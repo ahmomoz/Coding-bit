@@ -1,0 +1,20 @@
+/* 結構 */
+.tag {
+  display: inline;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  border-radius: 48px;
+  padding: 8px 16px;
+}
+
+/* 樣式 */
+.tag-brand-02 {
+  color: $brand-03;
+  background-color: $brand-02;
+
+  &:hover {
+    color: white;
+    background-color: $brand-03;
+  }
+}

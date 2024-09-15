@@ -1,5 +1,20 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import 'bootstrap/scss/functions';
+@import './utils/variables';
+@import './utils/custom-colors.scss';
+@import 'bootstrap/scss/bootstrap';
+@import './utils/mixin.scss';
+@import './utils/base.scss';
+@import './utils/btn.scss';
+@import './utils/flex.scss';
+@import './utils/nav.scss';
+@import './utils/tag.scss';
+@import './utils/card.scss';
+@import './utils/dropdown.scss';
+@import './utils/fonts.scss';
 
+
+@import './base/font.scss';
+
+@import './layout/header.scss';
 
 @import './pages/index.scss';

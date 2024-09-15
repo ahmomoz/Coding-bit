@@ -1,0 +1,65 @@
+$breakpoints: (
+  xxl: 1200px,
+  xl: 992px,
+  lg: 768px,
+  md: 576px,
+  sm: 0px
+);
+
+$font-sizes: (
+  1: 40px,
+  2: 32px,
+  3: 28px,
+  4: 24px,
+  5: 20px,
+  6: 16px,
+  7: 14px
+);
+
+$font-weights: (
+  lighter: lighter,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  bolder: bolder
+);
+
+@each $size, $value in $font-sizes {
+  @each $breakpoint, $media in $breakpoints {
+    @if $breakpoint != sm {
+      $next-breakpoint: map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $breakpoint) + 1));
+      $max-width: if($next-breakpoint, $next-breakpoint - 0.02px, null);
+      
+      .fs-#{$breakpoint}-#{$size} {
+        @media (min-width: #{$media}) and (max-width: #{$max-width}) {
+          font-size: $value !important;
+        }
+      }
+    } @else {
+      .fs-#{$breakpoint}-#{$size} {
+        font-size: $value !important;
+      }
+    }
+  }
+}
+
+@each $name, $value in $font-weights {
+  @each $breakpoint, $media in $breakpoints {
+    @if $breakpoint != sm {
+      $next-breakpoint: map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $breakpoint) + 1));
+      $max-width: if($next-breakpoint, $next-breakpoint - 0.02px, null);
+      
+      .fw-#{$breakpoint}-#{$name} {
+        @media (min-width: #{$media}) and (max-width: #{$max-width}) {
+          font-weight: $value !important;
+        }
+      }
+    } @else {
+      .fw-#{$breakpoint}-#{$name} {
+        font-weight: $value !important;
+      }
+    }
+  }
+}

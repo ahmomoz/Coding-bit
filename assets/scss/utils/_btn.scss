@@ -1,0 +1,31 @@
+.btn-brand-03,
+.btn-outline-none {
+  border: none;
+}
+.btn-outline-brand-03 {
+  border-width: 3px;
+}
+
+.btn-brand-03,
+.btn-outline-brand-03 {
+  &:hover, &:focus, &:active {
+    background-color: #645CAACC;
+    border-color: #645CAACC;
+  }
+  &:disabled {
+    color: $gray-03;
+    background-color: $white;
+    border: none;
+  }
+}
+.btn-outline-none {
+  color: $brand-03;
+
+  &:hover, &:focus, &:active {
+    background-color: $brand-02;
+  }
+  &:disabled {
+    color: $gray-03;
+    background-color: transparent;
+  }
+}

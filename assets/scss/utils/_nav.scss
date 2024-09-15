@@ -1,0 +1,12 @@
+.nav-tabs {
+  .nav-link {
+    color: $gray-03;
+    padding: 12px 24px;
+  }
+  .nav-link:hover {
+    color: $brand-03;
+  }
+  .active {
+    border-bottom: 3px solid $brand-01;
+  }
+}
