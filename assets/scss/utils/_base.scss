@@ -28,6 +28,13 @@ a {
 }
 
 /* wrap */
+.wrap-lg {
+  padding: 80px 0;
+
+  @include pad {
+    padding: 40px 0;
+  }
+}
 .wrap {
   padding: 80px 0;
 

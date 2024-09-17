@@ -8,15 +8,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <title>index</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>首頁</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
+    <header class="index-banner-section bg wrap-lg">
+      <div class="swiper banner-swiper position-relative pb-11 pb-xl-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container-lg">
+              <div class="row f-center flex-column-reverse flex-xl-row">
+                <div class="col-xl-8 f-column-align-center d-xl-block">
+                  <h1 class="title">
+                    程式學習，量身訂做
+                  </h1>
+                  <p class="fs-4 fs-xl-3 mt-4 mt-xl-6">
+                    打破一成不變舊課綱，想學什麼？讓我們為您客製化
+                  </p>
+                  <button
+                    class="btn btn-brand-03 f-align-center mt-6 mt-xl-10">
+                    立即提需求
+                    <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+                <div class="col-xl-4">
+                  <img
+                    src="../assets/images/deco/Illustration-1.png"
+                    alt="banner-illustration-1"
+                    class="banner-illustration">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container-lg">
+              <div class="row f-center flex-column-reverse flex-xl-row">
+                <div class="col-xl-8 f-column-align-center d-xl-block">
+                  <h1 class="title">
+                    一對一教學，</br>
+                    專屬於您的上課時間
+                  </h1>
+                  <p class="fs-4 fs-xl-3 mt-4 mt-xl-6">
+                    不怕問題在人海中埋沒，讓老師專為您一人解惑
+                  </p>
+                  <button
+                    class="btn btn-brand-03 f-align-center mt-6 mt-xl-10">
+                    立即預約
+                    <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+                <div class="col-xl-4">
+                  <img
+                    src="../assets/images/deco/Illustration-2.png"
+                    alt="banner-illustration-1"
+                    class="banner-illustration">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container-lg">
+              <div class="row f-center flex-column-reverse flex-xl-row">
+                <div class="col-xl-8 f-column-align-center d-xl-block">
+                  <h1 class="title">
+                    程式學習，量身訂做
+                  </h1>
+                  <p class="fs-4 fs-xl-3 mt-4 mt-xl-6">
+                    打破一成不變舊課綱，想學什麼？讓我們為您客製化
+                  </p>
+                  <button
+                    class="btn btn-brand-03 f-align-center mt-6 mt-xl-10">
+                    立即提需求
+                    <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+                <div class="col-xl-4">
+                  <img
+                    src="../assets/images/deco/Illustration-1.png"
+                    alt="banner-illustration-1"
+                    class="banner-illustration">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-brand-01"></div>
+      </div>
+    </header>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".banner-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 240,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -23,6 +23,10 @@ $breakpoints: (
   display: flex;
   flex-direction: row;
 }
+.f-between {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* 3個flex */
 .f-center {
@@ -30,10 +34,14 @@ $breakpoints: (
   justify-content: center;
   align-items: center;
 }
-
 .f-between-center {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.f-end-center {
+  display: flex;
+  justify-content: end;
   align-items: center;
 }
 .f-between-end {
@@ -41,11 +49,15 @@ $breakpoints: (
   justify-content: space-between;
   align-items: flex-end;
 }
-
 .f-column-align-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.f-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @each $breakpoint, $media in $breakpoints {
@@ -76,6 +88,11 @@ $breakpoints: (
       justify-content: space-between;
       align-items: center;
     }
+    .f-#{$breakpoint}-end-center {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
     .f-#{$breakpoint}-between-end {
       display: flex;
       justify-content: space-between;
@@ -85,6 +102,15 @@ $breakpoints: (
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .f-#{$breakpoint}-column-between {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .f-#{$breakpoint}-between {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

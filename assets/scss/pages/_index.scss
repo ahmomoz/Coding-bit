@@ -1,3 +1,34 @@
-.index-title {
-  font-size: 100px;
+/* index-banner-section */
+.index-banner-section {
+  background-image: url('/assets/images/deco/bg-1.png');
+  margin-top: -80px;
+  padding-top: 160px;
+
+  @include xl-pc {
+    background-image: url('/assets/images/deco/bg-sm-1.png');
+    padding-top: 112px;
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: 900;
+
+    @include xl-pc {
+      font-size: 32px;
+      font-weight: 700;
+      margin-top: 24px;
+    }
+  }
+
+  .swiper-slide {
+    @include xl-pc{
+      text-align: center;
+    }
+  }
+
+  .banner-illustration {
+    @include mobile {
+      width: 100%;
+    }
+  }
 }
