@@ -1,4 +1,5 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.layout-footer-wrap {
+  @include pad {
+    padding-bottom: 24px;
+  }
 }

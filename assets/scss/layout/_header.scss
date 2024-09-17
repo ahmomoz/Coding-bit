@@ -1,4 +1,74 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+$navbar-height-lg-pc: 80px;
+$navbar-height-mobile: 56px;
+
+.layout-nav-wrap {
+  z-index: 100;
+  
+  .navbar-collapse {
+    @include lg-pc {
+      position: fixed;
+      top: $navbar-height-lg-pc;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - $navbar-height-lg-pc);
+      background-color: white;
+      overflow-y: auto;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    @include mobile {
+      top: $navbar-height-mobile;
+      height: calc(100vh - $navbar-height-mobile);
+    }
+  }
+  .navbar-collapse.collapsing {
+    height: auto;
+    max-height: none;
+    transition: none;
+  }
+  .navbar-collapse.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar-collapse.collapsing,
+  .navbar-collapse.collapsed {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar-nav {
+    gap: 8px;
+
+    @include lg-pc {
+      height: 100%;
+      padding: 24px 12px;
+    }
+  }
+
+  .nav-link {
+    @include lg-pc {
+      padding: 8px 16px;
+    }
+  }
+
+  .nav-bottom-btn {
+    @include lg-pc {
+      display: block;
+      width: 100%;
+      margin-top: auto;
+    }
+  }
+
+  .nav-search-desktop {
+    width: 351px;
+
+    @include xxl-pc {
+      width: 200px;
+    }
+  }
+  .nav-search-desktop,
+  .nav-search-mobile {
+    padding-left: 44px;
+  }
 }
