@@ -5,16 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-5bb53260.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-35c90811.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-e045b57d.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-50696087.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-<a href="test.html">test</a>    <h1>我是about</h1>
-    <footer class="footer">我是 footer</footer>
+    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-lg">
+    <div class="d-flex">
+      <a href="index.html" class="navbar-brand me-10">
+        <picture>
+          <source
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAgCAYAAACVf3P1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAsJSURBVHgB7VpddhNHFr5V1QIbhxllBWlWgLUC5BUgn5k4/MbtAHPyhr0CyyswPMyTcSSDDQHmHIsVWKxA9su8IlYQzYyNjdVdNfdWSerqVstqCQFO0t85baur67++unV/CiBDhgwZMmTIkCFDhgwZMmT4s4DBHwD377woAvCi78tq9debTTjHaFRUHuDIBQGzwFgLfNUsLH2zD5+ARuXYBUfOgsK6A9UEcLDO6SZ8Idy787KkJMv/8nyhCiPiTALqhVXOdWCqqBjkdQHFmlIFb2Sgal9ysT1vN59rB+v0W4F/8GTnxiOdfuOF6zjine4bg2ZbHBWq1aUWnDM0Kv8rMsdZRZLMYk/zsc9NfOoqgLVRiBPWCcWEz3UFsFX4cbqaoipc69eruLYu/W4H7bW0a/vTrVce51Ch30pBdXNnYQlGgDPow/27r9exxmVknH7v/KNmXM54kTuwev/2r2tdInx2nJzklSM88yLq+Ee36zjgdrPgBLhwDnHw7OOqUrIMeg4T97yLj8cEeAfPjstX706vnVUfSVEmTmgzeqAGZitiS8X9p8fXVDC1UlhiwzYlChlZpB84p1tgNsVQMI6SvPubMdf+RpIR+6C/M+nXNp7f7pP0PKnSe3dfVTT5LKAEbNJjJeWx9XUk4TJ8RTzZvlkHJVdwoDUVqPnzJv165EsJ3ERlJM2ePlYToMnnfNwDIl86eJTfHP2TR+DkykqpLZp/3/ej0k9BCam3Sk8Audmk8n0SkEQxzoIX1iEfB4fH5WrNLCwdeULwMrJ9UWdgfBXTal9T9+pI4S8jiUdA4+mhNwr5LBRRGhIJ5+wjuUc+fYyPAMzPxTESAVZgwqhW54kXHoyJCAFJz2JBGyetm6LWNrdvlCMNGqJ5SNTv8HsRf+eFw0gK9klCYxw417q6hWLB+2GGgleq5PnMtCfAuUrvgZJv5YWjGpwMyI99dvxT07ZSrZ5uaKVLKZu/PL9Z7eq0DHUwBaoFzH+jJegAxPP7gf+Y+m70HuVSHt/58GiQ1GUgVhMS60oFWxCIpn4Xahbn5yGmu7GcbpyEA8lHdfryMR5o2A+Zx3OtxBhftLMoYMuoM74pLF2uQwokroMM6vG1e3Dr1aziqmTeZJ3mM0zjV6GjIwgO1+/feenaa0SIEJCftkuKm4lAEjY3d34oD+6ij3qKKOpyjF8Hi4DUeXF5BnVI2hm4dD0FkqF+IVB3fP3oyc73fbuRpGsuJ/ZIl0PJa/rEwBPBzGqbw3xiN1A3BMcsNOOsCV1JaKVz7tQ7G6ZMyqzqKU5iGdPLT7a/79O5jBqC/bfyY9+X/3H7pSeN9C9S2szpX0gB7yMgST+AKKlQGq4Vfpwpx7LWqc+NrWM8VSBOWJc5bBcl3xzpcEoGB0is2RR11pC4dSRwxU5kwlnstHcmUJXJ5y7PNPrWQYjmg1s787YuF6A1zxXr9FtrdPUwLVRQ8Rcdx6XIGkFMB4wqlGrrjD5q3evJ9gKjZ+PZwhX7m5i5vM6UEctKLw6rm6dbuVq+d/tfkckh0nbJZ/Vonx5KczirwJhAHcUl8lFfYnosfS0bSR3CWIThsWLKMLIqW0g+mryh+hRutevRZqBZWOwjSg+FxemyCuQ8SYhoOZSQHR0Oy3sk7XqfAlgaVCdKzSrOW2xjsRKkAXfWzTro+a+HXcE0kdv1vMqZ42d6DDhfKpxr8xvrkrweaSpSENjVXoEgGMs3RccTY9LrNhr4QQElzBw9vh8QUfUEUx574fmlmVKXfFSO8mIZKltgEgpkfcOYQMmCO1ltBYdHVzZxs5h+sHB8ioXSG6WwlpThxzUqQ/2nsWC5Jqal0MGieZDEa8NKFJZmakrKuUQSGqsXZu9OzyHx8Jn6lkh2ZoXyJKYXq/y/d9R3MAQ0XzjnS5351+vWJZMWBv6lMw3Pze0falQOc78NhwBrlLax8/eIocIHdkIMNduTy3F+PWw0iPiTzG/1uJdXiZ6ewjlbHFRu4/nCvl1uHAS+7BlSpm5/xepzb+M5wpYSDKV8qIZQOV+qtH4uN9qBdBuanNLo1E1SN7yDpx/WTZ7pegq3Cub7lvI07bSPp4dXhpUjf96G5VSmcTMW9MbdM0AngIEEJD0AxgAD40siSNmvb5ARYrVetFoMy104qUEfZB3GBDmo48qz7yf7uVBZDyUXOtzj36u4GfqP8eG4eGHmt7R5iWB0vEJ/35bRT7gKnxlItj71y3emehuIpOCwYzgtIgREhfZ9rxOcuzAeeh1LsnbttEGO4ySrchBhPiek4snWrdKK9DBE8nwMjuaGFSA9j6Ib5ANM1uGMnzAtCTu+RDeaOt7JRu4We+Oh8fVXmAAiVjADRUpnx78n6Ch9NKigCYFxT7/ETOuzQO4R8Nvd1/STwcVEdtyEkKIvpGOGeiu6ZGheq4NyE1lQz0MHs0Nlmtr9goYJWscQt447JIRhERPu8EUUKnafWp8Sd0bDrDfuowv//Q9MABEJ6OcuVsM3VYxbhzYch0x64+UGCI9Se5cklXf8E1s5b6YtxwFSKP4TAAslBOOyr82OkTK0L2jRvo0lFQdJrkblEI0M1YBQWnV9gK62jlW//tuJmFQGRUwOtk4X+53gqgZpoNiAcfcI2JpUxClCQBKzFFLpvjMmKp2GI7h382UpYikyFUo/BT29Salcn7Jqp6GPKVwkaVtM/eXQSHkIXwAMgnD8wBfj4zcbLw0+VuPWbIc07xpPjz191D47KhEpmRCNvgsKVoy3sHhpGcmU5Baj+PGeISId3abO/acfdtHpX41npssOkAYxJzZBiJy1edjYUjSOvlBc2w9W0OE4q10XZHI74t2DO69q6MY4MDn4NdtgoFDdphVNQFfFIyxDA8gbV8vrJpOnb4TkLT/nPMS4rWfKQSvwQ+Ji3iqYY0q7aNBPiP/bWwp43qgFI4afxgT5N7HP9W6UB8fSwL7UUDF/b42diHXmMUwWKBKNYtRx/6Wr04SjJyHxLgG6PPDkjIThyAfY2DoC1k8OFzQRHa9TNhEkRQtLl5qQDrO45rsKAiN5Gfo0O+tGkNLfSlWLdZpwDg9/uvsCOI7Njj71WcFkJARBMBdxIkIYVI6SD2oUJ46Xx5CNFeVABzDPNXy6MmVdcOASVmyDhDqF9YUuGu1LFHvom9zFBStJCNLt3gmAgurW+POmL92xq7W0EoCuQiUZEmcigXy9+pCEI9en68T+yuly6uwoVMyaiz39WOtG3yismaYe+zRBYHRE4GZ0ImpIohtGkzCXI+fvmk1Eq+o6kmxpc3thvutbs0Ed9LXz2Ip+WGVRTs5tJFxexPqW423qSIqSK9IfrMBPGjT+zZ2FKzTGThRnn1QTerf9gmlgdLiUpEGiDCJfpD5AF41K6RWgOLG8OJfGbxgWIV0xYR3M3YDltPUYoaLmoxyKnmQsRT3wM+pBvkPecdFqfzhqJpFuECjE5nwzNTtqWQpo0/9R2/sSwCN6r3sSXJTC/efzv70fVkYbC1yWE45Q7UVAH99jIhekRKPyWx7EVAkt09WEiwydCwr6gmsdPgFkEI6z7nH83NGlT05OWnY9qQj4Z4K+BXJ5qiRk7ppiqhm/qGDfwCZQLBxGgLmXR54A2dEhJ3Qln3RBEbgQkKS7VB9F4n1NZASMgfyUot1uMNaNS/MqMBMRoUsNgvOHVsx65CvoGaLICJgAOv4lg13GkiM1BqzuHx7Onzf14PeGjIADoI9aupiAESE8il2gKACDFroR9sk9cdZF1gwZMmTIkCFDhnOO/wPgEviKFO9QwQAAAABJRU5ErkJggg== "
+            media="(max-width: 575.98px)">
+          <img
+            src="/Coding-bit/assets/logo-5dfbcda2.png"
+            alt="article-image">
+        </picture>
+      </a>
+      <div class="position-relative f-align-center d-none d-xl-flex">
+        <input
+          type="search"
+          class="form-control nav-search-desktop"
+          placeholder="搜尋感興趣的課程">
+        <span
+          class="material-symbols-outlined text-gray-03 position-absolute ps-4"
+          style="width: 20px; height: 20px;">
+          search
+        </span>
+      </div>
+    </div>
+    <button
+      id="layout-navbar-toggler"
+      class="navbar-toggler border-0 p-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span
+        id="menu-icon"
+        class="material-symbols-outlined icon-fill fs-4">
+        menu
+      </span>
+      <span
+        id="close-icon"
+        class="material-symbols-outlined icon-fill fs-4 d-none">
+        close
+      </span>
+    </button>
+    <div
+      id="navbarSupportedContent"
+      class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="position-relative f-align-center d-lg-none">
+          <input
+            type="search"
+            class="form-control nav-search-mobile"
+            placeholder="搜尋感興趣的課程">
+            <span
+              class="material-symbols-outlined text-gray-03 position-absolute ps-4"
+              style="width: 20px; height: 20px;">
+            search
+            </span>
+        </li>
+        <li class="nav-item mt-4 mt-lg-0">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02"
+            aria-current="page"
+            href="#">
+            精選課程
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02"
+            href="#">
+            一對一教學
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02"
+            href="#">
+            課程客製化
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02"
+            href="#">
+            常見問題
+          </a>
+        </li>
+        <li class="nav-item nav-bottom-btn ms-lg-10">
+          <button
+            class="btn btn-outline-brand-03 w-100">
+            登入 / 註冊
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const toggler = document.getElementById('layout-navbar-toggler');
+  const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+
+  toggler.addEventListener('click', function() {
+    if (menuIcon.classList.contains('d-none')) {
+      menuIcon.classList.remove('d-none');
+      closeIcon.classList.add('d-none');
+      layoutNavWrap.classList.remove('bg-white');
+      layoutNavWrap.classList.add('bg-transparent');
+    } else {
+      menuIcon.classList.add('d-none');
+      closeIcon.classList.remove('d-none');
+      layoutNavWrap.classList.remove('bg-transparent');
+      layoutNavWrap.classList.add('bg-white');
+    }
+  });
+});
+</script>    <h1>我是about</h1>
+    <footer class="layout-footer-wrap wrap-lg bg-white">
+  <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+      <a href="index.html" class="navbar-brand">
+        <picture>
+          <source
+            srcset="data:image/png;base64,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 "
+            media="(max-width: 575.98px)">
+          <img
+            src="/Coding-bit/assets/logo-5dfbcda2.png"
+            alt="article-image">
+        </picture>
+      </a>
+      <ul class="mt-4 mt-lg-6">
+        <li class="f-align-center">
+          <span class="material-symbols-outlined fs-6">
+            call
+          </span>
+          <a
+            href="tel:+0212345678"
+            class="fs-7 link-hover lh-sm ms-2">
+            (02) 1234-5678
+          </a>
+        </li>
+        <li class="f-align-center mt-2">
+          <span class="material-symbols-outlined fs-6">
+            schedule
+          </span>
+          <p class="fs-7 lh-sm ms-2">MON - FRI : 8:30 am - 17:30 pm</p>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+      <ul class="navbar-nav f-column w-50 px-4">
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02 fs-7"
+            aria-current="page"
+            href="#">
+            精選課程
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            一對一教學
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            課程客製化
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav f-column w-50 px-4">
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02 fs-7"
+            aria-current="page"
+            href="#">
+            常見問題
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            成為老師
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            訂閱方案選擇
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+      <li>
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg" alt="icon-ins">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg" alt="icon-ins">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg" alt="icon-ins">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
     
   </body>
 </html>
