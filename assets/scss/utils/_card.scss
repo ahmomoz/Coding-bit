@@ -3,3 +3,19 @@
     box-shadow: 0px 4px 80px 0px rgba(208, 162, 247, 0.8);
   }
 }
+
+.card {
+  .img-wrapper {
+    overflow: hidden;
+  }
+  .img-hover-enlarge {
+    img {
+      transition: transform 0.3s;
+    }
+
+    &:hover img {
+      transition: transform 0.3s;
+      transform: scale(1.1);
+    }
+  }
+}

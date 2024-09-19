@@ -1,0 +1,62 @@
+<li class="teacher-card">
+  <div class="card p-lg-6 p-4">
+    <div class="position-relative mb-lg-5 mb-4">
+      <div class="img-wrapper img-hover-enlarge rounded-2">
+        <!-- dynamic image path -->
+        <img
+          src="../assets/images/course/<%= image %>.png"
+          class="card-img-top rounded-2 object-fit-cover"
+          alt="<%= image %>"
+        />
+      </div>
+      <!-- dynamic favorite status -->
+      <span
+        class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+        role="button"
+        style="background-color: #1e1e1e66"
+        data-favorite="<%= isFavorite %>"
+      >
+        favorite
+      </span>
+    </div>
+    <div class="card-body p-0">
+      <div class="mb-2 f-between-start">
+        <div>
+          <!-- dynamic tutor name -->
+          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
+            <%= name %>
+          </h5>
+          <!-- dynamic title-->
+          <p class="text-gray-02 fs-8"><%= title %></p>
+        </div>
+        <p class="f-center text-brand-03">
+          <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+            kid_star
+          </span>
+          <!-- dynamic score -->
+          <%= score %>
+        </p>
+      </div>
+
+      <!-- dynamic tag loop -->
+      <div class="mb-5 list-x-scroll py-2">
+        <% for(var i=0; i<tags.length; i++) {%>
+          <a href="#" class="tag tag-brand-02 fs-8 me-3"><%= tags[i].name %></a>
+        <% } %>
+      </div>
+
+      <div class="mb-lg-6 mb-5">
+        <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+        <!-- dynamic price -->
+        <h2 class="text-brand-03 fs-lg-2 fs-3">
+          NT $ <%= price.toLocaleString('en-IN') %>
+        </h2>
+      </div>
+
+      <a href="#" class="btn btn-brand-03  w-100"
+        ><p class="slide-right-hover f-center me-1">立即預約
+        <span class="material-symbols-outlined"> arrow_forward </span></p></a>
+
+    </div>
+  </div>
+</li>

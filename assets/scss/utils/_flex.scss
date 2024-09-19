@@ -3,7 +3,7 @@ $breakpoints: (
   xl: 992px,
   lg: 768px,
   md: 576px,
-  sm: 0px
+  sm: 0px,
 );
 
 /* 2個flex */
@@ -48,6 +48,11 @@ $breakpoints: (
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.f-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .f-column-align-center {
   display: flex;

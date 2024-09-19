@@ -18,3 +18,9 @@
     background-color: $brand-03;
   }
 }
+
+//horizontal scroll for list
+.list-x-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}

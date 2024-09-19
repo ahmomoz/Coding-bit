@@ -3,7 +3,7 @@ $breakpoints: (
   xl: 992px,
   lg: 768px,
   md: 576px,
-  sm: 0px
+  sm: 0px,
 );
 
 $font-sizes: (
@@ -13,7 +13,8 @@ $font-sizes: (
   4: 24px,
   5: 20px,
   6: 16px,
-  7: 14px
+  7: 14px,
+  8: 12px,
 );
 
 $font-weights: (
@@ -23,9 +24,8 @@ $font-weights: (
   medium: 500,
   semibold: 600,
   bold: 700,
-  bolder: bolder
+  bolder: bolder,
 );
-
 
 @each $size, $value in $font-sizes {
   .fs-#{$size} {
@@ -41,7 +41,6 @@ $font-weights: (
     }
   }
 }
-
 
 @each $name, $value in $font-weights {
   .fw-#{$name} {
