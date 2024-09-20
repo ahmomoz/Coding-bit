@@ -105,9 +105,70 @@
         <div class="swiper-pagination swiper-pagination-brand-01"></div>
       </div>
     </header>
+    <section class="index-course-section bg wrap-lg">
+      <div class="container">
+        <div class="f-center">
+          <picture>
+            <source
+              srcset="../assets/images/icon/icon-infinite-sm.svg"
+              media="(max-width: 575.98px)">
+            <img
+              src="../assets/images/icon/icon-infinite.svg"
+              alt="icon-infinite">
+          </picture>
+          <h2 class="fs-4 fs-lg-1 text-brand-03 ms-3 ms-lg-4">
+            精選課程
+          </h2>
+          <picture>
+            <source
+              srcset="../assets/images/icon/icon-infinite-sm.svg"
+              media="(max-width: 575.98px)">
+            <img
+            src="../assets/images/icon/icon-infinite.svg"
+            alt="icon-infinite" class="ms-3 ms-lg-4">
+          </picture>
+        </div>
+        <div class="row course-card-wrap mt-6 mt-lg-8 g-6">
+          <div class="col-md-6 col-xl-4">
+            <a href="#" class="course-card card-column">
+              <div class="card gradient-border p-lg-6 p-4 h-100">
+                <div class="overflow-hidden img-hover-enlarge rounded">
+                  <img
+                    src="../assets/images/course/course-1.png"
+                    class="card-img-top rounded"
+                    alt="course-image">
+                </div>
+                <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                  <h3 class="card-title fs-6 fs-lg-5">Python 基礎入門</h3>
+                  <div class="f-between-center mt-1 mt-lg-2">
+                    <p class="card-text fs-7 fs-lg-6">Anna Wu</p>
+                    <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                      <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                        kid_star
+                      </span>
+                      4.0
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="f-center">
+          <button
+            class="btn btn-outline-brand-03 slide-right-hover f-align-center mt-6 mt-lg-8">
+            了解更多
+            <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+              arrow_forward
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
