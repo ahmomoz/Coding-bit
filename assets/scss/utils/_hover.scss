@@ -1,0 +1,7 @@
+.slide-right-hover {
+  transition: 0.3s;
+  &:hover {
+    transform: translate(5px, 0px);
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>卡斯柏 ｜ 預約老師</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+      <ul class="row row-cols-2">
+        <%- include('./layout/teacher-card', {image:"course-1",
+        isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師",
+        score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name:
+        "WordPress 客製化佈景主題"}]}); -%>
+        <!-- Tutor 2 -->
+        <%- include('./layout/teacher-card', {image:"course-1",
+        isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師",
+        score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name:
+        "WordPress 客製化佈景主題"}]}); -%>
+      </ul>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../assets/js/add-to-favorite.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
