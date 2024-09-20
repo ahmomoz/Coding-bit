@@ -10,28 +10,3 @@
     border-bottom: 3px solid $brand-01;
   }
 }
-
-/* link hover特效 */
-.link-hover {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 0;
-    height: 1px;
-    background-color: currentColor;
-    transition: width 0.3s ease; 
-  }
-
-  &:hover::after {
-      width: 100%;
-  }
-}
-
-/* icon hover特效 */
-.icon-hover:hover img {
-  transform: scale(1.1);
-}

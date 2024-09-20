@@ -1,5 +1,8 @@
 $navbar-height-lg-pc: 80px;
 $navbar-height-mobile: 56px;
+.no-scroll {
+  overflow: hidden;
+}
 
 .layout-nav-wrap {
   z-index: 100;
