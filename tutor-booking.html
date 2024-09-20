@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-a16ef421.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>卡斯柏 ｜ 預約老師</title>
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-37fa3f46.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-a16ef421.js">
     <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-141e1ad0.css">
   </head>
   <body>
@@ -129,7 +147,140 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-</script>    <h1>我是about</h1>
+</script>
+    <div class="container">
+      <ul class="row row-cols-2">
+        <li class="teacher-card">
+  <div class="card p-lg-6 p-4">
+    <div class="position-relative mb-lg-5 mb-4">
+      <div class="img-wrapper img-hover-enlarge rounded-2">
+        <!-- dynamic image path -->
+        <img
+          src="/Coding-bit/assets/course-1-3de1fc2e.png"
+          class="card-img-top rounded-2 object-fit-cover"
+          alt="course-1"
+        />
+      </div>
+      <!-- dynamic favorite status -->
+      <span
+        class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+        role="button"
+        style="background-color: #1e1e1e66"
+        data-favorite="true"
+      >
+        favorite
+      </span>
+    </div>
+    <div class="card-body p-0">
+      <div class="mb-2 f-between-start">
+        <div>
+          <!-- dynamic tutor name -->
+          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
+            平凡老師 - 李東霖
+          </h5>
+          <!-- dynamic title-->
+          <p class="text-gray-02 fs-8">WordPress 工程師</p>
+        </div>
+        <p class="f-center text-brand-03">
+          <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+            kid_star
+          </span>
+          <!-- dynamic score -->
+          4.9
+        </p>
+      </div>
+
+      <!-- dynamic tag loop -->
+      <div class="mb-5 list-x-scroll py-2">
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 網站架設</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 客製化佈景主題</a>
+        
+      </div>
+
+      <div class="mb-lg-6 mb-5">
+        <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+        <!-- dynamic price -->
+        <h2 class="text-brand-03 fs-lg-2 fs-3">
+          NT $ 250
+        </h2>
+      </div>
+
+      <a href="#" class="btn btn-brand-03  w-100"
+        ><p class="slide-right-hover f-center me-1">立即預約
+        <span class="material-symbols-outlined"> arrow_forward </span></p></a>
+
+    </div>
+  </div>
+</li>
+        <!-- Tutor 2 -->
+        <li class="teacher-card">
+  <div class="card p-lg-6 p-4">
+    <div class="position-relative mb-lg-5 mb-4">
+      <div class="img-wrapper img-hover-enlarge rounded-2">
+        <!-- dynamic image path -->
+        <img
+          src="/Coding-bit/assets/course-1-3de1fc2e.png"
+          class="card-img-top rounded-2 object-fit-cover"
+          alt="course-1"
+        />
+      </div>
+      <!-- dynamic favorite status -->
+      <span
+        class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+        role="button"
+        style="background-color: #1e1e1e66"
+        data-favorite="true"
+      >
+        favorite
+      </span>
+    </div>
+    <div class="card-body p-0">
+      <div class="mb-2 f-between-start">
+        <div>
+          <!-- dynamic tutor name -->
+          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
+            平凡老師 - 李東霖
+          </h5>
+          <!-- dynamic title-->
+          <p class="text-gray-02 fs-8">WordPress 工程師</p>
+        </div>
+        <p class="f-center text-brand-03">
+          <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+            kid_star
+          </span>
+          <!-- dynamic score -->
+          4.9
+        </p>
+      </div>
+
+      <!-- dynamic tag loop -->
+      <div class="mb-5 list-x-scroll py-2">
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 網站架設</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 客製化佈景主題</a>
+        
+      </div>
+
+      <div class="mb-lg-6 mb-5">
+        <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+        <!-- dynamic price -->
+        <h2 class="text-brand-03 fs-lg-2 fs-3">
+          NT $ 250
+        </h2>
+      </div>
+
+      <a href="#" class="btn btn-brand-03  w-100"
+        ><p class="slide-right-hover f-center me-1">立即預約
+        <span class="material-symbols-outlined"> arrow_forward </span></p></a>
+
+    </div>
+  </div>
+</li>
+      </ul>
+    </div>
     <footer class="layout-footer-wrap wrap-lg bg-white">
   <div class="container f-xl-between">
     <div class="footer-info-wrap flex-grow-1">
@@ -233,5 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </footer>
 
     
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
