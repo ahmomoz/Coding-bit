@@ -7,8 +7,8 @@
             srcset="../assets/images/logo-sm.png"
             media="(max-width: 575.98px)">
           <img
-            src="../assets/images/logo.png"
-            alt="article-image">
+            src="../assets/images/logo.svg"
+            alt="logo-image">
         </picture>
       </a>
       <div class="position-relative f-align-center d-none d-xl-flex">
@@ -59,7 +59,7 @@
         </li>
         <li class="nav-item mt-4 mt-lg-0">
           <a
-            class="nav-link link-hover d-inline-flex link-gray-02"
+            class="nav-link underline-hover d-inline-flex link-gray-02"
             aria-current="page"
             href="#">
             精選課程
@@ -67,21 +67,21 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link link-hover d-inline-flex link-gray-02"
-            href="#">
+            class="nav-link underline-hover d-inline-flex link-gray-02"
+            href="tutor-booking.html">
             一對一教學
           </a>
         </li>
         <li class="nav-item">
           <a
-            class="nav-link link-hover d-inline-flex link-gray-02"
+            class="nav-link underline-hover d-inline-flex link-gray-02"
             href="#">
             課程客製化
           </a>
         </li>
         <li class="nav-item">
           <a
-            class="nav-link link-hover d-inline-flex link-gray-02"
+            class="nav-link underline-hover d-inline-flex link-gray-02"
             href="#">
             常見問題
           </a>
@@ -110,11 +110,15 @@ document.addEventListener('DOMContentLoaded', function() {
       closeIcon.classList.add('d-none');
       layoutNavWrap.classList.remove('bg-white');
       layoutNavWrap.classList.add('bg-transparent');
+
+      document.body.classList.remove('no-scroll');
     } else {
       menuIcon.classList.add('d-none');
       closeIcon.classList.remove('d-none');
       layoutNavWrap.classList.remove('bg-transparent');
       layoutNavWrap.classList.add('bg-white');
+
+      document.body.classList.add('no-scroll');
     }
   });
 });
