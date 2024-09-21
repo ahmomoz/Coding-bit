@@ -16,7 +16,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <header class="index-banner-section bg wrap-lg">
+    <header class="index-banner-section wrap bg">
       <div class="swiper banner-swiper position-relative pb-11 pb-xl-6">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-xl-4">
                   <img
-                    src="../assets/images/deco/Illustration-1.png"
+                    src="../assets/images/deco/Illustration-1.svg"
                     alt="banner-illustration-1"
                     class="banner-illustration">
                 </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-xl-4">
                   <img
-                    src="../assets/images/deco/Illustration-2.png"
+                    src="../assets/images/deco/Illustration-2.svg"
                     alt="banner-illustration-1"
                     class="banner-illustration">
                 </div>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="col-xl-4">
                   <img
-                    src="../assets/images/deco/Illustration-1.png"
+                    src="../assets/images/deco/Illustration-1.svg"
                     alt="banner-illustration-1"
                     class="banner-illustration">
                 </div>
@@ -105,9 +105,271 @@
         <div class="swiper-pagination swiper-pagination-brand-01"></div>
       </div>
     </header>
+    <main class="index-course-section wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '精選課程', title2: '', longTitle: false }) %>
+        <div class="row course-card-wrap mt-6 mt-lg-8 g-6">
+          <div class="col-md-6 col-xl-4">
+            <a href="#" class="course-card card-column">
+              <div class="card gradient-border p-lg-6 p-4 h-100">
+                <div class="overflow-hidden img-hover-enlarge rounded">
+                  <img
+                    src="../assets/images/course/course-1.png"
+                    class="card-img-top rounded"
+                    alt="course-image">
+                </div>
+                <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                  <h3 class="card-title fs-6 fs-lg-5">Python 基礎入門</h3>
+                  <div class="f-between-center mt-1 mt-lg-2">
+                    <p class="card-text fs-7 fs-lg-6">Anna Wu</p>
+                    <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                      <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                        kid_star
+                      </span>
+                      4.0
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="f-center">
+          <button
+            class="btn btn-outline-brand-03 slide-right-hover f-align-center mt-6 mt-lg-8">
+            了解更多
+            <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+              arrow_forward
+            </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <section class="index-feature-section wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '選擇我們的理由', title2: '', longTitle: false }) %>
+        <div class="row mt-6 mt-lg-8">
+          <div class="col-lg-4">
+            <div class="text-center p-6">
+              <span
+                class="material-symbols-outlined text-brand-01"
+                style="font-size: 80px;">
+                auto_stories
+              </span>
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  客製化方案解決學習需求
+                </h5>
+                <p class="mt-2">
+                  針對您的具體需求制定個人化學習課程
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text-center p-6">
+              <img
+                src="../assets/images/icon/teacher-fill-purple.svg"
+                alt="icon-teacher">
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  頂尖老師一對一指導
+                </h5>
+                <p class="mt-2">
+                  可預約專業老師進行一對一課程、或是一對一程式碼檢視服務
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text-center p-6">
+              <span
+                class="material-symbols-outlined text-brand-01"
+                style="font-size: 80px;">
+                calendar_clock
+              </span>
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  靈活彈性的學習時間
+                </h5>
+                <p class="mt-2">
+                  許多專業課程，讓您方便於自由時間觀看學習
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-booking-steps-section wrap bg-gray-04">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '簡單四步驟，', title2: '預約一對一教學', longTitle: true }) %>
+        <div class="step-wrap mt-6 mt-lg-8">
+          <div class="text-center position-relative">
+            <h4 class="step-num text-brand-01">1</h4>
+            <div class="step-item py-6">
+              <div class="step-img-wrap">
+                <img
+                  src="../assets/images/deco/Illustration-5.svg"
+                  alt="Illustration"
+                  class="step-img">
+              </div>
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  訂閱Coding∞bit
+                </h5>
+                <p class="mt-2">
+                  成為Coding∞bit的基本會員，享有各項權利
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined icon-fill text-gray-01 px-6 d-none d-xxl-block">
+            arrow_forward
+          </span>
+          <span class="material-symbols-outlined icon-fill text-gray-01 px-6 d-xxl-none">
+            arrow_downward
+          </span>
+          <div class="text-center position-relative">
+            <h4 class="step-num text-brand-01">2</h4>
+            <div class="step-item py-6">
+              <div class="step-img-wrap">
+                <img
+                  src="../assets/images/deco/Illustration-3.svg"
+                  alt="Illustration"
+                  class="step-img">
+              </div>
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  挑選喜歡的老師
+                </h5>
+                <p class="mt-2">
+                  免費觀看教學影片，找到喜歡的教學風格
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined icon-fill text-gray-01 px-6 d-none d-xxl-block">
+            arrow_forward
+          </span>
+          <span class="material-symbols-outlined icon-fill text-gray-01 px-6 d-xxl-none">
+            arrow_downward
+          </span>
+          <div class="text-center position-relative">
+            <h4 class="step-num text-brand-01">3</h4>
+            <div class="step-item py-6">
+              <div class="step-img-wrap">
+                <img
+                  src="../assets/images/deco/Illustration-4.svg"
+                  alt="Illustration"
+                  class="step-img">
+              </div>
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  挑選喜歡的時間
+                </h5>
+                <p class="mt-2">
+                  自由挑選預約時間，付費後即可預約一對一教學或是程式碼檢視服務
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined icon-fill text-gray-01 px-6 d-none d-xxl-block">
+            arrow_forward
+          </span>
+          <span class="material-symbols-outlined icon-fill text-gray-01 px-6 d-xxl-none">
+            arrow_downward
+          </span>
+          <div class="text-center position-relative">
+            <h4 class="step-num text-brand-01">4</h4>
+            <div class="step-item py-6">
+              <div class="step-img-wrap">
+                <img
+                  src="../assets/images/deco/Illustration-6.svg"
+                  alt="Illustration"
+                  class="step-img">
+              </div>
+              <div class="mt-4">
+                <h5 class="text-gray-01 fw-medium">
+                  開始一對一教學！
+                </h5>
+                <p class="mt-2">
+                  預約時間到，開始線上上課
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-customized-info-section wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '會員限定，', title2: '學習影片客製化服務', longTitle: true }) %>
+        <div class="info-wrap p-4 p-lg-10 mt-6 mt-lg-8">
+          <div>
+            <h3 class="fs-4 fs-lg-2">滿足您的學習需求</h3>
+            <p class="mt-4 mt-lg-6">
+              我們提供教學影片客製化服務，根據您提出的需求，錄製專屬的教學內容。只要您成為高級會員，即可享有服務。
+            </p>
+            <ul class="mt-4 mt-lg-6">
+              <li class="f-align-center">
+                <span class="material-symbols-outlined icon-fill text-brand-03">
+                  check_circle
+                </span>
+                <p class="fw-medium lh-sm ms-4">
+                  專業老師額外錄製教學內容
+                </p>
+              </li>
+              <li class="f-align-center mt-3 mt-lg-4">
+                <span class="material-symbols-outlined icon-fill text-brand-03">
+                  check_circle
+                </span>
+                <p class="fw-medium lh-sm ms-4">
+                  成果導向教學影片，每支影片都能學會一個知識點
+                </p>
+              </li>
+            </ul>
+            <div class="btn-wrap f-lg-align-center mt-6 mt-lg-10">
+              <button
+                class="btn btn-brand-03 slide-right-hover f-align-center">
+                了解更多
+                <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 ms-1">
+                  arrow_forward
+                </span>
+              </button>
+              <div>
+                <a href="#" class="link-brand-03 fs-6 fw-medium underline-hover pb-3 pb-md-0 mt-5 mt-md-0 ms-md-10">
+                  已有帳號？點此學習！
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <div class="video-wrap rounded-2 position-relative">
+              <img
+                src="../assets/images/course/course-lg-1.png"
+                alt="video-image"
+                class="rounded-2">
+              <span class="play-icon material-symbols-outlined icon-fill display-3 text-white">
+                play_circle
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="index-subscription-section bg wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '訂閱方案', title2: '', longTitle: false }) %>
+        <div class="row mt-6 mt-lg-8">
+          <%- include('./layout/subscription-card'); -%>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>

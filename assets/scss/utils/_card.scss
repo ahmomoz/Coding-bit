@@ -19,3 +19,19 @@
     }
   }
 }
+
+.gradient-border {
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background-clip: padding-box;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -1px; bottom: -1px;
+    left: -1px; right: -1px;
+    background: linear-gradient(123.12deg, #D0A2F7 0%, rgba(241, 234, 255, 0.1) 100%);
+    border-radius: 16px;
+    z-index: -1;
+  }
+}

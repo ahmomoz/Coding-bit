@@ -1,0 +1,22 @@
+.subscription-card {
+  box-shadow: 0px 26px 40px 0px rgba(188, 202, 255, 0.13);
+  height: 100%;
+  padding: 32px;
+
+  @include pad {
+    padding: 16px;
+  }
+
+  .card-badge-text {
+    @include pad {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .recommend-badge {
+    top: -3px; right: -3px;
+    border-radius: 0 20px 0 24px;
+    padding: 12px 24px;
+  }
+}
