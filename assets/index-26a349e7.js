@@ -4,7 +4,7 @@ import"./bootstrap.min-ccbe106b.js";function c(r){let s="";[{courseName:"Python 
           <div class="card gradient-border p-lg-6 p-4 h-100">
             <div class="overflow-hidden img-hover-enlarge rounded">
               <img
-                src="../assets/images/course/${e.img}"
+                src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${e.img}"
                 class="card-img-top rounded"
                 alt="course-image">
             </div>
