@@ -7,20 +7,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>卡斯柏 ｜ 預約老師</title>
   </head>
   <body>
@@ -36,11 +30,7 @@
               <!-- tutor profile -->
               <div class="tutor-profile section-component">
                 <div class="flex-shrink-0">
-                  <img
-                    src="../assets/images/user/user-1.png"
-                    alt="profile"
-                    class="object-fit-cover rounded-circle me-6"
-                  />
+                  <img src="../assets/images/user/user-1.png" alt="profile" class="object-fit-cover rounded-circle me-6" />
                 </div>
                 <div class="flex-grow-1">
                   <h2 class="mb-2">卡斯伯 Casper</h2>
@@ -100,73 +90,233 @@
                   </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="about-me-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="about-me-tab"
-                    tabindex="0"
-                  >
+                  <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
                     <p>
                       我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
                       在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
                       如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步
                     </p>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="teaching-styles-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="teaching-styles-tab"
-                    tabindex="0"
-                  >
+                  <div class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" aria-labelledby="teaching-styles-tab" tabindex="0">
                     ...
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="resume-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="resume-tab"
-                    tabindex="0"
-                  >
-                    ...
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="disabled-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="disabled-tab"
-                    tabindex="0"
-                  >
-                    ...
-                  </div>
+                  <div class="tab-pane fade" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
                 </div>
               </div>
               <!-- statistics -->
               <div class="row row-cols-2 row-cols-lg-5 g-3">
-                <%- include('./layout/tutor-stat-overview-card',{title: "學生",
-                details: "200"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "課堂",
-                details: "250"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "影片",
-                details: "10"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "出席率",
-                details: "100%"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "回覆率",
-                details: "100%"}); -%>
+                <%- include('./layout/tutor-stat-overview-card',{title: "學生", details: "200"}); -%> <%-
+                include('./layout/tutor-stat-overview-card',{title: "課堂", details: "250"}); -%> <%-
+                include('./layout/tutor-stat-overview-card',{title: "影片", details: "10"}); -%> <%-
+                include('./layout/tutor-stat-overview-card',{title: "出席率", details: "100%"}); -%> <%-
+                include('./layout/tutor-stat-overview-card',{title: "回覆率", details: "100%"}); -%>
               </div>
             </section>
 
             <section class="section">
-              <div>
+              <div class="section-component f-between-center">
                 <h4>時間表</h4>
-                <a href="#" class="text-brand-03 d-flex">
+                <a href="#" class="text-brand-03 d-flex slide-right-hover">
                   <p>更多</p>
-                  <span class="material-symbols-outlined icon-fill">
-                    arrow_forward
-                  </span>
-                </p>
+                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                </a>
               </div>
+              <div class="f-between-center mb-5">
+                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
+                <h5 class="text-brand-03" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
+              </div>
+
+              <div>
+                <!-- <table class="table" style="table-layout: fixed">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期四</span>
+                          <span class="fs-7 fw-normal">08/01</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期五</span>
+                          <span class="fs-7 fw-normal">08/02</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期六</span>
+                          <span class="fs-7 fw-normal">08/03</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期日</span>
+                          <span class="fs-7 fw-normal">08/04</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期一</span>
+                          <span class="fs-7 fw-normal">08/05</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期二</span>
+                          <span class="fs-7 fw-normal">08/06</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期三</span>
+                          <span class="fs-7 fw-normal">08/07</span>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table> -->
+
+                <div class="row row-cols-7 available-date-time g-0">
+                  <div class="col flex-column">
+                    <div class="date f-center flex-column">
+                      <h6>星期四</h6>
+                      <p>08/01</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time disabled">08:00</li>
+                        <li class="time">09:00</li>
+                        <li class="time disabled">10:00</li>
+                        <li class="time">11:00</li>
+                        <li class="time">12:00</li>
+                        <li class="time">13:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期五</h6>
+                      <p>08/02</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">16:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time">19:00</li>
+                        <li class="time disabled">20:00</li>
+                        <li class="time">21:00</li>
+                        <li class="time">22:00</li>
+                        <li class="time disabled">23:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期六</h6>
+                      <p>08/02</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">10:00</li>
+                        <li class="time">11:00</li>
+                        <li class="time disabled">12:00</li>
+                        <li class="time">13:00</li>
+                        <li class="time disabled">14:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time disabled">19:00</li>
+                        <li class="time disabled">20:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column disabled">
+                      <h6>星期日</h6>
+                      <p>08/04</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column"></ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期一</h6>
+                      <p>08/05</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">13:00</li>
+                        <li class="time disabled">14:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time">19:00</li>
+                        <li class="time">20:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期二</h6>
+                      <p>08/06</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">13:00</li>
+                        <li class="time">14:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time">19:00</li>
+                        <li class="time">20:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期三</h6>
+                      <p>08/07</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">08:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div></div>
             </section>
           </div>
 
@@ -175,11 +325,7 @@
             <div class="card p-lg-6 p-4">
               <div class="position-relative mb-lg-5 mb-4">
                 <div class="img-wrapper img-hover-enlarge rounded-2">
-                  <img
-                    src="../assets/images/course/course-2.png"
-                    class="card-img-top rounded-2 object-fit-cover"
-                    alt="course-2"
-                  />
+                  <img src="../assets/images/course/course-2.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
                 </div>
 
                 <span
@@ -197,14 +343,12 @@
                   <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
                 </div>
 
-                <a href="#" class="btn btn-brand-03 w-100"
-                  ><p class="slide-right-hover f-center me-1">
+                <a href="#" class="btn btn-brand-03 w-100">
+                  <p class="slide-right-hover f-center me-1">
                     立即預約
-                    <span class="material-symbols-outlined">
-                      arrow_forward
-                    </span>
-                  </p></a
-                >
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -214,15 +358,12 @@
 
     <div class="container">
       <ul class="row row-cols-2">
-        <%- include('./layout/tutor-card', {image:"course-1",
-        isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師",
-        score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name:
-        "WordPress 客製化佈景主題"}]}); -%>
+        <%- include('./layout/tutor-card', {image:"course-1", isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9",
+        price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+
         <!-- Tutor 2 -->
-        <%- include('./layout/tutor-card', {image:"course-1",
-        isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師",
-        score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name:
-        "WordPress 客製化佈景主題"}]}); -%>
+        <%- include('./layout/tutor-card', {image:"course-1", isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9",
+        price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress 客製化佈景主題"}]}); -%>
       </ul>
     </div>
     <%- include('./layout/footer'); -%>
