@@ -1,0 +1,103 @@
+.tutor-booking {
+  .section {
+    padding: 24px;
+    background-color: $gray-04;
+    border-radius: 16px;
+    margin-bottom: 40px;
+
+    @include pad {
+      padding: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  .section-component {
+    margin-bottom: 24px;
+    @include pad {
+      margin-bottom: 16px;
+    }
+  }
+
+  .tutor-profile {
+    display: flex;
+    img {
+      width: 80px;
+      height: 80px;
+      @include pad {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}
+
+.available-date-time {
+  .date {
+    background-color: white;
+    padding: 20px 4px 20px 4px;
+    &.disabled h6 {
+      color: $gray-03;
+    }
+
+    &.disabled p {
+      color: $gray-03;
+    }
+  }
+
+  .col:first-child .date {
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .col:last-child .date {
+    border-radius: 0px 16px 16px 0px;
+  }
+
+  .times {
+    margin-top: 20px;
+    .time {
+      font-size: 14px;
+      background-color: $brand-02;
+      color: $brand-03;
+      text-align: center;
+      border-radius: 12px;
+      padding: 4px 12px;
+      margin: 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: $brand-03;
+        color: white;
+      }
+
+      &.disabled {
+        background-color: transparent;
+        color: $gray-03;
+        cursor: auto;
+      }
+    }
+  }
+}
+
+.student-comment {
+  .progress {
+    --bs-progress-bg: none;
+  }
+  .progress-bar {
+    border-radius: 0.5rem;
+  }
+  .student-comment-card {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .comment-details {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}

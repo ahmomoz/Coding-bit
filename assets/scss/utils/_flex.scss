@@ -1,10 +1,37 @@
+$breakpoints: (
+  xxl: 1200px,
+  xl: 992px,
+  lg: 768px,
+  md: 576px,
+  sm: 0px,
+);
+
+/* 2個flex */
+.f-justify-center {
+  display: flex;
+  justify-content: center;
+}
+.f-align-center {
+  display: flex;
+  align-items: center;
+}
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+.f-row {
+  display: flex;
+  flex-direction: row;
+}
+.f-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 3個flex */
 .f-center {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.f-align_center {
-  display: flex;
   align-items: center;
 }
 .f-between-center {
@@ -12,49 +39,84 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.f-end-center {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 .f-between-end {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
-.f-column {
+.f-between-start {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.f-column-center {
+.f-column-align-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.f-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-@media (max-width: 1199.98px) {
-  .media-f-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .media-f-column-start {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-@media (min-width: 1200px) {
-  .f-between-lg-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .f-column-lg-end {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-  }
-}
-@media (min-width: 768px) {
-  .align-md-middle {
-    vertical-align: middle;
+@each $breakpoint, $media in $breakpoints {
+  @media (min-width: #{$media}) {
+    .f-#{$breakpoint}-justify-center {
+      display: flex;
+      justify-content: center;
+    }
+    .f-#{$breakpoint}-align-center {
+      display: flex;
+      align-items: center;
+    }
+    .f-#{$breakpoint}-column {
+      display: flex;
+      flex-direction: column;
+    }
+    .f-#{$breakpoint}-row {
+      display: flex;
+      flex-direction: row;
+    }
+    .f-#{$breakpoint}-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .f-#{$breakpoint}-between-center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .f-#{$breakpoint}-end-center {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+    .f-#{$breakpoint}-between-end {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .f-#{$breakpoint}-column-align-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .f-#{$breakpoint}-column-between {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .f-#{$breakpoint}-between {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 

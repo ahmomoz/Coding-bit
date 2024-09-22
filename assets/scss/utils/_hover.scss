@@ -1,0 +1,32 @@
+/* 右移 特效 */
+.slide-right-hover {
+  transition: 0.3s;
+  &:hover {
+    transform: translate(5px, 0px);
+    transition: 0.3s;
+  }
+}
+/* underline 特效 */
+.underline-hover {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease; 
+  }
+
+  &:hover::after {
+      width: 100%;
+  }
+}
+/* icon放大 特效 */
+.icon-hover:hover img {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

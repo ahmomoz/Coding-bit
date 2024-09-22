@@ -1,0 +1,20 @@
+.swiper-pagination-brand-01 {
+  position: absolute;
+  @include pad {
+
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $gray-03;
+    width: 40px;
+    height: 8px;
+    border-radius: 4px;
+
+    @include pad {
+      height: 4px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $brand-01;
+  }
+} 

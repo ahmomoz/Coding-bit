@@ -1,0 +1,31 @@
+<div class="f-center">
+  <picture>
+    <source
+      srcset="../assets/images/icon/icon-infinite-sm.svg"
+      media="(max-width: 575.98px)">
+    <img
+      src="../assets/images/icon/icon-infinite.svg"
+      alt="icon-infinite">
+  </picture>
+  <h2 class="fs-4 fs-lg-1 text-brand-03 text-center ms-3 ms-lg-4">
+    <% if (!longTitle) { %>
+      <%= title %>
+    <% } %>
+    <% if (longTitle) { %>
+      <span class="d-block d-xl-inline">
+        <%= title %>
+      <span>
+      <span class="d-block d-xl-inline mt-1 mt-lg-0">
+        <%= title2 %>
+      <span>
+    <% } %>
+  </h2>
+  <picture>
+    <source
+      srcset="../assets/images/icon/icon-infinite-sm.svg"
+      media="(max-width: 575.98px)">
+    <img
+    src="../assets/images/icon/icon-infinite.svg"
+    alt="icon-infinite" class="ms-3 ms-lg-4">
+  </picture>
+</div>

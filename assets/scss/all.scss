@@ -1,22 +1,29 @@
-@import 'bootstrap/scss/functions';
-@import './utils/variables';
-@import './utils/custom-colors.scss';
-@import 'bootstrap/scss/bootstrap';
-@import './utils/mixin.scss';
-@import './utils/base.scss';
-@import './utils/btn.scss';
-@import './utils/flex.scss';
-@import './utils/nav.scss';
-@import './utils/tag.scss';
-@import './utils/card.scss';
-@import './utils/dropdown.scss';
-@import './utils/fonts.scss';
+@import "bootstrap/scss/functions";
+@import "./utils/variables";
+@import "./utils/custom-colors.scss";
+@import "bootstrap/scss/bootstrap";
+@import "./utils/mixin.scss";
+@import "./utils/base.scss";
+@import "./utils/btn.scss";
+@import "./utils/flex.scss";
+@import "./utils/nav.scss";
+@import "./utils/tag.scss";
+@import "./utils/card.scss";
+@import "./utils/dropdown.scss";
+@import "./utils/fonts.scss";
+@import "./utils/hover.scss";
+@import "./utils/icon.scss";
+@import "./vendors/swiper.scss";
 
+@import "./base/font.scss";
 
-@import './base/font.scss';
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/stat-overview-card.scss";
 
-@import './layout/header.scss';
+@import "./components/subscription-card.scss";
 
-@import './pages/index.scss';
-
-@import './pages/suject.scss';
+@import "./pages/index.scss";
+@import "./pages/suject.scss";
+@import "./pages/tutor-booking.scss";
+@import "./pages/subscription.scss";

@@ -1,5 +1,125 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-<a href="test.html">test</a>
+<nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-lg">
+    <div class="d-flex">
+      <a href="index.html" class="navbar-brand me-10">
+        <picture>
+          <source
+            srcset="../assets/images/logo-sm.svg"
+            media="(max-width: 575.98px)">
+          <img
+            src="../assets/images/logo.svg"
+            alt="logo-image">
+        </picture>
+      </a>
+      <div class="position-relative f-align-center d-none d-xl-flex">
+        <input
+          type="search"
+          class="form-control nav-search-desktop"
+          placeholder="搜尋感興趣的課程">
+        <span
+          class="material-symbols-outlined text-gray-03 position-absolute ps-4"
+          style="width: 20px; height: 20px;">
+          search
+        </span>
+      </div>
+    </div>
+    <button
+      id="layout-navbar-toggler"
+      class="navbar-toggler border-0 p-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span
+        id="menu-icon"
+        class="material-symbols-outlined icon-fill fs-4">
+        menu
+      </span>
+      <span
+        id="close-icon"
+        class="material-symbols-outlined icon-fill fs-4 d-none">
+        close
+      </span>
+    </button>
+    <div
+      id="navbarSupportedContent"
+      class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="position-relative f-align-center d-lg-none">
+          <input
+            type="search"
+            class="form-control nav-search-mobile"
+            placeholder="搜尋感興趣的課程">
+            <span
+              class="material-symbols-outlined text-gray-03 position-absolute ps-4"
+              style="width: 20px; height: 20px;">
+            search
+            </span>
+        </li>
+        <li class="nav-item mt-4 mt-lg-0">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02"
+            aria-current="page"
+            href="#">
+            精選課程
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02"
+            href="tutor-booking.html">
+            一對一教學
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02"
+            href="#">
+            課程客製化
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02"
+            href="#">
+            常見問題
+          </a>
+        </li>
+        <li class="nav-item nav-bottom-btn ms-lg-10">
+          <button
+            class="btn btn-outline-brand-03 w-100">
+            登入 / 註冊
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const toggler = document.getElementById('layout-navbar-toggler');
+  const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+
+  toggler.addEventListener('click', function() {
+    if (menuIcon.classList.contains('d-none')) {
+      menuIcon.classList.remove('d-none');
+      closeIcon.classList.add('d-none');
+      layoutNavWrap.classList.remove('bg-white');
+      layoutNavWrap.classList.add('bg-transparent');
+
+      document.body.classList.remove('no-scroll');
+    } else {
+      menuIcon.classList.add('d-none');
+      closeIcon.classList.remove('d-none');
+      layoutNavWrap.classList.remove('bg-transparent');
+      layoutNavWrap.classList.add('bg-white');
+
+      document.body.classList.add('no-scroll');
+    }
+  });
+});
+</script>
