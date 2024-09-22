@@ -1,5 +1,6 @@
-/* subscription-section */
-.subscription-section {
+/* subscription-section, subscription-info-section */
+.subscription-section,
+.subscription-info-section {
   background-image: url('/assets/images/deco/bg-1.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,4 +20,9 @@
       gap: 24px;
     }
   }
+}
+
+/* subscription-booking-section */
+.subscription-booking-section {
+  background-color: #fbf7ff;
 }
