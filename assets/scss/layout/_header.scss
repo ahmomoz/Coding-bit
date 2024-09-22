@@ -1,5 +1,6 @@
 $navbar-height-lg-pc: 80px;
 $navbar-height-mobile: 56px;
+
 .no-scroll {
   overflow: hidden;
 }
@@ -20,6 +21,7 @@ $navbar-height-mobile: 56px;
       visibility: hidden;
       transition: opacity 0.5s ease, visibility 0.5s ease;
     }
+
     @include mobile {
       top: $navbar-height-mobile;
       height: calc(100vh - $navbar-height-mobile);
@@ -57,9 +59,11 @@ $navbar-height-mobile: 56px;
 
   .nav-bottom-btn {
     @include lg-pc {
-      display: block;
-      width: 100%;
-      margin-top: auto;
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 24px;
+      padding-bottom: calc(24rpx + env(safe-area-inset-bottom));
     }
   }
 
