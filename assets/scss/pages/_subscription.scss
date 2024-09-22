@@ -1,0 +1,22 @@
+/* subscription-section */
+.subscription-section {
+  background-image: url('/assets/images/deco/bg-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -80px;
+  padding-top: 160px;
+  padding-bottom: 80px;
+
+  @include lg-pc {
+    background-image: none;
+    background-color: #fbf7ff;
+    margin-top: 0;
+    padding-top: 32px;
+  }
+
+  .row {
+    @include lg-pc {
+      gap: 24px;
+    }
+  }
+}
