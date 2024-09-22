@@ -16,9 +16,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-f778fa25.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-e8ca3a79.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-25826eda.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-4fffde1a.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-57b68964.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-fad24118.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -147,7 +147,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
     <div class="tutor-booking">
-      <div class="container wrap-xs">
+      <!-- Mobile Top Cover -->
+      <div class="position-relative d-lg-none">
+        <div class="img-wrapper img-hover-enlarge">
+          <img src="/Coding-bit/assets/course-2-high-res-a9d94f28.jpg" class="w-100" alt="tutor cover" style="max-height: 300px" />
+        </div>
+
+        <span class="material-symbols-outlined icon-fill text-white position-absolute top-50 start-50 translate-middle" style="font-size: 56px">
+          play_circle
+        </span>
+
+        <span
+          class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+          role="button"
+          style="background-color: #1e1e1e66"
+          data-favorite="true"
+        >
+          favorite
+        </span>
+      </div>
+      <!-- Main Content -->
+      <main class="container py-lg-13 py-7">
         <div class="row">
           <!-- tutor information -->
           <div class="col-lg-8">
@@ -265,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </div>
             </section>
             <!-- section 2 - timetable -->
-            <section class="section">
+            <section class="section scheudle">
               <div class="section-component f-between-center">
                 <h4>時間表</h4>
                 <a href="#" class="text-brand-03 d-flex slide-right-hover">
@@ -274,85 +294,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
               </div>
               <div class="f-between-center mb-5">
-                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
-                <h5 class="text-brand-03" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
-                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
+                <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
+                <h5 class="text-brand-03 week" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
               </div>
 
               <div>
-                <!-- <table class="table" style="table-layout: fixed">
-                  <thead>
-                    <tr>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期四</span>
-                          <span class="fs-7 fw-normal">08/01</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期五</span>
-                          <span class="fs-7 fw-normal">08/02</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期六</span>
-                          <span class="fs-7 fw-normal">08/03</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期日</span>
-                          <span class="fs-7 fw-normal">08/04</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期一</span>
-                          <span class="fs-7 fw-normal">08/05</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期二</span>
-                          <span class="fs-7 fw-normal">08/06</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期三</span>
-                          <span class="fs-7 fw-normal">08/07</span>
-                        </div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-center">
-                    <tr>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table> -->
-
                 <div class="row row-cols-7 available-date-time g-0">
-                  <div class="col flex-column">
+                  <div class="col">
                     <div class="date f-center flex-column">
                       <h6>星期四</h6>
                       <p>08/01</p>
@@ -587,7 +536,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div>
       <img src="/Coding-bit/assets/user-2-33082ac6.png" alt="profile" class="object-fit-cover rounded-circle me-4" />
     </div>
-    <div class="h-100">
+    <div class="flex-grow-1">
       <h6 class="mb-2 text-gray-01 fw-medium mb-1">阮永庭</h6>
       <p class="comment-details mb-1">找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。</p>
       <p class="timestamp text-gray-03 fs-7 mt-auto">2024-07-31 10:30</p>
@@ -600,7 +549,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div>
       <img src="/Coding-bit/assets/user-3-ee46b278.png" alt="profile" class="object-fit-cover rounded-circle me-4" />
     </div>
-    <div class="h-100">
+    <div class="flex-grow-1">
       <h6 class="mb-2 text-gray-01 fw-medium mb-1">黄詠琪</h6>
       <p class="comment-details mb-1">所有我的問題都得到了解決。謝謝老師。</p>
       <p class="timestamp text-gray-03 fs-7 mt-auto">2024-08-01 10:30</p>
@@ -613,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div>
       <img src="/Coding-bit/assets/user-4-e0a6fbf8.png" alt="profile" class="object-fit-cover rounded-circle me-4" />
     </div>
-    <div class="h-100">
+    <div class="flex-grow-1">
       <h6 class="mb-2 text-gray-01 fw-medium mb-1">鍾宗仁</h6>
       <p class="comment-details mb-1">非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！</p>
       <p class="timestamp text-gray-03 fs-7 mt-auto">2024-08-07 10:30</p>
@@ -622,47 +571,18 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
               </div>
             </section>
-          </div>
-
-          <!-- price card -->
-          <div class="col-lg-4">
-            <div class="card p-lg-6 p-4">
-              <div class="position-relative mb-lg-5 mb-4">
-                <div class="img-wrapper img-hover-enlarge rounded-2">
-                  <img src="/Coding-bit/assets/course-2-550d8ff7.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
-                </div>
-
-                <span
-                  class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
-                  role="button"
-                  style="background-color: #1e1e1e66"
-                  data-favorite="true"
-                >
-                  favorite
-                </span>
-              </div>
-              <div class="card-body p-0">
-                <div class="mb-lg-6 mb-5">
-                  <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
-                  <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
-                </div>
-
-                <a href="#" class="btn btn-brand-03 w-100">
-                  <p class="slide-right-hover f-center me-1">
-                    立即預約
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </p>
+            <!-- section 4 - tutor recommendation -->
+            <section class="section">
+              <div class="section-component f-between-center">
+                <h4>推薦老師</h4>
+                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                  <p>更多</p>
+                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <ul class="row row-cols-2">
-        <li class="tutor-card">
+              <ul class="row row-cols-lg-2 g-lg-4">
+                <!-- Tutor 1 -->
+                <li class="tutor-card col">
   <div class="card p-lg-6 p-4">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper img-hover-enlarge rounded-2">
@@ -719,24 +639,158 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03  w-100"
-        ><p class="slide-right-hover f-center me-1">立即預約
+      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+        ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
     </div>
   </div>
 </li>
 
-        <!-- Tutor 2 -->
-        <li class="tutor-card">
+                <!-- Tutor 2 -->
+                <li class="tutor-card col">
   <div class="card p-lg-6 p-4">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper img-hover-enlarge rounded-2">
         <!-- dynamic image path -->
         <img
-          src="/Coding-bit/assets/course-1-3de1fc2e.png"
+          src="/Coding-bit/assets/course-5-69bfc947.png"
           class="card-img-top rounded-2 object-fit-cover"
-          alt="course-1"
+          alt="course-5"
+        />
+      </div>
+      <!-- dynamic favorite status -->
+      <span
+        class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+        role="button"
+        style="background-color: #1e1e1e66"
+        data-favorite="false"
+      >
+        favorite
+      </span>
+    </div>
+    <div class="card-body p-0">
+      <div class="mb-2 f-between-start">
+        <div>
+          <!-- dynamic tutor name -->
+          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
+            米克老師
+          </h5>
+          <!-- dynamic title-->
+          <p class="text-gray-02 fs-8">喜歡寫code的前端工程師</p>
+        </div>
+        <p class="f-center text-brand-03">
+          <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+            kid_star
+          </span>
+          <!-- dynamic score -->
+          3.4
+        </p>
+      </div>
+
+      <!-- dynamic tag loop -->
+      <div class="mb-5 list-x-scroll py-2">
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">製作 RWD 網站</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">Bootstrap</a>
+        
+      </div>
+
+      <div class="mb-lg-6 mb-5">
+        <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+        <!-- dynamic price -->
+        <h2 class="text-brand-03 fs-lg-2 fs-3">
+          NT $ 100
+        </h2>
+      </div>
+
+      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+        ><p class="f-center me-1">立即預約
+        <span class="material-symbols-outlined"> arrow_forward </span></p></a>
+
+    </div>
+  </div>
+</li>
+                <!-- Tutor 3 -->
+                <li class="tutor-card col">
+  <div class="card p-lg-6 p-4">
+    <div class="position-relative mb-lg-5 mb-4">
+      <div class="img-wrapper img-hover-enlarge rounded-2">
+        <!-- dynamic image path -->
+        <img
+          src="/Coding-bit/assets/course-8-9d6b2514.png"
+          class="card-img-top rounded-2 object-fit-cover"
+          alt="course-8"
+        />
+      </div>
+      <!-- dynamic favorite status -->
+      <span
+        class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+        role="button"
+        style="background-color: #1e1e1e66"
+        data-favorite="false"
+      >
+        favorite
+      </span>
+    </div>
+    <div class="card-body p-0">
+      <div class="mb-2 f-between-start">
+        <div>
+          <!-- dynamic tutor name -->
+          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
+            Pong Pong
+          </h5>
+          <!-- dynamic title-->
+          <p class="text-gray-02 fs-8">台大資訊訓練班首席老師</p>
+        </div>
+        <p class="f-center text-brand-03">
+          <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+            kid_star
+          </span>
+          <!-- dynamic score -->
+          4.3
+        </p>
+      </div>
+
+      <!-- dynamic tag loop -->
+      <div class="mb-5 list-x-scroll py-2">
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">Node.js</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">MongoDB</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python 數據分析</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python Flask 網站後端開發</a>
+        
+      </div>
+
+      <div class="mb-lg-6 mb-5">
+        <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+        <!-- dynamic price -->
+        <h2 class="text-brand-03 fs-lg-2 fs-3">
+          NT $ 530
+        </h2>
+      </div>
+
+      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+        ><p class="f-center me-1">立即預約
+        <span class="material-symbols-outlined"> arrow_forward </span></p></a>
+
+    </div>
+  </div>
+</li>
+                <!-- Tutor 4 -->
+                <li class="tutor-card col">
+  <div class="card p-lg-6 p-4">
+    <div class="position-relative mb-lg-5 mb-4">
+      <div class="img-wrapper img-hover-enlarge rounded-2">
+        <!-- dynamic image path -->
+        <img
+          src="/Coding-bit/assets/course-3-929f59ab.png"
+          class="card-img-top rounded-2 object-fit-cover"
+          alt="course-3"
         />
       </div>
       <!-- dynamic favorite status -->
@@ -754,26 +808,28 @@ document.addEventListener('DOMContentLoaded', function() {
         <div>
           <!-- dynamic tutor name -->
           <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            平凡老師 - 李東霖
+            Alan Lee
           </h5>
           <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">WordPress 工程師</p>
+          <p class="text-gray-02 fs-8">熱愛遊戲的熱血青年</p>
         </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
           </span>
           <!-- dynamic score -->
-          4.9
+          4.3
         </p>
       </div>
 
       <!-- dynamic tag loop -->
       <div class="mb-5 list-x-scroll py-2">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 網站架設</a>
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">Unity</a>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 客製化佈景主題</a>
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">2D遊戲製作</a>
+        
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">C# 腳本撰寫</a>
         
       </div>
 
@@ -785,15 +841,53 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03  w-100"
-        ><p class="slide-right-hover f-center me-1">立即預約
+      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+        ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
     </div>
   </div>
 </li>
-      </ul>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Desktop right CTA card -->
+          <div class="col-lg-4 d-lg-block d-none">
+            <div class="desktop-cta-card card p-lg-6 p-4 sticky-top">
+              <div class="position-relative mb-lg-5 mb-4">
+                <div class="img-wrapper img-hover-enlarge rounded-2">
+                  <img src="/Coding-bit/assets/course-2-550d8ff7.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
+                </div>
+
+                <span
+                  class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+                  role="button"
+                  style="background-color: #1e1e1e66"
+                  data-favorite="true"
+                >
+                  favorite
+                </span>
+              </div>
+              <div class="card-body p-0">
+                <div class="mb-lg-6 mb-5">
+                  <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+                  <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
+                </div>
+
+                <a href="#" class="btn slide-right-hover btn-brand-03 w-100">
+                  <p class="f-center me-1">
+                    立即預約
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+
     <footer class="layout-footer-wrap wrap-lg bg-white">
   <div class="container f-xl-between">
     <div class="footer-info-wrap flex-grow-1">
@@ -895,6 +989,24 @@ document.addEventListener('DOMContentLoaded', function() {
     </ul>
   </div>
 </footer>
+
+    <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
+      <div class="pt-4 pb-6 px-4">
+        <div class="f-between-center">
+          <div>
+            <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+            <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
+          </div>
+
+          <a href="#" class="btn slide-right-hover btn-brand-03">
+            <p class="f-center me-1">
+              立即預約
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
 
     
     
