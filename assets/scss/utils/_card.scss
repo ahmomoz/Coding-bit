@@ -4,22 +4,6 @@
   }
 }
 
-.card {
-  .img-wrapper {
-    overflow: hidden;
-  }
-  .img-hover-enlarge {
-    img {
-      transition: transform 0.3s;
-    }
-
-    &:hover img {
-      transition: transform 0.3s;
-      transform: scale(1.1);
-    }
-  }
-}
-
 .gradient-border {
   border: 1px solid transparent;
   border-radius: 16px;
@@ -27,10 +11,12 @@
 
   &::after {
     position: absolute;
-    content: '';
-    top: -1px; bottom: -1px;
-    left: -1px; right: -1px;
-    background: linear-gradient(123.12deg, #D0A2F7 0%, rgba(241, 234, 255, 0.1) 100%);
+    content: "";
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(123.12deg, #d0a2f7 0%, rgba(241, 234, 255, 0.1) 100%);
     border-radius: 16px;
     z-index: -1;
   }

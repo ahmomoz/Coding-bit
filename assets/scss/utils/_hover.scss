@@ -11,22 +11,37 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
     width: 0;
     height: 1px;
     background-color: currentColor;
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
   }
 
   &:hover::after {
-      width: 100%;
+    width: 100%;
   }
 }
 /* icon放大 特效 */
 .icon-hover:hover img {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+/* 圖片放大 特效 */
+.img-wrapper {
+  overflow: hidden;
+}
+.img-hover-enlarge {
+  img {
+    transition: transform 0.3s;
+  }
+
+  &:hover img {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
 }

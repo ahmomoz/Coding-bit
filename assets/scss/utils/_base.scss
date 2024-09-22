@@ -65,7 +65,7 @@ a {
 .wrap-xs {
   padding: 80px 0;
 
-  @include pad {
-    padding: 0 0;
+  @include lg-pc {
+    padding: 24px 0;
   }
 }
