@@ -15,6 +15,18 @@ a {
   display: block;
 }
 
+/* breadcrumb */
+.breadcrumb {
+  a {
+    display: inline;
+  }
+}
+
+/* table*/
+.table {
+  margin-bottom: 0;
+}
+
 /* badge */
 .badge {
   line-height: 1.2;

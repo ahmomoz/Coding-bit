@@ -758,10 +758,10 @@ $mark-bg:                     $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y:        .5rem !default;
-$table-cell-padding-x:        .5rem !default;
-$table-cell-padding-y-sm:     .25rem !default;
-$table-cell-padding-x-sm:     .25rem !default;
+$table-cell-padding-y:        0; // .5rem !default; custom
+$table-cell-padding-x:        0; // .5rem !default; custom
+$table-cell-padding-y-sm:     0; // .25rem !default; custom
+$table-cell-padding-x-sm:     0; // .25rem !default; custom
 
 $table-cell-vertical-align:   top !default;
 
@@ -1665,7 +1665,7 @@ $breadcrumb-font-size:              null !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x:         .5rem !default;
-$breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-margin-bottom:          0; // 1rem !default; custom
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
 $breadcrumb-active-color:           $brand-03; // var(--#{$prefix}secondary-color) !default; custom
