@@ -1,0 +1,76 @@
+<div class="f-center">
+  <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
+    <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5">
+      check_circle
+    </span>
+    付款成功
+  </h1>
+</div>
+<div class="row f-center">
+  <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
+    <div class="card p-6 p-lg-10">
+      <h2 class="fs-5 fs-lg-4 w-bolder">訂閱方案詳細資訊</h2>
+      <table class="table border-top border-bottom mt-6 mt-lg-10">
+        <tbody>
+          <tr>
+            <th scope="row" class="border-0">
+              <h3 class="fs-5 fs-lg-4 pt-6">
+                <% if (level === 'normal') { %>
+                  基本會員方案 / 月
+                <% } %>
+                <% if (level === 'premium') { %>
+                  高級會員方案 / 月
+                <% } %>
+              </h3>
+            </th>
+            <td class="border-0 text-end">
+              <h3 class="fs-5 fs-lg-4 pt-6">
+                <% if (level === 'normal') { %>
+                  NT$ 299
+                <% } %>
+                <% if (level === 'premium') { %>
+                  NT$ 499
+                <% } %>
+              </h3>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="border-0">
+              <h4
+                class="fs-6 fw-medium mt-6 mt-lg-10">
+                開始日期
+              </h4>
+            </th>
+            <td class="border-0 text-end">
+              <p class="mt-6 mt-lg-10">
+                <time>2024 / 9 / 22</time>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="border-0">
+              <h4
+                class="fs-6 fw-medium pb-6 mt-3">
+                終止日期
+              </h4>
+            </th>
+            <td class="border-0 text-end">
+              <p class="pb-6 mt-3">
+                <time>2024 / 10 / 21</time>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="index.html" class="mt-6 mt-lg-10">
+        <button
+          class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
+          回到首頁
+          <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
+            arrow_forward
+          </span>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>

@@ -101,7 +101,12 @@
         查看其它方案
       </button>
     </a>
-    <a href="subscription-booking.html">
+    <% if (level === 'normal') { %>
+      <a href="subscription-booking-normal.html">
+    <% } %>
+    <% if (level === 'premium') { %>
+      <a href="subscription-booking-premium.html">
+    <% } %>
       <button
         class="btn btn-brand-03 rounded-2 slide-right-hover f-align-center ms-4 px-md-13">
         前往付款

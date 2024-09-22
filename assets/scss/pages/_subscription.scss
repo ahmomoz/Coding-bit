@@ -10,7 +10,7 @@
 
   @include lg-pc {
     background-image: none;
-    background-color: #fbf7ff;
+    background-color: $brand-05;
     margin-top: 0;
     padding-top: 32px;
   }
@@ -23,6 +23,7 @@
 }
 
 /* subscription-booking-section */
-.subscription-booking-section {
-  background-color: #fbf7ff;
+.subscription-booking-section,
+.subscription-booking-success-section {
+  background-color: $brand-05;
 }
