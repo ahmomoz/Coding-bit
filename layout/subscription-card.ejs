@@ -1,5 +1,5 @@
 <div class="col-lg-4">
-  <div class="subscription-card card gradient-border">
+  <div class="subscription-card card shadow">
     <div>
       <span class="badge bg-gray-04 rounded-2">
         <h4 class="card-badge-text">免費會員</h4>
@@ -12,7 +12,12 @@
           0
         </span>
         <span class="fs-5 fs-lg-4 fw-normal ms-2">
-          / 月
+          <% if (month) { %>
+            / 月
+          <% } %>
+          <% if (!month) { %>
+            / 年
+          <% } %>
         </span>
       </h4>
     </div>
@@ -46,7 +51,7 @@
   </div>
 </div>
 <div class="col-lg-4">
-  <div class="subscription-card card gradient-border">
+  <div class="subscription-card card shadow">
     <div>
       <span class="badge bg-gray-04 rounded-2">
         <h4 class="card-badge-text">基本會員</h4>
@@ -56,10 +61,20 @@
       <h4 class="fs-5 fs-lg-4 fw-medium fw-lg-bold f-align-center">
         NT$
         <span class="fs-2 fs-lg-1 fw-bold ms-2">
-          299
+          <% if (month) { %>
+            299
+          <% } %>
+          <% if (!month) { %>
+            2,399
+          <% } %>
         </span>
         <span class="fs-5 fs-lg-4 fw-normal ms-2">
-          / 月
+          <% if (month) { %>
+            / 月
+          <% } %>
+          <% if (!month) { %>
+            / 年
+          <% } %>
         </span>
       </h4>
     </div>
@@ -101,7 +116,7 @@
   </div>
 </div>
 <div class="col-lg-4">
-  <div class="subscription-card card border-4 border-brand-01 position-relative">
+  <div class="subscription-card card border-4 border-brand-01 shadow position-relative">
     <div>
       <span class="badge bg-gray-04 rounded-2">
         <h4 class="card-badge-text">高級會員</h4>
@@ -111,10 +126,20 @@
       <h4 class="fs-5 fs-lg-4 fw-medium fw-lg-bold f-align-center">
         NT$
         <span class="fs-2 fs-lg-1 fw-bold ms-2">
-          499
+          <% if (month) { %>
+            499
+          <% } %>
+          <% if (!month) { %>
+            5,799
+          <% } %>
         </span>
         <span class="fs-5 fs-lg-4 fw-normal ms-2">
-          / 月
+          <% if (month) { %>
+            / 月
+          <% } %>
+          <% if (!month) { %>
+            / 年
+          <% } %>
         </span>
       </h4>
     </div>

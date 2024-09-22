@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/icon/icon-infinite.svg"
+    />
+    <title>Coding∞bit ｜ 訂閱方案</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="subscription-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a
+                href="index.html"
+                class="underline-hover">
+                首頁
+              </a>
+            </li>
+            <li class="breadcrumb-item active fw-semibold" aria-current="page">
+              訂閱方案
+            </li>
+          </ol>
+        </nav>
+        <h1 class="text-brand-03 mt-8">訂閱方案一覽</h1>
+        <p class="fs-5 mt-3">立即升級會員，享有更多服務</p>
+        <ul
+          class="nav nav-tabs border-bottom border-gray-03 mt-8 mt-lg-12"
+          id="subscriptionTab"
+          role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="annually-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#annually"
+              type="button"
+              role="tab"
+              aria-controls="annually"
+              aria-selected="true">
+              月繳
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="monthly-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#monthly"
+              type="button"
+              role="tab"
+              aria-controls="monthly"
+              aria-selected="false">
+              年繳
+            </button>
+          </li>
+        </ul>
+        <div class="row mt-6 mt-lg-12">
+          <div class="col">
+            <div class="tab-content" id="subscriptionTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="annually"
+                role="tabpanel"
+                aria-labelledby="annually-tab">
+                <div class="row">
+                  <%- include('./layout/subscription-card', { month: true }); -%>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="monthly"
+                role="tabpanel"
+                aria-labelledby="monthly-tab">
+                <div class="row">
+                  <%- include('./layout/subscription-card', { month: false }); -%>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
