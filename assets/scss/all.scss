@@ -12,14 +12,16 @@
 @import "./utils/dropdown.scss";
 @import "./utils/fonts.scss";
 @import "./utils/hover.scss";
+@import "./utils/icon.scss";
 @import "./vendors/swiper.scss";
 
 @import "./base/font.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
-@import "./layout/teacher-card.scss";
+@import "./layout/stat-overview-card.scss";
 
 @import "./components/subscription-card.scss";
 
 @import "./pages/index.scss";
+@import "./pages/tutor-booking.scss";
