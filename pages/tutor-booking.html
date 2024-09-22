@@ -21,7 +21,27 @@
     <%- include('./layout/header'); -%>
 
     <div class="tutor-booking">
-      <div class="container wrap-xs">
+      <!-- Mobile Top Cover -->
+      <div class="position-relative d-lg-none">
+        <div class="img-wrapper img-hover-enlarge">
+          <img src="../assets/images/course/course-2-high-res.jpg" class="w-100" alt="tutor cover" style="max-height: 300px" />
+        </div>
+
+        <span class="material-symbols-outlined icon-fill text-white position-absolute top-50 start-50 translate-middle" style="font-size: 56px">
+          play_circle
+        </span>
+
+        <span
+          class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+          role="button"
+          style="background-color: #1e1e1e66"
+          data-favorite="true"
+        >
+          favorite
+        </span>
+      </div>
+      <!-- Main Content -->
+      <main class="container py-lg-13 py-7">
         <div class="row">
           <!-- tutor information -->
           <div class="col-lg-8">
@@ -114,7 +134,7 @@
               </div>
             </section>
             <!-- section 2 - timetable -->
-            <section class="section">
+            <section class="section scheudle">
               <div class="section-component f-between-center">
                 <h4>時間表</h4>
                 <a href="#" class="text-brand-03 d-flex slide-right-hover">
@@ -123,85 +143,14 @@
                 </a>
               </div>
               <div class="f-between-center mb-5">
-                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
-                <h5 class="text-brand-03" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
-                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
+                <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
+                <h5 class="text-brand-03 week" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
               </div>
 
               <div>
-                <!-- <table class="table" style="table-layout: fixed">
-                  <thead>
-                    <tr>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期四</span>
-                          <span class="fs-7 fw-normal">08/01</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期五</span>
-                          <span class="fs-7 fw-normal">08/02</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期六</span>
-                          <span class="fs-7 fw-normal">08/03</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期日</span>
-                          <span class="fs-7 fw-normal">08/04</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期一</span>
-                          <span class="fs-7 fw-normal">08/05</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期二</span>
-                          <span class="fs-7 fw-normal">08/06</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期三</span>
-                          <span class="fs-7 fw-normal">08/07</span>
-                        </div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-center">
-                    <tr>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table> -->
-
                 <div class="row row-cols-7 available-date-time g-0">
-                  <div class="col flex-column">
+                  <div class="col">
                     <div class="date f-center flex-column">
                       <h6>星期四</h6>
                       <p>08/01</p>
@@ -471,7 +420,7 @@
           </div>
 
           <!-- Desktop right CTA card -->
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-lg-block d-none">
             <div class="desktop-cta-card card p-lg-6 p-4 sticky-top">
               <div class="position-relative mb-lg-5 mb-4">
                 <div class="img-wrapper img-hover-enlarge rounded-2">
@@ -503,10 +452,28 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
 
     <%- include('./layout/footer'); -%>
+
+    <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
+      <div class="pt-4 pb-6 px-4">
+        <div class="f-between-center">
+          <div>
+            <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+            <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
+          </div>
+
+          <a href="#" class="btn slide-right-hover btn-brand-03">
+            <p class="f-center me-1">
+              立即預約
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="../assets/js/add-to-favorite.js"></script>
     <script type="module" src="../main.js"></script>
