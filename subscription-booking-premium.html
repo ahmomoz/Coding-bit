@@ -149,70 +149,245 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>    <main class="subscription-booking-success-section wrap-lg">
       <div class="container">
-        <div class="f-center">
-  <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
-    <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5">
-      check_circle
-    </span>
-    付款成功
-  </h1>
-</div>
-<div class="row f-center">
-  <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
-    <div class="card p-6 p-lg-10">
-      <h2 class="fs-5 fs-lg-4 w-bolder">訂閱方案詳細資訊</h2>
-      <table class="table border-top border-bottom mt-6 mt-lg-10">
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a
+        href="index.html"
+        class="underline-hover">
+        首頁
+      </a>
+    </li>
+    <li class="breadcrumb-item">
+      <a
+        href="subscription.html"
+        class="underline-hover">
+        訂閱方案
+      </a>
+    </li>
+    <li class="breadcrumb-item d-none d-sm-block">
+        
+        
+          <a
+            href="subscription-info-premium.html"
+            class="underline-hover">
+            升級方案 - 高級會員
+        
+      </a>
+    </li>
+    <li class="breadcrumb-item d-sm-none">
+      ...
+    </li>
+    <li class="breadcrumb-item active fw-semibold" aria-current="page">
+      確認付款
+    </li>
+  </ol>
+</nav>
+<h1 class="fs-2 fs-lg-1 text-brand-03 mt-8">確認付款</h1>
+<div class="row mt-8 mt-lg-12">
+  <div class="col-lg-7">
+    <div class="input-card card shadow rounded-2 p-6 p-lg-10 ">
+      <h2 class="fs-5 fs-lg-3">購買人資訊</h2>
+      <form class="mt-6">
+        <div>
+          <label for="buyerEmail" class="form-label">
+            <h3 class="fs-6 fw-medium">電子信箱<span class="text-danger ms-1">*</span></h3>
+          </label>
+          <input
+            type="email"
+            class="form-control rounded-1 border-0 bg-light"
+            id="buyerEmail"
+            aria-describedby="emailHelp"
+            placeholder="請輸入電子信箱">
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <label for="buyerName" class="form-label">
+              <h3 class="fs-6 fw-medium">姓名<span class="text-danger ms-1">*</span></h3>
+            </label>
+            <input
+              type="text"
+              class="form-control rounded-1 border-0 bg-light mt-1"
+              id="buyerName"
+              placeholder="請輸入姓名">
+          </div>
+          <div class="col-lg-6">
+            <label for="buyerPassword" class="form-label mt-4 mt-lg-0">
+              <h3 class="fs-6 fw-medium">密碼<span class="text-danger ms-1">*</span></h3>
+            </label>
+            <input
+              type="password"
+              class="form-control rounded-1 border-0 bg-light mt-1"
+              id="buyerPassword"
+              placeholder="請輸入密碼">
+          </div>
+        </div>
+        <div class="form-check mt-6">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="rememberMeCheckbox">
+          <label
+            class="form-check-label"
+            for="rememberMeCheckbox">
+            記住我的資訊
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="input-card card shadow rounded-2 p-6 p-lg-10 mt-6">
+      <h2 class="fs-5 fs-lg-3">付款方式</h2>
+      <form class="mt-6">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="pay-with"
+            id="creditCard"
+            checked>
+          <label
+            class="form-check-label"
+            for="creditCard">
+            信用卡
+          </label>
+        </div>
+        <div class="mt-6">
+          <label for="userCreditCardNumber" class="form-label">
+            <h3 class="fs-6 fw-medium">信用卡號碼<span class="text-danger ms-1">*</span></h3>
+          </label>
+          <input
+            type="password"
+            class="form-control rounded-1 border-0 bg-light mt-1"
+            id="userCreditCardNumber"
+            placeholder="**** **** **** ****"
+            maxlength="19">
+        </div>
+        <div class="row mt-4">
+          <div class="col-6">
+            <label for="credit-card-expiration" class="form-label">
+              <h3 class="fs-6 fw-medium">過期日<span class="text-danger ms-1">*</span></h3>
+            </label>
+            <input
+              type="text"
+              class="form-control rounded-1 border-0 bg-light mt-1"
+              id="credit-card-expiration"
+              name="credit-card-expiration"
+              placeholder="MM / YY"
+              maxlength="7"
+              required="">
+          </div>
+          <div class="col-6">
+            <label for="credit-card-cvc" class="form-label">
+              <h3 class="fs-6 fw-medium">卡片背面後三碼<span class="text-danger ms-1">*</span></h3>
+            </label>
+            <input
+              type="text"
+              class="form-control rounded-1 border-0 bg-light mt-1"
+              id="credit-card-cvc"
+              name="credit-card-cvc"
+              placeholder="CVC / CVV"
+              pattern="\d{3,4}/"
+              maxlength="3"
+              required="">
+          </div>
+        </div>
+        <div class="form-check mt-6">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="rememberCardCheckbox">
+          <label
+            class="form-check-label"
+            for="rememberCardCheckbox">
+            記住卡片資訊
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 電腦版明細卡片 -->
+  <div class="col-lg-5 d-none d-lg-block">
+    <div class="input-card card shadow rounded-2 p-6 p-lg-10">
+      <h2 class="fs-5 fs-lg-3">訂閱方案明細</h2>
+      <table class="table mt-8">
         <tbody>
-          <tr>
+          <tr class="border-top border-bottom f-between-center">
             <th scope="row" class="border-0">
-              <h3 class="fs-5 fs-lg-4 pt-6">
+              <h4 class="fs-6 fs-lg-5 fw-medium py-10">
                 
                 
                   高級會員方案 / 月
                 
-              </h3>
+              </h4>
             </th>
             <td class="border-0 text-end">
-              <h3 class="fs-5 fs-lg-4 pt-6">
+              <h4 class="fs-6 fs-lg-5 fw-medium py-10">
                 
                 
                   NT$ 499
                 
-              </h3>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="border-0">
-              <h4
-                class="fs-6 fw-medium mt-6 mt-lg-10">
-                開始日期
               </h4>
-            </th>
-            <td class="border-0 text-end">
-              <p class="mt-6 mt-lg-10">
-                <time>2024 / 9 / 22</time>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="border-0">
-              <h4
-                class="fs-6 fw-medium pb-6 mt-3">
-                終止日期
-              </h4>
-            </th>
-            <td class="border-0 text-end">
-              <p class="pb-6 mt-3">
-                <time>2024 / 10 / 21</time>
-              </p>
             </td>
           </tr>
         </tbody>
       </table>
-      <a href="index.html" class="mt-6 mt-lg-10">
+      <table class="table border-0 mt-8">
+        <tbody>
+          <tr class="f-between-center">
+            <th scope="row" class="border-0">
+              <h4 class="fs-6 fs-lg-5">總計</h4>
+            </th>
+            <td class="border-0 text-end">
+              <h4 class="fs-2">
+                
+                
+                  NT$ 499
+                
+              </h4>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+        <a href="subscription-booking-success-premium.html" class="mt-8">
+      
         <button
           class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
-          回到首頁
+          立即付款
+          <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
+            arrow_forward
+          </span>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- 手機版明細卡片 -->
+  <div class="media-subscription-price-card fixed-bottom bg-white border-top d-lg-none px-4 py-5">
+    <div class="f-between-center">
+      <div>
+        <h4 class="fs-6 fs-lg-5 fw-medium">
+          
+          
+            高級會員方案 / 月
+          
+        </h4>
+        <h6 class="fs-6 mt-1">
+          
+          
+            NT$ 499
+          
+        </h6>
+      </div>
+      
+      
+        <a href="subscription-booking-success-premium.html" class="mt-8">
+      
+        <button
+          class="btn btn-brand-03 slide-right-hover f-center rounded-2">
+          立即付款
           <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
             arrow_forward
           </span>
