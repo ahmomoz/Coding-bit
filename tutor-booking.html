@@ -7,24 +7,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-9166b786.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-ccbe106b.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-9a209afd.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-34d7e9c7.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-222b2171.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-0465074b.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -152,9 +146,370 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+    <div class="tutor-booking">
+      <div class="container wrap-xs">
+        <div class="row">
+          <!-- tutor information -->
+          <div class="col-lg-8">
+            <!-- section 1 - overview -->
+            <section class="section">
+              <!-- tutor profile -->
+              <div class="tutor-profile section-component">
+                <div class="flex-shrink-0">
+                  <img src="/Coding-bit/assets/user-1-f526f231.png" alt="profile" class="object-fit-cover rounded-circle me-6" />
+                </div>
+                <div class="flex-grow-1">
+                  <h2 class="mb-2">卡斯伯 Casper</h2>
+                  <p class="fs-5 text-gray-02">10年經驗的前端工程師</p>
+                </div>
+              </div>
+              <!-- tag list-->
+              <div class="list-x-scroll py-2 section-component">
+                <a href="#" class="tag tag-brand-02 fs-8 me-3">HTML/CSS</a>
+                <a href="#" class="tag tag-brand-02 fs-8 me-3">React</a>
+                <a href="#" class="tag tag-brand-02 fs-8">網頁動畫</a>
+              </div>
+              <!-- tab -->
+              <div class="section-component">
+                <ul class="nav nav-tabs mb-6" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="about-me-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#about-me-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="about-me-tab-pane"
+                      aria-selected="true"
+                    >
+                      關於我
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="teaching-styles-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#teaching-styles-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="teaching-styles-tab-pane"
+                      aria-selected="false"
+                    >
+                      我的教學風格
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="resume-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#resume-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="resume-tab-pane"
+                      aria-selected="false"
+                    >
+                      我的履歷
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
+                    <p>
+                      我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
+                      在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
+                      如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" aria-labelledby="teaching-styles-tab" tabindex="0">
+                    ...
+                  </div>
+                  <div class="tab-pane fade" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                </div>
+              </div>
+              <!-- statistics -->
+              <div class="row row-cols-2 row-cols-lg-5 g-3">
+                <div class="col">
+  <div class="stat-overview-card">
+    <h4 class="text-brand-03">200</h4>
+    <p class="fs-7">學生</p>
+  </div>
+</div>
+ <div class="col">
+  <div class="stat-overview-card">
+    <h4 class="text-brand-03">250</h4>
+    <p class="fs-7">課堂</p>
+  </div>
+</div>
+ <div class="col">
+  <div class="stat-overview-card">
+    <h4 class="text-brand-03">10</h4>
+    <p class="fs-7">影片</p>
+  </div>
+</div>
+ <div class="col">
+  <div class="stat-overview-card">
+    <h4 class="text-brand-03">100%</h4>
+    <p class="fs-7">出席率</p>
+  </div>
+</div>
+ <div class="col">
+  <div class="stat-overview-card">
+    <h4 class="text-brand-03">100%</h4>
+    <p class="fs-7">回覆率</p>
+  </div>
+</div>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-component f-between-center">
+                <h4>時間表</h4>
+                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                  <p>更多</p>
+                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                </a>
+              </div>
+              <div class="f-between-center mb-5">
+                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
+                <h5 class="text-brand-03" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
+              </div>
+
+              <div>
+                <!-- <table class="table" style="table-layout: fixed">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期四</span>
+                          <span class="fs-7 fw-normal">08/01</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期五</span>
+                          <span class="fs-7 fw-normal">08/02</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期六</span>
+                          <span class="fs-7 fw-normal">08/03</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期日</span>
+                          <span class="fs-7 fw-normal">08/04</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期一</span>
+                          <span class="fs-7 fw-normal">08/05</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期二</span>
+                          <span class="fs-7 fw-normal">08/06</span>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="d-flex flex-column text-center">
+                          <span class="fs-6 fw-medium">星期三</span>
+                          <span class="fs-7 fw-normal">08/07</span>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table> -->
+
+                <div class="row row-cols-7 available-date-time g-0">
+                  <div class="col flex-column">
+                    <div class="date f-center flex-column">
+                      <h6>星期四</h6>
+                      <p>08/01</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time disabled">08:00</li>
+                        <li class="time">09:00</li>
+                        <li class="time disabled">10:00</li>
+                        <li class="time">11:00</li>
+                        <li class="time">12:00</li>
+                        <li class="time">13:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期五</h6>
+                      <p>08/02</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">16:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time">19:00</li>
+                        <li class="time disabled">20:00</li>
+                        <li class="time">21:00</li>
+                        <li class="time">22:00</li>
+                        <li class="time disabled">23:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期六</h6>
+                      <p>08/02</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">10:00</li>
+                        <li class="time">11:00</li>
+                        <li class="time disabled">12:00</li>
+                        <li class="time">13:00</li>
+                        <li class="time disabled">14:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time disabled">19:00</li>
+                        <li class="time disabled">20:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column disabled">
+                      <h6>星期日</h6>
+                      <p>08/04</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column"></ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期一</h6>
+                      <p>08/05</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">13:00</li>
+                        <li class="time disabled">14:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time">19:00</li>
+                        <li class="time">20:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期二</h6>
+                      <p>08/06</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">13:00</li>
+                        <li class="time">14:00</li>
+                        <li class="time">17:00</li>
+                        <li class="time">18:00</li>
+                        <li class="time">19:00</li>
+                        <li class="time">20:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="date f-center flex-column">
+                      <h6>星期三</h6>
+                      <p>08/07</p>
+                    </div>
+
+                    <div>
+                      <ul class="times f-center flex-column">
+                        <li class="time">08:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div></div>
+            </section>
+          </div>
+
+          <!-- price card -->
+          <div class="col-lg-4">
+            <div class="card p-lg-6 p-4">
+              <div class="position-relative mb-lg-5 mb-4">
+                <div class="img-wrapper img-hover-enlarge rounded-2">
+                  <img src="/Coding-bit/assets/course-2-550d8ff7.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
+                </div>
+
+                <span
+                  class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+                  role="button"
+                  style="background-color: #1e1e1e66"
+                  data-favorite="true"
+                >
+                  favorite
+                </span>
+              </div>
+              <div class="card-body p-0">
+                <div class="mb-lg-6 mb-5">
+                  <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+                  <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
+                </div>
+
+                <a href="#" class="btn btn-brand-03 w-100">
+                  <p class="slide-right-hover f-center me-1">
+                    立即預約
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <ul class="row row-cols-2">
-        <li class="teacher-card">
+        <li class="tutor-card">
   <div class="card p-lg-6 p-4">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper img-hover-enlarge rounded-2">
@@ -199,7 +554,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 網站架設</a>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 客製化佈景主題</a>
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress客製化佈景主題</a>
         
       </div>
 
@@ -218,8 +573,9 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </li>
+
         <!-- Tutor 2 -->
-        <li class="teacher-card">
+        <li class="tutor-card">
   <div class="card p-lg-6 p-4">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper img-hover-enlarge rounded-2">
