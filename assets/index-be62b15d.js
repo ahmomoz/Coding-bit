@@ -1,4 +1,4 @@
-import"./bootstrap.min-61f9de2f.js";function o(r,c){let s="";c.forEach(e=>{s+=`
+import"./bootstrap.min-e8ca3a79.js";function o(r,c){let s="";c.forEach(e=>{s+=`
       <div class="col-md-6 col-xl-4">
         <a href="#" class="course-card card-column">
           <div class="card gradient-border p-lg-6 p-4 h-100">
