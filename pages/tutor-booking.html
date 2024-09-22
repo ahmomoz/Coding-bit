@@ -443,11 +443,36 @@
                 timestamp:"2024-08-07 10:30"}); -%>
               </div>
             </section>
+            <!-- section 4 - tutor recommendation -->
+            <section class="section">
+              <div class="section-component f-between-center">
+                <h4>推薦老師</h4>
+                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                  <p>更多</p>
+                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                </a>
+              </div>
+              <ul class="row row-cols-lg-2 g-lg-4">
+                <!-- Tutor 1 -->
+                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, name:"平凡老師 - 李東霖", title:"WordPress 工程師",
+                score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+
+                <!-- Tutor 2 -->
+                <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, name:"米克老師", title:"喜歡寫code的前端工程師", score:"3.4",
+                price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                <!-- Tutor 3 -->
+                <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, name:"Pong Pong", title:"台大資訊訓練班首席老師", score:"4.3",
+                price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name: "Python Flask 網站後端開發"}]}); -%>
+                <!-- Tutor 4 -->
+                <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, name:"Alan Lee", title:"熱愛遊戲的熱血青年", score:"4.3",
+                price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+              </ul>
+            </section>
           </div>
 
-          <!-- price card -->
+          <!-- Desktop right CTA card -->
           <div class="col-lg-4">
-            <div class="card p-lg-6 p-4">
+            <div class="desktop-cta-card card p-lg-6 p-4 sticky-top">
               <div class="position-relative mb-lg-5 mb-4">
                 <div class="img-wrapper img-hover-enlarge rounded-2">
                   <img src="../assets/images/course/course-2.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
@@ -468,8 +493,8 @@
                   <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
                 </div>
 
-                <a href="#" class="btn btn-brand-03 w-100">
-                  <p class="slide-right-hover f-center me-1">
+                <a href="#" class="btn slide-right-hover btn-brand-03 w-100">
+                  <p class="f-center me-1">
                     立即預約
                     <span class="material-symbols-outlined">arrow_forward</span>
                   </p>
@@ -481,16 +506,6 @@
       </div>
     </div>
 
-    <div class="container">
-      <ul class="row row-cols-2">
-        <%- include('./layout/tutor-card', {image:"course-1", isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9",
-        price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
-
-        <!-- Tutor 2 -->
-        <%- include('./layout/tutor-card', {image:"course-1", isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9",
-        price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress 客製化佈景主題"}]}); -%>
-      </ul>
-    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../assets/js/add-to-favorite.js"></script>
