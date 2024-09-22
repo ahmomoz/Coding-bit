@@ -101,3 +101,11 @@
     -webkit-box-orient: vertical;
   }
 }
+
+.tutor-booking {
+  .desktop-cta-card {
+    &.sticky-top {
+      top: 30px;
+    }
+  }
+}
