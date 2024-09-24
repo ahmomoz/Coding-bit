@@ -112,7 +112,8 @@
                 <h3 class="fs-6 fw-medium">信用卡號碼<span class="text-danger ms-1">*</span></h3>
               </label>
               <input
-                type="password"
+                type="text"
+                inputmode="numeric"
                 class="form-control rounded-1 border-0 bg-light mt-1"
                 id="userCreditCardNumber"
                 placeholder="**** **** **** ****"
@@ -125,11 +126,12 @@
                 </label>
                 <input
                   type="text"
+                  inputmode="numeric"
                   class="form-control rounded-1 border-0 bg-light mt-1"
                   id="credit-card-expiration"
                   name="credit-card-expiration"
                   placeholder="MM / YY"
-                  maxlength="7"
+                  maxlength="5"
                   required="">
               </div>
               <div class="col-6">
@@ -138,6 +140,7 @@
                 </label>
                 <input
                   type="text"
+                  inputmode="numeric"
                   class="form-control rounded-1 border-0 bg-light mt-1"
                   id="credit-card-cvc"
                   name="credit-card-cvc"

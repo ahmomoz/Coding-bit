@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeIcon = document.getElementById('close-icon');
   const toggler = document.getElementById('layout-navbar-toggler');
   const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+  const stickBottomWrap = document.querySelector('.sticky-bottom');
 
   toggler.addEventListener('click', function() {
     if (menuIcon.classList.contains('d-none')) {
@@ -112,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-transparent');
 
       document.body.classList.remove('no-scroll');
+      stickBottomWrap.classList.remove('d-none');
+
     } else {
       menuIcon.classList.add('d-none');
       closeIcon.classList.remove('d-none');
@@ -119,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-white');
 
       document.body.classList.add('no-scroll');
+      stickBottomWrap.classList.add('d-none');
     }
   });
 });
