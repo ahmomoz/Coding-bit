@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-8c9524cd.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-ea97e13c.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-dc19550c.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-3dce0dd5.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-8ade7b6f.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-4dfc4c32.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeIcon = document.getElementById('close-icon');
   const toggler = document.getElementById('layout-navbar-toggler');
   const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+  const stickBottomWrap = document.querySelector('.sticky-bottom');
 
   toggler.addEventListener('click', function() {
     if (menuIcon.classList.contains('d-none')) {
@@ -135,6 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-transparent');
 
       document.body.classList.remove('no-scroll');
+      stickBottomWrap.classList.remove('d-none');
+
     } else {
       menuIcon.classList.add('d-none');
       closeIcon.classList.remove('d-none');
@@ -142,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-white');
 
       document.body.classList.add('no-scroll');
+      stickBottomWrap.classList.add('d-none');
     }
   });
 });
@@ -1169,7 +1173,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alt="logo-image">
         </picture>
       </a>
-      <ul class="mt-4 mt-lg-6">
+      <ul class="mt-4">
         <li class="f-align-center">
           <span class="material-symbols-outlined fs-6">
             call
@@ -1185,6 +1189,9 @@ document.addEventListener('DOMContentLoaded', function() {
             schedule
           </span>
           <p class="fs-7 lh-sm ms-2">MON - FRI : 8:30 am - 17:30 pm</p>
+        </li>
+        <li class="f-align-center mt-2">
+          <p class="fs-7 lh-sm">本網站僅供作品參考，並非真實營運販售</p>
         </li>
       </ul>
     </div>

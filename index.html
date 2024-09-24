@@ -19,9 +19,9 @@
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
     <title>Coding∞bit ｜ 首頁</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/index-34106160.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-ea97e13c.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-dc19550c.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/index-9f5db742.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-8ade7b6f.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-4dfc4c32.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeIcon = document.getElementById('close-icon');
   const toggler = document.getElementById('layout-navbar-toggler');
   const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+  const stickBottomWrap = document.querySelector('.sticky-bottom');
 
   toggler.addEventListener('click', function() {
     if (menuIcon.classList.contains('d-none')) {
@@ -138,6 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-transparent');
 
       document.body.classList.remove('no-scroll');
+      stickBottomWrap.classList.remove('d-none');
+
     } else {
       menuIcon.classList.add('d-none');
       closeIcon.classList.remove('d-none');
@@ -145,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-white');
 
       document.body.classList.add('no-scroll');
+      stickBottomWrap.classList.add('d-none');
     }
   });
 });
@@ -153,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="container-lg">
-              <div class="row f-center flex-column-reverse flex-xl-row">
+              <div class="row f-center flex-column-reverse flex-xl-row py-xl-10">
                 <div class="col-xl-8 f-column-align-center d-xl-block">
                   <h1 class="title">
                     程式學習，量身訂做
@@ -200,33 +204,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="col-xl-4">
                   <img
                     src="/Coding-bit/assets/Illustration-2-986986b7.svg"
-                    alt="banner-illustration-1"
-                    class="banner-illustration">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container-lg">
-              <div class="row f-center flex-column-reverse flex-xl-row">
-                <div class="col-xl-8 f-column-align-center d-xl-block">
-                  <h1 class="title">
-                    程式學習，量身訂做
-                  </h1>
-                  <p class="fs-4 fs-xl-3 mt-4 mt-xl-6">
-                    打破一成不變舊課綱，想學什麼？讓我們為您客製化
-                  </p>
-                  <button
-                    class="btn btn-brand-03 slide-right-hover f-align-center mt-6 mt-xl-10">
-                    立即提需求
-                    <span class="material-symbols-outlined icon-fill fs-5 ms-1">
-                      arrow_forward
-                    </span>
-                  </button>
-                </div>
-                <div class="col-xl-4">
-                  <img
-                    src="/Coding-bit/assets/Illustration-1-46b4e321.svg"
                     alt="banner-illustration-1"
                     class="banner-illustration">
                 </div>
@@ -647,6 +624,14 @@ document.addEventListener('DOMContentLoaded', function() {
             check_circle
           </span>
           <p class="fw-medium lh-sm ms-4">
+            只需註冊帳號，即可享有服務
+          </p>
+        </li>
+        <li class="f-align-center mt-4 mt-lg-4">
+          <span class="material-symbols-outlined icon-fill text-brand-03">
+            check_circle
+          </span>
+          <p class="fw-medium lh-sm ms-4">
             可觀看免費影片
           </p>
         </li>
@@ -661,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </ul>
       <button
         class="btn btn-brand-03 slide-right-hover f-center w-100 mt-6 mt-lg-10">
-        立即訂閱
+        立即註冊
         <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 ms-1">
           arrow_forward
         </span>
@@ -808,7 +793,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alt="logo-image">
         </picture>
       </a>
-      <ul class="mt-4 mt-lg-6">
+      <ul class="mt-4">
         <li class="f-align-center">
           <span class="material-symbols-outlined fs-6">
             call
@@ -824,6 +809,9 @@ document.addEventListener('DOMContentLoaded', function() {
             schedule
           </span>
           <p class="fs-7 lh-sm ms-2">MON - FRI : 8:30 am - 17:30 pm</p>
+        </li>
+        <li class="f-align-center mt-2">
+          <p class="fs-7 lh-sm">本網站僅供作品參考，並非真實營運販售</p>
         </li>
       </ul>
     </div>
@@ -906,6 +894,10 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         spaceBetween: 240,
         loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

@@ -19,8 +19,8 @@
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
     <title>Coding∞bit ｜ 訂閱方案</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-ea97e13c.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-dc19550c.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-8ade7b6f.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-4dfc4c32.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeIcon = document.getElementById('close-icon');
   const toggler = document.getElementById('layout-navbar-toggler');
   const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+  const stickBottomWrap = document.querySelector('.sticky-bottom');
 
   toggler.addEventListener('click', function() {
     if (menuIcon.classList.contains('d-none')) {
@@ -137,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-transparent');
 
       document.body.classList.remove('no-scroll');
+      stickBottomWrap.classList.remove('d-none');
+
     } else {
       menuIcon.classList.add('d-none');
       closeIcon.classList.remove('d-none');
@@ -144,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
       layoutNavWrap.classList.add('bg-white');
 
       document.body.classList.add('no-scroll');
+      stickBottomWrap.classList.add('d-none');
     }
   });
 });
@@ -233,6 +237,14 @@ document.addEventListener('DOMContentLoaded', function() {
             check_circle
           </span>
           <p class="fw-medium lh-sm ms-4">
+            只需註冊帳號，即可享有服務
+          </p>
+        </li>
+        <li class="f-align-center mt-4 mt-lg-4">
+          <span class="material-symbols-outlined icon-fill text-brand-03">
+            check_circle
+          </span>
+          <p class="fw-medium lh-sm ms-4">
             可觀看免費影片
           </p>
         </li>
@@ -247,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </ul>
       <button
         class="btn btn-brand-03 slide-right-hover f-center w-100 mt-6 mt-lg-10">
-        立即訂閱
+        立即註冊
         <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 ms-1">
           arrow_forward
         </span>
@@ -414,6 +426,14 @@ document.addEventListener('DOMContentLoaded', function() {
             check_circle
           </span>
           <p class="fw-medium lh-sm ms-4">
+            只需註冊帳號，即可享有服務
+          </p>
+        </li>
+        <li class="f-align-center mt-4 mt-lg-4">
+          <span class="material-symbols-outlined icon-fill text-brand-03">
+            check_circle
+          </span>
+          <p class="fw-medium lh-sm ms-4">
             可觀看免費影片
           </p>
         </li>
@@ -428,7 +448,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </ul>
       <button
         class="btn btn-brand-03 slide-right-hover f-center w-100 mt-6 mt-lg-10">
-        立即訂閱
+        立即註冊
         <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 ms-1">
           arrow_forward
         </span>
@@ -579,7 +599,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alt="logo-image">
         </picture>
       </a>
-      <ul class="mt-4 mt-lg-6">
+      <ul class="mt-4">
         <li class="f-align-center">
           <span class="material-symbols-outlined fs-6">
             call
@@ -595,6 +615,9 @@ document.addEventListener('DOMContentLoaded', function() {
             schedule
           </span>
           <p class="fs-7 lh-sm ms-2">MON - FRI : 8:30 am - 17:30 pm</p>
+        </li>
+        <li class="f-align-center mt-2">
+          <p class="fs-7 lh-sm">本網站僅供作品參考，並非真實營運販售</p>
         </li>
       </ul>
     </div>
