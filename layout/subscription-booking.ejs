@@ -1,266 +1,275 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a
-        href="index.html"
-        class="underline-hover">
-        首頁
-      </a>
-    </li>
-    <li class="breadcrumb-item">
-      <a
-        href="subscription.html"
-        class="underline-hover">
-        訂閱方案
-      </a>
-    </li>
-    <li class="breadcrumb-item d-none d-sm-block">
-        <% if (level === 'normal') { %>
+<main class="subscription-bbooking-section wrap-lg">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
           <a
-            href="subscription-info-normal.html"
+            href="index.html"
             class="underline-hover">
-            升級方案 - 基本會員
-        <% } %>
-        <% if (level === 'premium') { %>
+            首頁
+          </a>
+        </li>
+        <li class="breadcrumb-item">
           <a
-            href="subscription-info-premium.html"
+            href="subscription.html"
             class="underline-hover">
-            升級方案 - 高級會員
-        <% } %>
-      </a>
-    </li>
-    <li class="breadcrumb-item d-sm-none">
-      ...
-    </li>
-    <li class="breadcrumb-item active fw-semibold" aria-current="page">
-      確認付款
-    </li>
-  </ol>
-</nav>
-<h1 class="fs-2 fs-lg-1 text-brand-03 mt-8">確認付款</h1>
-<div class="row mt-8 mt-lg-12">
-  <div class="col-lg-7">
-    <div class="input-card card shadow rounded-2 p-6 p-lg-10 ">
-      <h2 class="fs-5 fs-lg-3">購買人資訊</h2>
-      <form class="mt-6">
-        <div>
-          <label for="buyerEmail" class="form-label">
-            <h3 class="fs-6 fw-medium">電子信箱<span class="text-danger ms-1">*</span></h3>
-          </label>
-          <input
-            type="email"
-            class="form-control rounded-1 border-0 bg-light"
-            id="buyerEmail"
-            aria-describedby="emailHelp"
-            placeholder="請輸入電子信箱">
+            訂閱方案
+          </a>
+        </li>
+        <li class="breadcrumb-item d-none d-sm-block">
+            <% if (level === 'normal') { %>
+              <a
+                href="subscription-info-normal.html"
+                class="underline-hover">
+                升級方案 - 基本會員
+            <% } %>
+            <% if (level === 'premium') { %>
+              <a
+                href="subscription-info-premium.html"
+                class="underline-hover">
+                升級方案 - 高級會員
+            <% } %>
+          </a>
+        </li>
+        <li class="breadcrumb-item d-sm-none">
+          ...
+        </li>
+        <li class="breadcrumb-item active fw-semibold" aria-current="page">
+          確認付款
+        </li>
+      </ol>
+    </nav>
+    <h1 class="fs-2 fs-lg-1 text-brand-03 mt-8">確認付款</h1>
+    <div class="row mt-8 mt-lg-12">
+      <div class="col-lg-7">
+        <div class="input-card card shadow rounded-2 p-6 p-lg-10 ">
+          <h2 class="fs-5 fs-lg-3">購買人資訊</h2>
+          <form class="mt-6">
+            <div>
+              <label for="buyerEmail" class="form-label">
+                <h3 class="fs-6 fw-medium">電子信箱<span class="text-danger ms-1">*</span></h3>
+              </label>
+              <input
+                type="email"
+                class="form-control rounded-1 border-0 bg-light"
+                id="buyerEmail"
+                aria-describedby="emailHelp"
+                placeholder="請輸入電子信箱">
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-6">
+                <label for="buyerName" class="form-label">
+                  <h3 class="fs-6 fw-medium">姓名<span class="text-danger ms-1">*</span></h3>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-1 border-0 bg-light mt-1"
+                  id="buyerName"
+                  placeholder="請輸入姓名">
+              </div>
+              <div class="col-lg-6">
+                <label for="buyerPassword" class="form-label mt-4 mt-lg-0">
+                  <h3 class="fs-6 fw-medium">密碼<span class="text-danger ms-1">*</span></h3>
+                </label>
+                <input
+                  type="password"
+                  class="form-control rounded-1 border-0 bg-light mt-1"
+                  id="buyerPassword"
+                  placeholder="請輸入密碼">
+              </div>
+            </div>
+            <div class="form-check mt-6">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="rememberMeCheckbox">
+              <label
+                class="form-check-label"
+                for="rememberMeCheckbox">
+                記住我的資訊
+              </label>
+            </div>
+          </form>
         </div>
-        <div class="row mt-4">
-          <div class="col-lg-6">
-            <label for="buyerName" class="form-label">
-              <h3 class="fs-6 fw-medium">姓名<span class="text-danger ms-1">*</span></h3>
-            </label>
-            <input
-              type="text"
-              class="form-control rounded-1 border-0 bg-light mt-1"
-              id="buyerName"
-              placeholder="請輸入姓名">
-          </div>
-          <div class="col-lg-6">
-            <label for="buyerPassword" class="form-label mt-4 mt-lg-0">
-              <h3 class="fs-6 fw-medium">密碼<span class="text-danger ms-1">*</span></h3>
-            </label>
-            <input
-              type="password"
-              class="form-control rounded-1 border-0 bg-light mt-1"
-              id="buyerPassword"
-              placeholder="請輸入密碼">
-          </div>
+        <div class="input-card card shadow rounded-2 p-6 p-lg-10 mt-6">
+          <h2 class="fs-5 fs-lg-3">付款方式</h2>
+          <form class="mt-6">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pay-with"
+                id="creditCard"
+                checked>
+              <label
+                class="form-check-label"
+                for="creditCard">
+                信用卡
+              </label>
+            </div>
+            <div class="mt-6">
+              <label for="userCreditCardNumber" class="form-label">
+                <h3 class="fs-6 fw-medium">信用卡號碼<span class="text-danger ms-1">*</span></h3>
+              </label>
+              <input
+                type="text"
+                inputmode="numeric"
+                class="form-control rounded-1 border-0 bg-light mt-1"
+                id="userCreditCardNumber"
+                placeholder="**** **** **** ****"
+                maxlength="19">
+            </div>
+            <div class="row mt-4">
+              <div class="col-6">
+                <label for="credit-card-expiration" class="form-label">
+                  <h3 class="fs-6 fw-medium">過期日<span class="text-danger ms-1">*</span></h3>
+                </label>
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  class="form-control rounded-1 border-0 bg-light mt-1"
+                  id="credit-card-expiration"
+                  name="credit-card-expiration"
+                  placeholder="MM / YY"
+                  maxlength="5"
+                  required="">
+              </div>
+              <div class="col-6">
+                <label for="credit-card-cvc" class="form-label">
+                  <h3 class="fs-6 fw-medium">卡片背面後三碼<span class="text-danger ms-1">*</span></h3>
+                </label>
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  class="form-control rounded-1 border-0 bg-light mt-1"
+                  id="credit-card-cvc"
+                  name="credit-card-cvc"
+                  placeholder="CVC / CVV"
+                  pattern="\d{3,4}/"
+                  maxlength="3"
+                  required="">
+              </div>
+            </div>
+            <div class="form-check mt-6">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="rememberCardCheckbox">
+              <label
+                class="form-check-label"
+                for="rememberCardCheckbox">
+                記住卡片資訊
+              </label>
+            </div>
+          </form>
         </div>
-        <div class="form-check mt-6">
-          <input
-            type="checkbox"
-            class="form-check-input"
-            id="rememberMeCheckbox">
-          <label
-            class="form-check-label"
-            for="rememberMeCheckbox">
-            記住我的資訊
-          </label>
+      </div>
+    
+      <!-- 電腦版明細卡片 -->
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="input-card card shadow rounded-2 p-6 p-lg-10">
+          <h2 class="fs-5 fs-lg-3">訂閱方案明細</h2>
+          <table class="table mt-8">
+            <tbody>
+              <tr class="border-top border-bottom f-between-center">
+                <th scope="row" class="border-0">
+                  <h4 class="fs-6 fs-lg-5 fw-medium py-10">
+                    <% if (level === 'normal') { %>
+                      基本會員方案 / 月
+                    <% } %>
+                    <% if (level === 'premium') { %>
+                      高級會員方案 / 月
+                    <% } %>
+                  </h4>
+                </th>
+                <td class="border-0 text-end">
+                  <h4 class="fs-6 fs-lg-5 fw-medium py-10">
+                    <% if (level === 'normal') { %>
+                      NT$ 299
+                    <% } %>
+                    <% if (level === 'premium') { %>
+                      NT$ 499
+                    <% } %>
+                  </h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table border-0 mt-8">
+            <tbody>
+              <tr class="f-between-center">
+                <th scope="row" class="border-0">
+                  <h4 class="fs-6 fs-lg-5">總計</h4>
+                </th>
+                <td class="border-0 text-end">
+                  <h4 class="fs-2">
+                    <% if (level === 'normal') { %>
+                      NT$ 299
+                    <% } %>
+                    <% if (level === 'premium') { %>
+                      NT$ 499
+                    <% } %>
+                  </h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <% if (level === 'normal') { %>
+            <a href="subscription-booking-success-normal.html" class="mt-8">
+          <% } %>
+          <% if (level === 'premium') { %>
+            <a href="subscription-booking-success-premium.html" class="mt-8">
+          <% } %>
+            <button
+              class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
+              立即付款
+              <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
+                arrow_forward
+              </span>
+            </button>
+          </a>
         </div>
-      </form>
-    </div>
-    <div class="input-card card shadow rounded-2 p-6 p-lg-10 mt-6">
-      <h2 class="fs-5 fs-lg-3">付款方式</h2>
-      <form class="mt-6">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="pay-with"
-            id="creditCard"
-            checked>
-          <label
-            class="form-check-label"
-            for="creditCard">
-            信用卡
-          </label>
-        </div>
-        <div class="mt-6">
-          <label for="userCreditCardNumber" class="form-label">
-            <h3 class="fs-6 fw-medium">信用卡號碼<span class="text-danger ms-1">*</span></h3>
-          </label>
-          <input
-            type="password"
-            class="form-control rounded-1 border-0 bg-light mt-1"
-            id="userCreditCardNumber"
-            placeholder="**** **** **** ****"
-            maxlength="19">
-        </div>
-        <div class="row mt-4">
-          <div class="col-6">
-            <label for="credit-card-expiration" class="form-label">
-              <h3 class="fs-6 fw-medium">過期日<span class="text-danger ms-1">*</span></h3>
-            </label>
-            <input
-              type="text"
-              class="form-control rounded-1 border-0 bg-light mt-1"
-              id="credit-card-expiration"
-              name="credit-card-expiration"
-              placeholder="MM / YY"
-              maxlength="7"
-              required="">
-          </div>
-          <div class="col-6">
-            <label for="credit-card-cvc" class="form-label">
-              <h3 class="fs-6 fw-medium">卡片背面後三碼<span class="text-danger ms-1">*</span></h3>
-            </label>
-            <input
-              type="text"
-              class="form-control rounded-1 border-0 bg-light mt-1"
-              id="credit-card-cvc"
-              name="credit-card-cvc"
-              placeholder="CVC / CVV"
-              pattern="\d{3,4}/"
-              maxlength="3"
-              required="">
-          </div>
-        </div>
-        <div class="form-check mt-6">
-          <input
-            type="checkbox"
-            class="form-check-input"
-            id="rememberCardCheckbox">
-          <label
-            class="form-check-label"
-            for="rememberCardCheckbox">
-            記住卡片資訊
-          </label>
-        </div>
-      </form>
-    </div>
+      </div>
+    </div>    
   </div>
+</main>
+<%- include('./layout/footer'); -%>
 
-  <!-- 電腦版明細卡片 -->
-  <div class="col-lg-5 d-none d-lg-block">
-    <div class="input-card card shadow rounded-2 p-6 p-lg-10">
-      <h2 class="fs-5 fs-lg-3">訂閱方案明細</h2>
-      <table class="table mt-8">
-        <tbody>
-          <tr class="border-top border-bottom f-between-center">
-            <th scope="row" class="border-0">
-              <h4 class="fs-6 fs-lg-5 fw-medium py-10">
-                <% if (level === 'normal') { %>
-                  基本會員方案 / 月
-                <% } %>
-                <% if (level === 'premium') { %>
-                  高級會員方案 / 月
-                <% } %>
-              </h4>
-            </th>
-            <td class="border-0 text-end">
-              <h4 class="fs-6 fs-lg-5 fw-medium py-10">
-                <% if (level === 'normal') { %>
-                  NT$ 299
-                <% } %>
-                <% if (level === 'premium') { %>
-                  NT$ 499
-                <% } %>
-              </h4>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="table border-0 mt-8">
-        <tbody>
-          <tr class="f-between-center">
-            <th scope="row" class="border-0">
-              <h4 class="fs-6 fs-lg-5">總計</h4>
-            </th>
-            <td class="border-0 text-end">
-              <h4 class="fs-2">
-                <% if (level === 'normal') { %>
-                  NT$ 299
-                <% } %>
-                <% if (level === 'premium') { %>
-                  NT$ 499
-                <% } %>
-              </h4>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <% if (level === 'normal') { %>
-        <a href="subscription-booking-success-normal.html" class="mt-8">
-      <% } %>
-      <% if (level === 'premium') { %>
-        <a href="subscription-booking-success-premium.html" class="mt-8">
-      <% } %>
-        <button
-          class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
-          立即付款
-          <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
-            arrow_forward
-          </span>
-        </button>
-      </a>
-    </div>
-  </div>
 
   <!-- 手機版明細卡片 -->
-  <div class="media-subscription-price-card fixed-bottom bg-white border-top d-lg-none px-4 py-5">
-    <div class="f-between-center">
-      <div>
-        <h4 class="fs-6 fs-lg-5 fw-medium">
-          <% if (level === 'normal') { %>
-            基本會員方案 / 月
-          <% } %>
-          <% if (level === 'premium') { %>
-            高級會員方案 / 月
-          <% } %>
-        </h4>
-        <h6 class="fs-6 mt-1">
-          <% if (level === 'normal') { %>
-            NT$ 299
-          <% } %>
-          <% if (level === 'premium') { %>
-            NT$ 499
-          <% } %>
-        </h6>
-      </div>
-      <% if (level === 'normal') { %>
-        <a href="subscription-booking-success-normal.html">
-      <% } %>
-      <% if (level === 'premium') { %>
-        <a href="subscription-booking-success-premium.html">
-      <% } %>
-        <button
-          class="btn btn-brand-03 slide-right-hover f-center rounded-2">
-          立即付款
-          <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
-            arrow_forward
-          </span>
-        </button>
-      </a>
+<div class="media-subscription-price-card sticky-bottom bg-white border-top d-lg-none px-4 py-5">
+  <div class="f-between-center">
+    <div>
+      <h4 class="fs-6 fs-lg-5 fw-medium">
+        <% if (level === 'normal') { %>
+          基本會員方案 / 月
+        <% } %>
+        <% if (level === 'premium') { %>
+          高級會員方案 / 月
+        <% } %>
+      </h4>
+      <h4 class="text-brand-03 fs-lg-2 fs-3 mt-1">
+        <% if (level === 'normal') { %>
+          NT$ 299
+        <% } %>
+        <% if (level === 'premium') { %>
+          NT$ 499
+        <% } %>
+      </h4>
     </div>
+    <% if (level === 'normal') { %>
+      <a href="subscription-booking-success-normal.html">
+    <% } %>
+    <% if (level === 'premium') { %>
+      <a href="subscription-booking-success-premium.html">
+    <% } %>
+      <button
+        class="btn btn-brand-03 slide-right-hover f-center rounded-2">
+        立即付款
+        <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
+          arrow_forward
+        </span>
+      </button>
+    </a>
   </div>
 </div>

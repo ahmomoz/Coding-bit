@@ -27,7 +27,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="container-lg">
-              <div class="row f-center flex-column-reverse flex-xl-row">
+              <div class="row f-center flex-column-reverse flex-xl-row py-xl-10">
                 <div class="col-xl-8 f-column-align-center d-xl-block">
                   <h1 class="title">
                     程式學習，量身訂做
@@ -74,33 +74,6 @@
                 <div class="col-xl-4">
                   <img
                     src="../assets/images/deco/Illustration-2.svg"
-                    alt="banner-illustration-1"
-                    class="banner-illustration">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container-lg">
-              <div class="row f-center flex-column-reverse flex-xl-row">
-                <div class="col-xl-8 f-column-align-center d-xl-block">
-                  <h1 class="title">
-                    程式學習，量身訂做
-                  </h1>
-                  <p class="fs-4 fs-xl-3 mt-4 mt-xl-6">
-                    打破一成不變舊課綱，想學什麼？讓我們為您客製化
-                  </p>
-                  <button
-                    class="btn btn-brand-03 slide-right-hover f-align-center mt-6 mt-xl-10">
-                    立即提需求
-                    <span class="material-symbols-outlined icon-fill fs-5 ms-1">
-                      arrow_forward
-                    </span>
-                  </button>
-                </div>
-                <div class="col-xl-4">
-                  <img
-                    src="../assets/images/deco/Illustration-1.svg"
                     alt="banner-illustration-1"
                     class="banner-illustration">
                 </div>
@@ -383,6 +356,10 @@
         slidesPerView: 1,
         spaceBetween: 240,
         loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
