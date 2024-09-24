@@ -32,6 +32,19 @@ a {
   line-height: 1.2;
 }
 
+/* divider-label */
+.divider-label {
+  color: $gray-03;
+
+  hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: $gray-02;
+    margin: 0 12px;
+  } 
+}
+
 /* background */
 .bg {
   background-repeat: no-repeat;
@@ -61,7 +74,6 @@ a {
     padding: 24px 0;
   }
 }
-
 .wrap-xs {
   padding: 80px 0;
 
