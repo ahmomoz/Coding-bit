@@ -1,0 +1,48 @@
+/*
+fs-1	40px
+fs-2	32px
+fs-3	28px
+fs-4	24px
+fs-5	20px
+fs-6	16px
+fs-7	14px
+fs-8	12px
+
+  *-1	4px
+  *-2	8px
+  *-3	12px
+  *-4	16px
+  *-5	20px
+  *-6	24px
+  *-7	28px
+  *-8	32px
+  *-9	36px
+  *-10	40px
+  *-11	48px
+  *-12	64px
+  *-13	80px
+*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.video-details {
+  .video-title{
+    line-height: 1.2;
+  }
+  .video-show{
+    max-width: 100%;
+  }
+}
