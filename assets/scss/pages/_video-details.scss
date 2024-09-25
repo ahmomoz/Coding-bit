@@ -39,6 +39,7 @@ fs-8	12px
     'opsz' 24
 }
 
+// section
 .video-details {
   .video-title {
     line-height: 1.2;
@@ -99,7 +100,29 @@ fs-8	12px
 }
 
 .nav-tabs {
-  .video-description-item {
-    list-style-type: decimal;
+  border-bottom: 1px solid $gray-03;
+
+  .video-description,
+  .video-comments {
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 12px 24px;
+    color: $brand-03;
+  }
+
+  .video-description {
+    border-bottom: 1px solid $brand-03;
+  }
+
+  .video-comments {
+    color: $gray-03;
+  }
+}
+
+// aside
+.chapter-video {
+  .chapter-video-title {
+    font-weight: 500;
+    color: $gray-01;
   }
 }

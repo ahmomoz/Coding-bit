@@ -73,25 +73,28 @@
             </div>
           </div>
           <div>
-            <nav>
-              <div class="nav-tabs">
-                <span class="video-description">影片簡介</span>
-                <span class="video-comments">留言討論區</span>
-                <div class="video-description-list">
-                  <ul>
-                    <li class="video-description-item">掌握 React Hooks 的進階用法</li>
-                    <li class="video-description-item">了解 React 性能優化技巧</li>
-                    <li class="video-description-item">學習 React 狀態管理最佳實踐</li>
-                    <li class="video-description-item">探索 React 生態系統中的常用工具</li>
-                  </ul>
-                </div>
-                <div class="comments-section"></div>
+            <nav class="mb-6">
+              <div class="nav-tabs d-flex">
+                <h6 class="video-description">影片簡介</h6>
+                <h6 class="video-comments">留言討論區</h6>
               </div>
             </nav>
+            <div class="video-description-list">
+              <%- include('./layout/video-description'); -%>
+            </div>
+            <div class="comments-section">
+              <%- include('./layout/video-comments'); -%>
+            </div>
           </div>
         </section>
         <aside class="col-4">
-
+          <div class="chapter-video">
+            <h5 class="chapter-video-title">章節影片</h5>
+            <div>
+              <span>更多</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
         </aside>
       </div>
     </main>
