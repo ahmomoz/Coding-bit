@@ -70,10 +70,36 @@ fs-8	12px
 
 .tag-label {
   background-color: $brand-02;
-  
+  margin-right: 12px;
+
   h6 {
     color: $brand-03;
     font-weight: 500;
     line-height: 1.2;
+  }
+}
+
+.author-content {
+  .author-image {
+    width: 48px;
+  }
+
+  .author-name {
+    font-weight: 500;
+    line-height: 1.2;
+    color: $gray-01;
+  }
+
+  .author-info {
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 14px;
+    color: $gray-02;
+  }
+}
+
+.nav-tabs {
+  .video-description-item {
+    list-style-type: decimal;
   }
 }
