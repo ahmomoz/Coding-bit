@@ -25,24 +25,55 @@ fs-8	12px
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
+
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .video-details {
-  .video-title{
+  .video-title {
     line-height: 1.2;
   }
-  .video-show{
+
+  .video-show {
     max-width: 100%;
+  }
+}
+
+.data-view-count,
+.data-rating-score {
+  color: $brand-03;
+}
+
+.view-count,
+.rating-score {
+  color: $brand-01;
+}
+
+.favorite-button {
+  color: $gray-01;
+}
+
+.review-button {
+  background-color: $brand-02;
+  color: $brand-03;
+}
+
+.tag-label {
+  background-color: $brand-02;
+  
+  h6 {
+    color: $brand-03;
+    font-weight: 500;
+    line-height: 1.2;
   }
 }
