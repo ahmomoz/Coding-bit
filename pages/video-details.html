@@ -95,28 +95,27 @@
               <span class="material-symbols-outlined">arrow_forward</span>
             </div>
           </div>
-          <ul class="chapter-list">
-            <li class="p-4 d-flex justify-content-between chapter-item">
-              <span class="material-symbols-outlined player-icon me-2">play_circle</span>
-              <div class="flex-grow-1">
-                <div class="d-flex align-items-center justify-content-between mb-1">
-                  <span class="fs-7 chapter-contents">第一章</span>
-                  <time class="video-duration fs-7 rounded-1 px-2 py-1">45:30</time>
-                </div>
-                <h6 class="chapter-item-title mb-2">React Hooks 深入解析</h6>
-                <div class="d-flex">
-                  <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
-                  <data class="chapter-view-count fs-7" value="15,234">15,234</data>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <% 
+            let chapters=[
+              { 'chapter' : '第一章' , 'title' : 'React Hooks 深入解析' }, 
+              { 'chapter' : '第二章' , 'title' : '使用 useCallback 優化性能' }, 
+              { 'chapter' : '第三章' , 'title' : '掌握 useMemo 的使用技巧' }, 
+              { 'chapter' : '第四章' , 'title' : 'React 狀態管理最佳實踐' }, 
+              { 'chapter' : '第五章' , 'title' : 'React 性能優化技巧' }]; 
+          %>
+          <% 
+            for(let i=0; i< chapters.length; i++) { %>
+              <%- include('./layout/chapter-list',{chapter: chapters[i].chapter, title: chapters[i].title}); -%>
+          <% } %>
         </aside>
       </div>
     </main>
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script>
+
+      </script>
 </body>
 
 </html>
