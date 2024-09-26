@@ -28,7 +28,7 @@
           <div class="d-flex mb-6">
             <div class="d-flex">
               <div class="d-flex align-items-center me-6">
-                <span class="view-count fs-5 me-1 material-symbols-outlined">visibility</span>
+                <span class="view-count fs-5 me-1 material-symbols-outlined eyes-icon">visibility</span>
                 <data value="12345" class="data-view-count">12,345</data>
               </div>
               <div class="d-flex align-items-center">
@@ -87,14 +87,30 @@
             </div>
           </div>
         </section>
-        <aside class="col-4">
-          <div class="chapter-video">
+        <aside class="col-4 rounded-4 aside-border">
+          <div class="chapter-video d-flex justify-content-between align-items-center">
             <h5 class="chapter-video-title">章節影片</h5>
-            <div>
-              <span>更多</span>
+            <div class="d-flex align-items-center show-more-button">
+              <span class="me-1">更多</span>
               <span class="material-symbols-outlined">arrow_forward</span>
             </div>
           </div>
+          <ul class="chapter-list">
+            <li class="p-4 d-flex justify-content-between chapter-item">
+              <span class="material-symbols-outlined player-icon me-2">play_circle</span>
+              <div class="flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="fs-7 chapter-contents">第一章</span>
+                  <time class="video-duration fs-7 rounded-1 px-2 py-1">45:30</time>
+                </div>
+                <h6 class="chapter-item-title mb-2">React Hooks 深入解析</h6>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
+                  <data class="chapter-view-count fs-7" value="15,234">15,234</data>
+                </div>
+              </div>
+            </li>
+          </ul>
         </aside>
       </div>
     </main>
