@@ -98,7 +98,6 @@
           </div>
         </div>
       </section>
-
       <!-- Category -->
       <section class="category bg-gray-04 py-13">
         <div class="container">
@@ -128,7 +127,90 @@
       <section id="tutor-list" class="py-13">
         <div class="container">
           <%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %>
-          <div class="mt-8"></div>
+          <div class="mt-8">
+            <div class="d-flex justify-content-lg-end justify-content-center">
+              <div class="position-relative f-align-center d-flex me-2">
+                <input type="search" class="form-control nav-search-desktop border border-brand-03 border-3" placeholder="搜尋講師" />
+                <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
+              </div>
+
+              <div class="sort">
+                <button type="button" class="btn btn-outline-brand-03 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  排序方式
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="my-8">
+            <ul>
+              <ul class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 g-4">
+                <!-- tutor1 -->
+                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
+                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                <!-- tutor2 -->
+                <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
+                title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                <!-- tutor3 -->
+                <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
+                "Python Flask 網站後端開發"}]}); -%>
+                <!-- tutor4 -->
+                <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
+                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+                <!-- tutor1 -->
+                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
+                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                <!-- tutor2 -->
+                <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
+                title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                <!-- tutor3 -->
+                <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
+                "Python Flask 網站後端開發"}]}); -%>
+                <!-- tutor4 -->
+                <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
+                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+                <!-- tutor1 -->
+                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
+                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                <!-- tutor2 -->
+                <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
+                title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                <!-- tutor3 -->
+                <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
+                "Python Flask 網站後端開發"}]}); -%>
+                <!-- tutor4 -->
+                <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
+                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+              </ul>
+            </ul>
+          </div>
+
+          <nav aria-label="navigation">
+            <ul class="pagination f-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><span class="material-symbols-outlined align-middle"> arrow_left </span></span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><span class="material-symbols-outlined align-middle"> arrow_right </span></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
     </main>
@@ -136,6 +218,7 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/add-to-favorite.js"></script>
     <script type="module" src="../assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
