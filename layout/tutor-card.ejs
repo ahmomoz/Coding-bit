@@ -1,5 +1,6 @@
-<li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+<li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -19,14 +20,14 @@
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="../assets/images/user/<%= tutorProfile %>" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               <%= name %>
             </h5>
             <!-- dynamic title-->
@@ -43,13 +44,13 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         <% for(var i=0; i<tags.length; i++) {%>
           <a href="#" class="tag tag-brand-02 fs-8 me-3"><%= tags[i].name %></a>
         <% } %>
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -57,7 +58,7 @@
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 

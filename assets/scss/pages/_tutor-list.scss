@@ -1,5 +1,15 @@
 .tutor-list {
   .hero-section {
+    .star-deco {
+      width: 450px;
+      @include lg-pc {
+        width: 300px;
+      }
+      @include pad {
+        display: none;
+      }
+    }
+
     .question-text-wrapper {
       position: relative;
       width: fit-content;
@@ -14,6 +24,12 @@
       background-color: white;
       border-left: 2px solid $brand-03;
       animation: textType 3s steps(12) infinite;
+      @include pad {
+        background-color: $brand-05;
+      }
+    }
+    @include pad {
+      background-color: $brand-05;
     }
   }
 
@@ -45,5 +61,92 @@
 
   100% {
     left: 0%;
+  }
+}
+
+.tutor-list {
+  .service-intro {
+    .description,
+    .cta {
+      @include pad {
+        text-align: center;
+      }
+    }
+    .cta {
+      display: inline-flex;
+      @include pad {
+        display: block;
+      }
+    }
+    .deco-img {
+      margin-top: 80px;
+      width: 400px;
+      @include lg-pc {
+        width: 250px;
+      }
+      @include pad {
+        display: none;
+      }
+    }
+  }
+}
+
+.tutor-list {
+  .arrow {
+    @include pad {
+      display: none;
+    }
+  }
+
+  .category-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    @include pad {
+      display: block;
+      overflow: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+  }
+}
+
+.tutor-list {
+  .control-group {
+    display: flex;
+    justify-content: end;
+    @include pad {
+      justify-content: center;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .nav-search-desktop {
+    width: 200px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .nav-search-desktop,
+  .nav-search-mobile {
+    padding-left: 44px;
+  }
+
+  .sort {
+    @include mobile {
+      margin-top: 16px;
+    }
+    .dropdown-toggle {
+      width: 100%;
+    }
   }
 }
