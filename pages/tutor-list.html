@@ -25,12 +25,12 @@
       <!-- hero-section -->
       <section class="hero-section py-10">
         <div class="container">
-          <div class="d-flex justify-content-evenly align-items-center">
+          <div class="d-flex justify-content-md-evenly align-items-md-center">
             <div>
               <div class="question-text-wrapper">
                 <h2 class="fs-1 mb-2 question-text text-brand-03"></h2>
               </div>
-              <h2 class="fs-1 mb-12">找專業講師來場一對一課程</h2>
+              <h2 class="fs-md-1 fs-2 mb-12">找專業講師來場一對一課程</h2>
               <a href="#tutor-list" class="w-50 fs-5 btn btn-brand-03 d-flex justify-content-center slide-down-hover mb-5">
                 我要找講師 <span class="material-symbols-outlined"> keyboard_arrow_down </span>
               </a>
@@ -45,22 +45,22 @@
                 <p class="profile">100+</p>
               </div>
             </div>
-            <img src="../assets/images/deco/star3D.png" alt="deco" style="transform: translate(50px, -80px)" />
+            <img src="../assets/images/deco/star3D.png" class="star-deco" alt="star-deco" style="transform: translate(50px, -80px)" />
           </div>
         </div>
       </section>
       <!-- service introduction -->
-      <section class="service-intro py-10">
+      <section class="service-intro wrap" style="overflow: hidden">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-8">
               <!-- title -->
-              <div class="d-flex align-items-center mb-2">
+              <div class="f-center mb-2">
                 <picture>
                   <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
                   <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" />
                 </picture>
-                <h2 class="fs-5 text-brand-03 ms-3 ms-lg-4">什麼是一對一教學&程式碼檢視服務？</h2>
+                <h2 class="fs-md-5 fs-4 text-center text-brand-03 ms-3 ms-lg-4">什麼是一對一教學&程式碼檢視服務？</h2>
                 <picture>
                   <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
                   <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" class="ms-3 ms-lg-4" />
@@ -68,7 +68,7 @@
               </div>
               <!-- description -->
               <div>
-                <p class="mb-5">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
+                <p class="mb-5 description">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
                 <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
                   <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">一對一課程</p>
                   <span class="material-symbols-outlined me-3"> chevron_right </span>
@@ -83,7 +83,7 @@
 
               <a
                 href="subscription-info-normal.html"
-                class="underline-hover d-inline-flex text-brand-03"
+                class="underline-hover text-brand-03 cta"
                 data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1000"
@@ -93,42 +93,36 @@
             </div>
             <!-- image-->
             <div class="col-4">
-              <img src="../assets/images/deco/Illustration-9.png" alt="illustration" width="400" class="mt-13" />
+              <img src="../assets/images/deco/Illustration-9.png" alt="illustration" class="deco-img" />
             </div>
           </div>
         </div>
       </section>
       <!-- Category -->
-      <section class="category bg-gray-04 py-13">
+      <section class="category bg-gray-04 wrap">
         <div class="container">
           <%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %>
-          <div class="d-flex flex-column align-items-center mt-8">
-            <div class="mb-4 f-center">
-              <span class="material-symbols-outlined bg-brand-02 p-2 rounded-circle me-2"> chevron_left </span>
-              <a href="#" class="btn btn-brand-03 me-2 border border-3 border-brand-03">全部</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">全部</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">HTML & CSS</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">JavaScript</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">WordPress</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">Python</a>
-            </div>
-            <div class="f-center">
-              <a href="#" class="btn btn-outline-brand-03 me-2">Vue</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">React</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">C++</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">Bootstrap</a>
-              <a href="#" class="btn btn-outline-brand-03 me-2">手機開發</a>
-              <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02"> chevron_right </span>
-            </div>
+          <div class="category-list">
+            <span class="material-symbols-outlined bg-brand-02 p-2 rounded-circle me-2 mb-4 arrow"> chevron_left </span>
+            <a href="#" class="btn btn-brand-03 me-2 mb-4 border border-3 border-brand-03">全部</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">HTML & CSS</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">JavaScript</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">WordPress</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Python</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Vue</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">React</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">C++</a>
+            <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Bootstrap</a>
+            <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02 mb-4 arrow"> chevron_right </span>
           </div>
         </div>
       </section>
 
-      <section id="tutor-list" class="py-13">
+      <section id="tutor-list" class="wrap">
         <div class="container">
           <%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %>
           <div class="mt-8">
-            <div class="d-flex justify-content-lg-end justify-content-center">
+            <div class="control-group">
               <div class="position-relative f-align-center d-flex me-2">
                 <input type="search" class="form-control nav-search-desktop border border-brand-03 border-3" placeholder="搜尋講師" />
                 <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
@@ -151,9 +145,9 @@
           <div class="my-8">
             <ul>
               <ul class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 g-4">
-                <!-- tutor1 -->
-                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
-                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                <%- include('./layout/tutor-card', {image:"course-2", isFavorite:true, tutorProfile:"user-1.png",name:" 卡斯伯 Casper",
+                title:"10年經驗的前端工程師", score:"4.9", price:250, tags:[{name:"HTML/CSS"}, {name: "React"},{name: "網頁動畫"}]}); -%>
+
                 <!-- tutor2 -->
                 <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
                 title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
@@ -229,16 +223,12 @@
         }, 0);
 
         setTimeout(() => {
-          questionText.textContent = "程式碼太冗長？";
+          questionText.textContent = "程式冗長？";
         }, 3000);
-
-        setTimeout(() => {
-          questionText.textContent = "想提升程式能力？";
-        }, 6000);
       };
 
       textLoad();
-      setInterval(textLoad, 9000);
+      setInterval(textLoad, 6000);
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
