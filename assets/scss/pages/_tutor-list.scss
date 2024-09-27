@@ -1,0 +1,49 @@
+.tutor-list {
+  .hero-section {
+    .question-text-wrapper {
+      position: relative;
+      width: fit-content;
+    }
+    .question-text:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      border-left: 2px solid $brand-03;
+      animation: textType 3s steps(12) infinite;
+    }
+  }
+
+  p.profile {
+    background-color: $brand-03;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -12px;
+  }
+
+  .profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid $gray-04;
+    &:not(:first-of-type) {
+      margin-left: -12px;
+    }
+  }
+}
+
+@keyframes textType {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+
+  100% {
+    left: 0%;
+  }
+}
