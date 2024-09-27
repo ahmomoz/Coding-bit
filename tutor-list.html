@@ -14,12 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>Coding∞bit ｜ 可預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-6e401d01.js"></script>
+    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-38b8cef1.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/index-5f6a5fce.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-04171d85.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-991c0d17.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -152,16 +153,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-</script>    <main class="tutor-list wrap">
+</script>    <main class="tutor-list">
       <!-- hero-section -->
-      <section class="hero-section">
+      <section class="hero-section py-10">
         <div class="container">
-          <div class="f-center">
+          <div class="d-flex justify-content-evenly align-items-center">
             <div>
               <div class="question-text-wrapper">
                 <h2 class="fs-1 mb-2 question-text text-brand-03"></h2>
               </div>
-              <h2 class="fs-1 mb-5">找專業講師來場一對一課程</h2>
+              <h2 class="fs-1 mb-12">找專業講師來場一對一課程</h2>
               <a href="#tutor-list" class="w-50 fs-5 btn btn-brand-03 d-flex justify-content-center slide-down-hover mb-5">
                 我要找講師 <span class="material-symbols-outlined"> keyboard_arrow_down </span>
               </a>
@@ -180,13 +181,13 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </section>
-
-      <section>
+      <!-- service introduction -->
+      <section class="service-intro py-10">
         <div class="container">
-          <div class="f-center">
-            <div>
+          <div class="row justify-content-center">
+            <div class="col-6">
               <!-- title -->
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center mb-2">
                 <picture>
                   <source srcset="/Coding-bit/assets/icon-infinite-sm-1203c3ea.svg " media="(max-width: 575.98px)" />
                   <img src="/Coding-bit/assets/icon-infinite-7978421b.svg" alt="icon-infinite" />
@@ -198,23 +199,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 </picture>
               </div>
               <!-- description -->
-              <p>只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
-              <div>一對一課程 → 不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</div>
+              <div>
+                <p class="mb-5">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
+                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                  <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">一對一課程</p>
+                  <span class="material-symbols-outlined me-3"> chevron_right </span>
+                  <p>不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</p>
+                </div>
+                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="800">
+                  <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">程式碼檢視</p>
+                  <span class="material-symbols-outlined me-3"> chevron_right </span>
+                  <p class="">預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。</p>
+                </div>
+              </div>
 
-              程式碼檢視 → 預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。
+              <a
+                href="subscription-info-normal.html"
+                class="underline-hover d-inline-flex text-brand-03"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                >還沒有訂閱嗎？點我前往訂閱</a
+              >
             </div>
-
-            <div>
-              <img src="/Coding-bit/assets/Illustration-2-24e78977.png" alt="" />
+            <!-- image-->
+            <div class="col-4">
+              <img src="/Coding-bit/assets/Illustration-9-52f94c13.png" alt="illustration" width="400" class="mt-13" />
             </div>
-
-            <!-- image -->
           </div>
         </div>
       </section>
 
       <!-- Category -->
-      <section><div class="f-center">
+      <section class="category bg-gray-04 py-13">
+        <div class="container">
+          <div class="f-center">
   <picture>
     <source
       srcset="/Coding-bit/assets/icon-infinite-sm-1203c3ea.svg "
@@ -237,9 +257,32 @@ document.addEventListener('DOMContentLoaded', function() {
     src="/Coding-bit/assets/icon-infinite-7978421b.svg"
     alt="icon-infinite" class="ms-3 ms-lg-4">
   </picture>
-</div></section>
+</div>
+          <div class="d-flex flex-column align-items-center mt-8">
+            <div class="mb-4 f-center">
+              <span class="material-symbols-outlined bg-brand-02 p-2 rounded-circle me-2"> chevron_left </span>
+              <a href="#" class="btn btn-brand-03 me-2 border border-3 border-brand-03">全部</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">全部</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">HTML & CSS</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">JavaScript</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">WordPress</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">Python</a>
+            </div>
+            <div class="f-center">
+              <a href="#" class="btn btn-outline-brand-03 me-2">Vue</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">React</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">C++</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">Bootstrap</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">手機開發</a>
+              <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02"> chevron_right </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section id="tutor-list"><div class="f-center">
+      <section id="tutor-list" class="py-13">
+        <div class="container">
+          <div class="f-center">
   <picture>
     <source
       srcset="/Coding-bit/assets/icon-infinite-sm-1203c3ea.svg "
@@ -262,7 +305,10 @@ document.addEventListener('DOMContentLoaded', function() {
     src="/Coding-bit/assets/icon-infinite-7978421b.svg"
     alt="icon-infinite" class="ms-3 ms-lg-4">
   </picture>
-</div></section>
+</div>
+          <div class="mt-8"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="layout-footer-wrap wrap-lg bg-white">
@@ -391,6 +437,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
       textLoad();
       setInterval(textLoad, 9000);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

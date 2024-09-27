@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-1087418f.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-6e401d01.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-04171d85.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-cfa407b4.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-38b8cef1.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-991c0d17.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -586,14 +586,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
               <!-- desktop -->
               <ul class="row row-cols-lg-2 g-lg-4 d-none d-lg-flex">
-                <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                <!-- tutor1 -->
+                <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-1-3de1fc2e.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-1"
         />
       </div>
@@ -609,14 +610,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            平凡老師 - 李東霖
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">WordPress 工程師</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-5-cb87930d.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              平凡老師 - 李東霖
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">WordPress 工程師</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -635,7 +640,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -650,14 +655,15 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </li>
- <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                <!-- tutor2 -->
+                <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-5-69bfc947.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-5"
         />
       </div>
@@ -673,14 +679,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            米克老師
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">喜歡寫code的前端工程師</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-6-aff8550b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              米克老師
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">喜歡寫code的前端工程師</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -699,7 +709,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -714,14 +724,15 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </li>
- <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                <!-- tutor3 -->
+                <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-8-9d6b2514.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-8"
         />
       </div>
@@ -737,14 +748,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            Pong Pong
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">台大資訊訓練班首席老師</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-7-b073bdd4.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              Pong Pong
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">台大資訊訓練班首席老師</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -767,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -782,14 +797,15 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </li>
- <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                <!-- tutor4 -->
+                <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-3-929f59ab.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-3"
         />
       </div>
@@ -805,14 +821,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            Alan Lee
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">熱愛遊戲的熱血青年</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-10-89d26a7b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              Alan Lee
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">熱愛遊戲的熱血青年</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -833,7 +853,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -853,14 +873,14 @@ document.addEventListener('DOMContentLoaded', function() {
               <div class="swiper tutor-card-swiper d-block d-lg-none">
                 <div class="swiper-wrapper mb-10 py-5">
                   <div class="swiper-slide">
-                    <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                    <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-1-3de1fc2e.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-1"
         />
       </div>
@@ -876,14 +896,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            平凡老師 - 李東霖
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">WordPress 工程師</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-5-cb87930d.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              平凡老師 - 李東霖
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">WordPress 工程師</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -902,7 +926,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -919,14 +943,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
                   </div>
                   <div class="swiper-slide">
-                    <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                    <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-5-69bfc947.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-5"
         />
       </div>
@@ -942,14 +966,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            米克老師
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">喜歡寫code的前端工程師</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-6-aff8550b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              米克老師
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">喜歡寫code的前端工程師</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -968,7 +996,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -985,14 +1013,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
                   </div>
                   <div class="swiper-slide">
-                    <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                    <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-8-9d6b2514.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-8"
         />
       </div>
@@ -1008,14 +1036,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            Pong Pong
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">台大資訊訓練班首席老師</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-7-b073bdd4.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              Pong Pong
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">台大資訊訓練班首席老師</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -1030,7 +1062,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">Python Flask 網站後端開發</a>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python 數據分析</a>
+          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python數據分析</a>
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">Node.js</a>
         
@@ -1038,7 +1070,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -1055,14 +1087,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
                   </div>
                   <div class="swiper-slide">
-                    <li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+                    <li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="/Coding-bit/assets/course-3-929f59ab.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="course-3"
         />
       </div>
@@ -1078,14 +1110,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            Alan Lee
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8">熱愛遊戲的熱血青年</p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="/Coding-bit/assets/user-10-89d26a7b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              Alan Lee
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8">熱愛遊戲的熱血青年</p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -1106,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
