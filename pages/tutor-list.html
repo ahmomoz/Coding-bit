@@ -14,22 +14,23 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
     <title>Coding∞bit ｜ 可預約老師</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main class="tutor-list wrap">
+    <main class="tutor-list">
       <!-- hero-section -->
-      <section class="hero-section">
+      <section class="hero-section wrap">
         <div class="container">
-          <div class="f-center">
+          <div class="d-flex justify-content-evenly align-items-center">
             <div>
               <div class="question-text-wrapper">
                 <h2 class="fs-1 mb-2 question-text text-brand-03"></h2>
               </div>
-              <h2 class="fs-1 mb-5">找專業講師來場一對一課程</h2>
+              <h2 class="fs-1 mb-12">找專業講師來場一對一課程</h2>
               <a href="#tutor-list" class="w-50 fs-5 btn btn-brand-03 d-flex justify-content-center slide-down-hover mb-5">
                 我要找講師 <span class="material-symbols-outlined"> keyboard_arrow_down </span>
               </a>
@@ -48,13 +49,13 @@
           </div>
         </div>
       </section>
-
-      <section>
+      <!-- service introduction -->
+      <section class="wrap">
         <div class="container">
-          <div class="f-center">
-            <div>
+          <div class="row justify-content-center">
+            <div class="col-6">
               <!-- title -->
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center mb-2">
                 <picture>
                   <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
                   <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" />
@@ -66,25 +67,42 @@
                 </picture>
               </div>
               <!-- description -->
-              <p>只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
-              <div>一對一課程 → 不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</div>
+              <div>
+                <p class="mb-5">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
+                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                  <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">一對一課程</p>
+                  <span class="material-symbols-outlined me-3"> chevron_right </span>
+                  <p>不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</p>
+                </div>
+                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="800">
+                  <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">程式碼檢視</p>
+                  <span class="material-symbols-outlined me-3"> chevron_right </span>
+                  <p class="">預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。</p>
+                </div>
+              </div>
 
-              程式碼檢視 → 預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。
+              <a
+                href="subscription-info-normal.html"
+                class="underline-hover d-inline-flex text-brand-03"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-delay="900"
+                >還沒有訂閱嗎？點我前往訂閱</a
+              >
             </div>
-
-            <div>
-              <img src="../assets/images/deco/Illustration-2.png" alt="" />
+            <!-- image-->
+            <div class="col-4">
+              <img src="../assets/images/deco/Illustration-9.png" alt="illustration" width="400" />
             </div>
-
-            <!-- image -->
           </div>
         </div>
       </section>
 
       <!-- Category -->
-      <section><%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %></section>
+      <!-- <section><%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %></section>
 
-      <section id="tutor-list"><%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %></section>
+      <section id="tutor-list"><%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %></section> -->
     </main>
 
     <%- include('./layout/footer'); -%>
@@ -110,6 +128,10 @@
 
       textLoad();
       setInterval(textLoad, 9000);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
