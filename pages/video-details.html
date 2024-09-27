@@ -95,26 +95,25 @@
               <span class="material-symbols-outlined">arrow_forward</span>
             </div>
           </div>
-          <% 
-            let chapters=[
-              { 'chapter' : '第一章' , 'title' : 'React Hooks 深入解析' }, 
-              { 'chapter' : '第二章' , 'title' : '使用 useCallback 優化性能' }, 
-              { 'chapter' : '第三章' , 'title' : '掌握 useMemo 的使用技巧' }, 
-              { 'chapter' : '第四章' , 'title' : 'React 狀態管理最佳實踐' }, 
-              { 'chapter' : '第五章' , 'title' : 'React 性能優化技巧' }]; 
-          %>
-          <% 
-            for(let i=0; i< chapters.length; i++) { %>
-              <%- include('./layout/chapter-list',{chapter: chapters[i].chapter, title: chapters[i].title}); -%>
-          <% } %>
+          <ul class="chapter-list"></ul>
         </aside>
       </div>
     </main>
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
-      <script>
+      <script type="module">
+        // videoListRender
+        import { chapterListRender } from '../assets/js/courses.js';
+        const chapterListDom = document.querySelector('.chapter-list');
+        let chapterVideos = [
+          { 'chapter': '第一章', 'title': 'React Hooks 深入解析', 'duration': '20:30', 'view-count': 23005 },
+          { 'chapter': '第二章', 'title': '使用 useCallback 優化性能', 'duration': '10:05', 'view-count': 3005 },
+          { 'chapter': '第三章', 'title': '掌握 useMemo 的使用技巧', 'duration': '46:39', 'view-count': 220 },
+          { 'chapter': '第四章', 'title': 'React 狀態管理最佳實踐', 'duration': '25:00', 'view-count': 999 },
+          { 'chapter': '第五章', 'title': 'React 性能優化技巧', 'duration': '13:40', 'view-count': 10060 }];
 
+        chapterListRender(chapterListDom, chapterVideos);
       </script>
 </body>
 

@@ -1,5 +1,5 @@
 export function courseRender(courseCard, courseList) {
-  let str='';
+  let str = '';
 
   courseList.forEach(item => {
     str += `
@@ -30,4 +30,29 @@ export function courseRender(courseCard, courseList) {
     `
     courseCard.innerHTML = str;
   });
+}
+
+// 影片列表 chapter-list
+export function chapterListRender(dom, videos) {
+  let emptyStr = '';
+  videos.forEach(video => {
+    const { chapter, title, duration, viewCount } = video;
+    const chapterStr = `
+    <li class="p-4 d-flex justify-content-between chapter-item">
+      <span class="material-symbols-outlined player-icon me-2">play_circle</span>
+      <div class="flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between mb-1">
+          <span class="fs-7 chapter-contents">${chapter}</span>
+          <time class="video-duration fs-7 rounded-1 px-2 py-1">${duration}</time>
+        </div>
+        <h6 class="chapter-item-title mb-2">${title}</h6>
+        <div class="d-flex">
+          <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
+          <data class="chapter-view-count fs-7" value="${viewCount}">${viewCount}</data>
+        </div>
+      </div>
+    </li>`;
+    emptyStr += chapterStr;
+  })
+  dom.innerHTML = emptyStr;
 }

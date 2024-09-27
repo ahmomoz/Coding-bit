@@ -8,19 +8,19 @@ fs-6	16px
 fs-7	14px
 fs-8	12px
 
-  *-1	4px
-  *-2	8px
-  *-3	12px
-  *-4	16px
-  *-5	20px
-  *-6	24px
-  *-7	28px
-  *-8	32px
-  *-9	36px
-  *-10	40px
-  *-11	48px
-  *-12	64px
-  *-13	80px
+*-1	4px
+*-2	8px
+*-3	12px
+*-4	16px
+*-5	20px
+*-6	24px
+*-7	28px
+*-8	32px
+*-9	36px
+*-10	40px
+*-11	48px
+*-12	64px
+*-13	80px
 */
 
 .material-symbols-outlined.eyes-icon {
@@ -136,5 +136,42 @@ fs-8	12px
   .show-more-button {
     font-weight: 500;
     color: $brand-03;
+  }
+}
+
+.chapter-list {
+  .player-icon {
+    color: $brand-01;
+  }
+
+  .chapter-item {
+    border-bottom: 2px solid #F1EAFF
+  }
+
+  .chapter-contents {
+    color: $gray-02;
+    line-height: 1.2;
+  }
+
+  .video-duration {
+    color: $gray-04;
+    line-height: 1.2;
+    background-color: hsl(0, 0%, 12%, 30%);
+  }
+
+  .chapter-item-title {
+    color: $gray-01;
+    min-height: 39px;
+    font-weight: 500;
+  }
+
+  .eyes-icon {
+    color: $brand-01;
+    margin-right: .5px;
+  }
+
+  .chapter-view-count {
+    color: $brand-03;
+    line-height: 1.2;
   }
 }
