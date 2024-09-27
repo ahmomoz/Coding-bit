@@ -23,7 +23,7 @@
     <%- include('./layout/header'); -%>
     <main class="tutor-list">
       <!-- hero-section -->
-      <section class="hero-section wrap">
+      <section class="hero-section py-10">
         <div class="container">
           <div class="d-flex justify-content-evenly align-items-center">
             <div>
@@ -50,7 +50,7 @@
         </div>
       </section>
       <!-- service introduction -->
-      <section class="wrap">
+      <section class="service-intro py-10">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-6">
@@ -87,22 +87,50 @@
                 data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1000"
-                data-aos-delay="900"
+                data-aos-delay="800"
                 >還沒有訂閱嗎？點我前往訂閱</a
               >
             </div>
             <!-- image-->
             <div class="col-4">
-              <img src="../assets/images/deco/Illustration-9.png" alt="illustration" width="400" />
+              <img src="../assets/images/deco/Illustration-9.png" alt="illustration" width="400" class="mt-13" />
             </div>
           </div>
         </div>
       </section>
 
       <!-- Category -->
-      <!-- <section><%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %></section>
+      <section class="category bg-gray-04 py-13">
+        <div class="container">
+          <%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %>
+          <div class="d-flex flex-column align-items-center mt-8">
+            <div class="mb-4 f-center">
+              <span class="material-symbols-outlined bg-brand-02 p-2 rounded-circle me-2"> chevron_left </span>
+              <a href="#" class="btn btn-brand-03 me-2 border border-3 border-brand-03">全部</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">全部</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">HTML & CSS</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">JavaScript</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">WordPress</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">Python</a>
+            </div>
+            <div class="f-center">
+              <a href="#" class="btn btn-outline-brand-03 me-2">Vue</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">React</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">C++</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">Bootstrap</a>
+              <a href="#" class="btn btn-outline-brand-03 me-2">手機開發</a>
+              <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02"> chevron_right </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section id="tutor-list"><%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %></section> -->
+      <section id="tutor-list" class="py-13">
+        <div class="container">
+          <%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %>
+          <div class="mt-8"></div>
+        </div>
+      </section>
     </main>
 
     <%- include('./layout/footer'); -%>

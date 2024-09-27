@@ -1,11 +1,11 @@
-<li class="tutor-card col">
-  <div class="card p-lg-6 p-4">
+<li class="tutor-card col ">
+  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
     <div class="position-relative mb-lg-5 mb-4">
-      <div class="img-wrapper img-hover-enlarge rounded-2">
+      <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
         <img
           src="../assets/images/course/<%= image %>.png"
-          class="card-img-top rounded-2 object-fit-cover"
+          class="card-img-top cover-img rounded-2 object-fit-cover"
           alt="<%= image %>"
         />
       </div>
@@ -21,14 +21,18 @@
     </div>
     <div class="card-body p-0">
       <div class="mb-2 f-between-start">
-        <div>
-          <!-- dynamic tutor name -->
-          <h5 class="card-title fw-medium mb-1 text-gray-01 fs-lg-5 fs-6">
-            <%= name %>
-          </h5>
-          <!-- dynamic title-->
-          <p class="text-gray-02 fs-8"><%= title %></p>
-        </div>
+        <div class="f-center">
+           <!-- dynamic tutor profile -->
+          <img src="../assets/images/user/<%= tutorProfile %>" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
+          <div>
+            <!-- dynamic tutor name -->
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+              <%= name %>
+            </h5>
+            <!-- dynamic title-->
+            <p class="text-gray-02 fs-8"><%= title %></p>
+          </div>
+      </div>
         <p class="f-center text-brand-03">
           <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
             kid_star
@@ -45,7 +49,7 @@
         <% } %>
       </div>
 
-      <div class="mb-lg-6 mb-5">
+      <div class="mb-lg-6 mb-5 flex-grow-1">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
