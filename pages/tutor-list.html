@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
+    <title>Coding∞bit ｜ 可預約老師</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="tutor-list wrap">
+      <!-- hero-section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="f-center">
+            <div>
+              <div class="question-text-wrapper">
+                <h2 class="fs-1 mb-2 question-text text-brand-03"></h2>
+              </div>
+              <h2 class="fs-1 mb-5">找專業講師來場一對一課程</h2>
+              <a href="#tutor-list" class="w-50 fs-5 btn btn-brand-03 d-flex justify-content-center slide-down-hover mb-5">
+                我要找講師 <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+              </a>
+              <div class="d-flex align-items-center">
+                <img src="../assets/images/user/user-1.png" alt="tutor" class="object-cover-fit profile" />
+                <img src="../assets/images/user/user-5.png" alt="tutor" class="object-cover-fit profile" />
+                <img src="../assets/images/user/user-6.png" alt="tutor" class="object-cover-fit profile" />
+                <img src="../assets/images/user/user-7.png" alt="tutor" class="object-cover-fit profile" />
+                <img src="../assets/images/user/user-10.png" alt="tutor" class="object-cover-fit profile" />
+                <img src="../assets/images/user/user-8.png" alt="tutor" class="object-cover-fit profile" />
+                <img src="../assets/images/user/user-9.png" alt="tutor" class="object-cover-fit profile" />
+                <p class="profile">100+</p>
+              </div>
+            </div>
+            <img src="../assets/images/deco/star3D.png" alt="deco" style="transform: translate(50px, -80px)" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="f-center">
+            <div>
+              <!-- title -->
+              <div class="d-flex align-items-center">
+                <picture>
+                  <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
+                  <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" />
+                </picture>
+                <h2 class="fs-5 text-brand-03 ms-3 ms-lg-4">什麼是一對一教學&程式碼檢視服務？</h2>
+                <picture>
+                  <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
+                  <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" class="ms-3 ms-lg-4" />
+                </picture>
+              </div>
+              <!-- description -->
+              <p>只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
+              <div>一對一課程 → 不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</div>
+
+              程式碼檢視 → 預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。
+            </div>
+
+            <div>
+              <img src="../assets/images/deco/Illustration-2.png" alt="" />
+            </div>
+
+            <!-- image -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Category -->
+      <section><%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %></section>
+
+      <section id="tutor-list"><%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %></section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const questionText = document.querySelector(".question-text");
+      const textLoad = () => {
+        setTimeout(() => {
+          questionText.textContent = "程式卡關？";
+        }, 0);
+
+        setTimeout(() => {
+          questionText.textContent = "程式碼太冗長？";
+        }, 3000);
+
+        setTimeout(() => {
+          questionText.textContent = "想提升程式能力？";
+        }, 6000);
+      };
+
+      textLoad();
+      setInterval(textLoad, 9000);
+    </script>
+  </body>
+</html>

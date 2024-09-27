@@ -6,6 +6,16 @@
     transition: 0.3s;
   }
 }
+
+/* 下移 特效 */
+.slide-down-hover {
+  transition: 0.3s;
+  &:hover {
+    transform: translate(0px, 5px);
+    transition: 0.3s;
+  }
+}
+
 /* underline 特效 */
 .underline-hover {
   position: relative;
