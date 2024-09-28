@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-cfa407b4.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-38b8cef1.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-991c0d17.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-dd858ca4.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-d9cc992f.js">
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/add-to-favorite-092af0d2.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-d4809d2d.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -26,24 +27,13 @@
     <div class="d-flex">
       <a href="index.html" class="navbar-brand me-10">
         <picture>
-          <source
-            srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "
-            media="(max-width: 575.98px)">
-          <img
-            src="/Coding-bit/assets/logo-da4adea3.svg"
-            alt="logo-image">
+          <source srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg " media="(max-width: 575.98px)" />
+          <img src="/Coding-bit/assets/logo-da4adea3.svg" alt="logo-image" />
         </picture>
       </a>
       <div class="position-relative f-align-center d-none d-xl-flex">
-        <input
-          type="search"
-          class="form-control nav-search-desktop"
-          placeholder="搜尋感興趣的課程">
-        <span
-          class="material-symbols-outlined text-gray-03 position-absolute ps-4"
-          style="width: 20px; height: 20px;">
-          search
-        </span>
+        <input type="search" class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" />
+        <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
       </div>
     </div>
     <button
@@ -53,68 +43,32 @@
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span
-        id="menu-icon"
-        class="material-symbols-outlined icon-fill fs-4">
-        menu
-      </span>
-      <span
-        id="close-icon"
-        class="material-symbols-outlined icon-fill fs-4 d-none">
-        close
-      </span>
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span id="menu-icon" class="material-symbols-outlined icon-fill fs-4"> menu </span>
+      <span id="close-icon" class="material-symbols-outlined icon-fill fs-4 d-none"> close </span>
     </button>
-    <div
-      id="navbarSupportedContent"
-      class="collapse navbar-collapse justify-content-end">
+    <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
       <ul class="navbar-nav align-items-lg-center">
         <li class="position-relative f-align-center d-lg-none">
-          <input
-            type="search"
-            class="form-control nav-search-mobile"
-            placeholder="搜尋感興趣的課程">
-            <span
-              class="material-symbols-outlined text-gray-03 position-absolute ps-4"
-              style="width: 20px; height: 20px;">
-            search
-            </span>
+          <input type="search" class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" />
+          <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
         </li>
         <li class="nav-item mt-4 mt-lg-0">
-          <a
-            class="nav-link underline-hover d-inline-flex link-gray-02"
-            aria-current="page"
-            href="#">
-            精選課程
-          </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link underline-hover d-inline-flex link-gray-02"
-            href="tutor-booking.html">
-            一對一教學
-          </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link underline-hover d-inline-flex link-gray-02"
-            href="#">
-            課程客製化
-          </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="#"> 課程客製化 </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link underline-hover d-inline-flex link-gray-02"
-            href="#">
-            常見問題
-          </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="#"> 常見問題 </a>
         </li>
         <li class="nav-item nav-bottom-btn ms-lg-10">
           <a href="sign-up.html">
-            <button
-              class="btn btn-outline-brand-03 w-100">
-              登入 / 註冊
-            </button>
+            <button class="btn btn-outline-brand-03 w-100">登入 / 註冊</button>
           </a>
         </li>
       </ul>
@@ -123,35 +77,35 @@
 </nav>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.getElementById('menu-icon');
-  const closeIcon = document.getElementById('close-icon');
-  const toggler = document.getElementById('layout-navbar-toggler');
-  const layoutNavWrap = document.querySelector('.layout-nav-wrap');
-  const stickBottomWrap = document.querySelector('.sticky-bottom');
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.getElementById("menu-icon");
+    const closeIcon = document.getElementById("close-icon");
+    const toggler = document.getElementById("layout-navbar-toggler");
+    const layoutNavWrap = document.querySelector(".layout-nav-wrap");
+    const stickBottomWrap = document.querySelector(".sticky-bottom");
 
-  toggler.addEventListener('click', function() {
-    if (menuIcon.classList.contains('d-none')) {
-      menuIcon.classList.remove('d-none');
-      closeIcon.classList.add('d-none');
-      layoutNavWrap.classList.remove('bg-white');
-      layoutNavWrap.classList.add('bg-transparent');
+    toggler.addEventListener("click", function () {
+      if (menuIcon.classList.contains("d-none")) {
+        menuIcon.classList.remove("d-none");
+        closeIcon.classList.add("d-none");
+        layoutNavWrap.classList.remove("bg-white");
+        layoutNavWrap.classList.add("bg-transparent");
 
-      document.body.classList.remove('no-scroll');
-      stickBottomWrap.classList.remove('d-none');
+        document.body.classList.remove("no-scroll");
+        stickBottomWrap.classList.remove("d-none");
+      } else {
+        menuIcon.classList.add("d-none");
+        closeIcon.classList.remove("d-none");
+        layoutNavWrap.classList.remove("bg-transparent");
+        layoutNavWrap.classList.add("bg-white");
 
-    } else {
-      menuIcon.classList.add('d-none');
-      closeIcon.classList.remove('d-none');
-      layoutNavWrap.classList.remove('bg-transparent');
-      layoutNavWrap.classList.add('bg-white');
-
-      document.body.classList.add('no-scroll');
-      stickBottomWrap.classList.add('d-none');
-    }
+        document.body.classList.add("no-scroll");
+        stickBottomWrap.classList.add("d-none");
+      }
+    });
   });
-});
 </script>
+
     <div class="tutor-booking">
       <!-- Mobile Top Cover -->
       <div class="position-relative d-lg-none">
@@ -587,8 +541,9 @@ document.addEventListener('DOMContentLoaded', function() {
               <!-- desktop -->
               <ul class="row row-cols-lg-2 g-lg-4 d-none d-lg-flex">
                 <!-- tutor1 -->
-                <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -608,14 +563,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-5-cb87930d.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               平凡老師 - 李東霖
             </h5>
             <!-- dynamic title-->
@@ -632,7 +587,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 網站架設</a>
         
@@ -640,7 +595,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -648,7 +603,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -656,8 +611,9 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </li>
                 <!-- tutor2 -->
-                <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -677,14 +633,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-6-aff8550b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               米克老師
             </h5>
             <!-- dynamic title-->
@@ -701,7 +657,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">製作 RWD 網站</a>
         
@@ -709,7 +665,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -717,7 +673,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -725,8 +681,9 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </li>
                 <!-- tutor3 -->
-                <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -746,14 +703,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-7-b073bdd4.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               Pong Pong
             </h5>
             <!-- dynamic title-->
@@ -770,7 +727,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">Node.js</a>
         
@@ -782,7 +739,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -790,7 +747,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -798,8 +755,9 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </li>
                 <!-- tutor4 -->
-                <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -819,14 +777,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-10-89d26a7b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               Alan Lee
             </h5>
             <!-- dynamic title-->
@@ -843,7 +801,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">Unity</a>
         
@@ -853,7 +811,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -861,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -873,8 +831,9 @@ document.addEventListener('DOMContentLoaded', function() {
               <div class="swiper tutor-card-swiper d-block d-lg-none">
                 <div class="swiper-wrapper mb-10 py-5">
                   <div class="swiper-slide">
-                    <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                    <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -894,14 +853,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-5-cb87930d.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               平凡老師 - 李東霖
             </h5>
             <!-- dynamic title-->
@@ -918,7 +877,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress網站架設</a>
         
@@ -926,7 +885,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -934,7 +893,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -943,8 +902,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
                   </div>
                   <div class="swiper-slide">
-                    <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                    <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -964,14 +924,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-6-aff8550b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               米克老師
             </h5>
             <!-- dynamic title-->
@@ -988,7 +948,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">製作 RWD 網站</a>
         
@@ -996,7 +956,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -1004,7 +964,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -1013,8 +973,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
                   </div>
                   <div class="swiper-slide">
-                    <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                    <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -1034,14 +995,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-7-b073bdd4.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               Pong Pong
             </h5>
             <!-- dynamic title-->
@@ -1058,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">Python Flask 網站後端開發</a>
         
@@ -1070,7 +1031,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -1078,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
@@ -1087,8 +1048,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </li>
                   </div>
                   <div class="swiper-slide">
-                    <li class="tutor-card col ">
-  <div class="card p-lg-6 p-4 h-100 img-hover-enlarge">
+                    <li class="tutor-card col">
+  <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
     <div class="position-relative mb-lg-5 mb-4">
       <div class="img-wrapper rounded-2">
         <!-- dynamic image path -->
@@ -1108,14 +1070,14 @@ document.addEventListener('DOMContentLoaded', function() {
         favorite
       </span>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body p-0 d-flex flex-column">
       <div class="mb-2 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-10-89d26a7b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
           <div>
             <!-- dynamic tutor name -->
-            <h5 class="card-title fw-medium text-gray-01 fs-lg-5 fs-6 mb-1">
+            <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
               Alan Lee
             </h5>
             <!-- dynamic title-->
@@ -1132,7 +1094,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2">
+      <div class="mb-5 list-x-scroll py-2 mt-auto">
         
           <a href="#" class="tag tag-brand-02 fs-8 me-3">Unity</a>
         
@@ -1142,7 +1104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </div>
 
-      <div class="mb-lg-6 mb-5 flex-grow-1">
+      <div class="mb-lg-6 mb-5 mt-auto">
         <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
         <!-- dynamic price -->
         <h2 class="text-brand-03 fs-lg-2 fs-3">
@@ -1150,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h2>
       </div>
 
-      <a href="#" class="btn btn-brand-03 w-100 slide-right-hover"
+      <a href="tutor-booking.html" class="btn btn-brand-03 w-100 slide-right-hover"
         ><p class="f-center me-1">立即預約
         <span class="material-symbols-outlined"> arrow_forward </span></p></a>
 
