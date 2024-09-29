@@ -18,13 +18,13 @@
       type="image/x-icon"
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
-    <title>Coding∞bit ｜ 會員註冊</title>
+    <title>Coding∞bit ｜ 會員登入</title>
     <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-df07d523.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/user-auth-24526d3b.js"></script>
     <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-c5476966.css">
   </head>
   <body style="background-color: #c0c4df;">
-    <main class="sign-up-section bg">
+    <main class="login-section bg">
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <picture>
@@ -36,29 +36,19 @@
               alt="logo-image">
           </picture>
         </a>
-        <div class="row f-end-center mt-9 mt-lg-0">
+        <div class="row f-end-center mt-9 mt-lg-12">
           <div class="col-lg-6">
             <div class="user-auth-card card border-0 rounded-2">
               <div class="card-body px-6 py-10 p-lg-13">
-                <h1 class="fs-4 fs-lg-3 text-brand-03">立即加入 Coding∞bit</h1>
+                <h1 class="fs-4 fs-lg-3 text-brand-03">Coding∞bit 會員登入</h1>
                 <form class="mt-6 mt-lg-11">
                   <div class="position-relative">
-                    <input
-                      type="text"
-                      class="form-control underline-input"
-                      id="addUsername"
-                      placeholder="請輸入您的暱稱">
-                      <span class="material-symbols-outlined position-absolute top-0 text-gray-03 ms-1 mt-1">
-                        person
-                      </span>
-                  </div>
-                  <div class="position-relative mt-9">
                     <input
                       type="email"
                       class="form-control underline-input"
                       id="addEmail"
                       aria-describedby="emailHelp"
-                      placeholder="請輸入您的電子信箱">
+                      placeholder="請輸入電子信箱">
                       <span class="material-symbols-outlined position-absolute top-0 text-gray-03 ms-1 mt-1">
                         mail
                       </span>
@@ -68,7 +58,7 @@
                       type="password"
                       class="form-control underline-input"
                       id="addPassword"
-                      placeholder="請輸入您的密碼">
+                      placeholder="請輸入密碼">
                       <span class="material-symbols-outlined position-absolute top-0 text-gray-03 ms-1 mt-1">
                         lock
                       </span>
@@ -78,26 +68,20 @@
                         </span>
                       </a>
                   </div>
-                  <div class="position-relative mt-9">
-                    <input
-                      type="password"
-                      class="form-control underline-input"
-                      id="addPasswordAgain"
-                      placeholder="請再次輸入您的密碼">
-                      <span class="material-symbols-outlined position-absolute top-0 text-gray-03 ms-1 mt-1">
-                        lock
-                      </span>
-                      <a href="#">
-                        <span class="material-symbols-outlined position-absolute top-0 end-0 text-gray-03 ms-1 mt-1">
-                          visibility_off
-                        </span>
-                      </a>
+                  <div class="f-between-center mt-9">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        記住帳號
+                      </label>
+                    </div>
+                    <a href="forgot-password.html" class="link-brand-03 fw-medium underline-hover link-hover">忘記密碼</a>
                   </div>
                   <button
                     type="button"
-                    class="btn btn-brand-03 rounded-2 slide-right-hover w-100 f-center mt-6 mt-lg-10"
-                    id="signUpBtn">
-                    註冊帳號
+                    class="btn btn-brand-03 rounded-2 slide-right-hover w-100 f-center mt-4 mt-lg-6"
+                    id="loginBtn">
+                    立即登入
                     <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
                       arrow_forward
                     </span>
@@ -110,11 +94,11 @@
                 </div>
                 <button type="button" class="btn btn-brand-02 border-1 rounded-1 w-100 f-center mt-6 mt--lg-8">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="icon-google" class="me-3">
-                  使用 Google 註冊
+                  使用 Google 登入
                 </button>
                 <div class="f-end-center mt-6 mt-lg-8">
-                  <p class="text-center">已經是會員了？</p>
-                  <a href="login.html" class="link-brand-03 fw-medium underline-hover ms-1">點此登入</a>
+                  <p class="text-center">還不是會員？</p>
+                  <a href="login.html" class="link-brand-03 fw-medium underline-hover ms-1">點此註冊</a>
                 </div>
               </div>
             </div>
