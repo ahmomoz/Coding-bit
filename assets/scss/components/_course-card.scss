@@ -1,0 +1,12 @@
+.course-card-wrap {
+  @include pad {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
