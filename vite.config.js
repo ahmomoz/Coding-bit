@@ -34,6 +34,7 @@ export default defineConfig({
   server: {
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
+    host: '0.0.0.0',
   },
   build: {
     rollupOptions: {
@@ -43,7 +44,7 @@ export default defineConfig({
           .map((file) => [
             path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
             fileURLToPath(new URL(file, import.meta.url)),
-          ])
+          ]),
       ),
     },
     outDir: 'dist',

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
+    <title>Coding∞bit ｜ 課程需求一覽表</title>
+  </head>
+  <body class="bg-custom-course">
+    <!-- header -->
+    <header class="header-custom-course bg-white shadow-sm">
+      <div class="container">
+        <nav class="py-3">
+          <div
+            class="d-flex flex-column flex-lg-row align-items-lg-center flex-wrap position-relative pe-lg-10 row-gap-4"
+          >
+            <!-- 導覽&搜尋框 -->
+            <div class="d-flex align-items-center">
+              <div class="navigationArrows d-none d-lg-flex">
+                <div class="circle left-btn">
+                  <span class="material-symbols-outlined icon-fill">arrow_back</span>
+                </div>
+                <div class="circle right-btn">
+                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                </div>
+              </div>
+              <div class="searchInput pe-10">
+                <input
+                  type="search"
+                  name="courseSearch"
+                  class="form-control search-course border-1 border-gray-03"
+                  placeholder="搜尋課程需求"
+                />
+              </div>
+            </div>
+            <!-- 篩選器 -->
+            <div class="d-flex column-gap-4 pe-6 order-lg-1 order-2 ms-lg-auto">
+              <button class="btn status-btn text-brand-03 f-align-center">
+                <span class="material-symbols-outlined icon">radio_button_unchecked</span>
+                <span>已完成</span>
+              </button>
+              <button class="btn status-btn text-brand-03 f-align-center">
+                <span class="material-symbols-outlined icon icon-fill">check_circle</span>
+                <span>已回應</span>
+              </button>
+            </div>
+            <!-- 下拉霸 -->
+            <div class="d-flex column-gap-4 pe-lg-6 order-lg-2 order-1">
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-brand-03 dropdown-toggle"
+                  type="button"
+                  id="sortDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  排序方式
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                  <li><a class="dropdown-item" href="#">遞增</a></li>
+                  <li><a class="dropdown-item" href="#">遞減</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-brand-03 dropdown-toggle"
+                  type="button"
+                  id="formatDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HTML
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="formatDropdown">
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 回首頁 -->
+            <button class="position-absolute border-0 end-0 top-0 btn p-2">
+              <a href="index.html">
+                <span class="material-symbols-outlined icon-fill" style="width: 28px; height: 28px"> close </span>
+              </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- wishpool -->
+      <section class="custom-course-wishpool">
+        <div class="wishpool-container">
+          <div class="cards-container">
+            <!-- 卡片將由 JavaScript 動態生成 -->
+          </div>
+          <div class="timeline-container">
+            <!-- 時間點將由 JavaScript 動態生成 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="time-line mt-auto">
+        <div class="f-between">
+          <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月1日</span>
+        <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月2日</span>
+        <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月3日</span>
+        <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月4日</span>
+        </div>
+        <div class="bg-brand-01" style="height: 8px"></div>
+      </section> -->
+    </main>
+
+    <!-- footer-learning-needs -->
+    <footer class="footer-learning-needs">
+      <div class="container">
+        <div class="banner">
+          <div class="banner-text">
+            <h1 class="title display-1">學習，<br />不再受侷限。</h1>
+            <p class="subtitle text-brand-03">大膽提出你的學習需求</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <button class="add-button" aria-label="提學習需求">
+              <span class="add-icon material-symbols-outlined icon-fill"> add </span>
+            </button>
+            <span class="fs-md-5 fs-6 text-gray-02 d-block mt-2">提學習需求</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // 卡片數據
+      const cardData = [
+        {
+          category: 'CSS',
+          responseCount: 15,
+          title: 'CSS 毛玻璃製作效果',
+          content: '想知道CSS 毛玻璃效果如何製作，因為這種效果在網頁設計中真的非常吸引人。無論是讓背景模糊，...',
+          date: '2024-10-01 09:15',
+        },
+        {
+          category: 'SCSS',
+          responseCount: 8,
+          title: 'SCSS 7+1設計模式',
+          content: '我想要瞭解一下關於 SCSS 7+1 設計模式的詳細文章，想瞭解這個模式如何幫助我組織大型專案的樣式...',
+          date: '2024-10-01 14:30',
+        },
+        {
+          category: 'JS',
+          responseCount: 12,
+          title: '表格渲染錯誤',
+          content: '網站中有張表格渲染錯誤，這張表是個基礎表格但是在渲染時卻出現了一些非預期的樣式問題，想知道...',
+          date: '2024-10-02 11:45',
+        },
+        {
+          category: 'CSS',
+          responseCount: 20,
+          title: 'clip-path繪製不規則圖形',
+          content: '對使用 clip-path 繪製不規則圖形有興趣，但不太理解如何操作，想要瞭解一下 clip-path 可以實現...',
+          date: '2024-10-02 16:20',
+        },
+        {
+          category: 'API',
+          responseCount: 5,
+          title: 'API 疑問',
+          content: '全新的 API 接案未完全搞清楚，但在實際操作中遇到了一些參數值部分的問題，比如 API 返回...',
+          date: '2024-10-03 10:05',
+        },
+        {
+          category: 'React',
+          responseCount: 18,
+          title: 'React Hooks 使用技巧',
+          content: '想深入了解 React Hooks 的進階使用技巧，特別是在複雜組件中如何有效管理狀態和副作用...',
+          date: '2024-10-03 13:40',
+        },
+        {
+          category: 'TypeScript',
+          responseCount: 10,
+          title: 'TypeScript 高級類型技巧',
+          content:
+            '想深入學習 TypeScript 的高級類型，如條件類型、映射類型等，以提高代碼的類型安全性和可讀性。同時也希望了解泛型在實際項目中的最佳實踐...',
+          date: '2024-10-03 17:55',
+        },
+        {
+          category: 'Performance',
+          responseCount: 22,
+          title: 'Web 應用性能優化與監控',
+          content:
+            '尋求有效的前端性能優化策略，包括如何減少頁面加載時間、優化資源請求，以及提升整體用戶體驗。同時也想了解如何有效地監控性能並進行針對性優化...',
+          date: '2024-10-04 09:30',
+        },
+        {
+          category: 'Accessibility',
+          responseCount: 7,
+          title: 'Web 無障礙設計與ARIA實踐',
+          content:
+            '想了解更多關於 Web 無障礙設計的最佳實踐，如何確保網站對所有用戶都是可訪問的，包括使用輔助技術的用戶。特別關注ARIA屬性的應用，以提高Web應用的可訪問性...',
+          date: '2024-10-04 12:10',
+        },
+        {
+          category: 'GraphQL',
+          responseCount: 14,
+          title: 'GraphQL 應用與優化',
+          content:
+            '在選擇 API 架構時對比 GraphQL 和 RESTful API，想了解它們各自的優缺點以及適用場景。同時也希望了解一些 GraphQL 查詢性能優化的技巧和最佳實踐...',
+          date: '2024-10-04 15:25',
+        },
+      ];
+
+      // 工具函數
+      const utils = {
+        formatDate(date) {
+          return `${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${date
+            .getMinutes()
+            .toString()
+            .padStart(2, '0')}`;
+        },
+        formatOnlyDate(date) {
+          // 僅格式化日期
+          return `${date.getMonth() + 1}月${date.getDate()}日`;
+        },
+        formatOnlyTime(date) {
+          // 僅格式化時間
+          return `${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`;
+        },
+        debounce(func, wait) {
+          let timeout;
+          return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+          };
+        },
+      };
+
+      // 卡片相關功能
+      const cardManager = {
+        createCardHTML(card) {
+          return `
+      <div class="card-wrapper" data-date="${card.date}">
+        <div class="card-back">
+          <span class="category">${card.category}</span>
+          <div class="response-count">
+            <span class="material-symbols-outlined">comment</span>
+            <span>${card.responseCount}</span>
+          </div>
+        </div>
+        <div class="card-front">
+          <div class="card-content">
+            <div class="card-title">
+              <span class="material-symbols-outlined icon-fill text-brand-03">check_circle</span>
+              <h2>${card.title}</h2>
+            </div>
+            <p>${card.content}</p>
+          </div>
+        </div>
+      </div>
+    `;
+        },
+        renderCards() {
+          const cardsContainer = document.querySelector('.cards-container');
+          cardsContainer.innerHTML = ''; // 清空容器
+
+          if (window.innerWidth <= 576) {
+            // 移動版：單欄
+            cardData.forEach((card) => {
+              const cardElement = document.createElement('div');
+              cardElement.innerHTML = this.createCardHTML(card);
+              cardsContainer.appendChild(cardElement.firstElementChild);
+            });
+          } else {
+            // 桌機版：雙列
+            const row1 = document.createElement('div');
+            const row2 = document.createElement('div');
+            row1.className = 'card_row';
+            row2.className = 'card_row';
+
+            cardData.forEach((card, index) => {
+              const cardElement = document.createElement('div');
+              cardElement.innerHTML = this.createCardHTML(card);
+              const cardWrapper = cardElement.querySelector('.card-wrapper');
+
+              if (index % 2 === 0) {
+                row1.appendChild(cardWrapper);
+              } else {
+                row2.appendChild(cardWrapper);
+              }
+            });
+
+            cardsContainer.appendChild(row1);
+            cardsContainer.appendChild(row2);
+          }
+        },
+      };
+
+      // 時間軸相關功能
+      const timelineManager = {
+        generateTimeline() {
+          const timelineContainer = document.querySelector('.timeline-container');
+          timelineContainer.innerHTML = '';
+
+          const cards = document.querySelectorAll('.card-wrapper');
+
+          if (window.innerWidth <= 576) {
+            // 移動版：垂直時間軸
+            // cards.forEach((card) => {
+            //   const timelinePoint = document.createElement('div');
+            //   timelinePoint.className = 'timeline-point';
+            //   timelinePoint.textContent = utils.formatDate(new Date(card.dataset.date));
+            //   card.appendChild(timelinePoint);
+            // });
+            cards.forEach((card) => {
+              const timelinePoint = document.createElement('div');
+              timelinePoint.className = 'timeline-point';
+
+              const dateObj = new Date(card.dataset.date);
+
+              // 使用新函數來格式化日期
+              const dateElement = document.createElement('span');
+              dateElement.className = 'date';
+              dateElement.textContent = utils.formatOnlyDate(dateObj); // 只顯示日期
+
+              // 使用新函數來格式化時間
+              const timeElement = document.createElement('span');
+              timeElement.className = 'time';
+              timeElement.textContent = utils.formatOnlyTime(dateObj); // 只顯示時間
+
+              // 將日期和時間元素加入到 timelinePoint
+              timelinePoint.appendChild(dateElement);
+              timelinePoint.appendChild(timeElement);
+
+              card.appendChild(timelinePoint);
+            });
+          } else {
+            // 桌面版：水平時間軸
+            cards.forEach((card) => {
+              const timelinePoint = document.createElement('div');
+              timelinePoint.className = 'timeline-point';
+
+              // 計算卡片相對於容器的左偏移
+              const offsetLeft = card.offsetLeft;
+
+              timelinePoint.style.left = `${offsetLeft}px`;
+              timelinePoint.textContent = utils.formatDate(new Date(card.dataset.date));
+              timelineContainer.appendChild(timelinePoint);
+            });
+          }
+        },
+      };
+
+      // 滾動相關功能
+      const scrollManager = {
+        addScrollButtons() {
+          const wishpool = document.querySelector('.wishpool-container');
+          const leftButton = document.querySelector('.left-btn');
+          const rightButton = document.querySelector('.right-btn');
+
+          leftButton.onclick = () => wishpool.scrollBy({ left: -200, behavior: 'smooth' });
+          rightButton.onclick = () => wishpool.scrollBy({ left: 200, behavior: 'smooth' });
+        },
+        addScrollFunctionality() {
+          const wishpool = document.querySelector('.wishpool-container');
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+
+          wishpool.addEventListener('wheel', (e) => {
+            if (window.innerWidth > 576) {
+              e.preventDefault();
+              wishpool.scrollLeft += e.deltaY;
+            }
+          });
+
+          wishpool.addEventListener('mousedown', (e) => {
+            isDown = true;
+            wishpool.style.cursor = 'grabbing';
+            startX = e.pageX - wishpool.offsetLeft;
+            scrollLeft = wishpool.scrollLeft;
+          });
+
+          wishpool.addEventListener('mouseleave', () => {
+            isDown = false;
+            wishpool.style.cursor = 'grab';
+          });
+
+          wishpool.addEventListener('mouseup', () => {
+            isDown = false;
+            wishpool.style.cursor = 'grab';
+          });
+
+          wishpool.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - wishpool.offsetLeft;
+            const walk = (x - startX) * 2;
+            wishpool.scrollLeft = scrollLeft - walk;
+          });
+        },
+        updateScrollButtonVisibility() {
+          const wishpool = document.querySelector('.wishpool-container');
+          const leftButton = document.querySelector('.left-btn');
+          const rightButton = document.querySelector('.right-btn');
+
+          if (window.innerWidth <= 576) {
+            leftButton.style.display = 'none';
+            rightButton.style.display = 'none';
+          } else {
+            leftButton.style.display = '';
+            rightButton.style.display = '';
+
+            // 檢查是否需要顯示滾動按鈕
+            const canScrollLeft = wishpool.scrollLeft > 0;
+            const canScrollRight = wishpool.scrollLeft < wishpool.scrollWidth - wishpool.clientWidth;
+
+            // leftButton.style.visibility = canScrollLeft ? 'visible' : 'hidden';
+            // rightButton.style.visibility = canScrollRight ? 'visible' : 'hidden';
+          }
+        },
+      };
+
+      function adjustMainContentPadding() {
+        const header = document.querySelector('.header-custom-course');
+        const footer = document.querySelector('.footer-learning-needs');
+        const mainContent = document.querySelector('.main-content');
+
+        const headerHeight = header ? header.offsetHeight : 0;
+        const footerHeight = footer ? footer.offsetHeight : 0;
+
+        mainContent.style.paddingTop = headerHeight + 'px';
+        mainContent.style.paddingBottom = footerHeight + 'px';
+      }
+
+      function applyRandomPositioning() {
+        if (window.innerWidth <= 576) return; // 只在桌機版本應用
+
+        const cards = document.querySelectorAll('.card-wrapper');
+        const maxOffset = 20; // 最大偏移量（像素）
+
+        cards.forEach((card) => {
+          const randomX = (Math.random() - 0.5) * 2 * maxOffset; // -50px 到 50px 之間
+          const randomY = (Math.random() - 0.5) * 2 * maxOffset; // -50px 到 50px 之間
+
+          card.style.position = 'relative';
+          card.style.left = `${randomX}px`;
+          card.style.top = `${randomY}px`;
+          card.style.transition = 'all 0.5s ease';
+        });
+      }
+
+      // 在卡片渲染後應用隨機定位
+      function initRandomPositioning() {
+        cardManager.renderCards();
+        setTimeout(applyRandomPositioning, 100); // 給予一點時間讓卡片渲染完成
+      }
+
+      // 初始化函數
+      function initWishpool() {
+        adjustMainContentPadding();
+        initRandomPositioning();
+        cardManager.renderCards();
+        timelineManager.generateTimeline();
+        scrollManager.addScrollButtons();
+        scrollManager.addScrollFunctionality();
+        scrollManager.updateScrollButtonVisibility();
+
+        // 監聽滾動事件以更新按鈕可見性
+        document
+          .querySelector('.wishpool-container')
+          .addEventListener('scroll', scrollManager.updateScrollButtonVisibility);
+      }
+
+      // 使用 debounce 函數優化視窗大小改變時的重新渲染
+      window.addEventListener(
+        'resize',
+        utils.debounce(() => {
+          // cardManager.renderCards();
+          initRandomPositioning();
+          timelineManager.generateTimeline();
+          scrollManager.updateScrollButtonVisibility();
+          adjustMainContentPadding();
+        }, 250),
+      );
+
+      // 事件監聽器
+      document.addEventListener('DOMContentLoaded', initWishpool);
+
+      // 狀態按鈕功能
+      document.querySelectorAll('.status-btn').forEach((button) => {
+        button.addEventListener('click', function () {
+          const icon = this.querySelector('.material-symbols-outlined');
+          if (icon.textContent === 'radio_button_unchecked') {
+            icon.textContent = 'check_circle';
+            icon.classList.add('icon-fill');
+          } else {
+            icon.textContent = 'radio_button_unchecked';
+            icon.classList.remove('icon-fill');
+          }
+        });
+      });
+    </script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
