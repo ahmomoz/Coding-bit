@@ -19,8 +19,8 @@
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
     <title>Coding∞bit ｜ 訂閱方案付款完成</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-df07d523.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-c5476966.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-a74f9b85.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-13366c82.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -34,7 +34,9 @@
       </a>
       <div class="position-relative f-align-center d-none d-xl-flex">
         <input type="search" class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" />
-        <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
+        <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+          search
+        </span>
       </div>
     </div>
     <button
@@ -45,7 +47,8 @@
       data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
-      aria-label="Toggle navigation">
+      aria-label="Toggle navigation"
+    >
       <span id="menu-icon" class="material-symbols-outlined icon-fill fs-4"> menu </span>
       <span id="close-icon" class="material-symbols-outlined icon-fill fs-4 d-none"> close </span>
     </button>
@@ -53,7 +56,9 @@
       <ul class="navbar-nav align-items-lg-center">
         <li class="position-relative f-align-center d-lg-none">
           <input type="search" class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" />
-          <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
+          <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+            search
+          </span>
         </li>
         <li class="nav-item mt-4 mt-lg-0">
           <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
@@ -62,7 +67,7 @@
           <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="#"> 課程客製化 </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html"> 課程客製化 </a>
         </li>
         <li class="nav-item">
           <a class="nav-link underline-hover d-inline-flex link-gray-02" href="#"> 常見問題 </a>
@@ -78,30 +83,30 @@
 </nav>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.getElementById("menu-icon");
-    const closeIcon = document.getElementById("close-icon");
-    const toggler = document.getElementById("layout-navbar-toggler");
-    const layoutNavWrap = document.querySelector(".layout-nav-wrap");
-    const stickBottomWrap = document.querySelector(".sticky-bottom");
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+    const stickBottomWrap = document.querySelector('.sticky-bottom');
 
-    toggler.addEventListener("click", function () {
-      if (menuIcon.classList.contains("d-none")) {
-        menuIcon.classList.remove("d-none");
-        closeIcon.classList.add("d-none");
-        layoutNavWrap.classList.remove("bg-white");
-        layoutNavWrap.classList.add("bg-transparent");
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
 
-        document.body.classList.remove("no-scroll");
-        stickBottomWrap.classList.remove("d-none");
+        document.body.classList.remove('no-scroll');
+        stickBottomWrap.classList.remove('d-none');
       } else {
-        menuIcon.classList.add("d-none");
-        closeIcon.classList.remove("d-none");
-        layoutNavWrap.classList.remove("bg-transparent");
-        layoutNavWrap.classList.add("bg-white");
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
 
-        document.body.classList.add("no-scroll");
-        stickBottomWrap.classList.add("d-none");
+        document.body.classList.add('no-scroll');
+        stickBottomWrap.classList.add('d-none');
       }
     });
   });
