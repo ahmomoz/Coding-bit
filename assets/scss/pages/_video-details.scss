@@ -110,14 +110,60 @@ fs-8	12px
     color: $brand-03;
   }
 
-  .video-description {
-    border-bottom: 1px solid $brand-03;
-  }
-
   .video-comments {
     color: $gray-03;
   }
 }
+
+.tab-content {
+  .user-comment-picture {
+    display: block;
+    width: 40px;
+    border-radius: 88px;
+  }
+
+  .user-comment {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $gray-03;
+
+    &::placeholder {
+      color: $gray-03;
+    }
+  }
+}
+
+.history-commemts {
+
+  .user-content {
+    .user-image {
+      width: 40px;
+      border-radius: 88px;
+    }
+
+    .user-name {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: $gray-01;
+    }
+
+    .comment-time {
+      font-weight: 400;
+      line-height: 1.2;
+      font-size: 14px;
+      color: $gray-03;
+    }
+  }
+
+  .reply {
+    .reply-style {
+
+    }
+  }
+}
+
+
 
 // aside
 .aside-border {

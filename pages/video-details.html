@@ -18,12 +18,10 @@
     <main class="video-details container py-13">
       <div class="row">
         <section class="col-8">
-          <iframe class="mb-6 video-show" width="840" height="508"
-            src="https://www.youtube.com/embed/-eg-fRDWNFg?si=pJqMRO_HEFapgzeQ" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
+          <video class="mb-6 video-show"
+            src="https://firebasestorage.googleapis.com/v0/b/video-test-d54b2.appspot.com/o/recording-2024-07-06-15-34-42.mp4?alt=media&amp;token=11ca4ab0-8256-4b97-afd9-7fada0a30879"
+            controls="">
+          </video>
           <h2 class="fs-2 mb-4 video-title">React 進階開發技巧</h2>
           <div class="d-flex mb-6">
             <div class="d-flex">
@@ -65,27 +63,6 @@
               </li>
             </ul>
           </div>
-          <div class="author-content d-flex mb-10">
-            <img class="author-image rounded-5 me-4" src="/assets/images/user/user-1.png" alt="作者">
-            <div>
-              <h6 class="author-name mb-2">卡斯伯Casper</h6>
-              <span class="author-info">10年經驗的前端工程師</span>
-            </div>
-          </div>
-          <div>
-            <nav class="mb-6">
-              <div class="nav-tabs d-flex">
-                <h6 class="video-description">影片簡介</h6>
-                <h6 class="video-comments">留言討論區</h6>
-              </div>
-            </nav>
-            <div class="video-description-list">
-              <%- include('./layout/video-description'); -%>
-            </div>
-            <div class="comments-section">
-              <%- include('./layout/video-comments'); -%>
-            </div>
-          </div>
         </section>
         <aside class="col-4 rounded-4 aside-border">
           <div class="chapter-video d-flex justify-content-between align-items-center">
@@ -97,7 +74,88 @@
           </div>
           <ul class="chapter-list"></ul>
         </aside>
-      </div>
+        <div class="author-content d-flex mb-10">
+          <img class="author-image rounded-5 me-4" src="/assets/images/user/user-1.png" alt="作者">
+          <div>
+            <h6 class="author-name mb-2">卡斯伯Casper</h6>
+            <span class="author-info">10年經驗的前端工程師</span>
+          </div>
+        </div>
+        <div>
+          <nav class="mb-6">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <h6 class="nav-link active video-description" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                  role="tab" aria-controls="home" aria-selected="true">影片簡介</h6>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h6 class="nav-link video-comments" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                  role="tab" aria-controls="profile" aria-selected="false">留言討論區</h6>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <ul class="ps-5 pt-6">
+                  <li class="video-description-item mb-2">掌握 React Hooks 的進階用法</li>
+                  <li class="video-description-item mb-2">了解 React 性能優化技巧</li>
+                  <li class="video-description-item mb-2">學習 React 狀態管理最佳實踐</li>
+                  <li class="video-description-item">探索 React 生態系統中的常用工具</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <section class="video-comments pt-6">
+                  <div class="d-flex py-4 mb-6">
+                    <img class="user-comment-picture me-3" src="../assets/images/user/user-2.png" alt="">
+                    <input type="text" placeholder="發表留言" name="user-comment" id="user-comment"
+                      class="w-100 user-comment py-2">
+                  </div>
+                  <ul class="history-commemts">
+                    <li>
+
+                      <div class="user-content d-flex mb-3">
+                        <img class="user-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                        <div class="d-flex flex-column">
+                          <span class="user-name mb-2">張小明</span>
+                          <time class="comment-time">2024-08-07 10:30</time>
+                        </div>
+                      </div>
+                      <div class="reply">
+                        <p class="reply-style fs-6">這個課程解釋得很清楚!特別是關於Hooks的部分,讓我對useEffect和useCallback有了更深入的理解。講師的代碼示例也很實用,我已經開始在自己的項目中運用了。</p>
+                        
+                        <!--  -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Accordion Item #1
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                          </div>
+                          <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Accordion Item #2
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                          </div> -->
+                        </div>
+
+                        <!--  -->
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+
+            </div>
+          </nav>
+        </div>
     </main>
     <%- include('./layout/footer'); -%>
 
