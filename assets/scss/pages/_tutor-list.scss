@@ -1,5 +1,6 @@
 .tutor-list {
   .hero-section {
+    overflow-x: hidden;
     .star-deco {
       width: 450px;
       @include lg-pc {
