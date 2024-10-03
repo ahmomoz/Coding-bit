@@ -65,14 +65,37 @@
           </div>
         </section>
         <aside class="col-4 rounded-4 aside-border">
-          <div class="chapter-video d-flex justify-content-between align-items-center">
-            <h5 class="chapter-video-title">章節影片</h5>
-            <div class="d-flex align-items-center show-more-button">
-              <span class="me-1">更多</span>
-              <span class="material-symbols-outlined">arrow_forward</span>
+          <div>
+            <div class="chapter-video d-flex justify-content-between align-items-center">
+              <h5 class="chapter-video-title">章節影片</h5>
+              <div class="d-flex align-items-center show-more-button">
+                <span class="me-1">更多</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
             </div>
+            <ul class="chapter-list"></ul>
           </div>
-          <ul class="chapter-list"></ul>
+          <div>
+            <div class="other-videos d-flex justify-content-between align-items-center">
+              <h5 class="teacher-other-video">講師其他影片</h5>
+              <div class="d-flex align-items-center show-more-button">
+                <span class="me-1">更多</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
+            </div>
+            <ul class="other-videos-list">
+              <li class="d-flex py-3 px-6">
+                <img class="rounded-2 me-4 other-video-image" src="../assets/images/course/course-2.png" alt="影片縮圖">
+                <div class="d-flex flex-column justify-content-between py-2">
+                  <h6 class="fs-6 other-video-title">Vue.js 3.0 新特性解析</h6>
+                  <div class="d-flex align-items-center me-6">
+                    <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+                    <data value="12345" class="data-view-count fs-7">12,345</data>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </aside>
         <div class="author-content d-flex mb-10">
           <img class="author-image rounded-5 me-4" src="/assets/images/user/user-1.png" alt="作者">
@@ -132,7 +155,7 @@
                               </span>
                             </div>
                             <div id="flush-collapseOne" class="accordion-collapse collapse rounded-2"
-                              aria-labelledby="flush-headingOne" >
+                              aria-labelledby="flush-headingOne">
                               <div class="accordion-body">
                                 <div class="teacher-content">
                                   <div class="d-flex mb-3">
@@ -172,7 +195,7 @@
                               </span>
                             </div>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse rounded-2"
-                              aria-labelledby="flush-headingTwo" >
+                              aria-labelledby="flush-headingTwo">
                               <div class="accordion-body">
                                 <div class="teacher-content">
                                   <div class="d-flex mb-3">
@@ -191,7 +214,8 @@
                                     5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
                                     <br>
                                     一般來說,我的建議是:從Context<br>
-                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。</p>
+                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -220,7 +244,7 @@
                               </span>
                             </div>
                             <div id="flush-collapseThree" class="accordion-collapse collapse rounded-2"
-                              aria-labelledby="flush-headingThree" >
+                              aria-labelledby="flush-headingThree">
                               <div class="accordion-body">
                                 <div class="teacher-content">
                                   <div class="d-flex mb-3">
@@ -239,7 +263,8 @@
                                     5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
                                     <br>
                                     一般來說,我的建議是:從Context<br>
-                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。</p>
+                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -268,7 +293,7 @@
                               </span>
                             </div>
                             <div id="flush-collapseFour" class="accordion-collapse collapse rounded-2"
-                              aria-labelledby="flush-headingFour" >
+                              aria-labelledby="flush-headingFour">
                               <div class="accordion-body">
                                 <div class="teacher-content">
                                   <div class="d-flex mb-3">
@@ -287,7 +312,8 @@
                                     5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
                                     <br>
                                     一般來說,我的建議是:從Context<br>
-                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。</p>
+                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -298,7 +324,6 @@
                   </ul>
                 </section>
               </div>
-
             </div>
           </nav>
         </div>
@@ -310,12 +335,24 @@
         // videoListRender
         import { chapterListRender } from '../assets/js/courses.js';
         const chapterListDom = document.querySelector('.chapter-list');
+        const otherVideosDom = document.querySelector('.other-videos-list');
+
         let chapterVideos = [
           { 'chapter': '第一章', 'title': 'React Hooks 深入解析', 'duration': '20:30', 'view-count': 23005 },
           { 'chapter': '第二章', 'title': '使用 useCallback 優化性能', 'duration': '10:05', 'view-count': 3005 },
           { 'chapter': '第三章', 'title': '掌握 useMemo 的使用技巧', 'duration': '46:39', 'view-count': 220 },
           { 'chapter': '第四章', 'title': 'React 狀態管理最佳實踐', 'duration': '25:00', 'view-count': 999 },
           { 'chapter': '第五章', 'title': 'React 性能優化技巧', 'duration': '13:40', 'view-count': 10060 }];
+
+        let otherVideos = [
+          { 'title': 'Vue.js 3.0 新特性解析', 'duration': '20:30', 'view-count': 23005 },
+          { 'title': '前端框架對比:React vs Vue vs Angular', 'duration': '10:05', 'view-count': 3005 },
+          { 'title': 'GraphQL 入門到精通', 'duration': '46:39', 'view-count': 220 },
+          { 'title': 'Node.js 性能調優秘笈', 'duration': '25:00', 'view-count': 999 },
+          { 'title': 'TypeScript 高級技巧與實戰', 'duration': '13:40', 'view-count': 10060 }];
+
+
+
 
         chapterListRender(chapterListDom, chapterVideos);
       </script>

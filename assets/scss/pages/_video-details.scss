@@ -254,3 +254,64 @@ fs-8	12px
     line-height: 1.2;
   }
 }
+
+
+// 
+
+.other-videos {
+  padding: 34px 24px 22px;
+
+  .teacher-other-video {
+    font-weight: 500;
+    color: $gray-01;
+  }
+
+  .show-more-button {
+    font-weight: 500;
+    color: $brand-03;
+  }
+}
+
+.other-videos-list {
+  .other-video-image{
+    max-width: 136px;
+  }
+  .other-video-title{
+    font-weight: 500;
+    color: $gray-01;
+  }
+  //   .player-icon {
+  //     color: $brand-01;
+  //   }
+
+  //   .chapter-item {
+  //     border-bottom: 2px solid #F1EAFF
+  //   }
+
+  //   .chapter-contents {
+  //     color: $gray-02;
+  //     line-height: 1.2;
+  //   }
+
+  //   .video-duration {
+  //     color: $gray-04;
+  //     line-height: 1.2;
+  //     background-color: hsl(0, 0%, 12%, 30%);
+  //   }
+
+  //   .chapter-item-title {
+  //     color: $gray-01;
+  //     min-height: 39px;
+  //     font-weight: 500;
+  //   }
+
+  //   .eyes-icon {
+  //     color: $brand-01;
+  //     margin-right: .5px;
+  //   }
+
+  //   .chapter-view-count {
+  //     color: $brand-03;
+  //     line-height: 1.2;
+  //   }
+}
