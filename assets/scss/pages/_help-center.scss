@@ -1,0 +1,41 @@
+/* help-center-banner-section */
+.help-center-banner-section {
+  h1 {
+    font-size: 56px;
+
+    @include pad {
+      font-size: 32px;
+    }
+  }
+}
+
+/* help-center-FAQ-section */
+.help-center-FAQ-section {
+  margin-top: 100px;
+
+  @include pad {
+    margin-top: 48px;
+  }
+
+  .accordion {
+    &-item, &-body {
+      border: none;
+    }
+  }
+
+  .accordion-button {
+    font-weight: 500;
+    font-size: 16px;
+    border-bottom: 0;
+  }
+}
+/* help-center-contact-section */
+.help-center-contact-section {
+  input, textarea {
+    border-radius: 0;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
