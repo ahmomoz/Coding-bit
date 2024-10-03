@@ -38,7 +38,7 @@ export function chapterListRender(dom, videos) {
   videos.forEach(video => {
     const { chapter, title, duration, viewCount } = video;
     const chapterStr = `
-    <li class="p-4 d-flex justify-content-between chapter-item">
+    <li class="py-4 d-flex justify-content-between chapter-item">
       <span class="material-symbols-outlined player-icon me-2">play_circle</span>
       <div class="flex-grow-1">
         <div class="d-flex align-items-center justify-content-between mb-1">
@@ -48,7 +48,7 @@ export function chapterListRender(dom, videos) {
         <h6 class="chapter-item-title mb-2">${title}</h6>
         <div class="d-flex">
           <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
-          <data class="chapter-view-count fs-7" value="${viewCount}">${viewCount}</data>
+          <data class="chapter-view-count fs-7" value="${video["view-count"]}">${video["view-count"]}</data>
         </div>
       </div>
     </li>`;
