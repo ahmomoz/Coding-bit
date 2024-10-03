@@ -157,15 +157,48 @@ fs-8	12px
   }
 
   .reply {
-    .reply-style {
+    .accordion-button {
+      color: $brand-03;
 
+      &:not(.collapsed) {
+        background-color: unset;
+        box-shadow: none
+      }
+
+      &::after {
+        margin-left: 4px;
+        color: $brand-03;
+      }
+    }
+
+    .accordion-collapse {
+      background-color: $gray-04;
+      background: rgba(248, 248, 248, 1);
+
+      .teacher-content {
+        .teacher-image {
+          width: 40px;
+          border-radius: 88px;
+        }
+
+        .teacher-name {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.2;
+          color: $gray-01;
+        }
+
+        .comment-time {
+          font-weight: 400;
+          line-height: 1.2;
+          font-size: 14px;
+          color: $gray-03;
+        }
+      }
     }
   }
 }
 
-
-
-// aside
 .aside-border {
   border: 2px solid $brand-02;
 }

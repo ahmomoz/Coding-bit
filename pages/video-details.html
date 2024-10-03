@@ -110,43 +110,189 @@
                       class="w-100 user-comment py-2">
                   </div>
                   <ul class="history-commemts">
-                    <li>
-
+                    <li class="mb-6">
                       <div class="user-content d-flex mb-3">
-                        <img class="user-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                        <img class="user-image me-4" src="/assets/images/user/user-2.png" alt="作者">
                         <div class="d-flex flex-column">
                           <span class="user-name mb-2">張小明</span>
                           <time class="comment-time">2024-08-07 10:30</time>
                         </div>
                       </div>
                       <div class="reply">
-                        <p class="reply-style fs-6">這個課程解釋得很清楚!特別是關於Hooks的部分,讓我對useEffect和useCallback有了更深入的理解。講師的代碼示例也很實用,我已經開始在自己的項目中運用了。</p>
-                        
-                        <!--  -->
+                        <p class="reply-style fs-6">
+                          這個課程解釋得很清楚!特別是關於Hooks的部分,讓我對useEffect和useCallback有了更深入的理解。講師的代碼示例也很實用,我已經開始在自己的項目中運用了。
+                        </p>
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                           <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Accordion Item #1
-                              </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            <div class="accordion-header mb-4" id="flush-headingOne">
+                              <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                1 則回覆
+                              </span>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse rounded-2"
+                              aria-labelledby="flush-headingOne" >
+                              <div class="accordion-body">
+                                <div class="teacher-content">
+                                  <div class="d-flex mb-3">
+                                    <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                    <div class="d-flex flex-column">
+                                      <span class="teacher-name mb-2">張小明</span>
+                                      <time class="comment-time">2024-08-07 10:30</time>
+                                    </div>
+                                  </div>
+                                  <p class="teacher-reply-style fs-6">
+                                    謝謝你的評價,張小明!很高興聽到課程對你有幫助。如果你在實踐過程中有任何問題,歡迎隨時在這裡提出。</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                          <!-- <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Accordion Item #2
-                              </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                            </div>
-                          </div> -->
                         </div>
-
-                        <!--  -->
+                      </div>
+                    </li>
+                    <li class="mb-6">
+                      <div class="user-content d-flex mb-3">
+                        <img class="user-image me-4" src="/assets/images/user/user-2.png" alt="作者">
+                        <div class="d-flex flex-column">
+                          <span class="user-name mb-2">張小明</span>
+                          <time class="comment-time">2024-08-07 10:30</time>
+                        </div>
+                      </div>
+                      <div class="reply">
+                        <p class="reply-style fs-6">講師解釋得很好!我想請教一下,在實際項目中,你會如何平衡使用Context API和Redux?有什麼準則可以幫助我們決定使用哪一個嗎?
+                        </p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <div class="accordion-header mb-4" id="flush-headingTwo">
+                              <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                1 則回覆
+                              </span>
+                            </div>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse rounded-2"
+                              aria-labelledby="flush-headingTwo" >
+                              <div class="accordion-body">
+                                <div class="teacher-content">
+                                  <div class="d-flex mb-3">
+                                    <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                    <div class="d-flex flex-column">
+                                      <span class="teacher-name mb-2">張小明</span>
+                                      <time class="comment-time">2024-08-07 10:30</time>
+                                    </div>
+                                  </div>
+                                  <p class="teacher-reply-style fs-6">
+                                    王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                    1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                    2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                    3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                    4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                    5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                    <br>
+                                    一般來說,我的建議是:從Context<br>
+                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mb-6">
+                      <div class="user-content d-flex mb-3">
+                        <img class="user-image me-4" src="/assets/images/user/user-4.png" alt="作者">
+                        <div class="d-flex flex-column">
+                          <span class="user-name mb-2">張小明</span>
+                          <time class="comment-time">2024-08-07 10:30</time>
+                        </div>
+                      </div>
+                      <div class="reply">
+                        <p class="reply-style fs-6">講師解釋得很好!我想請教一下,在實際項目中,你會如何平衡使用Context API和Redux?有什麼準則可以幫助我們決定使用哪一個嗎?
+                        </p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <div class="accordion-header mb-4" id="flush-headingThree">
+                              <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                1 則回覆
+                              </span>
+                            </div>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse rounded-2"
+                              aria-labelledby="flush-headingThree" >
+                              <div class="accordion-body">
+                                <div class="teacher-content">
+                                  <div class="d-flex mb-3">
+                                    <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                    <div class="d-flex flex-column">
+                                      <span class="teacher-name mb-2">張小明</span>
+                                      <time class="comment-time">2024-08-07 10:30</time>
+                                    </div>
+                                  </div>
+                                  <p class="teacher-reply-style fs-6">
+                                    王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                    1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                    2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                    3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                    4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                    5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                    <br>
+                                    一般來說,我的建議是:從Context<br>
+                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mb-6">
+                      <div class="user-content d-flex mb-3">
+                        <img class="user-image me-4" src="/assets/images/user/user-2.png" alt="作者">
+                        <div class="d-flex flex-column">
+                          <span class="user-name mb-2">張小明</span>
+                          <time class="comment-time">2024-08-07 10:30</time>
+                        </div>
+                      </div>
+                      <div class="reply">
+                        <p class="reply-style fs-6">講師解釋得很好!我想請教一下,在實際項目中,你會如何平衡使用Context API和Redux?有什麼準則可以幫助我們決定使用哪一個嗎?
+                        </p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <div class="accordion-header mb-4" id="flush-headingFour">
+                              <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                1 則回覆
+                              </span>
+                            </div>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse rounded-2"
+                              aria-labelledby="flush-headingFour" >
+                              <div class="accordion-body">
+                                <div class="teacher-content">
+                                  <div class="d-flex mb-3">
+                                    <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                    <div class="d-flex flex-column">
+                                      <span class="teacher-name mb-2">張小明</span>
+                                      <time class="comment-time">2024-08-07 10:30</time>
+                                    </div>
+                                  </div>
+                                  <p class="teacher-reply-style fs-6">
+                                    王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                    1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                    2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                    3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                    4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                    5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                    <br>
+                                    一般來說,我的建議是:從Context<br>
+                                    API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </li>
                   </ul>
