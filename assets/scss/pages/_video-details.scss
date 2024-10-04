@@ -154,6 +154,12 @@ fs-8	12px
       font-size: 14px;
       color: $gray-03;
     }
+
+    .delete-comment,
+    .reply-comment {
+      color: $gray-01;
+      line-height: 1.5;
+    }
   }
 
   .reply {
@@ -193,6 +199,12 @@ fs-8	12px
           line-height: 1.2;
           font-size: 14px;
           color: $gray-03;
+        }
+
+        .delete-comment,
+        .reply-comment {
+          color: $gray-01;
+          line-height: 1.5;
         }
       }
     }
