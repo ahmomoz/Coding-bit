@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
-    <title>Coding∞bit ｜ 一對一教學預約</title>
+    <title>Coding∞bit ｜ 程式碼檢視預約</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <main class="subscription-bbooking-section wrap-lg">
+    <main class="tutor-booking-section wrap-lg">
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -29,7 +29,10 @@
               <a href="index.html" class="underline-hover"> 首頁 </a>
             </li>
             <li class="breadcrumb-item">
-              <a href="subscription.html" class="underline-hover"> 訂閱方案 </a>
+              <a href="tutor-list.html" class="underline-hover"> 所有老師 </a>
+            </li>
+            <li class="breadcrumb-item d-none d-sm-block">
+              <a href="tutor-booking.html" class="underline-hover"> 老師預約 </a>
             </li>
             <li class="breadcrumb-item d-none d-sm-block">
               <a href="">一對一教學</a>
@@ -115,8 +118,8 @@
                 </div>
                 <hr />
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">希望接受指導的項目<span class="text-danger ms-1">*</span></label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" style="resize: none"></textarea>
+                  <label for="userInput" class="form-label">希望接受指導的項目<span class="text-danger ms-1">*</span></label>
+                  <textarea class="form-control" id="userInput" rows="15" style="resize: none"></textarea>
                 </div>
               </form>
             </div>
@@ -171,7 +174,7 @@
                 </tbody>
               </table>
 
-              <a href="tutor-booking-payment-step2.html" class="mt-8">
+              <a href="tutor-booking-payment-step2-1on-1.html" class="mt-8">
                 <button class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
                   前往付款
                   <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1"> arrow_forward </span>
@@ -186,14 +189,14 @@
     <%- include('./layout/footer'); -%>
 
     <!-- 手機版明細卡片 -->
-    <div class="media-subscription-price-card sticky-bottom bg-white border-top d-lg-none px-4 py-5">
+    <div class="sticky-bottom bg-white border-top d-lg-none px-4 py-5">
       <div class="f-between-center">
         <div>
           <h4 class="fs-6 fs-lg-5 fw-medium">小計</h4>
           <h4 class="text-brand-03 fs-lg-2 fs-3 mt-1">NT$ 250</h4>
         </div>
 
-        <a href="tutor-booking-payment-step2.html">
+        <a href="tutor-booking-payment-step2-1on-1.html">
           <button class="btn btn-brand-03 slide-right-hover f-center rounded-2">
             前往付款
             <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1"> arrow_forward </span>
