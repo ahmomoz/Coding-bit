@@ -16,10 +16,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
-    <title>Coding∞bit ｜ 一對一教學預約</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-3f8d600c.js"></script>
-    <script type="module" crossorigin src="/Coding-bit/assets/index-16c5268c.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-8d7491d2.css">
+    <title>Coding∞bit ｜ 一對一教學預約完成</title>
+    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-ef4890db.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-ceec42b8.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -110,30 +109,13 @@
     });
   });
 </script>
-
-    <main class="subscription-bbooking-section wrap-lg">
+    <main class="tutor-booking-success-section wrap">
       <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html" class="underline-hover"> 首頁 </a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="subscription.html" class="underline-hover"> 訂閱方案 </a>
-            </li>
-            <li class="breadcrumb-item d-none d-sm-block">
-              <a href="">一對一教學</a>
-            </li>
-            <li class="breadcrumb-item d-sm-none">...</li>
-            <li class="breadcrumb-item active fw-semibold" aria-current="page">一對一教學預約</li>
-          </ol>
-        </nav>
-
         <!-- Step Tracking -->
-        <div class="tracking container mt-13 mb-8">
+        <div class="tracking mb-8">
           <div class="row row-cols-lg-5 row-cols-3 g-5 justify-content-center">
-            <div class="text-brand-03">
-              <div class="d-flex border-bottom border-brand-03 border-5 ps-0 rounded-1 pb-1">
+            <div class="text-brand-02">
+              <div class="d-flex border-bottom border-brand-02 border-5 ps-0 rounded-1 pb-1">
                 <div class="d-flex align-items-center">
                   <span class="material-symbols-outlined icon-fill fs-3 me-2 d-none d-sm-block"> shopping_cart </span>
                   <div>
@@ -154,8 +136,8 @@
                 </div>
               </div>
             </div>
-            <div class="text-brand-02">
-              <div class="d-flex border-bottom border-brand-02 border-5 ps-0 rounded-1 pb-1 h-100">
+            <div class="text-brand-03">
+              <div class="d-flex border-bottom border-brand-03 border-5 ps-0 rounded-1 pb-1 h-100">
                 <div class="d-flex align-items-center mb-auto">
                   <span class="material-symbols-outlined icon-fill fs-3 me-2 d-none d-sm-block"> check_circle </span>
                   <div>
@@ -167,10 +149,17 @@
             </div>
           </div>
         </div>
-        <div class="row mt-8 mt-lg-12">
-          <div class="col-lg-7">
-            <div class="input-card card shadow rounded-2 p-6 p-lg-10">
-              <h2 class="fs-5 fs-lg-3">預約資訊</h2>
+        <div class="f-center">
+          <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
+            <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5"> check_circle </span>
+            付款成功
+          </h1>
+        </div>
+        <div class="row f-center">
+          <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
+            <div class="card shadow rounded-2 p-6 p-lg-10">
+              <h2 class="fs-5 fs-lg-4 w-bolder">預約詳細資訊</h2>
+              <!-- 詳細預約內容 -->
               <form class="mt-6">
                 <div class="row row-cols-md-2">
                   <div class="mb-md-12 mb-6">
@@ -204,66 +193,21 @@
                   </div>
                 </div>
                 <hr />
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">希望接受指導的項目<span class="text-danger ms-1">*</span></label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" style="resize: none"></textarea>
+                <div class="mb-8 h-100">
+                  <label for="userInput" class="form-label">希望接受指導的項目</label>
+                  <textarea class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="userInput" style="resize: none" rows="5" disabled>
+想深入學習 TypeScript 的高級類型，如條件類型、映射類型等，以提高代碼的類型安全性和可讀性。同時也希望了解泛型在實際項目中的最佳實踐。</textarea
+                  >
                 </div>
               </form>
-            </div>
-          </div>
-
-          <!-- 電腦版明細卡片 -->
-          <div class="col-lg-5 d-none d-lg-block">
-            <div class="input-card card shadow rounded-2 p-6 p-lg-10">
-              <h2 class="fs-5 fs-lg-3">預約明細</h2>
-              <table class="table mt-8">
-                <tbody>
-                  <tr class="f-between-center">
-                    <th scope="row" class="border-0">
-                      <h4 class="fs-6 fs-lg-5 fw-medium">小計</h4>
-                    </th>
-                    <td class="border-0 text-end">
-                      <h4 class="fs-6 fs-lg-5 fw-medium">NT$ 250</h4>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="table mt-8">
-                <tbody>
-                  <tr class="f-between-center pb-8">
-                    <th scope="row" class="border-0">
-                      <h4 class="fs-6 fs-lg-5 fw-medium">折扣</h4>
-                    </th>
-                    <td class="border-0 text-end">
-                      <h4 class="fs-6 fs-lg-5 fw-medium">-NT$ 0</h4>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="d-flex justify-content-end">
-                <input type="text" class="form-control border-0 w-50 border-bottom rounded-0 ps-0" id="discountCode" placeholder="輸入折扣碼" />
-                <button class="btn border-0 p-0 text-gray-03 border-bottom rounded-0">
-                  <span class="material-symbols-outlined"> upgrade </span>
-                </button>
+              <!-- 提醒 -->
+              <div class="alert bg-brand-02 f-center" role="alert">
+                <span class="material-symbols-outlined me-2"> info </span>會議連結將於預約時間前一天發送至您的電子信箱。
               </div>
-
-              <table class="table border-top mt-8">
-                <tbody>
-                  <tr class="f-between-center py-5">
-                    <th scope="row" class="border-0">
-                      <h4 class="fs-6 fs-lg-5">總計</h4>
-                    </th>
-                    <td class="border-0 text-end">
-                      <h4 class="fs-2">NT$ 250</h4>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <a href="tutor-booking-payment-step2.html" class="mt-8">
+              <!-- Button -->
+              <a href="index.html" class="">
                 <button class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
-                  前往付款
+                  回到首頁
                   <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1"> arrow_forward </span>
                 </button>
               </a>
@@ -272,7 +216,6 @@
         </div>
       </div>
     </main>
-
     <footer class="layout-footer-wrap wrap-lg bg-white">
   <div class="container f-xl-between">
     <div class="footer-info-wrap flex-grow-1">
@@ -378,24 +321,6 @@
   </div>
 </footer>
 
-    <!-- 手機版明細卡片 -->
-    <div class="media-subscription-price-card sticky-bottom bg-white border-top d-lg-none px-4 py-5">
-      <div class="f-between-center">
-        <div>
-          <h4 class="fs-6 fs-lg-5 fw-medium">小計</h4>
-          <h4 class="text-brand-03 fs-lg-2 fs-3 mt-1">NT$ 250</h4>
-        </div>
-
-        <a href="tutor-booking-payment-step2.html">
-          <button class="btn btn-brand-03 slide-right-hover f-center rounded-2">
-            前往付款
-            <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1"> arrow_forward </span>
-          </button>
-        </a>
-      </div>
-    </div>
-
-    
     
   </body>
 </html>

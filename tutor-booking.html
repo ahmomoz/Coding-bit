@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-eac0bb5e.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-3f8d600c.js">
+    <script type="module" crossorigin src="/Coding-bit/assets/tutor-booking-ffdbacb4.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-ef4890db.js">
     <link rel="modulepreload" crossorigin href="/Coding-bit/assets/add-to-favorite-092af0d2.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-8d7491d2.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-ceec42b8.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -1152,17 +1152,54 @@
                   <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
                 </div>
 
-                <a href="#" class="btn slide-right-hover btn-brand-03 w-100">
+                <button class="btn slide-right-hover btn-brand-03 w-100" data-bs-toggle="modal" data-bs-target="#serviceSelectionModal">
                   <p class="f-center me-1">
                     立即預約
                     <span class="material-symbols-outlined">arrow_forward</span>
                   </p>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-3" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-8">
+            <div class="row row-cols-2 g-4">
+              <div class="col">
+                <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
+                  <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
+                    <h3 class="mb-auto">一對一教學</h3>
+                    <img src="/Coding-bit/assets/Illustration-7-28dcbb99.png" alt="" class="w-md-50 w-100 mb-auto" />
+                    <p class="text-center">以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="tutor-booking-payment-step1-code-review.html" class="h-100">
+                  <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
+                    <h3 class="mb-auto">程式碼檢視</h3>
+                    <img src="/Coding-bit/assets/Illustration-8-0fe7d17b.png" alt="" class="w-md-50 w-100 mb-auto" />
+                    <p class="text-center">
+                      您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼， 老師會於預約時間內進行程式碼檢視服務，
+                      並且於時間結束時回覆檢視後的結果。
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="layout-footer-wrap wrap-lg bg-white">
@@ -1269,7 +1306,7 @@
     </ul>
   </div>
 </footer>
-
+    <!--Mobile sticky bottom CTA card -->
     <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
       <div class="pt-4 pb-6 px-4">
         <div class="f-between-center">
@@ -1278,12 +1315,12 @@
             <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
           </div>
 
-          <a href="#" class="btn slide-right-hover btn-brand-03">
+          <button class="btn slide-right-hover btn-brand-03" data-bs-toggle="modal" data-bs-target="#serviceSelectionModal">
             <p class="f-center me-1">
               立即預約
               <span class="material-symbols-outlined">arrow_forward</span>
             </p>
-          </a>
+          </button>
         </div>
       </div>
     </div>
