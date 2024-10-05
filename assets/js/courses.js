@@ -1,5 +1,5 @@
 export function courseRender(courseCard, courseList) {
-  let str='';
+  let str = '';
 
   courseList.forEach(item => {
     str += `
@@ -51,4 +51,72 @@ export function courseRender(courseCard, courseList) {
     `
     courseCard.innerHTML = str;
   });
+}
+
+// 影片列表 chapter-list
+export function chapterListRender(dom, videos) {
+  let emptyStr = '';
+  videos.forEach(video => {
+    const { chapter, title, duration, viewCount } = video;
+    const chapterStr = `
+    <li class="py-4 d-flex justify-content-between chapter-item">
+      <span class="material-symbols-outlined player-icon me-2">play_circle</span>
+      <div class="flex-grow-1">
+        <div class="d-flex align-items-center justify-content-between mb-1">
+          <span class="fs-7 chapter-contents">${chapter}</span>
+          <time class="video-duration fs-7 rounded-1 px-2 py-1">${duration}</time>
+        </div>
+        <h6 class="chapter-item-title mb-2">${title}</h6>
+        <div class="d-flex">
+          <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
+          <data class="chapter-view-count fs-7" value="${viewCount}">${video["view-count"]}</data>
+        </div>
+      </div>
+    </li>`;
+    emptyStr += chapterStr;
+  })
+  dom.innerHTML = emptyStr;
+}
+
+// 講師其他影片 other-videos
+export function otherVideosRender(dom, videos) {
+  let emptyStr = '';
+  videos.forEach(video => {
+    const { imageUrl, title, viewCount } = video;
+    const otherStr = `
+      <li class="d-flex py-3 py-4 position-relative">
+        <img class="rounded-2 me-4 other-video-image" src="${imageUrl}" alt="影片縮圖">
+        <div class="f-column-between py-2">
+          <h6 class="fs-6 other-video-title">${title}</h6>
+          <div class="f-align-center me-6">
+            <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+            <data value="${viewCount}" class="data-view-count fs-7">${viewCount}</data>
+          </div>
+        </div>
+      </li>`;
+    emptyStr += otherStr;
+  })
+  dom.innerHTML = emptyStr;
+}
+
+// 相關影片 related-videos
+export function relatedVideosRender(dom, videos) {
+  let emptyStr = '';
+  videos.forEach(video => {
+    const { imageUrl, title, viewCount, author } = video;
+    const relatedStr = `
+      <li class="d-flex py-3 py-4 position-relative">
+        <img class="rounded-2 me-4 related-video-image" src="${imageUrl}" alt="影片縮圖">
+        <div class="f-between-center py-2">
+          <h6 class="fs-6 related-video-title">${title}</h6>
+          <div class="f-align-center me-6">
+            <span>${author}</span>
+            <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+            <data value="${viewCount}" class="data-view-count fs-7">${viewCount}</data>
+          </div>
+        </div>
+      </li>`;
+    emptyStr += relatedStr;
+  })
+  dom.innerHTML = emptyStr;
 }
