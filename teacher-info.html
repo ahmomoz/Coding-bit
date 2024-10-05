@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Coding-bit/assets/icon-infinite-7978421b.svg"
+    />
+    <title>講師介紹 ｜ 卡斯伯 Casper</title>
+    <script type="module" crossorigin src="/Coding-bit/assets/teacher-info-82a90401.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-f71ca812.js">
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-20cd3aa9.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-4f6b0c4d.css">
+  </head>
+  <body>
+    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-lg">
+    <div class="d-flex">
+      <a href="index.html" class="navbar-brand me-10">
+        <picture>
+          <source srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg " media="(max-width: 575.98px)" />
+          <img src="/Coding-bit/assets/logo-da4adea3.svg" alt="logo-image" />
+        </picture>
+      </a>
+      <div class="position-relative f-align-center d-none d-xl-flex">
+        <input type="search" class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" />
+        <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+          search
+        </span>
+      </div>
+    </div>
+    <button
+      id="layout-navbar-toggler"
+      class="navbar-toggler border-0 p-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span id="menu-icon" class="material-symbols-outlined icon-fill fs-4"> menu </span>
+      <span id="close-icon" class="material-symbols-outlined icon-fill fs-4 d-none"> close </span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="position-relative f-align-center d-lg-none">
+          <input type="search" class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" />
+          <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+            search
+          </span>
+        </li>
+        <li class="nav-item mt-4 mt-lg-0">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html"> 課程客製化 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html"> 幫助中心 </a>
+        </li>
+        <li class="nav-item nav-bottom-btn ms-lg-10">
+          <a href="sign-up.html">
+            <button class="btn btn-outline-brand-03 w-100">登入 / 註冊</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+    const stickBottomWrap = document.querySelector('.sticky-bottom');
+
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
+
+        document.body.classList.remove('no-scroll');
+        stickBottomWrap.classList.remove('d-none');
+      } else {
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
+
+        document.body.classList.add('no-scroll');
+        stickBottomWrap.classList.add('d-none');
+      }
+    });
+  });
+</script>
+    <header class="teacher-info-header-section bg">
+    </header>
+    <main>
+      <div class="container-fluid px-lg-13">
+        <div class="row">
+          <div class="col-xxl-3 f-column-align-center teacher-info-section">
+            <div
+              class="teacher-img-wrap">
+              <img src="/Coding-bit/assets/user-1-f526f231.png" class="rounded-circle w-100">
+            </div>
+            <div class="teacher-content-info px-6 mt-6 mt-lg-8">
+              <div class="text-start">
+                <h1>卡斯伯 Casper</h1>
+                <p class="fs-lg-5 fs-6 text-gray-02 mt-2">10年經驗的前端工程師</p>
+                <div class="list-x-scroll py-2 mt-4">
+                  <a href="#" class="tag tag-brand-02 fs-8 me-3">HTML/CSS</a>
+                  <a href="#" class="tag tag-brand-02 fs-8 me-3">React</a>
+                  <a href="#" class="tag tag-brand-02 fs-8">網頁動畫</a>
+                </div>
+              </div>
+              <div class="text-start mt-4 mt-lg-6">
+                <p class="fs-lg-5">
+                  我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。<br><br>
+                  在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。<br>
+                  我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
+                  <br><br>
+                  老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。
+                  <br>
+                  我曾經教導過百位學生，大家均表示教學清晰容易明白。
+                  <br>
+                  如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。<br>
+                  我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
+                </p>
+              </div>
+              <ul class="d-flex mt-6 mt-lg-8">
+                <li>
+                  <a href="#" class="icon-hover">
+                    <img src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg" alt="icon-ins">
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a href="#" class="icon-hover">
+                    <img src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg" alt="icon-ins">
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a href="#" class="icon-hover">
+                    <img src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg" alt="icon-ins">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-9 pt-11 pb-13">
+            <ul
+              class="nav nav-tabs border-bottom border-gray-03"
+              id="courseCategoryTab"
+              role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="topicSeries-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#topicSeries"
+                  type="button"
+                  role="tab"
+                  aria-controls="topicSeries"
+                  aria-selected="true">
+                  主題式系列課程影片
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="customLearning-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#customLearning"
+                  type="button"
+                  role="tab"
+                  aria-controls="customLearning"
+                  aria-selected="false">
+                  客製化學習需求影片
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="teacherIntro-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#teacherIntro"
+                  type="button"
+                  role="tab"
+                  aria-controls="teacherIntro"
+                  aria-selected="false">
+                  學習心得&講師背景介紹影片
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="courseCategoryTab">
+              <div class="tab-pane fade active show" id="topicSeries" role="tabpanel" aria-labelledby="topicSeries-tab">
+                <div class="row topicSeriesCourse-card-wrap mt-6 mt-lg-8 g-6">
+                  <div class="col-md-6 col-xl-4">
+                    <a href="#" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img
+                            src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
+                            class="card-img-top cover-img rounded"
+                            alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">${item.teacher}</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.totalDuration}
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.purchaseCount}
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              ${item.star}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="customLearning" role="tabpanel" aria-labelledby="customLearning-tab">
+                <div class="row customLearning-card-wrap mt-6 mt-lg-8 g-6">
+                  <div class="col-md-6 col-xl-4">
+                    <a href="#" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img
+                            src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
+                            class="card-img-top cover-img rounded"
+                            alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">${item.teacher}</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.totalDuration}
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.purchaseCount}
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              ${item.star}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="teacherIntro" role="tabpanel" aria-labelledby="teacherIntro-tab">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="layout-footer-wrap wrap-lg bg-white">
+  <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+      <a href="index.html" class="navbar-brand">
+        <picture>
+          <source
+            srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "
+            media="(max-width: 575.98px)">
+          <img
+            src="/Coding-bit/assets/logo-da4adea3.svg"
+            alt="logo-image">
+        </picture>
+      </a>
+      <ul class="mt-4">
+        <li class="f-align-center">
+          <span class="material-symbols-outlined fs-6">
+            call
+          </span>
+          <a
+            href="tel:+0212345678"
+            class="fs-7 underline-hover lh-sm ms-2">
+            (02) 1234-5678
+          </a>
+        </li>
+        <li class="f-align-center mt-2">
+          <span class="material-symbols-outlined fs-6">
+            schedule
+          </span>
+          <p class="fs-7 lh-sm ms-2">MON - FRI : 8:30 am - 17:30 pm</p>
+        </li>
+        <li class="f-align-center mt-2">
+          <p class="fs-7 lh-sm">本網站僅供作品參考，並非真實營運販售</p>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+      <ul class="navbar-nav f-column w-50 px-4">
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            aria-current="page"
+            href="#">
+            精選課程
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            一對一教學
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            課程客製化
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav f-column w-50 px-4">
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            aria-current="page"
+            href="help-center.html">
+            幫助中心
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            成為老師
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="subscription.html">
+            訂閱方案選擇
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+      <li>
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg" alt="icon-ins">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg" alt="icon-ins">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg" alt="icon-ins">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+    
+    
+  </body>
+</html>
