@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/icon/icon-infinite.svg"
+    />
+    <title>講師介紹 ｜ 卡斯伯 Casper</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <header class="teacher-info-header-section bg">
+    </header>
+    <main>
+      <div class="container-fluid px-lg-13">
+        <div class="row">
+          <div class="col-xxl-3 f-column-align-center teacher-info-section">
+            <div
+              class="teacher-img-wrap">
+              <img src="../assets/images/user/user-1.png" class="rounded-circle w-100">
+            </div>
+            <div class="teacher-content-info px-6 mt-6 mt-lg-8">
+              <div class="text-start">
+                <h1>卡斯伯 Casper</h1>
+                <p class="fs-lg-5 fs-6 text-gray-02 mt-2">10年經驗的前端工程師</p>
+                <div class="list-x-scroll py-2 mt-4">
+                  <a href="#" class="tag tag-brand-02 fs-8 me-3">HTML/CSS</a>
+                  <a href="#" class="tag tag-brand-02 fs-8 me-3">React</a>
+                  <a href="#" class="tag tag-brand-02 fs-8">網頁動畫</a>
+                </div>
+              </div>
+              <div class="text-start mt-4 mt-lg-6">
+                <p class="fs-lg-5">
+                  我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。<br><br>
+                  在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。<br>
+                  我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
+                  <br><br>
+                  老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。
+                  <br>
+                  我曾經教導過百位學生，大家均表示教學清晰容易明白。
+                  <br>
+                  如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。<br>
+                  我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
+                </p>
+              </div>
+              <ul class="d-flex mt-6 mt-lg-8">
+                <li>
+                  <a href="#" class="icon-hover">
+                    <img src="../assets/images/icon/icon-ins-purple.svg" alt="icon-ins">
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a href="#" class="icon-hover">
+                    <img src="../assets/images/icon/icon-facebook-purple.svg" alt="icon-ins">
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a href="#" class="icon-hover">
+                    <img src="../assets/images/icon/icon-mail-purple.svg" alt="icon-ins">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-9 pt-11 pb-13">
+            <ul
+              class="nav nav-tabs border-bottom border-gray-03"
+              id="courseCategoryTab"
+              role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="topicSeries-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#topicSeries"
+                  type="button"
+                  role="tab"
+                  aria-controls="topicSeries"
+                  aria-selected="true">
+                  主題式系列課程影片
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="customLearning-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#customLearning"
+                  type="button"
+                  role="tab"
+                  aria-controls="customLearning"
+                  aria-selected="false">
+                  客製化學習需求影片
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="teacherIntro-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#teacherIntro"
+                  type="button"
+                  role="tab"
+                  aria-controls="teacherIntro"
+                  aria-selected="false">
+                  學習心得&講師背景介紹影片
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="courseCategoryTab">
+              <div class="tab-pane fade active show" id="topicSeries" role="tabpanel" aria-labelledby="topicSeries-tab">
+                <div class="row topicSeriesCourse-card-wrap mt-6 mt-lg-8 g-6">
+                  <div class="col-md-6 col-xl-4">
+                    <a href="#" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img
+                            src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
+                            class="card-img-top cover-img rounded"
+                            alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">${item.teacher}</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.totalDuration}
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.purchaseCount}
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              ${item.star}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="customLearning" role="tabpanel" aria-labelledby="customLearning-tab">
+                <div class="row customLearning-card-wrap mt-6 mt-lg-8 g-6">
+                  <div class="col-md-6 col-xl-4">
+                    <a href="#" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img
+                            src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
+                            class="card-img-top cover-img rounded"
+                            alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">${item.teacher}</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.totalDuration}
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.purchaseCount}
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              ${item.star}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="teacherIntro" role="tabpanel" aria-labelledby="teacherIntro-tab">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/teacher-info.js"></script>
+  </body>
+</html>
