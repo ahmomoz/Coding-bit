@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-b46f388c.js"></script>
+  <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-46272152.css">
+</head>
+<body>
+  
+    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-lg">
+    <div class="d-flex">
+      <a href="index.html" class="navbar-brand me-10">
+        <picture>
+          <source srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg " media="(max-width: 575.98px)" />
+          <img src="/Coding-bit/assets/logo-da4adea3.svg" alt="logo-image" />
+        </picture>
+      </a>
+      <div class="position-relative f-align-center d-none d-xl-flex">
+        <input type="search" class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" />
+        <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+          search
+        </span>
+      </div>
+    </div>
+    <button
+      id="layout-navbar-toggler"
+      class="navbar-toggler border-0 p-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span id="menu-icon" class="material-symbols-outlined icon-fill fs-4"> menu </span>
+      <span id="close-icon" class="material-symbols-outlined icon-fill fs-4 d-none"> close </span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="position-relative f-align-center d-lg-none">
+          <input type="search" class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" />
+          <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+            search
+          </span>
+        </li>
+        <li class="nav-item mt-4 mt-lg-0">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html"> 課程客製化 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html"> 幫助中心 </a>
+        </li>
+        <li class="nav-item nav-bottom-btn ms-lg-10">
+          <a href="sign-up.html">
+            <button class="btn btn-outline-brand-03 w-100">登入 / 註冊</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+    const stickBottomWrap = document.querySelector('.sticky-bottom');
+
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
+
+        document.body.classList.remove('no-scroll');
+        stickBottomWrap.classList.remove('d-none');
+      } else {
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
+
+        document.body.classList.add('no-scroll');
+        stickBottomWrap.classList.add('d-none');
+      }
+    });
+  });
+</script>
+  
+    <h1 class="suject">我是subject 課程影片</h1>
+  
+    <footer class="layout-footer-wrap wrap-lg bg-white">
+  <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+      <a href="index.html" class="navbar-brand">
+        <picture>
+          <source
+            srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "
+            media="(max-width: 575.98px)">
+          <img
+            src="/Coding-bit/assets/logo-da4adea3.svg"
+            alt="logo-image">
+        </picture>
+      </a>
+      <ul class="mt-4">
+        <li class="f-align-center">
+          <span class="material-symbols-outlined fs-6">
+            call
+          </span>
+          <a
+            href="tel:+0212345678"
+            class="fs-7 underline-hover lh-sm ms-2">
+            (02) 1234-5678
+          </a>
+        </li>
+        <li class="f-align-center mt-2">
+          <span class="material-symbols-outlined fs-6">
+            schedule
+          </span>
+          <p class="fs-7 lh-sm ms-2">MON - FRI : 8:30 am - 17:30 pm</p>
+        </li>
+        <li class="f-align-center mt-2">
+          <p class="fs-7 lh-sm">本網站僅供作品參考，並非真實營運販售</p>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+      <ul class="navbar-nav f-column w-50 px-4">
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            aria-current="page"
+            href="#">
+            精選課程
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            一對一教學
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            課程客製化
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav f-column w-50 px-4">
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            aria-current="page"
+            href="help-center.html">
+            幫助中心
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="#">
+            成為老師
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
+            href="subscription.html">
+            訂閱方案選擇
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+      <li>
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg" alt="icon-ins">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg" alt="icon-ins">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="icon-hover">
+          <img src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg" alt="icon-ins">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  
+    
+</body>
+</html>

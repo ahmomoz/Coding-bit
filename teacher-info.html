@@ -19,10 +19,11 @@
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
     <title>講師介紹 ｜ 卡斯伯 Casper</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/teacher-info-82a90401.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-f71ca812.js">
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-20cd3aa9.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-4f6b0c4d.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/teacher-info-68db4b5c.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/bootstrap.min-b46f388c.js">
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-937fd4e6.js">
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/show-n-hide-text-799d5ee3.js">
+    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-46272152.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -125,7 +126,7 @@
             </div>
             <div class="teacher-content-info px-6 mt-6 mt-lg-8">
               <div class="text-start">
-                <h1>卡斯伯 Casper</h1>
+                <h1 class="fs-4 fs-lg-1">卡斯伯 Casper</h1>
                 <p class="fs-lg-5 fs-6 text-gray-02 mt-2">10年經驗的前端工程師</p>
                 <div class="list-x-scroll py-2 mt-4">
                   <a href="#" class="tag tag-brand-02 fs-8 me-3">HTML/CSS</a>
@@ -133,19 +134,22 @@
                   <a href="#" class="tag tag-brand-02 fs-8">網頁動畫</a>
                 </div>
               </div>
-              <div class="text-start mt-4 mt-lg-6">
-                <p class="fs-lg-5">
-                  我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。<br><br>
-                  在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。<br>
-                  我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
-                  <br><br>
-                  老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。
-                  <br>
-                  我曾經教導過百位學生，大家均表示教學清晰容易明白。
-                  <br>
-                  如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。<br>
-                  我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
-                </p>
+              <div class="tab-content mt-6" id="myTabContent">
+                <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
+                  <p class="tab-details text-hide">
+                    我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。<br><br>
+                    在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
+                    <br><br>
+                    老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。我曾經教導過百位學生，大家均表示教學清晰容易明白。如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
+                  </p>
+                  <div class="d-flex align-items-center py-3 show-more" role="button">
+                    <p class="text-brand-03">更多</p>
+                    <span
+                      class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+                      stat_minus_1
+                    </span>
+                  </div>
+                </div>
               </div>
               <ul class="d-flex mt-6 mt-lg-8">
                 <li>
@@ -173,7 +177,7 @@
               role="tablist">
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link active"
+                  class="nav-link fs-7 fs-lg-6 p-2 py-lg-6 px-lg-4 active"
                   id="topicSeries-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#topicSeries"
@@ -181,12 +185,12 @@
                   role="tab"
                   aria-controls="topicSeries"
                   aria-selected="true">
-                  主題式系列課程影片
+                  主題式課程影片
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link fs-7 fs-lg-6 p-2 py-lg-6 px-lg-4"
                   id="customLearning-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#customLearning"
@@ -194,20 +198,20 @@
                   role="tab"
                   aria-controls="customLearning"
                   aria-selected="false">
-                  客製化學習需求影片
+                  客製化需求影片
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link"
-                  id="teacherIntro-tab"
+                  class="nav-link fs-7 fs-lg-6 p-2 py-lg-6 px-lg-4"
+                  id="freeTipShorts-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#teacherIntro"
+                  data-bs-target="#freeTipShorts"
                   type="button"
                   role="tab"
-                  aria-controls="teacherIntro"
+                  aria-controls="freeTipShorts"
                   aria-selected="false">
-                  學習心得&講師背景介紹影片
+                  免費影片
                 </button>
               </li>
             </ul>
@@ -310,8 +314,54 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane" id="teacherIntro" role="tabpanel" aria-labelledby="teacherIntro-tab">
-
+              <div class="tab-pane" id="freeTipShorts" role="tabpanel" aria-labelledby="freeTipShorts-tab">
+                <div class="row freeTipShorts-card-wrap mt-6 mt-lg-8 g-6">
+                  <div class="col-md-6 col-xl-4">
+                    <a href="#" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img
+                            src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
+                            class="card-img-top cover-img rounded"
+                            alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">${item.teacher}</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.totalDuration}
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  ${item.purchaseCount}
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              ${item.star}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -424,6 +474,7 @@
 </footer>
 
 
+    
     
     
   </body>
