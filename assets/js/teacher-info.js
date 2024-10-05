@@ -1,9 +1,10 @@
 import { courseRender } from '../js/courses.js';
 
-const courseCard = document.querySelector('.topicSeriesCourse-card-wrap');
+const topicSeriesCourseCard = document.querySelector('.topicSeriesCourse-card-wrap');
 const customLearningCourseCard = document.querySelector('.customLearning-card-wrap');
+const freeTipShortsCard = document.querySelector('.freeTipShorts-card-wrap');
 
-const courseList = [
+const topicSeriesCourseList = [
   {
     courseName: 'Python 基礎入門',
     img: 'course-1.png',
@@ -68,13 +69,70 @@ const courseList = [
     courseCategory: '主題式課程影片'
   }
 ];
+const customLearningCourseList = [
+  {
+    courseName: 'CSS 毛玻璃製作效果',
+    img: 'course-14.png',
+    teacher: '卡斯伯 Casper',
+    star: '4.0',
+    totalDuration: '8分16秒',
+    purchaseCount: '1,100',
+    courseCategory: '客製化學習需求教學影片'
+  },
+  {
+    courseName: '表格渲染技巧',
+    img: 'course-15.png',
+    teacher: '卡斯伯 Casper',
+    star: '4.0',
+    totalDuration: '5分30秒',
+    purchaseCount: '402',
+    courseCategory: '客製化學習需求教學影片'
+  },
+  {
+    courseName: 'clip-path繪製不規則圖形',
+    img: 'course-16.png',
+    teacher: '卡斯伯 Casper',
+    star: '4.0',
+    totalDuration: '7分12秒',
+    purchaseCount: '48',
+    courseCategory: '客製化學習需求教學影片'
+  }
+];
+const freeTipShortsList = [
+  {
+    courseName: '快速掌握html標籤',
+    img: 'course-12.png',
+    teacher: '卡斯伯 Casper',
+    star: '4.0',
+    totalDuration: '2分18秒',
+    purchaseCount: '3,581',
+    courseCategory: '免費影片'
+  },
+  {
+    courseName: 'html載入外部圖片方式',
+    img: 'course-13.png',
+    teacher: '卡斯伯 Casper',
+    star: '4.0',
+    totalDuration: '3分56秒',
+    purchaseCount: '1,589',
+    courseCategory: '免費影片'
+  }
+];
 
-if (courseCard) {
+if (topicSeriesCourseCard) {
   const courseRenderData = () => {
-    courseRender(courseCard, courseList);
+    courseRender(topicSeriesCourseCard, topicSeriesCourseList);
   };
-
+  const customLearningCourseRenderData = () => {
+    courseRender(customLearningCourseCard, customLearningCourseList);
+  };
+  const freeTipShortsRenderData = () => {
+    courseRender(freeTipShortsCard, freeTipShortsList);
+  };
+  
   courseRenderData();
+  customLearningCourseRenderData();
+  freeTipShortsRenderData();
 } else {
   console.error('course-card-wrap element not found');
 }
