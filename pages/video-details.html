@@ -26,23 +26,23 @@
           <div class="d-flex mb-6">
             <div class="d-flex">
               <div class="f-align-center me-6">
-                <span class="view-count fs-5 me-1 material-symbols-outlined eyes-icon">visibility</span>
+                <span class="view-count fs-5 material-symbols-outlined">visibility</span>
                 <data value="12345" class="data-view-count">12,345</data>
               </div>
               <div class="f-align-center">
-                <span class="rating-score fs-5 me-1 material-symbols-outlined">kid_star</span>
+                <span class="rating-score fs-5 material-symbols-outlined icon-fill">kid_star</span>
                 <data value="6789" class="data-rating-score">6,789</data>
               </div>
             </div>
             <div class="ms-auto">
               <div class="d-flex">
-                <button type="button" class="favorite-button f-align-center btn">
+                <button type="button" class="favorite-button f-align-center btn btn-outline-none py-2 px-4">
                   <span class="fs-5 me-1 material-symbols-outlined">favorite</span>
-                  <span class="">收藏</span>
+                  <span class="fs-7 favorite-font">已收藏</span>
                 </button>
-                <button type="button" class="review-button f-align-center btn btn-brand-03">
+                <button type="button" class="review-button f-align-center btn btn-outline-none py-2 px-4">
                   <span class="fs-5 me-1 material-symbols-outlined">kid_star</span>
-                  <span class="review-button">評價</span>
+                  <span class="fs-7 review-font">已評價</span>
                 </button>
               </div>
             </div>
@@ -648,11 +648,11 @@
         const relatedVideosDom = document.querySelector('.related-videos-list');
 
         let chapterVideos = [
-          { 'chapter': '第一章', 'title': 'React Hooks 深入解析', 'duration': '20:30', 'viewCount': 23005 },
-          { 'chapter': '第二章', 'title': '使用 useCallback 優化性能', 'duration': '10:05', 'viewCount': 3005 },
-          { 'chapter': '第三章', 'title': '掌握 useMemo 的使用技巧', 'duration': '46:39', 'viewCount': 220 },
-          { 'chapter': '第四章', 'title': 'React 狀態管理最佳實踐', 'duration': '25:00', 'viewCount': 999 },
-          { 'chapter': '第五章', 'title': 'React 性能優化技巧', 'duration': '13:40', 'viewCount': 10060 }];
+          { 'chapter': '第一章', 'title': 'React Hooks 深入解析', 'duration': '20:30', 'viewCount': '23,005' },
+          { 'chapter': '第二章', 'title': '使用 useCallback 優化性能', 'duration': '10:05', 'viewCount': '3,005' },
+          { 'chapter': '第三章', 'title': '掌握 useMemo 的使用技巧', 'duration': '46:39', 'viewCount': '220' },
+          { 'chapter': '第四章', 'title': 'React 狀態管理最佳實踐', 'duration': '25:00', 'viewCount': '999' },
+          { 'chapter': '第五章', 'title': 'React 性能優化技巧', 'duration': '13:40', 'viewCount': '10,060' }];
 
         let otherVideos = [
           { 'title': 'Vue.js 3.0 新特性解析', 'imageUrl': '../assets/images/course/course-1.png', 'viewCount': '23,005' },
@@ -668,11 +668,9 @@
           { 'title': '微前端架構設計與實現', 'author': '陳靜', 'imageUrl': '../assets/images/course/course-4.png', 'viewCount': '999' },
           { 'title': 'PWA 開發實戰', 'author': '劉芳', 'imageUrl': '../assets/images/course/course-5.png', 'viewCount': '10,060' }];
 
-
-        chapterListRender(chapterListDom, chapterVideos);
-        otherVideosRender(otherVideosDom, otherVideos);
-        relatedVideosRender(relatedVideosDom, relatedVideos);
-
+          chapterListRender(chapterListDom, chapterVideos);
+          otherVideosRender(otherVideosDom, otherVideos);
+          relatedVideosRender(relatedVideosDom, relatedVideos);
       </script>
 </body>
 

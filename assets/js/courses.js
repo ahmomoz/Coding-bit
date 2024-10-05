@@ -69,7 +69,7 @@ export function chapterListRender(dom, videos) {
         <h6 class="chapter-item-title mb-2">${title}</h6>
         <div class="d-flex">
           <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
-          <data class="chapter-view-count fs-7" value="${viewCount}">${video["view-count"]}</data>
+          <data class="chapter-view-count fs-7" value="${viewCount}">${viewCount}</data>
         </div>
       </div>
     </li>`;

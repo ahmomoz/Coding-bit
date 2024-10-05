@@ -1,53 +1,9 @@
-/*
-fs-1	40px
-fs-2	32px
-fs-3	28px
-fs-4	24px
-fs-5	20px
-fs-6	16px
-fs-7	14px
-fs-8	12px
-
-*-1	4px
-*-2	8px
-*-3	12px
-*-4	16px
-*-5	20px
-*-6	24px
-*-7	28px
-*-8	32px
-*-9	36px
-*-10	40px
-*-11	48px
-*-12	64px
-*-13	80px
-*/
-
-.material-symbols-outlined.eyes-icon {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+.video-show {
+  max-width: 100%;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-
-// section
-.video-details {
-  .video-title {
-    line-height: 1.2;
-  }
-
-  .video-show {
-    max-width: 100%;
-  }
+.video-title {
+  line-height: 1.2;
 }
 
 .data-view-count,
@@ -55,18 +11,25 @@ fs-8	12px
   color: $brand-03;
 }
 
-.view-count,
-.rating-score {
+.view-count.view-count,
+.rating-score.rating-score {
+  margin-right: 1.5px;
   color: $brand-01;
 }
 
-.favorite-button {
-  color: $gray-01;
+.favorite-button,
+.review-button {
+  color: $brand-01 !important;
+
+  &:hover {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  }
 }
 
-.review-button {
-  background-color: $brand-02;
-  color: $brand-03;
+.favorite-font,
+.review-font {
+  color: $gray-01;
+  line-height: 1.5;
 }
 
 .tag-label {
@@ -98,36 +61,43 @@ fs-8	12px
   }
 }
 
-.nav-tabs {
-  border-bottom: 1px solid $gray-03;
-
-  .video-description,
-  .video-comments {
-    font-weight: 500;
-    line-height: 1.2;
-    padding: 12px 24px;
-    color: $brand-03;
-  }
-
-  .video-comments {
-    color: $gray-03;
-  }
-}
-
-.tab-content {
-  .user-comment-picture {
-    display: block;
-    width: 40px;
-    border-radius: 88px;
-  }
-
-  .user-comment {
-    border: none;
-    outline: none;
+// 影片簡介及留言討論區
+.video-details {
+  .nav-tabs {
     border-bottom: 1px solid $gray-03;
 
-    &::placeholder {
+    .video-description,
+    .video-comments {
+      font-weight: 500;
+      line-height: 1.2;
+      padding: 12px 24px;
+      color: $brand-03;
+    }
+
+    .video-comments {
       color: $gray-03;
+    }
+  }
+
+  .tab-content {
+    .video-description-item {
+      list-style-type: decimal;
+    }
+
+    .user-comment-picture {
+      display: block;
+      width: 40px;
+      border-radius: 88px;
+    }
+
+    .user-comment {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $gray-03;
+
+      &::placeholder {
+        color: $gray-03;
+      }
     }
   }
 }
@@ -264,9 +234,6 @@ fs-8	12px
   }
 }
 
-
-// 
-
 .other-videos {
   padding: 34px 24px 12px;
   backdrop-filter: blur(20px);
@@ -292,8 +259,6 @@ fs-8	12px
     color: $gray-01;
   }
 }
-
-
 
 .related-videos {
   padding: 34px 24px 12px;
