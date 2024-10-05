@@ -1,7 +1,9 @@
 .swiper-pagination-brand-01 {
   position: absolute;
-  @include pad {
+  margin-bottom: 40px;
 
+  @include pad {
+    margin-bottom: 0;
   }
 
   .swiper-pagination-bullet {

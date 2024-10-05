@@ -15,9 +15,34 @@ a {
   display: block;
 }
 
+/* breadcrumb */
+.breadcrumb {
+  a {
+    display: inline;
+  }
+}
+
+/* table*/
+.table {
+  margin-bottom: 0;
+}
+
 /* badge */
 .badge {
   line-height: 1.2;
+}
+
+/* divider-label */
+.divider-label {
+  color: $gray-03;
+
+  hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: $gray-02;
+    margin: 0 12px;
+  } 
 }
 
 /* background */
@@ -49,11 +74,10 @@ a {
     padding: 24px 0;
   }
 }
-
 .wrap-xs {
   padding: 80px 0;
 
-  @include pad {
-    padding: 0 0;
+  @include lg-pc {
+    padding: 24px 0;
   }
 }

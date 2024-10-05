@@ -1,0 +1,19 @@
+.course-card-wrap {
+  @include pad {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
+
+.course-category-tag {
+  background-color: $white;
+  border-radius: 0 4px 4px 0;
+  padding: 4px 8px;
+  margin-top: 8px;
+}

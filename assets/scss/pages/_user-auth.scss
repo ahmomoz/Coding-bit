@@ -1,0 +1,34 @@
+/* sign-up-section & login-section */
+.sign-up-section,
+.login-section,
+.forgot-password-section {
+  background-image: url('/assets/images/deco/bg-7.jpg');
+  padding: 40px 0;
+
+  @include lg-pc {
+    background-image: none;
+  }
+}
+
+.underline-input {
+  font-size: 20px;
+  font-weight: normal;
+  border: none;
+  border-bottom: 1px solid $gray-03;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 4px 40px 12px; 
+
+  &:focus {
+    background-color: transparent;
+  }
+
+  @include pad {
+    font-size: 16px;
+  }
+}
+
+.user-auth-card {
+  background-color: #FFFFFFE6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}

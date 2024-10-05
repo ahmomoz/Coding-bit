@@ -1,5 +1,6 @@
-/* subscription-section */
-.subscription-section {
+/* subscription-section, subscription-info-section */
+.subscription-section,
+.subscription-info-section {
   background-image: url('/assets/images/deco/bg-1.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -9,7 +10,7 @@
 
   @include lg-pc {
     background-image: none;
-    background-color: #fbf7ff;
+    background-color: $brand-05;
     margin-top: 0;
     padding-top: 32px;
   }
@@ -19,4 +20,10 @@
       gap: 24px;
     }
   }
+}
+
+/* subscription-booking-section */
+.subscription-booking-section,
+.subscription-booking-success-section {
+  background-color: $brand-05;
 }

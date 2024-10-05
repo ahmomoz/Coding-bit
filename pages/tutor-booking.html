@@ -11,17 +11,36 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <div class="tutor-booking">
-      <div class="container wrap-xs">
+      <!-- Mobile Top Cover -->
+      <div class="position-relative d-lg-none">
+        <div class="img-wrapper img-hover-enlarge">
+          <img src="../assets/images/course/course-2-high-res.jpg" class="w-100" alt="tutor cover" style="max-height: 300px" />
+        </div>
+
+        <span class="material-symbols-outlined icon-fill text-white position-absolute top-50 start-50 translate-middle" style="font-size: 56px">
+          play_circle
+        </span>
+
+        <span
+          class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
+          role="button"
+          style="background-color: #1e1e1e66"
+          data-favorite="true">
+          favorite
+        </span>
+      </div>
+      <!-- Main Content -->
+      <main class="container py-lg-13 py-7">
         <div class="row">
           <!-- tutor information -->
           <div class="col-lg-8">
@@ -33,8 +52,8 @@
                   <img src="../assets/images/user/user-1.png" alt="profile" class="object-fit-cover rounded-circle me-6" />
                 </div>
                 <div class="flex-grow-1">
-                  <h2 class="mb-2">卡斯伯 Casper</h2>
-                  <p class="fs-5 text-gray-02">10年經驗的前端工程師</p>
+                  <h2 class="mb-2 fs-lg-2 fs-4">卡斯伯 Casper</h2>
+                  <p class="fs-lg-5 fs-6 text-gray-02">10年經驗的前端工程師</p>
                 </div>
               </div>
               <!-- tag list-->
@@ -45,7 +64,7 @@
               </div>
               <!-- tab -->
               <div class="section-component">
-                <ul class="nav nav-tabs mb-6" id="myTab" role="tablist">
+                <ul class="nav nav-tabs mb-6 list-x-scroll flex-nowrap" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link active"
@@ -55,8 +74,7 @@
                       type="button"
                       role="tab"
                       aria-controls="about-me-tab-pane"
-                      aria-selected="true"
-                    >
+                      aria-selected="true">
                       關於我
                     </button>
                   </li>
@@ -69,8 +87,7 @@
                       type="button"
                       role="tab"
                       aria-controls="teaching-styles-tab-pane"
-                      aria-selected="false"
-                    >
+                      aria-selected="false">
                       我的教學風格
                     </button>
                   </li>
@@ -83,19 +100,23 @@
                       type="button"
                       role="tab"
                       aria-controls="resume-tab-pane"
-                      aria-selected="false"
-                    >
+                      aria-selected="false">
                       我的履歷
                     </button>
                   </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
-                    <p>
-                      我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
+                    <p class="tab-details text-hide">
+                      我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。<br /><br />
                       在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
-                      如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步
+                      <br /><br />
+                      老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。我曾經教導過百位學生，大家均表示教學清晰容易明白。如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
                     </p>
+                    <div class="d-flex align-items-center py-3 show-more" role="button">
+                      <p class="text-brand-03">更多</p>
+                      <span class="material-symbols-outlined icon-fill text-brand-03 align-middle"> stat_minus_1 </span>
+                    </div>
                   </div>
                   <div class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" aria-labelledby="teaching-styles-tab" tabindex="0">
                     ...
@@ -114,94 +135,23 @@
               </div>
             </section>
             <!-- section 2 - timetable -->
-            <section class="section">
+            <section class="section schedule">
               <div class="section-component f-between-center">
                 <h4>時間表</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">arrow_forward</span>
                 </a>
               </div>
               <div class="f-between-center mb-5">
-                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
-                <h5 class="text-brand-03" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
-                <span class="material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
+                <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
+                <h5 class="text-brand-03 week" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
               </div>
 
               <div>
-                <!-- <table class="table" style="table-layout: fixed">
-                  <thead>
-                    <tr>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期四</span>
-                          <span class="fs-7 fw-normal">08/01</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期五</span>
-                          <span class="fs-7 fw-normal">08/02</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期六</span>
-                          <span class="fs-7 fw-normal">08/03</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期日</span>
-                          <span class="fs-7 fw-normal">08/04</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期一</span>
-                          <span class="fs-7 fw-normal">08/05</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期二</span>
-                          <span class="fs-7 fw-normal">08/06</span>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column text-center">
-                          <span class="fs-6 fw-medium">星期三</span>
-                          <span class="fs-7 fw-normal">08/07</span>
-                        </div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-center">
-                    <tr>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                      <td><p class="time fs-8 bg-brand-02 p-1 rounded-4 text-brand-03" role="button">08:00</p></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table> -->
-
                 <div class="row row-cols-7 available-date-time g-0">
-                  <div class="col flex-column">
+                  <div class="col">
                     <div class="date f-center flex-column">
                       <h6>星期四</h6>
                       <p>08/01</p>
@@ -328,7 +278,7 @@
                 </a>
               </div>
 
-              <div class="row row-cols-lg-2 g-lg-4 g-2">
+              <div class="row row-cols-lg-2 row-cols-1 g-lg-4 g-2">
                 <div class="col">
                   <div class="card p-4">
                     <div class="row justify-content-center">
@@ -355,8 +305,7 @@
                               aria-label="Basic example"
                               aria-valuenow="0"
                               aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
+                              aria-valuemax="100">
                               <div class="progress-bar" style="width: 85%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">108</p>
@@ -371,8 +320,7 @@
                               aria-label="Basic example"
                               aria-valuenow="0"
                               aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
+                              aria-valuemax="100">
                               <div class="progress-bar" style="width: 15%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">3</p>
@@ -387,8 +335,7 @@
                               aria-label="Basic example"
                               aria-valuenow="0"
                               aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
+                              aria-valuemax="100">
                               <div class="progress-bar" style="width: 0%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">0</p>
@@ -403,8 +350,7 @@
                               aria-label="Basic example"
                               aria-valuenow="0"
                               aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
+                              aria-valuemax="100">
                               <div class="progress-bar" style="width: 0%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">0</p>
@@ -419,8 +365,7 @@
                               aria-label="Basic example"
                               aria-valuenow="0"
                               aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
+                              aria-valuemax="100">
                               <div class="progress-bar" style="width: 0%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">0</p>
@@ -443,11 +388,61 @@
                 timestamp:"2024-08-07 10:30"}); -%>
               </div>
             </section>
+
+            <!-- section 4 - tutor recommendation -->
+            <section class="section mb-0">
+              <div class="section-component f-between-center">
+                <h4>推薦老師</h4>
+                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                  <p>更多</p>
+                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                </a>
+              </div>
+
+              <!-- desktop -->
+              <ul class="row row-cols-lg-2 g-lg-4 d-none d-lg-flex">
+                <!-- tutor1 -->
+                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
+                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                <!-- tutor2 -->
+                <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
+                title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                <!-- tutor3 -->
+                <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
+                "Python Flask 網站後端開發"}]}); -%>
+                <!-- tutor4 -->
+                <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
+                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+              </ul>
+              <!-- mobile -->
+              <div class="swiper tutor-card-swiper d-block d-lg-none">
+                <div class="swiper-wrapper mb-10 py-5">
+                  <div class="swiper-slide">
+                    <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
+                    title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                  </div>
+                  <div class="swiper-slide">
+                    <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
+                    title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                  </div>
+                  <div class="swiper-slide">
+                    <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
+                    title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python Flask 網站後端開發"}, {name:
+                    "Python數據分析"},{name:"Node.js"}, {name: "MongoDB"}, ]}); -%>
+                  </div>
+                  <div class="swiper-slide">
+                    <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
+                    title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
 
-          <!-- price card -->
-          <div class="col-lg-4">
-            <div class="card p-lg-6 p-4">
+          <!-- Desktop right CTA card -->
+          <div class="col-lg-4 d-lg-block d-none">
+            <div class="desktop-cta-card card p-lg-6 p-4 sticky-top">
               <div class="position-relative mb-lg-5 mb-4">
                 <div class="img-wrapper img-hover-enlarge rounded-2">
                   <img src="../assets/images/course/course-2.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
@@ -457,8 +452,7 @@
                   class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
                   role="button"
                   style="background-color: #1e1e1e66"
-                  data-favorite="true"
-                >
+                  data-favorite="true">
                   favorite
                 </span>
               </div>
@@ -468,8 +462,8 @@
                   <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
                 </div>
 
-                <a href="#" class="btn btn-brand-03 w-100">
-                  <p class="slide-right-hover f-center me-1">
+                <a href="#" class="btn slide-right-hover btn-brand-03 w-100">
+                  <p class="f-center me-1">
                     立即預約
                     <span class="material-symbols-outlined">arrow_forward</span>
                   </p>
@@ -478,23 +472,50 @@
             </div>
           </div>
         </div>
+      </main>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
+      <div class="pt-4 pb-6 px-4">
+        <div class="f-between-center">
+          <div>
+            <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+            <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
+          </div>
+
+          <a href="#" class="btn slide-right-hover btn-brand-03">
+            <p class="f-center me-1">
+              立即預約
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </p>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <ul class="row row-cols-2">
-        <%- include('./layout/tutor-card', {image:"course-1", isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9",
-        price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
-
-        <!-- Tutor 2 -->
-        <%- include('./layout/tutor-card', {image:"course-1", isFavorite:"true", name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9",
-        price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress 客製化佈景主題"}]}); -%>
-      </ul>
-    </div>
-    <%- include('./layout/footer'); -%>
-
     <script type="module" src="../assets/js/add-to-favorite.js"></script>
+    <script type="module" src="../assets/js/show-n-hide-text.js"></script>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".tutor-card-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

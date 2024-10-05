@@ -6,7 +6,7 @@
     margin-bottom: 40px;
 
     @include pad {
-      padding: 0;
+      padding: 24px 12px;
       margin-bottom: 16px;
     }
   }
@@ -29,12 +29,84 @@
       }
     }
   }
+  .mobile-bottom-cta {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+}
+
+.tab-pane {
+  .tab-details {
+    &.text-hide {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* number of lines to show */
+      line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+.schedule {
+  .week {
+    text-align: center;
+    @include lg-pc {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+
+    @include mobile-sm {
+      font-size: 15px;
+    }
+  }
+
+  .prev,
+  .next {
+    @include lg-pc {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+
+    @include mobile-sm {
+      font-size: 15px;
+    }
+  }
 }
 
 .available-date-time {
   .date {
     background-color: white;
-    padding: 20px 4px 20px 4px;
+    padding: 20px 4px;
+    text-align: center;
+    @include lg-pc {
+      h6 {
+        font-size: 13px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    @include mobile {
+      h6 {
+        font-size: 12px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+
+    @include mobile-sm {
+      h6 {
+        font-size: 11px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
     &.disabled h6 {
       color: $gray-03;
     }
@@ -54,6 +126,9 @@
 
   .times {
     margin-top: 20px;
+    @include lg-pc {
+      margin-top: 10px;
+    }
     .time {
       font-size: 14px;
       background-color: $brand-02;
@@ -61,8 +136,22 @@
       text-align: center;
       border-radius: 12px;
       padding: 4px 12px;
-      margin: 8px;
+      margin: 8px 0px;
       cursor: pointer;
+      @include lg-pc {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin: 6px 0px;
+      }
+      @include mobile {
+        font-size: 10px;
+        margin: 4px 0px;
+      }
+      @include mobile-sm {
+        font-size: 9px;
+        padding: 4px 6px;
+      }
+
       &:hover {
         background-color: $brand-03;
         color: white;
@@ -99,5 +188,13 @@
     -webkit-line-clamp: 3; /* number of lines to show */
     line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+}
+
+.tutor-booking {
+  .desktop-cta-card {
+    &.sticky-top {
+      top: 30px;
+    }
   }
 }
