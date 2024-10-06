@@ -1,13 +1,21 @@
+//hero section
 .tutor-list {
   .hero-section {
     overflow-x: hidden;
-    overflow-y: scroll;
     background-image: url("/assets/images/deco/bg-6.png");
-    margin-top: -130px;
-    padding-top: 280px;
-    padding-bottom: 80px;
+    margin-top: -200px;
+    padding-top: 250px;
+    padding-bottom: 180px;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include pad {
+      background-color: $brand-05;
+      background-image: none;
+      margin-top: 0;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
 
     .star-deco {
       width: 450px;
@@ -36,9 +44,6 @@
       @include pad {
         background-color: $brand-05;
       }
-    }
-    @include pad {
-      background-color: $brand-05;
     }
   }
 
