@@ -121,7 +121,7 @@
           <%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %>
           <div class="mt-8">
             <div class="control-group">
-              <div class="position-relative f-align-center d-flex me-2">
+              <div class="position-relative f-align-center d-flex me-2 search-tutor">
                 <input type="search" class="form-control nav-search-desktop border border-brand-03 border-3" placeholder="搜尋講師" />
                 <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
               </div>
@@ -130,12 +130,12 @@
                 <button type="button" class="btn btn-outline-brand-03 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   排序方式
                 </button>
+
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  <li><a class="dropdown-item" href="#">最熱門</a></li>
+                  <li><a class="dropdown-item" href="#">最高評價</a></li>
+                  <li><a class="dropdown-item" href="#">依時間(最舊到最新)</a></li>
+                  <li><a class="dropdown-item" href="#">依時間(最新到最舊)</a></li>
                 </ul>
               </div>
             </div>

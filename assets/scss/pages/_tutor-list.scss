@@ -129,6 +129,7 @@
   }
 }
 
+//category section
 .tutor-list {
   .arrow {
     @include pad {
@@ -156,6 +157,7 @@
   }
 }
 
+//tutor list
 .tutor-list {
   .control-group {
     display: flex;
@@ -168,6 +170,13 @@
       flex-direction: column;
     }
   }
+
+  .search-tutor {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
   .nav-search-desktop {
     width: 200px;
     @include mobile {
@@ -182,6 +191,9 @@
   .sort {
     @include mobile {
       margin-top: 16px;
+      .dropdown-menu {
+        width: calc(100% - 20px);
+      }
     }
     .dropdown-toggle {
       width: 100%;
