@@ -21,7 +21,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="../assets/images/user/<%= tutorProfile %>" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -44,10 +44,14 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         <% for(var i=0; i<tags.length; i++) {%>
-          <a href="#" class="tag tag-brand-02 fs-8 me-3"><%= tags[i].name %></a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8"><%= tags[i].name %></a>
+        </div>
         <% } %>
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
