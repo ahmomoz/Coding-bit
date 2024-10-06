@@ -99,6 +99,7 @@
   .service-intro {
     padding-bottom: 80px;
     @include pad {
+      padding-top: 32px;
       padding-bottom: 32px;
     }
     @include mobile {
