@@ -48,6 +48,7 @@
     height: 45px;
     border-radius: 50px;
     border: 1px solid $gray-04;
+    background-color: white;
     &:not(:first-of-type) {
       margin-left: -12px;
     }
