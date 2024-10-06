@@ -25,6 +25,13 @@
       padding-bottom: 80px;
     }
 
+    .cta-btn {
+      font-size: 20px;
+      @media (max-width: 368px) {
+        font-size: 15px;
+      }
+    }
+
     .star-deco {
       width: 450px;
       @include lg-pc {
