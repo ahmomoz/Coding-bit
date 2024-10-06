@@ -23,9 +23,9 @@
     <%- include('./layout/header'); -%>
     <main class="tutor-list">
       <!-- hero-section -->
-      <section class="hero-section py-10">
+      <section class="hero-section">
         <div class="container">
-          <div class="d-flex justify-content-md-evenly align-items-md-center">
+          <div class="d-flex justify-content-md-around align-items-md-center">
             <div>
               <div class="question-text-wrapper">
                 <h2 class="fs-1 mb-2 question-text text-brand-03"></h2>
@@ -45,7 +45,7 @@
                 <p class="profile">100+</p>
               </div>
             </div>
-            <img src="../assets/images/deco/star3D.png" class="star-deco" alt="star-deco" style="transform: translate(50px, -80px)" />
+            <img src="../assets/images/deco/star3D.png" class="star-deco" alt="star-deco" />
           </div>
         </div>
       </section>
@@ -69,12 +69,18 @@
               <!-- description -->
               <div>
                 <p class="mb-5 description">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
-                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800" data-aos-offset="200">
                   <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">一對一課程</p>
                   <span class="material-symbols-outlined me-3"> chevron_right </span>
                   <p>不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</p>
                 </div>
-                <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="800">
+                <div
+                  class="mb-8 f-center"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-offset="200">
                   <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">程式碼檢視</p>
                   <span class="material-symbols-outlined me-3"> chevron_right </span>
                   <p class="">預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。</p>
