@@ -50,25 +50,17 @@
         </div>
       </section>
       <!-- service introduction -->
-      <section class="service-intro wrap" style="overflow: hidden">
+      <section class="service-intro" style="overflow: hidden">
         <div class="container">
-          <div class="row justify-content-center">
+          <!-- title -->
+          <div class="f-center flex-column">
+            <%- include('./layout/title-brand-03', { title: '什麼是一對一教學&程式碼檢視服務？ ', title2: '', longTitle: true }) %>
+            <p class="mt-5 mb-11 description">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
+          </div>
+          <div class="row justify-content-around">
             <div class="col-lg-6 col-md-8">
-              <!-- title -->
-              <div class="f-center mb-2">
-                <picture>
-                  <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
-                  <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" />
-                </picture>
-                <h2 class="fs-md-5 fs-4 text-center text-brand-03 ms-3 ms-lg-4">什麼是一對一教學&程式碼檢視服務？</h2>
-                <picture>
-                  <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
-                  <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" class="ms-3 ms-lg-4" />
-                </picture>
-              </div>
               <!-- description -->
               <div>
-                <p class="mb-5 description">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
                 <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800" data-aos-offset="200">
                   <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">一對一課程</p>
                   <span class="material-symbols-outlined me-3"> chevron_right </span>
