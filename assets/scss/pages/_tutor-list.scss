@@ -1,6 +1,14 @@
 .tutor-list {
   .hero-section {
     overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("/assets/images/deco/bg-6.png");
+    margin-top: -130px;
+    padding-top: 280px;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     .star-deco {
       width: 450px;
       @include lg-pc {
