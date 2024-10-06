@@ -46,9 +46,9 @@
         <div class="container">
           <div class="row f-center">
             <div class="col">
-              <div class="bg-white rounded shadow py-8 px-4 p-sm-13">
+              <div class="bg-white rounded shadow py-8 px-4 p-md-13">
                 <%- include('./layout/title-brand-03', { title: '常見問題', title2: '', longTitle: false }) %>
-                <div class="accordion mt-10" id="accordionPanelsStayOpenExample">
+                <div class="accordion mt-10" id="FAQ-accordion">
                   <div class="accordion-item">
                     <h3 class="accordion-header" id="panelsStayOpen-headingOne">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -115,9 +115,76 @@
         <div class="container">
           <div class="row f-center">
             <div class="col">
-              <div class="bg-white rounded shadow py-8 px-4 p-sm-13">
+              <div class="bg-white rounded shadow py-8 px-4 p-md-13">
                 <%- include('./layout/title-brand-03', { title: '聯絡我們', title2: '', longTitle: false }) %>
-                <form class="row g-3 mt-6 mt-lg-12">
+                <div class="row mt-6 mt-lg-12">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li class="f-align-center mt-4">
+                        <div class="flex-shrink-0 f-align-center">
+                          <span class="material-symbols-outlined text-brand-01 fs-2">
+                          call
+                          </span>
+                        </div>
+                        <div class="flex-grow-1 ms-4">
+                          <p class="fw-semibold">電話</p>
+                          <small>
+                            <a href="tel:+021234-5678"
+                            class="underline-hover d-inline-block">
+                              (02) 1234-5678
+                            </a>
+                          </small>
+                        </div>
+                      </li>
+                      <li class="f-align-center mt-4">
+                        <div class="flex-shrink-0 f-align-center">
+                          <span class="material-symbols-outlined text-brand-01 fs-2">
+                          mail
+                          </span>
+                        </div>
+                        <div class="flex-grow-1 ms-4">
+                          <p class="fw-semibold">信箱</p>
+                          <small>
+                            <a
+                              href="mailto:custommadesite@gmail.com"
+                              class="underline-hover d-inline-block">custommadesite@gmail.com</a>
+                          </small>
+                        </div>
+                      </li>
+                      <li class="f-align-center mt-4">
+                        <div class="flex-shrink-0 f-align-center">
+                          <span class="material-symbols-outlined text-brand-01 fs-2">
+                          pin_drop
+                          </span>
+                        </div>
+                        <div class="flex-grow-1 ms-4">
+                          <p class="fw-semibold">地址</p>
+                          <small>
+                            100台北市中正區重慶南路一段102號
+                          </small>
+                        </div>
+                      </li>
+                    </ul>
+                    <hr>
+                    <h4 class="fw-medium fs-6 fs-lg-4 mt-6">Follow us</h4>
+                    <ul class="d-flex mt-4">
+                      <li>
+                        <a href="#" class="icon-hover">
+                          <img src="../assets/images/icon/icon-ins-purple.svg" alt="icon-ins">
+                        </a>
+                      </li>
+                      <li class="ms-3">
+                        <a href="#" class="icon-hover">
+                          <img src="../assets/images/icon/icon-facebook-purple.svg" alt="icon-ins">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 mt-10 mt-lg-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.6875711010141!2d121.51242426953871!3d25.042547213645992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90b40d1885d%3A0xaa64cab47db4b886!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A6YeN5oW25Y2X6Lev5LiA5q61MTAy6Jmf!5e0!3m2!1szh-TW!2stw!4v1728110805181!5m2!1szh-TW!2stw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </div>
+                <form class="row g-3 bg-brand-05 p-3 px-sm-6 py-sm-8 mt-8">
                   <div class="col-md-6">
                     <label for="name" class="form-label">姓名</label>
                     <input type="text" class="form-control" id="name">

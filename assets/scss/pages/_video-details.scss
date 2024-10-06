@@ -1,0 +1,322 @@
+/*
+fs-1	40px
+fs-2	32px
+fs-3	28px
+fs-4	24px
+fs-5	20px
+fs-6	16px
+fs-7	14px
+fs-8	12px
+
+*-1	4px
+*-2	8px
+*-3	12px
+*-4	16px
+*-5	20px
+*-6	24px
+*-7	28px
+*-8	32px
+*-9	36px
+*-10	40px
+*-11	48px
+*-12	64px
+*-13	80px
+*/
+
+.material-symbols-outlined.eyes-icon {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+// section
+.video-details {
+  .video-title {
+    line-height: 1.2;
+  }
+
+  .video-show {
+    max-width: 100%;
+  }
+}
+
+.data-view-count,
+.data-rating-score {
+  color: $brand-03;
+}
+
+.view-count,
+.rating-score {
+  color: $brand-01;
+}
+
+.favorite-button {
+  color: $gray-01;
+}
+
+.review-button {
+  background-color: $brand-02;
+  color: $brand-03;
+}
+
+.tag-label {
+  background-color: $brand-02;
+  margin-right: 12px;
+
+  h6 {
+    color: $brand-03;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.author-content {
+  .author-image {
+    width: 48px;
+  }
+
+  .author-name {
+    font-weight: 500;
+    line-height: 1.2;
+    color: $gray-01;
+  }
+
+  .author-info {
+    font-weight: 400;
+    line-height: 1.2;
+    color: $gray-02;
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $gray-03;
+
+  .video-description,
+  .video-comments {
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 12px 24px;
+    color: $brand-03;
+  }
+
+  .video-comments {
+    color: $gray-03;
+  }
+}
+
+.tab-content {
+  .user-comment-picture {
+    display: block;
+    width: 40px;
+    border-radius: 88px;
+  }
+
+  .user-comment {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $gray-03;
+
+    &::placeholder {
+      color: $gray-03;
+    }
+  }
+}
+
+.history-commemts {
+
+  .user-content {
+    .user-image {
+      width: 40px;
+      border-radius: 88px;
+    }
+
+    .user-name {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: $gray-01;
+    }
+
+    .comment-time {
+      font-weight: 400;
+      line-height: 1.2;
+      color: $gray-03;
+    }
+
+    .delete-comment,
+    .reply-comment {
+      color: $gray-01;
+      line-height: 1.5;
+    }
+  }
+
+  .reply {
+    .accordion-button {
+      color: $brand-03;
+
+      &:not(.collapsed) {
+        background-color: unset;
+        box-shadow: none
+      }
+
+      &::after {
+        margin-left: 4px;
+        color: $brand-03;
+      }
+    }
+
+    .accordion-collapse {
+      background-color: $gray-04;
+      background: rgba(248, 248, 248, 1);
+
+      .teacher-content {
+        .teacher-image {
+          width: 40px;
+          border-radius: 88px;
+        }
+
+        .teacher-name {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.2;
+          color: $gray-01;
+        }
+
+        .comment-time {
+          font-weight: 400;
+          line-height: 1.2;
+          color: $gray-03;
+        }
+
+        .delete-comment,
+        .reply-comment {
+          color: $gray-01;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.aside-border {
+  border: 2px solid $brand-02;
+}
+
+.chapter-video {
+  padding: 34px 24px 12px;
+  backdrop-filter: blur(20px);
+
+  .chapter-video-title {
+    font-weight: 500;
+    color: $gray-01;
+  }
+
+  .show-more-button {
+    font-weight: 500;
+    color: $brand-03;
+  }
+}
+
+.chapter-list {
+  .player-icon {
+    color: $brand-01;
+  }
+
+  .chapter-item:not(:last-child) {
+    border-bottom: 2px solid #F1EAFF
+  }
+
+  .chapter-contents {
+    color: $gray-02;
+    line-height: 1.2;
+  }
+
+  .video-duration {
+    color: $gray-04;
+    line-height: 1.2;
+    background-color: hsl(0, 0%, 12%, 30%);
+  }
+
+  .chapter-item-title {
+    color: $gray-01;
+    min-height: 39px;
+    font-weight: 500;
+  }
+
+  .eyes-icon {
+    color: $brand-01;
+    margin-right: .5px;
+  }
+
+  .chapter-view-count {
+    color: $brand-03;
+    line-height: 1.2;
+  }
+}
+
+
+// 
+
+.other-videos {
+  padding: 34px 24px 12px;
+  backdrop-filter: blur(20px);
+
+  .teacher-other-video {
+    font-weight: 500;
+    color: $gray-01;
+  }
+
+  .show-more-button {
+    font-weight: 500;
+    color: $brand-03;
+  }
+}
+
+.other-videos-list {
+  .other-video-image {
+    max-width: 136px;
+  }
+
+  .other-video-title {
+    font-weight: 500;
+    color: $gray-01;
+  }
+}
+
+
+
+.related-videos {
+  padding: 34px 24px 12px;
+  backdrop-filter: blur(20px);
+
+  .teacher-related-video {
+    font-weight: 500;
+    color: $gray-01;
+  }
+
+  .show-more-button {
+    font-weight: 500;
+    color: $brand-03;
+  }
+}
+
+.related-videos-list {
+  .related-video-image {
+    max-width: 136px;
+  }
+
+  .related-video-title {
+    font-weight: 500;
+    color: $gray-01;
+  }
+}

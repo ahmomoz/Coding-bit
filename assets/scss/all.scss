@@ -25,6 +25,11 @@
 @import './components/subscription-card.scss';
 @import './components/course-card.scss';
 
+@import "./layout/video-comments";
+@import "./layout/video-description";
+
+@import "./pages/suject.scss";
+@import "./pages/video-details";
 @import './pages/index.scss';
 @import './pages/tutor-booking.scss';
 @import './pages/subscription.scss';
@@ -32,3 +37,4 @@
 @import './pages/tutor-list.scss';
 @import './pages/custom-course';
 @import './pages/help-center.scss';
+@import './pages/teacher-info.scss';
