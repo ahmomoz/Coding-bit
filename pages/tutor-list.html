@@ -20,7 +20,7 @@
     <title>Coding∞bit ｜ 可預約老師</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/loader'); -%> <%- include('./layout/header'); -%>
     <main class="tutor-list">
       <!-- hero-section -->
       <section class="hero-section">
@@ -31,7 +31,7 @@
                 <h2 class="fs-1 mb-2 question-text text-brand-03"></h2>
               </div>
               <h2 class="fs-md-1 fs-2 mb-12">找專業講師來場一對一課程</h2>
-              <a href="#tutor-list" class="w-50 fs-5 btn btn-brand-03 d-flex justify-content-center slide-down-hover mb-5">
+              <a href="#tutor-list" class="w-50 btn btn-brand-03 cta-btn f-center slide-down-hover mb-5">
                 我要找講師 <span class="material-symbols-outlined"> keyboard_arrow_down </span>
               </a>
               <div class="d-flex align-items-center">
@@ -50,29 +50,21 @@
         </div>
       </section>
       <!-- service introduction -->
-      <section class="service-intro wrap" style="overflow: hidden">
+      <section class="service-intro" style="overflow: hidden">
         <div class="container">
-          <div class="row justify-content-center">
+          <!-- title -->
+          <div class="f-center flex-column">
+            <%- include('./layout/title-brand-03', { title: '什麼是一對一教學&程式碼檢視服務？ ', title2: '', longTitle: true }) %>
+            <p class="mt-5 mb-11 description fs-md-5 fs-6">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
+          </div>
+          <div class="row justify-content-around">
             <div class="col-lg-6 col-md-8">
-              <!-- title -->
-              <div class="f-center mb-2">
-                <picture>
-                  <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
-                  <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" />
-                </picture>
-                <h2 class="fs-md-5 fs-4 text-center text-brand-03 ms-3 ms-lg-4">什麼是一對一教學&程式碼檢視服務？</h2>
-                <picture>
-                  <source srcset="../assets/images/icon/icon-infinite-sm.svg" media="(max-width: 575.98px)" />
-                  <img src="../assets/images/icon/icon-infinite.svg" alt="icon-infinite" class="ms-3 ms-lg-4" />
-                </picture>
-              </div>
               <!-- description -->
               <div>
-                <p class="mb-5 description">只要您訂閱成為基本會員，即可購買專業講師一對一課程或是程式碼檢視服務。</p>
                 <div class="mb-8 f-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800" data-aos-offset="200">
-                  <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">一對一課程</p>
+                  <p class="tag bg-brand-03 text-white fs-md-5 fs-7 text-nowrap me-3">一對一課程</p>
                   <span class="material-symbols-outlined me-3"> chevron_right </span>
-                  <p>不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</p>
+                  <p class="fs-md-5 fs-7">不怕問題被淹沒在人海之中，只要預約，就可以在線上接受指定老師的單獨教學。</p>
                 </div>
                 <div
                   class="mb-8 f-center"
@@ -81,15 +73,15 @@
                   data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200">
-                  <p class="tag bg-brand-03 text-white fs-7 text-nowrap me-3">程式碼檢視</p>
+                  <p class="tag bg-brand-03 text-white fs-md-5 fs-7 text-nowrap me-3">程式碼檢視</p>
                   <span class="material-symbols-outlined me-3"> chevron_right </span>
-                  <p class="">預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。</p>
+                  <p class="fs-md-5 fs-7">預約時提交想接受指導的程式碼，講師將會於預約時間回覆指導，再也不怕code沒有人批改。</p>
                 </div>
               </div>
 
               <a
                 href="subscription-info-normal.html"
-                class="underline-hover text-brand-03 cta"
+                class="underline-hover text-brand-03 cta fs-md-5 fs-6"
                 data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1000"
@@ -109,7 +101,7 @@
         <div class="container">
           <%- include('./layout/title-brand-03', { title: '不知道要選哪位講師？先從分類開始選起', title2: '', longTitle: false }) %>
           <div class="category-list">
-            <span class="material-symbols-outlined bg-brand-02 p-2 rounded-circle me-2 mb-4 arrow"> chevron_left </span>
+            <span class="material-symbols-outlined bg-brand-02 text-brand-01 p-2 rounded-circle me-2 mb-4 arrow" role="button"> chevron_left </span>
             <a href="#" class="btn btn-brand-03 me-2 mb-4 border border-3 border-brand-03">全部</a>
             <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">HTML & CSS</a>
             <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">JavaScript</a>
@@ -119,7 +111,7 @@
             <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">React</a>
             <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">C++</a>
             <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Bootstrap</a>
-            <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02 mb-4 arrow"> chevron_right </span>
+            <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02 text-brand-01 mb-4 arrow" role="button"> chevron_right </span>
           </div>
         </div>
       </section>
@@ -129,7 +121,7 @@
           <%- include('./layout/title-brand-03', { title: '尋找喜歡的講師', title2: '', longTitle: false }) %>
           <div class="mt-8">
             <div class="control-group">
-              <div class="position-relative f-align-center d-flex me-2">
+              <div class="position-relative f-align-center d-flex me-2 search-tutor">
                 <input type="search" class="form-control nav-search-desktop border border-brand-03 border-3" placeholder="搜尋講師" />
                 <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
               </div>
@@ -138,19 +130,19 @@
                 <button type="button" class="btn btn-outline-brand-03 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   排序方式
                 </button>
+
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  <li><a class="dropdown-item" href="#">最熱門</a></li>
+                  <li><a class="dropdown-item" href="#">最高評價</a></li>
+                  <li><a class="dropdown-item" href="#">依時間(最舊到最新)</a></li>
+                  <li><a class="dropdown-item" href="#">依時間(最新到最舊)</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="my-8">
             <ul>
-              <ul class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 g-4">
+              <ul class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
                 <%- include('./layout/tutor-card', {image:"course-2", isFavorite:true, tutorProfile:"user-1.png",name:" 卡斯伯 Casper",
                 title:"10年經驗的前端工程師", score:"4.9", price:250, tags:[{name:"HTML/CSS"}, {name: "React"},{name: "網頁動畫"}]}); -%>
 
@@ -159,8 +151,7 @@
                 title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
                 <!-- tutor3 -->
                 <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
-                "Python Flask 網站後端開發"}]}); -%>
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python 數據分析"},{name: "Python Flask 網站後端開發"}]}); -%>
                 <!-- tutor4 -->
                 <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
                 title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
@@ -172,8 +163,7 @@
                 title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
                 <!-- tutor3 -->
                 <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
-                "Python Flask 網站後端開發"}]}); -%>
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python 數據分析"},{name: "Python Flask 網站後端開發"}]}); -%>
                 <!-- tutor4 -->
                 <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
                 title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
@@ -185,8 +175,7 @@
                 title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
                 <!-- tutor3 -->
                 <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name:"Node.js"}, {name: "MongoDB"},{name: "Python 數據分析"},{name:
-                "Python Flask 網站後端開發"}]}); -%>
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python 數據分析"},{name: "Python Flask 網站後端開發"}]}); -%>
                 <!-- tutor4 -->
                 <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
                 title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
