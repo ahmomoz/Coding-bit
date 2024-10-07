@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
-    <title>Coding∞bit ｜ 程式碼檢視預約完成</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-b46f388c.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-46272152.css">
+    <title>Coding∞bit ｜ 講師預約完成</title>
+    <script type="module" crossorigin src="/Coding-bit/assets/main-6b7a1c8e.js"></script>
+    <script type="module" crossorigin src="/Coding-bit/assets/courses-937fd4e6.js"></script>
+    <script type="module" crossorigin src="/Coding-bit/assets/index-ce8543f5.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/main-d0737ae3.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -59,7 +61,7 @@
           </span>
         </li>
         <li class="nav-item mt-4 mt-lg-0">
-          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="course-list.html"> 精選課程 </a>
         </li>
         <li class="nav-item">
           <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
@@ -109,124 +111,100 @@
     });
   });
 </script>
-    <main class="tutor-booking-success-section wrap">
-      <div class="container">
-        <!-- Step Tracking -->
-        <div class="tracking mb-8">
-          <div class="row row-cols-lg-5 row-cols-3 g-5 justify-content-center">
-            <div class="text-brand-02">
-              <div class="d-flex border-bottom border-brand-02 border-5 ps-0 rounded-1 pb-1">
-                <div class="d-flex align-items-center">
-                  <span class="material-symbols-outlined icon-fill fs-3 me-2 d-none d-sm-block"> shopping_cart </span>
-                  <div>
-                    <p class="fs-8">Step 1/3</p>
-                    <p class="fw-semibold fs-8 fs-lg-6">確認預約資訊</p>
-                  </div>
-                </div>
+<main class="tutor-booking-success-section wrap">
+  <div class="container">
+    <div class="f-center">
+      <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
+        <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5"> check_circle </span>
+        付款成功
+      </h1>
+    </div>
+    <div class="row f-center">
+      <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
+        <div class="card shadow rounded-2 p-6 p-lg-10">
+          <h2 class="fs-5 fs-lg-4 w-bolder">預約詳細資訊</h2>
+          <!-- 詳細預約內容 -->
+          <form class="mt-6">
+            <div class="row row-cols-md-2">
+              <div class="mb-md-12 mb-6">
+                <label for="tutor" class="form-label">
+                  <h3 class="fs-6 fw-medium">預約老師</h3>
+                </label>
+                <input type="text" class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="tutor" value="卡斯伯 Casper" disabled />
+              </div>
+              <div class="mb-md-12 mb-6">
+                <label for="bookingType" class="form-label">
+                  <h3 class="fs-6 fw-medium">預約類型</h3>
+                </label>
+                <input
+                  type="text"
+                  class="form-control border-0 bg-white p-0 rounded-0 text-gray-02"
+                  id="bookingType"
+                  value="程式碼檢視"
+                  disabled />
+              </div>
+              <div class="mb-md-5 mb-6">
+                <label for="date" class="form-label">
+                  <h3 class="fs-6 fw-medium">預約日期</h3>
+                </label>
+                <input type="text" class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="date" value="2024/08/11" disabled />
+              </div>
+              <div class="mb-md-5 mb-6">
+                <label for="timeslot" class="form-label">
+                  <h3 class="fs-6 fw-medium">預約時段</h3>
+                </label>
+                <input type="text" class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="timeslot" value="10:00-11:00" disabled />
               </div>
             </div>
-            <div class="text-brand-02">
-              <div class="d-flex border-bottom border-brand-02 border-5 ps-0 rounded-1 pb-1 h-100">
-                <div class="d-flex align-items-center mb-auto">
-                  <span class="material-symbols-outlined icon-fill fs-3 me-2 d-none d-sm-block"> credit_card </span>
-                  <div>
-                    <p class="fs-8">Step 2/3</p>
-                    <p class="fw-semibold fs-8 fs-lg-6">確認付款</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-brand-03">
-              <div class="d-flex border-bottom border-brand-03 border-5 ps-0 rounded-1 pb-1 h-100">
-                <div class="d-flex align-items-center mb-auto">
-                  <span class="material-symbols-outlined icon-fill fs-3 me-2 d-none d-sm-block"> check_circle </span>
-                  <div>
-                    <p class="fs-8">Step 3/3</p>
-                    <p class="fw-semibold fs-8 fs-lg-6">付款結果</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="f-center">
-          <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
-            <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5"> check_circle </span>
-            付款成功
-          </h1>
-        </div>
-        <div class="row f-center">
-          <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
-            <div class="card shadow rounded-2 p-6 p-lg-10">
-              <h2 class="fs-5 fs-lg-4 w-bolder">預約詳細資訊</h2>
-              <!-- 詳細預約內容 -->
-              <form class="mt-6">
-                <div class="row row-cols-md-2">
-                  <div class="mb-md-12 mb-6">
-                    <label for="tutor" class="form-label">
-                      <h3 class="fs-6 fw-medium">預約老師</h3>
-                    </label>
-                    <input type="text" class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="tutor" value="卡斯伯 Casper" disabled />
-                  </div>
-                  <div class="mb-md-12 mb-6">
-                    <label for="bookingType" class="form-label">
-                      <h3 class="fs-6 fw-medium">預約類型</h3>
-                    </label>
-                    <input
-                      type="text"
-                      class="form-control border-0 bg-white p-0 rounded-0 text-gray-02"
-                      id="bookingType"
-                      value="程式碼檢視預約"
-                      disabled />
-                  </div>
-                  <div class="mb-md-5 mb-6">
-                    <label for="date" class="form-label">
-                      <h3 class="fs-6 fw-medium">預約日期</h3>
-                    </label>
-                    <input type="text" class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="date" value="2024/08/11" disabled />
-                  </div>
-                  <div class="mb-md-5 mb-6">
-                    <label for="timeslot" class="form-label">
-                      <h3 class="fs-6 fw-medium">預約時段</h3>
-                    </label>
-                    <input type="text" class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="timeslot" value="10:00-11:00" disabled />
-                  </div>
-                </div>
-                <hr />
+            <hr />
 
-                <div class="mb-8">
-                  <label for="sourceCodeURL" class="form-label">希望接受檢視的程式碼儲存庫</label>
-                  <input
-                    class="form-control border-0 bg-white p-0 rounded-0 text-gray-02 h-100"
-                    id="sourceCodeURL"
-                    value="https://github.com/masterchan/next-todo-list.git"
-                    disabled />
-                </div>
+            <div class="mt-10">
+              <!-- 一程式碼檢視 -->
+              
+              <div class="mb-8">
+                <label for="sourceCodeURL" class="form-label">希望接受檢視的程式碼儲存庫</label>
+                <input
+                  class="form-control border-0 bg-white p-0 rounded-0 text-gray-02 h-100"
+                  id="sourceCodeURL"
+                  value="https://github.com/masterchan/next-todo-list.git"
+                  disabled />
+              </div>
 
-                <div class="mb-8">
-                  <label for="userInput" class="form-label">希望接受指導的項目</label>
-                  <textarea class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="userInput" style="resize: none" rows="5" disabled>
+              <div>
+                <label for="userInput" class="form-label">希望接受指導的項目</label>
+                <textarea class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" id="userInput" style="resize: none" rows="5" disabled>
 第一次寫NextJs的框架。感覺寫的東西都都堆在一齊，看起來很複雜，不知道要怎麼factorize我的程式碼，讓往後維護會更簡單，而且看起來會跟直接，更符合業界標準。希望得到老師的指導。</textarea
-                  >
-                </div>
-              </form>
-              <!-- 提醒 -->
-              <div class="alert bg-brand-02 f-center" role="alert">
-                <span class="material-symbols-outlined me-2"> info </span>檢視結果將於預約時間結束時回覆。
+                >
               </div>
-              <!-- Button -->
-              <a href="index.html" class="">
-                <button class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
-                  回到首頁
-                  <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1"> arrow_forward </span>
-                </button>
-              </a>
+
+              
+
+              <!-- 一對一教學 -->
+              
             </div>
+          </form>
+          <!-- 提醒 -->
+          <div class="alert bg-brand-02 f-center" role="alert">
+            <span class="material-symbols-outlined me-2"> info </span>
+
+            <!-- 程式碼檢視 -->
+             檢視結果將於預約時間結束時回覆。 
+            <!-- 一對一教學 -->
+            
           </div>
+          <!-- Button -->
+          <a href="index.html" class="">
+            <button class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
+              回到首頁
+              <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1"> arrow_forward </span>
+            </button>
+          </a>
         </div>
       </div>
-    </main>
-    <footer class="layout-footer-wrap wrap-lg bg-white">
+    </div>
+  </div>
+</main>
+<footer class="layout-footer-wrap wrap-lg bg-white">
   <div class="container f-xl-between">
     <div class="footer-info-wrap flex-grow-1">
       <a href="index.html" class="navbar-brand">
@@ -267,21 +245,21 @@
           <a
             class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
             aria-current="page"
-            href="#">
+            href="course-list.html">
             精選課程
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
-            href="#">
+            href="tutor-list.html">
             一對一教學
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
-            href="#">
+            href="custom-course.html">
             課程客製化
           </a>
         </li>
@@ -331,6 +309,7 @@
   </div>
 </footer>
 
+    
     
   </body>
 </html>

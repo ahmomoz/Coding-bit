@@ -16,13 +16,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/bootstrap.min-b46f388c.js"></script>
+    <script type="module" crossorigin src="/Coding-bit/assets/main-6b7a1c8e.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/add-to-favorite-092af0d2.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/show-n-hide-text-799d5ee3.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/bootstrap-46272152.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/main-d0737ae3.css">
   </head>
   <body>
-    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="loader-wrapper">
+  <svg width="150px" height="75px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color: #d0a2f7; stop-opacity: 1" />
+        <stop offset="50%" style="stop-color: #f1eaff; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: #645caa; stop-opacity: 1" />
+      </linearGradient>
+    </defs>
+    <path
+      id="outline-bg"
+      d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+    <path
+      id="outline"
+      d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+  </svg>
+</div>
+ <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-lg">
     <div class="d-flex">
       <a href="index.html" class="navbar-brand me-10">
@@ -60,7 +77,7 @@
           </span>
         </li>
         <li class="nav-item mt-4 mt-lg-0">
-          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="course-list.html"> 精選課程 </a>
         </li>
         <li class="nav-item">
           <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
@@ -569,7 +586,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-5-cb87930d.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -592,12 +609,18 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress 網站架設</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">WordPress 網站架設</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress客製化佈景主題</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">WordPress客製化佈景主題</a>
+        </div>
         
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -639,7 +662,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-6-aff8550b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -662,12 +685,18 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">製作 RWD 網站</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">製作 RWD 網站</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Bootstrap</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Bootstrap</a>
+        </div>
         
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -709,7 +738,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-7-b073bdd4.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -732,16 +761,18 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Node.js</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Python 數據分析</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">MongoDB</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Python Flask 網站後端開發</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python 數據分析</a>
-        
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python Flask 網站後端開發</a>
-        
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -783,7 +814,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-10-2614d161.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -806,14 +837,22 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Unity</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Unity</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">2D遊戲製作</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">2D遊戲製作</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">C# 腳本撰寫</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">C# 腳本撰寫</a>
+        </div>
         
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -859,7 +898,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-5-cb87930d.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -882,12 +921,18 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress網站架設</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">WordPress網站架設</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">WordPress客製化佈景主題</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">WordPress客製化佈景主題</a>
+        </div>
         
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -930,7 +975,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-6-aff8550b.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -953,12 +998,18 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">製作 RWD 網站</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">製作 RWD 網站</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Bootstrap</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Bootstrap</a>
+        </div>
         
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -1001,7 +1052,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-7-b073bdd4.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -1024,16 +1075,18 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python Flask 網站後端開發</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Python Flask 網站後端開發</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Python數據分析</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Python數據分析</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Node.js</a>
-        
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">MongoDB</a>
-        
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -1076,7 +1129,7 @@
       </span>
     </div>
     <div class="card-body p-0 d-flex flex-column">
-      <div class="mb-2 f-between-start">
+      <div class="mb-5 f-between-start">
         <div class="f-center">
            <!-- dynamic tutor profile -->
           <img src="/Coding-bit/assets/user-10-2614d161.png" class="object-cover-fit rounded-circle me-2" width="45" height="45" alt="">
@@ -1099,14 +1152,22 @@
       </div>
 
       <!-- dynamic tag loop -->
-      <div class="mb-5 list-x-scroll py-2 mt-auto">
+      <div class="mb-auto">
+        <div class="">
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">Unity</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">Unity</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">2D遊戲製作</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">2D遊戲製作</a>
+        </div>
         
-          <a href="#" class="tag tag-brand-02 fs-8 me-3">C# 腳本撰寫</a>
+          <div class="d-inline-block mb-5">
+            <a href="#" class="tag tag-brand-02 fs-8">C# 腳本撰寫</a>
+        </div>
         
+        </div>
       </div>
 
       <div class="mb-lg-6 mb-5 mt-auto">
@@ -1243,21 +1304,21 @@
           <a
             class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
             aria-current="page"
-            href="#">
+            href="course-list.html">
             精選課程
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
-            href="#">
+            href="tutor-list.html">
             一對一教學
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
-            href="#">
+            href="custom-course.html">
             課程客製化
           </a>
         </li>
