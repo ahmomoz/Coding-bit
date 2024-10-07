@@ -1,7 +1,7 @@
 import { courseRender } from '../js/courses.js';
 
-const courseCard = document.querySelector('.course-card-wrap');
-const courseList = [
+const topicSeriesCourseCard = document.querySelector('.topicSeriesCourse-card-wrap');
+const topicSeriesCourseList = [
   {
     courseName: 'Python 基礎入門',
     img: 'course-1.png',
@@ -55,42 +55,15 @@ const courseList = [
     totalDuration: '1.8小時',
     purchaseCount: '168',
     courseCategory: '主題式課程影片'
-  },
-  {
-    courseName: '雲計算應用',
-    img: 'course-7.png',
-    teacher: 'momomo',
-    star: '4.0',
-    totalDuration: '13小時',
-    purchaseCount: '349',
-    courseCategory: '主題式課程影片'
-  },
-  {
-    courseName: 'UI/UX 設計原則',
-    img: 'course-8.png',
-    teacher: 'Tina Chen',
-    star: '4.0',
-    totalDuration: '3小時',
-    purchaseCount: '1,025',
-    courseCategory: '主題式課程影片'
-  },
-  {
-    courseName: '區塊鏈技術探索',
-    img: 'course-9.png',
-    teacher: 'Anna Wu',
-    star: '4.0',
-    totalDuration: '7小時',
-    purchaseCount: '225',
-    courseCategory: '主題式課程影片'
   }
 ];
 
-if (courseCard) {
-  const courseRenderData = () => {
-    courseRender(courseCard, courseList);
+if (topicSeriesCourseCard) {
+  const topicSeriesCourseRenderData = () => {
+    courseRender(topicSeriesCourseCard, topicSeriesCourseList);
   };
 
-  courseRenderData();
+  topicSeriesCourseRenderData();
 } else {
   console.error('course-card-wrap element not found');
 }

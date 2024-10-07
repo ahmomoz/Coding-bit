@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
+    <title>Coding∞bit ｜ 課程一覽</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <header class="course-list-banner-section bg">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col f-column-align-center d-lg-block">
+            <h1 class="title">
+              教學影片一覽
+            </h1>
+            <p class="title-info play-write-font">
+              <span class="d-inline d-xl-block">
+                Your Journey to Coding Excellence
+              <span>
+              <span class="d-inline d-xl-block mt-1 mt-lg-0">
+                Starts Here
+              <span>
+            </p>
+          </div>
+          <div class="col text-center">
+            <img
+              src="../assets/images/deco/Illustration-10.png"
+              alt="banner-illustration"
+              class="banner-illustration">
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="course-list-category-section wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '三大類別影片，', title2: '豐富多元', longTitle: true }) %> 
+      </div>
+    </section>
+    <section class="course-list-hot-section wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '熱門課程', title2: '', longTitle: false }) %>
+        <div class="swiper hotCourses-swiper pb-10 mt-6 mt-lg-8">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
+                  <div class="img-wrapper rounded">
+                    <img src="../assets/images/course/course-10.png"
+                    class="cover-img w-100"
+                    alt="course-image">
+                  </div>
+                  <div class="overlay rounded">
+                    <div>
+                      <h3 class="text-white fs-4 fw-medium">
+                        Python 基礎入門
+                      </h3>
+                      <p class="text-white mt-2">
+                        新手必學課程，輕鬆學Python
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hot-course-tag position-absolute">
+                    <span class="material-symbols-outlined fs-3">
+                    arrow_right
+                    </span>
+                    <span class="me-1">快速入門</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
+                  <div class="img-wrapper rounded">
+                    <img src="../assets/images/course/course-3.png"
+                    class="cover-img w-100"
+                    alt="course-image">
+                  </div>
+                  <div class="overlay rounded">
+                    <div>
+                      <h3 class="text-white fs-4 fw-medium">
+                        數據分析技巧
+                      </h3>
+                      <p class="text-white mt-2">
+                        教你學會如何有效率地分析數據
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hot-course-tag position-absolute">
+                    <span class="material-symbols-outlined fs-3">
+                    arrow_right
+                    </span>
+                    <span class="me-1">必備課程</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
+                  <div class="img-wrapper rounded">
+                    <img src="../assets/images/course/course-12.png"
+                    class="cover-img w-100"
+                    alt="course-image">
+                  </div>
+                  <div class="overlay rounded">
+                    <div>
+                      <h3 class="text-white fs-4 fw-medium">
+                        Web 開發實戰
+                      </h3>
+                      <p class="text-white mt-2">
+                        手把手教你如何開發網站
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hot-course-tag position-absolute">
+                    <span class="material-symbols-outlined fs-3">
+                    arrow_right
+                    </span>
+                    <span class="me-1">真材實料</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
+                  <div class="img-wrapper rounded">
+                    <img src="../assets/images/course/course-16.png"
+                    class="cover-img w-100"
+                    alt="course-image">
+                  </div>
+                  <div class="overlay rounded">
+                    <div>
+                      <h3 class="text-white fs-4 fw-medium">
+                        網路安全基礎
+                      </h3>
+                      <p class="text-white mt-2">
+                        網路安全漏洞百出，你學會怎麼防了嗎？
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hot-course-tag position-absolute">
+                    <span class="material-symbols-outlined fs-3">
+                    arrow_right
+                    </span>
+                    <span class="me-1">工程師必備</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-switch-btn f-end-center gap-5 mt-4">
+          <div class="swiper-button-prev swiper-circle-btn-prev rounded-circle"></div>
+          <div class="swiper-button-next swiper-circle-btn-next rounded-circle"></div>
+        </div>  
+      </div>
+    </section>
+    <section class="course-list-topicSeries-section wrap bg-brand-05">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '講師自編', title2: '主題式系列課程', longTitle: true }) %>
+        <div class="row topicSeriesCourse-card-wrap mt-6 mt-lg-8 g-6">
+          <div class="col-md-6 col-xl-4">
+            <a href="#" class="course-card card-column">
+              <div class="card gradient-border img-hover-enlarge h-100">
+                <div class="overflow-hidden img-wrapper rounded position-relative">
+                  <img
+                    src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
+                    class="card-img-top cover-img rounded"
+                    alt="course-image">
+                </div>
+                <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                  <div>
+                    <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
+                    <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">${item.teacher}</p>
+                  </div>
+                  <div class="f-between-center">
+                    <div class="f-align-center mt-1 mt-lg-2">
+                      <div class="f-center">
+                        <span class="material-symbols-outlined fs-5 me-1">
+                          schedule
+                        </span>
+                        <p class="fs-7 fs-lg-6">
+                          ${item.totalDuration}
+                        </p>
+                      </div>
+                      <div class="f-center ms-2">
+                        <span class="material-symbols-outlined fs-5 me-1">
+                          group
+                        </span>
+                        <p class="fs-7 fs-lg-6">
+                          ${item.purchaseCount}
+                        </p>
+                      </div>
+                    </div>
+                    <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                      <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                        kid_star
+                      </span>
+                      ${item.star}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="f-center">
+          <button
+            class="btn btn-outline-brand-03 slide-right-hover f-align-center mt-6 mt-lg-8">
+            了解更多
+            <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+              arrow_forward
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="course-list-customLearning-section wrap">
+      <div class="container">
+        <%- include('./layout/title-brand-03', { title: '客製化學習需求教學影片', title2: '', longTitle: false }) %>
+        <div class="row mt-lg-12">
+          <div class="col-lg-4 rounded-1 d-none d-lg-block">
+            <ul class="customLearning-list-group list-group bg-white shadow h-100 px-6 py-8" id="customLearning" role="tablist">
+              <li role="presentation">
+                <a
+                  href="#customLearning-01-tab"
+                  class="list-group-item list-group-item-action border-0 fs-5 fw-bolder py-4 active"
+                  aria-current="true"
+                  id="customLearning-01-tab" data-bs-toggle="tab"
+                  data-bs-target="#customLearning-01" role="tab"
+                  aria-controls="customLearning-01" aria-selected="true"
+                  >
+                  SCSS 7+1設計模式
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="#customLearning-02-tab"
+                  class="list-group-item list-group-item-action border-0 fs-5 fw-bolder py-4 mt-4"
+                  id="customLearning-02-tab" data-bs-toggle="tab"
+                  data-bs-target="#customLearning-02" role="tab"
+                  aria-controls="customLearning-02" aria-selected="false"
+                  >
+                  clip-path繪製不規則圖形
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="#customLearning-03-tab"
+                  class="list-group-item list-group-item-action border-0 fs-5 fw-bolder py-4 mt-4"
+                  id="customLearning-03-tab" data-bs-toggle="tab"
+                  data-bs-target="#customLearning-03" role="tab"
+                  aria-controls="customLearning-03" aria-selected="false"
+                  >
+                  CSS毛玻璃製作效果
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="#customLearning-04-tab"
+                  class="list-group-item list-group-item-action border-0 fs-5 fw-bolder py-4 mt-4"
+                  id="customLearning-04-tab" data-bs-toggle="tab"
+                  data-bs-target="#customLearning-04" role="tab"
+                  aria-controls="customLearning-04" aria-selected="false"
+                  >
+                  正則表達式暗記法
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8 mt-6 mt-lg-10">
+            <div
+              class="hot-card-wrap card tab-content border-0 f-center py-6"
+              id="customLearningContent">
+              <div
+                class="card-body bg-white tab-pane fade show active"
+                id="customLearning-01" role="tabpanel"
+                aria-labelledby="customLearning-01-tab">
+                <a
+                  href="#"
+                  class="course-card card-column">
+                  <div class="card border-0 img-hover-enlarge h-100">
+                    <div class="overflow-hidden img-wrapper rounded position-relative">
+                      <img
+                        src="../assets/images/course/course-10.png"
+                        class="card-img-top cover-img rounded"
+                        alt="course-image">
+                    </div>
+                    <div class="card-body p-0 mt-4 mt-lg-6 f-column-between">
+                      <div>
+                        <h3 class="card-title fs-5 fs-lg-4">
+                          SCSS 7+1設計模式
+                        </h3>
+                        <p class="card-text fs-7 fs-lg-5 mt-1 mt-lg-2">
+                          by Peter Fan
+                        </p>
+                        <p class="card-text fs-6 fs-lg-5 mt-2 mt-lg-4">
+                          深入介紹 SCSS 中的「7+1」設計模式，這是一種結構化和模組化管理大型 CSS 專案的最佳實踐方法。</br>
+                          透過影片，將學習如何透過將樣式檔案劃分為功能、佈局、元件等不同類型，來提升代碼的可維護性和擴展性。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="card-body bg-white tab-pane fade"
+                id="customLearning-02" role="tabpanel"
+                aria-labelledby="customLearning-02-tab">
+                <a
+                  href="#"
+                  class="course-card card-column">
+                  <div class="card border-0 img-hover-enlarge h-100">
+                    <div class="overflow-hidden img-wrapper rounded position-relative">
+                      <img
+                        src="../assets/images/course/course-14.png"
+                        class="card-img-top cover-img rounded"
+                        alt="course-image">
+                    </div>
+                    <div class="card-body p-0 mt-4 mt-lg-6 f-column-between">
+                      <div>
+                        <h3 class="card-title fs-5 fs-lg-4">
+                          clip-path繪製不規則圖形
+                        </h3>
+                        <p class="card-text fs-7 fs-lg-5 mt-1 mt-lg-2">
+                          by Neko Meow
+                        </p>
+                        <p class="card-text fs-6 fs-lg-5 mt-2 mt-lg-4">
+                          學習如何使用 CSS 的 clip-path 屬性來繪製各種不規則圖形，並實現創意十足的網頁設計效果。</br>
+                          本影片教你如何將學習如何通過多邊形、多點路徑、圓形等方式裁剪元素，讓圖片或區塊展現出獨特的形狀和視覺效果，靈活運用 clip-path 打造獨具特色的網頁佈局。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="card-body bg-white tab-pane fade"
+                id="customLearning-03" role="tabpanel"
+                aria-labelledby="customLearning-03-tab">
+                <a
+                  href="#"
+                  class="course-card card-column">
+                  <div class="card border-0 img-hover-enlarge h-100">
+                    <div class="overflow-hidden img-wrapper rounded position-relative">
+                      <img
+                        src="../assets/images/course/course-12.png"
+                        class="card-img-top cover-img rounded"
+                        alt="course-image">
+                    </div>
+                    <div class="card-body p-0 mt-4 mt-lg-6 f-column-between">
+                      <div>
+                        <h3 class="card-title fs-5 fs-lg-4">
+                          CSS毛玻璃製作效果
+                        </h3>
+                        <p class="card-text fs-7 fs-lg-5 mt-1 mt-lg-2">
+                          by momomo
+                        </p>
+                        <p class="card-text fs-6 fs-lg-5 mt-2 mt-lg-4">
+                          學習如何使用純CSS製作流行的毛玻璃效果，讓你的網頁設計更具現代感與層次感。</br>
+                          通過應用 backdrop-filter 屬性，我們可以輕鬆模擬出透明的毛玻璃視覺效果，並且搭配適當的透明度與背景模糊，提升網站的美觀度與用戶體驗。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="card-body bg-white tab-pane fade"
+                id="customLearning-04" role="tabpanel"
+                aria-labelledby="customLearning-04-tab">
+                <a
+                  href="#"
+                  class="course-card card-column">
+                  <div class="card border-0 img-hover-enlarge h-100">
+                    <div class="overflow-hidden img-wrapper rounded position-relative">
+                      <img
+                        src="../assets/images/course/course-13.png"
+                        class="card-img-top cover-img rounded"
+                        alt="course-image">
+                    </div>
+                    <div class="card-body p-0 mt-4 mt-lg-6 f-column-between">
+                      <div>
+                        <h3 class="card-title fs-5 fs-lg-4">
+                          正則表達式暗記法
+                        </h3>
+                        <p class="card-text fs-7 fs-lg-5 mt-1 mt-lg-2">
+                          by Anna Wu
+                        </p>
+                        <p class="card-text fs-6 fs-lg-5 mt-2 mt-lg-4">
+                          正則表達式常被認為是程式設計中的難題之一，但在這部教學影片中，我們將介紹一些簡單易記的速記法，幫助你快速掌握正則表達式的核心概念與語法。</br>
+                          影片將分解常用的匹配模式、特殊字元、量詞等關鍵知識，並提供實用的範例讓你輕鬆理解如何應用正則表達式來處理日常的文字匹配與檢索需求。無需死記硬背，學會用簡單方法記住這些複雜的表達式！
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="f-center f-lg-end-center">
+              <button
+                class="btn btn-outline-brand-03 slide-right-hover f-align-center mt-6 mt-lg-8">
+                查看所有客製化需求影片
+                <span class="material-symbols-outlined icon-fill fs-5 ms-1">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/course-list.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".hotCourses-swiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 24,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            width: 348,
+          }
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

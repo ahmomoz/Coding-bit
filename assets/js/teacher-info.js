@@ -42,7 +42,7 @@ const topicSeriesCourseList = [
     courseCategory: '主題式課程影片'
   },
   {
-    courseName: '網絡安全基礎',
+    courseName: '網路安全基礎',
     img: 'course-6.png',
     teacher: '卡斯伯 Casper',
     star: '4.0',
