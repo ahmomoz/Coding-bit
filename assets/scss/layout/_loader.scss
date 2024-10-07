@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $brand-02;
+  background-color: $brand-05;
 }
 
 .loader-hidden {
@@ -18,40 +18,30 @@
   transition: all 1s ease;
 }
 
-//loader animation
-#loader {
-  stroke-dasharray: 2.427766571px, 242.7766571045px;
-  stroke-dashoffset: 0;
-  -webkit-animation: anim 1.2s linear infinite;
-  animation: anim 1.2s linear infinite;
+#outline {
+  fill: none;
+  stroke: url(#gradient); /* 修改主輪廓顏色為橘紅色 */
+  stroke-width: 10; /* 加粗了線條寬度 */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 50 150;
+  animation: loading 1.5s linear infinite; /* 調整動畫時間為2秒，且使用ease-in-out效果 */
 }
-@-webkit-keyframes anim {
-  12.5% {
-    stroke-dasharray: 33.9887319946px, 242.7766571045px;
-    stroke-dashoffset: -26.7054322815px;
-  }
-  43.75% {
-    stroke-dasharray: 84.9718299866px, 242.7766571045px;
-    stroke-dashoffset: -84.9718299866px;
-    stroke: $brand-01;
+#outline-bg {
+  fill: none;
+  stroke: #f1eaff; /* 修改背景線條顏色為藍色 */
+  stroke-width: 6; /* 加粗了線條寬度 */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  opacity: 0.1; /* 增加背景線條的透明度 */
+}
+@keyframes loading {
+  from {
+    stroke-dashoffset: 0;
   }
   to {
-    stroke-dasharray: 2.427766571px, 242.7766571045px;
-    stroke-dashoffset: -240.3488905334px;
-  }
-}
-@keyframes anim {
-  12.5% {
-    stroke-dasharray: 33.9887319946px, 242.7766571045px;
-    stroke-dashoffset: -26.7054322815px;
-  }
-  43.75% {
-    stroke-dasharray: 84.9718299866px, 242.7766571045px;
-    stroke-dashoffset: -84.9718299866px;
-    stroke: $brand-01;
-  }
-  to {
-    stroke-dasharray: 2.427766571px, 242.7766571045px;
-    stroke-dashoffset: -240.3488905334px;
+    stroke-dashoffset: -200;
   }
 }
