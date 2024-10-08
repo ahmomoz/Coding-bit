@@ -6,8 +6,8 @@
 
   @include xl-pc {
     background-image: none;
-    padding-top: 112px;
-    padding-bottom: 32px;
+    padding-top: 142px;
+    padding-bottom: 72px;
   }
 
   .row {
@@ -24,6 +24,15 @@
     }
   }
 
+  .title-wrap {
+    @include lg-pc {
+      margin-top: -120px;
+    }
+    @include pad {
+      margin-top: -80px;
+    }
+  }
+
   .title {
     font-size: 64px;
     font-weight: 900;
@@ -37,6 +46,7 @@
 
   .title-info {
     font-size: 28px;
+    font-weight: 500;
     margin-top: 24px;
 
     @include xl-pc {
@@ -110,5 +120,20 @@
     @include xl-pc {
       width: 100%;
     }
+  }
+
+  .tab-pane {
+    @include lg-pc {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+.customLearning-card-wrap {
+  display: flex;
+  justify-content: center;
+
+  @include lg-pc {
+    flex-direction: column;
   }
 }
