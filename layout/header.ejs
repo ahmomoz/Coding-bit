@@ -36,7 +36,7 @@
           </span>
         </li>
         <li class="nav-item mt-4 mt-lg-0">
-          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="#"> 精選課程 </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" aria-current="page" href="course-list.html"> 精選課程 </a>
         </li>
         <li class="nav-item">
           <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html"> 一對一教學 </a>
@@ -45,7 +45,7 @@
           <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html"> 課程客製化 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="#"> 常見問題 </a>
+          <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html"> 幫助中心 </a>
         </li>
         <li class="nav-item nav-bottom-btn ms-lg-10">
           <a href="sign-up.html">
@@ -63,7 +63,6 @@
     const closeIcon = document.getElementById('close-icon');
     const toggler = document.getElementById('layout-navbar-toggler');
     const layoutNavWrap = document.querySelector('.layout-nav-wrap');
-    const stickBottomWrap = document.querySelector('.sticky-bottom');
 
     toggler.addEventListener('click', function () {
       if (menuIcon.classList.contains('d-none')) {
@@ -73,7 +72,6 @@
         layoutNavWrap.classList.add('bg-transparent');
 
         document.body.classList.remove('no-scroll');
-        stickBottomWrap.classList.remove('d-none');
       } else {
         menuIcon.classList.add('d-none');
         closeIcon.classList.remove('d-none');
@@ -81,7 +79,7 @@
         layoutNavWrap.classList.add('bg-white');
 
         document.body.classList.add('no-scroll');
-        stickBottomWrap.classList.add('d-none');
+
       }
     });
   });

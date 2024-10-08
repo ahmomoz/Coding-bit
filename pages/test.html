@@ -220,15 +220,18 @@
         <img src="../assets/images/icon/kid_star_half.svg" alt="icon-star_half">
       </div>
 
-      <div class="mt-5">
-        <div class="dropdown">
-          <button class="btn btn-brand-04 dropdown-toggle border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            排序方式
-          </button>
-          <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">標題</a></li>
-            <li><a class="dropdown-item" href="#">標題</a></li>
-          </ul>
+      <div class="d-flex border p-3 mt-5">
+        <button class="btn btn-outline-brand-03 me-3" id="dropdownMenuCopyButton">複製此dropdown語法</button>
+        <div id="dropdownTestComponent">
+          <div class="dropdown">
+            <button class="btn btn-brand-04 dropdown-toggle border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              排序方式
+            </button>
+            <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">標題</a></li>
+              <li><a class="dropdown-item" href="#">標題</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -306,6 +309,29 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="../main.js"></script>
+    <script>
+      document.getElementById('dropdownMenuCopyButton').addEventListener('click', function() {
+        let htmlContent = document.querySelector('#dropdownTestComponent').innerHTML;
+        
+        let tempTextArea = document.createElement('textarea');
+        tempTextArea.value = htmlContent;
+        document.body.appendChild(tempTextArea);
+    
+        tempTextArea.select();
+        document.execCommand('copy');
+    
+        document.body.removeChild(tempTextArea);
+    
+        Swal.fire({
+          icon: "success",
+          title: "複製成功",
+          showConfirmButton: false,
+          timer: 1500,
+          padding: '3em',
+        });
+      });
+    </script>
   </body>
 </html>

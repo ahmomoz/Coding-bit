@@ -1,0 +1,52 @@
+/* help-center-banner-section */
+.help-center-banner-section {
+  h1 {
+    font-size: 56px;
+
+    @include pad {
+      font-size: 32px;
+    }
+  }
+}
+
+/* help-center-FAQ-section */
+.help-center-FAQ-section {
+  margin-top: 100px;
+
+  @include pad {
+    margin-top: 48px;
+  }
+
+  .accordion {
+    --bs-accordion-border-width: 0;
+
+    &-item, &-body {
+      border: none;
+    }
+  }
+
+  .accordion-item,
+  .accordion-button {
+    font-size: 20px;
+
+    @include pad {
+      font-size: 16px;
+    }
+  }
+
+  .accordion-button {
+    font-weight: 500;
+    border-radius: 8px;
+  }
+}
+/* help-center-contact-section */
+.help-center-contact-section {
+  input, textarea {
+    border-radius: 4px;
+    border-color: $brand-01;
+  }
+
+  textarea {
+    resize: none;
+  }
+}

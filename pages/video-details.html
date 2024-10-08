@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="../assets/images/icon/icon-infinite.svg"
+  />
+  <title>React 進階開發技巧 ｜ 課程詳細</title>
+</head>
+
+<body>
+  <%- include('./layout/loader'); -%> 
+  <%- include('./layout/header'); -%>
+    <main class="video-details container-lg py-lg-13 py-md-0">
+      <div class="row">
+        <section class="col-md-12 col-lg-8">
+          <video class="mb-6 video-show"
+            src="https://firebasestorage.googleapis.com/v0/b/video-test-d54b2.appspot.com/o/recording-2024-07-06-15-34-42.mp4?alt=media&amp;token=11ca4ab0-8256-4b97-afd9-7fada0a30879"
+            controls="">
+          </video>
+          <h2 class="fs-2 mb-4 video-title">React 進階開發技巧</h2>
+          <div class="d-flex mb-6">
+            <div class="f-align-center">
+              <div class="f-align-center py-2 ps-0">
+                <span class="view-count me-1 fs-5 material-symbols-outlined">visibility</span>
+                <data value="12345" class="fs-7 data-view-count">12,345</data>
+              </div>
+              <div class="f-align-center py-2 px-4">
+                <span class="rating-score me-1 fs-5 material-symbols-outlined icon-fill">kid_star</span>
+                <data value="6789" class="fs-7 data-rating-score">6,789</data>
+              </div>
+            </div>
+            <div class="ms-auto">
+              <div class="f-align-center">
+                <button type="button" class="favorite-button f-align-center btn btn-outline-none py-2 ps-3 px-4">
+                  <span class="fs-5 me-1 material-symbols-outlined">favorite</span>
+                  <span class="fs-7 favorite-font">已收藏</span>
+                </button>
+                <button type="button" class="review-button f-align-center btn btn-outline-none py-2 ps-3 pe-0 pe-sm-4 ">
+                  <span class="fs-5 me-1 material-symbols-outlined">kid_star</span>
+                  <span class="fs-7 review-font">已評價</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul class="d-flex flex-wrap gy-3 mb-6">
+              <li class="tag-label btn btn-brand-03 py-2 px-4">
+                <h6>React</h6>
+              </li>
+              <li class="tag-label btn btn-brand-03 py-2 px-4">
+                <h6>前端開發</h6>
+              </li>
+              <li class="tag-label btn btn-brand-03 py-2 px-4">
+                <h6>效能優化</h6>
+              </li>
+              <li class="tag-label btn btn-brand-03 py-2 px-4">
+                <h6>Hooks</h6>
+              </li>
+            </ul>
+          </div>
+          <div class="author-content d-flex mb-10">
+            <img class="author-image rounded-5 me-4" src="/assets/images/user/user-1.png" alt="作者">
+            <div>
+              <h6 class="author-name mb-2">卡斯伯Casper</h6>
+              <span class="author-info fs-7">10年經驗的前端工程師</span>
+            </div>
+          </div>
+          <div>
+            <nav class="mb-6">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <h6 class="nav-link active video-description" id="home-tab" data-bs-toggle="tab"
+                    data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">影片簡介</h6>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <h6 class="nav-link video-comments" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                    role="tab" aria-controls="profile" aria-selected="false">留言討論區</h6>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <ul class="ps-5 pt-6">
+                    <li class="video-description-item mb-2">掌握 React Hooks 的進階用法</li>
+                    <li class="video-description-item mb-2">了解 React 性能優化技巧</li>
+                    <li class="video-description-item mb-2">學習 React 狀態管理最佳實踐</li>
+                    <li class="video-description-item">探索 React 生態系統中的常用工具</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <section class="video-comments pt-6">
+                    <div class="d-flex py-4 mb-6">
+                      <img class="user-comment-picture me-3" src="../assets/images/user/user-2.png" alt="">
+                      <input type="text" placeholder="發表留言" name="user-comment" id="user-comment"
+                        class="w-100 user-comment py-2">
+                    </div>
+                    <ul class="history-commemts">
+                      <li class="mb-6">
+                        <div class="user-content d-flex mb-3">
+                          <img class="user-image me-4" src="/assets/images/user/user-2.png" alt="作者">
+                          <div class="d-flex justify-content-between align-items-center flex-fill">
+                            <div class="f-column">
+                              <span class="user-name mb-2">張小明</span>
+                              <time class="comment-time fs-7">2024-08-07 10:30</time>
+                            </div>
+                            <button type="button"
+                              class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 delete-comment">刪除</button>
+                          </div>
+                        </div>
+                        <div class="reply">
+                          <p class="reply-style fs-6">
+                            這個課程解釋得很清楚!特別是關於Hooks的部分,讓我對useEffect和useCallback有了更深入的理解。講師的代碼示例也很實用,我已經開始在自己的項目中運用了。
+                          </p>
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <div class="accordion-header mb-4" id="flush-headingOne">
+                                <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                  aria-controls="flush-collapseOne">
+                                  1 則回覆
+                                </span>
+                              </div>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse rounded-2"
+                                aria-labelledby="flush-headingOne">
+                                <div class="accordion-body">
+                                  <div class="teacher-content">
+                                    <div class="d-flex mb-3">
+                                      <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                      <div class="d-flex justify-content-between align-items-center flex-fill">
+                                        <div class="f-column">
+                                          <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                          <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                        </div>
+                                        <button type="button"
+                                          class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                      </div>
+                                    </div>
+                                    <p class="teacher-reply-style fs-6">
+                                      謝謝你的評價,張小明!很高興聽到課程對你有幫助。如果你在實踐過程中有任何問題,歡迎隨時在這裡提出。
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="mb-6">
+                        <div class="user-content d-flex mb-3">
+                          <img class="user-image me-4" src="/assets/images/user/user-3.png" alt="作者">
+                          <div class="d-flex justify-content-between align-items-center flex-fill">
+                            <div class="f-column">
+                              <span class="user-name mb-2">李大華</span>
+                              <time class="comment-time fs-7">2024-08-07 10:30</time>
+                            </div>
+                            <button type="button"
+                              class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                          </div>
+                        </div>
+                        <div class="reply">
+                          <p class="reply-style fs-6">我對第三章節有些疑問,可以再詳細解釋一下嗎?具體來說,我不太理解為什麼在某些情況下使用useMemo會比直接計算更有效率。</p>
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <div class="accordion-header mb-4" id="flush-headingTwo">
+                                <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                  aria-controls="flush-collapseTwo">
+                                  5 則回覆
+                                </span>
+                              </div>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse rounded-2"
+                                aria-labelledby="flush-headingTwo">
+                                <div class="accordion-body">
+                                  <div class="teacher-content">
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="mb-6">
+                        <div class="user-content d-flex mb-3">
+                          <img class="user-image me-4" src="/assets/images/user/user-3.png" alt="作者">
+                          <div class="d-flex justify-content-between align-items-center flex-fill">
+                            <div class="f-column">
+                              <span class="user-name mb-2">李大華</span>
+                              <time class="comment-time fs-7">2024-08-07 10:30</time>
+                            </div>
+                            <button type="button"
+                              class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                          </div>
+                        </div>
+                        <div class="reply">
+                          <p class="reply-style fs-6">講師解釋得很好!我想請教一下,在實際項目中,你會如何平衡使用Context
+                            API和Redux?有什麼準則可以幫助我們決定使用哪一個嗎?</p>
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <div class="accordion-header mb-4" id="flush-headingThree">
+                                <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                  aria-controls="flush-collapseThree">
+                                  1 則回覆
+                                </span>
+                              </div>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse rounded-2"
+                                aria-labelledby="flush-headingThree">
+                                <div class="accordion-body">
+                                  <div class="teacher-content">
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                    <div class="mb-8">
+                                      <div class="d-flex mb-3">
+                                        <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                                          <div class="f-column">
+                                            <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                          </div>
+                                          <button type="button"
+                                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                        </div>
+                                      </div>
+                                      <p class="teacher-reply-style fs-6">
+                                        王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                        1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                        2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                        3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                        4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                        5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                        <br>
+                                        一般來說,我的建議是:從Context<br>
+                                        API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="mb-6"></li>
+                      <div class="user-content d-flex mb-3">
+                        <img class="user-image me-4" src="/assets/images/user/user-4.png" alt="作者">
+                        <div class="d-flex justify-content-between align-items-center flex-fill">
+                          <div class="f-column">
+                            <span class="user-name mb-2">王小花</span>
+                            <time class="comment-time fs-7">2024-08-07 10:30</time>
+                          </div>
+                          <button type="button"
+                            class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                        </div>
+                      </div>
+                      <div class="reply">
+                        <p class="reply-style fs-6">講師解釋得很好!我想請教一下,在實際項目中,你會如何平衡使用Context API和Redux?有什麼準則可以幫助我們決定使用哪一個嗎?
+                        </p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <div class="accordion-header mb-4" id="flush-headingFour">
+                              <span class="accordion-button collapsed py-2 px-4" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                2 則回覆
+                              </span>
+                            </div>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse rounded-2"
+                              aria-labelledby="flush-headingFour">
+                              <div class="accordion-body">
+                                <div class="teacher-content">
+                                  <div class="mb-8">
+                                    <div class="d-flex mb-3">
+                                      <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                      <div class="d-flex justify-content-between align-items-center flex-fill">
+                                        <div class="f-column">
+                                          <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                          <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                        </div>
+                                        <button type="button"
+                                          class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                      </div>
+                                    </div>
+                                    <p class="teacher-reply-style fs-6">
+                                      王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                      1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                      2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                      3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                      4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                      5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                      <br>
+                                      一般來說,我的建議是:從Context<br>
+                                      API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                    </p>
+                                  </div>
+                                  <div class="mb-8">
+                                    <div class="d-flex mb-3">
+                                      <img class="teacher-image me-4" src="/assets/images/user/user-1.png" alt="作者">
+                                      <div class="d-flex justify-content-between align-items-center flex-fill">
+                                        <div class="f-column">
+                                          <span class="teacher-name mb-2">卡斯伯Casper</span>
+                                          <time class="comment-time fs-7">2024-08-07 10:30</time>
+                                        </div>
+                                        <button type="button"
+                                          class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment">回覆</button>
+                                      </div>
+                                    </div>
+                                    <p class="teacher-reply-style fs-6">
+                                      王小花,這是一個很棒的問題!選擇Context API還是Redux主要取決於你的項目需求。以下是一些考慮因素:<br>
+                                      1. 項目規模: 對於小到中型項目,Context API通常就足夠了。對於大型、複雜的應用,Redux的可預測性和調試工具可能更有優勢。<br>
+                                      2. 狀態複雜度: 如果你的狀態邏輯很簡單,Context API是個不錯的選擇。如果你需要處理複雜的狀態邏輯和異步操作,Redux可能更合適。<br>
+                                      3. 性能考慮: 當你有大量的狀態更新時,Redux的性能可能會更好,因為它可以精確地控制重渲染。<br>
+                                      4. 團隊熟悉度: 如果你的團隊已經熟悉Redux,那麼在大型項目中使用它可能會更有效率。<br>
+                                      5. 中間件需求: 如果你需要像redux-saga或redux-thunk這樣的強大中間件,那麼Redux會是更好的選擇。<br>
+                                      <br>
+                                      一般來說,我的建議是:從Context<br>
+                                      API開始,當你發現它不能滿足你的需求時,再考慮切換到Redux。記住,你也可以在同一個項目中同時使用這兩種技術,根據不同部分的需求來選擇。
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <aside class="col-md-12 col-lg-4">
+          <div class="chapter-video rounded-4 aside-border mb-6">
+            <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 22px;">
+              <h5 class="chapter-video-title">章節影片</h5>
+              <div class="f-align-center show-more-button">
+                <span class="me-1">更多</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
+            </div>
+            <ul class="chapter-list"></ul>
+          </div>
+
+          <div class="other-videos rounded-4 aside-border mb-6">
+            <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 22px;">
+              <h5 class="teacher-other-video">講師其他影片</h5>
+              <div class="f-align-center show-more-button">
+                <span class="me-1">更多</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
+            </div>
+            <ul class="other-videos-list"></ul>
+          </div>
+
+          <div class="related-videos rounded-4 aside-border">
+            <div class="f-between-center" style="margin-bottom: 22px;">
+              <h5 class="teacher-related-video">相關影片</h5>
+              <div class="f-align-center show-more-button">
+                <span class="me-1">更多</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
+            </div>
+            <ul class="related-videos-list"></ul>
+          </div>
+
+        </aside>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script type="module">
+        // videoListRender
+        import { chapterListRender, otherVideosRender, relatedVideosRender } from '../assets/js/courses.js';
+        const chapterListDom = document.querySelector('.chapter-list');
+        const otherVideosDom = document.querySelector('.other-videos-list');
+        const relatedVideosDom = document.querySelector('.related-videos-list');
+
+        let chapterVideos = [
+          { 'chapter': '第一章', 'title': 'React Hooks 深入解析', 'duration': '20:30', 'viewCount': '23,005' },
+          { 'chapter': '第二章', 'title': '使用 useCallback 優化性能', 'duration': '10:05', 'viewCount': '3,005' },
+          { 'chapter': '第三章', 'title': '掌握 useMemo 的使用技巧', 'duration': '46:39', 'viewCount': '220' },
+          { 'chapter': '第四章', 'title': 'React 狀態管理最佳實踐', 'duration': '25:00', 'viewCount': '999' },
+          { 'chapter': '第五章', 'title': 'React 性能優化技巧', 'duration': '13:40', 'viewCount': '10,060' }];
+
+        let otherVideos = [
+          { 'title': 'Vue.js 3.0 新特性解析', 'duration': '10:20', 'imageUrl': '../assets/images/course/course-1.png', 'viewCount': '23,005' },
+          { 'title': '前端框架對比:React vs Vue vs Angular', 'duration': '11:20', 'imageUrl': '../assets/images/course/course-2.png', 'viewCount': '3,005' },
+          { 'title': 'GraphQL 入門到精通', 'duration': '33:50', 'imageUrl': '../assets/images/course/course-3.png', 'viewCount': '220' },
+          { 'title': 'Node.js 性能調優秘笈', 'duration': '24:03', 'imageUrl': '../assets/images/course/course-4.png', 'viewCount': '999' },
+          { 'title': 'TypeScript 高級技巧與實戰', 'duration': '50:10', 'imageUrl': '../assets/images/course/course-5.png', 'viewCount': '10,060' }];
+
+        let relatedVideos = [
+          { 'title': '前端工程化實踐', 'duration': '10:20', 'author': '李某', 'imageUrl': '../assets/images/course/course-6.png', 'viewCount': '23,005' },
+          { 'title': 'React Native 移動應用開發', 'duration': '11:20', 'author': '張三', 'imageUrl': '../assets/images/course/course-7.png', 'viewCount': '3,005' },
+          { 'title': 'WebAssembly 與 JavaScript 結合應用', 'duration': '33:50', 'author': '老陳', 'imageUrl': '../assets/images/course/course-8.png', 'viewCount': '220' },
+          { 'title': '微前端架構設計與實現', 'duration': '24:03', 'author': '陳靜', 'imageUrl': '../assets/images/course/course-9.png', 'viewCount': '999' },
+          { 'title': 'PWA 開發實戰', 'duration': '50:10', 'author': '劉芳', 'imageUrl': '../assets/images/course/course-10.png', 'viewCount': '10,060' }];
+
+        chapterListRender(chapterListDom, chapterVideos);
+        otherVideosRender(otherVideosDom, otherVideos);
+        relatedVideosRender(relatedVideosDom, relatedVideos);
+      </script>
+</body>
+
+</html>

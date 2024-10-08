@@ -1,0 +1,47 @@
+//display loader
+.loader-wrapper {
+  z-index: 5000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $brand-05;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease;
+}
+
+#outline {
+  fill: none;
+  stroke: url(#gradient); /* 修改主輪廓顏色為橘紅色 */
+  stroke-width: 10; /* 加粗了線條寬度 */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 50 150;
+  animation: loading 1.5s linear infinite; /* 調整動畫時間為2秒，且使用ease-in-out效果 */
+}
+#outline-bg {
+  fill: none;
+  stroke: #f1eaff; /* 修改背景線條顏色為藍色 */
+  stroke-width: 6; /* 加粗了線條寬度 */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  opacity: 0.1; /* 增加背景線條的透明度 */
+}
+@keyframes loading {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -200;
+  }
+}

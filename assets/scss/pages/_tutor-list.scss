@@ -1,5 +1,37 @@
+//hero section
 .tutor-list {
   .hero-section {
+    overflow-x: hidden;
+    background-image: url("/assets/images/deco/bg-6.png");
+    margin-top: -200px;
+    padding-top: 250px;
+    padding-bottom: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include lg-pc {
+      margin-top: -100px;
+      margin-left: -250px;
+      padding-left: 250px;
+      padding-top: 250px;
+      padding-bottom: 150px;
+    }
+
+    @include pad {
+      background-color: $brand-05;
+      background-image: none;
+      margin-top: 0;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .cta-btn {
+      font-size: 20px;
+      @media (max-width: 368px) {
+        font-size: 15px;
+      }
+    }
+
     .star-deco {
       width: 450px;
       @include lg-pc {
@@ -28,9 +60,6 @@
         background-color: $brand-05;
       }
     }
-    @include pad {
-      background-color: $brand-05;
-    }
   }
 
   p.profile {
@@ -47,6 +76,7 @@
     height: 45px;
     border-radius: 50px;
     border: 1px solid $gray-04;
+    background-color: white;
     &:not(:first-of-type) {
       margin-left: -12px;
     }
@@ -64,8 +94,17 @@
   }
 }
 
+//service intro section
 .tutor-list {
   .service-intro {
+    padding-bottom: 80px;
+    @include pad {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    @include mobile {
+      padding-top: 32px;
+    }
     .description,
     .cta {
       @include pad {
@@ -79,7 +118,6 @@
       }
     }
     .deco-img {
-      margin-top: 80px;
       width: 400px;
       @include lg-pc {
         width: 250px;
@@ -91,6 +129,7 @@
   }
 }
 
+//category section
 .tutor-list {
   .arrow {
     @include pad {
@@ -118,6 +157,7 @@
   }
 }
 
+//tutor list
 .tutor-list {
   .control-group {
     display: flex;
@@ -130,6 +170,13 @@
       flex-direction: column;
     }
   }
+
+  .search-tutor {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
   .nav-search-desktop {
     width: 200px;
     @include mobile {
@@ -144,6 +191,9 @@
   .sort {
     @include mobile {
       margin-top: 16px;
+      .dropdown-menu {
+        width: calc(100% - 20px);
+      }
     }
     .dropdown-toggle {
       width: 100%;

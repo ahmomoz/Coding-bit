@@ -21,6 +21,8 @@
     <title>Coding∞bit ｜ 首頁</title>
   </head>
   <body>
+    <%- include('./layout/loader'); -%>
+    <%- include('./layout/scroll-to-top-btn.ejs'); -%> 
     <%- include('./layout/header'); -%>
     <header class="index-banner-section wrap bg">
       <div class="swiper banner-swiper position-relative pb-11 pb-xl-6">
@@ -46,7 +48,7 @@
                 <div class="col-xl-4">
                   <img
                     src="../assets/images/deco/Illustration-1.svg"
-                    alt="banner-illustration-1"
+                    alt="banner-illustration"
                     class="banner-illustration">
                 </div>
               </div>
@@ -91,12 +93,13 @@
           <div class="col-md-6 col-xl-4">
             <a href="#" class="course-card card-column">
               <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
-                <div class="overflow-hidden img-wrapper rounded">
+                <div class="overflow-hidden img-wrapper rounded position-relative">
                   <img
                     src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/${item.img}"
                     class="card-img-top cover-img rounded"
                     alt="course-image">
                 </div>
+                <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
                 <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
                   <div>
                     <h3 class="card-title fs-6 fs-lg-5">${item.courseName}</h3>
@@ -199,7 +202,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
     <section class="index-booking-steps-section wrap bg-gray-04">
       <div class="container">
         <%- include('./layout/title-brand-03', { title: '簡單四步驟，', title2: '預約一對一教學', longTitle: true }) %>
