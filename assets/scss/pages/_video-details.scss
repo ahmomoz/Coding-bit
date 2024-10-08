@@ -225,7 +225,6 @@
 
   .eyes-icon {
     color: $brand-01;
-    margin-right: .5px;
   }
 
   .chapter-view-count {
@@ -258,6 +257,14 @@
     font-weight: 500;
     color: $gray-01;
   }
+
+  .other-video-duration {
+    right: 16px;
+    bottom: 0;
+    color: $gray-04;
+    line-height: 1.2;
+    background-color: #1e1e1e4d;
+  }
 }
 
 .related-videos {
@@ -280,8 +287,21 @@
     max-width: 136px;
   }
 
+  .related-video-duration {
+    right: 16px;
+    bottom: 0;
+    color: $gray-04;
+    line-height: 1.2;
+    background-color: #1e1e1e4d;
+  }
+
   .related-video-title {
     font-weight: 500;
     color: $gray-01;
   }
+
+  .author-icon {
+    color: $brand-01;
+  }
+
 }

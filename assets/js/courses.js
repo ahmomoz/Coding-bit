@@ -68,7 +68,7 @@ export function chapterListRender(dom, videos) {
         </div>
         <h6 class="chapter-item-title mb-2">${title}</h6>
         <div class="d-flex">
-          <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
+          <span class="material-symbols-outlined me-1 fs-6 eyes-icon">visibility</span>
           <data class="chapter-view-count fs-7" value="${viewCount}">${viewCount}</data>
         </div>
       </div>
@@ -82,14 +82,17 @@ export function chapterListRender(dom, videos) {
 export function otherVideosRender(dom, videos) {
   let emptyStr = '';
   videos.forEach(video => {
-    const { imageUrl, title, viewCount } = video;
+    const { imageUrl, title, viewCount, duration} = video;
     const otherStr = `
-      <li class="d-flex py-3 py-4 position-relative">
-        <img class="rounded-2 me-4 other-video-image" src="${imageUrl}" alt="影片縮圖">
+      <li class="d-flex py-3 py-4">
+        <div class="position-relative">
+          <img class="rounded-2 me-4 other-video-image" src="${imageUrl}" alt="影片縮圖">
+          <span class="position-absolute py-1 px-2 rounded-1 fs-7 other-video-duration">${duration}</span>
+        </div>
         <div class="f-column-between py-2">
           <h6 class="fs-6 other-video-title">${title}</h6>
           <div class="f-align-center me-6">
-            <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+            <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${viewCount}" class="data-view-count fs-7">${viewCount}</data>
           </div>
         </div>
@@ -103,15 +106,19 @@ export function otherVideosRender(dom, videos) {
 export function relatedVideosRender(dom, videos) {
   let emptyStr = '';
   videos.forEach(video => {
-    const { imageUrl, title, viewCount, author } = video;
+    const { imageUrl, title, viewCount, author ,duration} = video;
     const relatedStr = `
       <li class="d-flex py-3 py-4 position-relative">
-        <img class="rounded-2 me-4 related-video-image" src="${imageUrl}" alt="影片縮圖">
-        <div class="f-between-center py-2">
-          <h6 class="fs-6 related-video-title">${title}</h6>
-          <div class="f-align-center me-6">
-            <span>${author}</span>
-            <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+        <div class="position-relative me-4">
+          <img class="rounded-2 related-video-image" src="${imageUrl}" alt="影片縮圖">
+          <span class="position-absolute py-1 px-2 rounded-1 fs-7 related-video-duration">${duration}</span>
+        </div>
+        <div class="f-column-between py-2">
+          <h6 class="related-video-title">${title}</h6>
+          <div class="f-align-center">
+            <span class="material-symbols-outlined me-1 author-icon fs-6">co_present</span>
+            <span class="me-4">${author}</span>
+            <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${viewCount}" class="data-view-count fs-7">${viewCount}</data>
           </div>
         </div>
