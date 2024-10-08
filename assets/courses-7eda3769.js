@@ -1,6 +1,6 @@
 function d(a,t){let e="";t.forEach(s=>{e+=`
       <div class="col-md-6 col-xl-4">
-        <a href="#" class="course-card card-column">
+        <a href="video-details.html" class="course-card card-column">
           <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
             <div class="overflow-hidden img-wrapper rounded position-relative">
               <img
