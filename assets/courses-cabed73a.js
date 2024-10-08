@@ -1,4 +1,4 @@
-function o(a,t){let e="";t.forEach(s=>{e+=`
+function d(a,t){let e="";t.forEach(s=>{e+=`
       <div class="col-md-6 col-xl-4">
         <a href="#" class="course-card card-column">
           <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
@@ -44,39 +44,46 @@ function o(a,t){let e="";t.forEach(s=>{e+=`
           </div>
         </a>
       </div>
-    `,a.innerHTML=e})}function d(a,t){let e="";t.forEach(s=>{const{chapter:l,title:c,duration:i,viewCount:n}=s,r=`
+    `,a.innerHTML=e})}function p(a,t){let e="";t.forEach(s=>{const{chapter:n,title:o,duration:i,viewCount:l}=s,c=`
     <li class="py-4 d-flex justify-content-between chapter-item">
       <span class="material-symbols-outlined player-icon me-2">play_circle</span>
       <div class="flex-grow-1">
         <div class="d-flex align-items-center justify-content-between mb-1">
-          <span class="fs-7 chapter-contents">${l}</span>
+          <span class="fs-7 chapter-contents">${n}</span>
           <time class="video-duration fs-7 rounded-1 px-2 py-1">${i}</time>
         </div>
-        <h6 class="chapter-item-title mb-2">${c}</h6>
+        <h6 class="chapter-item-title mb-2">${o}</h6>
         <div class="d-flex">
-          <span class="material-symbols-outlined fs-6 eyes-icon">visibility</span>
-          <data class="chapter-view-count fs-7" value="${n}">${s["view-count"]}</data>
+          <span class="material-symbols-outlined me-1 fs-6 eyes-icon">visibility</span>
+          <data class="chapter-view-count fs-7" value="${l}">${l}</data>
         </div>
       </div>
-    </li>`;e+=r}),a.innerHTML=e}function p(a,t){let e="";t.forEach(s=>{const{imageUrl:l,title:c,viewCount:i}=s,n=`
-      <li class="d-flex py-3 py-4 position-relative">
-        <img class="rounded-2 me-4 other-video-image" src="${l}" alt="影片縮圖">
+    </li>`;e+=c}),a.innerHTML=e}function v(a,t){let e="";t.forEach(s=>{const{imageUrl:n,title:o,viewCount:i,duration:l}=s,c=`
+      <li class="d-flex py-3 py-4">
+        <div class="position-relative">
+          <img class="rounded-2 me-4 other-video-image" src="${n}" alt="影片縮圖">
+          <span class="position-absolute py-1 px-2 rounded-1 fs-7 other-video-duration">${l}</span>
+        </div>
         <div class="f-column-between py-2">
-          <h6 class="fs-6 other-video-title">${c}</h6>
+          <h6 class="fs-6 other-video-title">${o}</h6>
           <div class="f-align-center me-6">
-            <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+            <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${i}" class="data-view-count fs-7">${i}</data>
           </div>
         </div>
-      </li>`;e+=n}),a.innerHTML=e}function m(a,t){let e="";t.forEach(s=>{const{imageUrl:l,title:c,viewCount:i,author:n}=s,r=`
+      </li>`;e+=c}),a.innerHTML=e}function m(a,t){let e="";t.forEach(s=>{const{imageUrl:n,title:o,viewCount:i,author:l,duration:c}=s,r=`
       <li class="d-flex py-3 py-4 position-relative">
-        <img class="rounded-2 me-4 related-video-image" src="${l}" alt="影片縮圖">
-        <div class="f-between-center py-2">
-          <h6 class="fs-6 related-video-title">${c}</h6>
-          <div class="f-align-center me-6">
-            <span>${n}</span>
-            <span class="view-count me-1 material-symbols-outlined eyes-icon">visibility</span>
+        <div class="position-relative me-4">
+          <img class="rounded-2 related-video-image" src="${n}" alt="影片縮圖">
+          <span class="position-absolute py-1 px-2 rounded-1 fs-7 related-video-duration">${c}</span>
+        </div>
+        <div class="f-column-between py-2">
+          <h6 class="related-video-title">${o}</h6>
+          <div class="f-align-center">
+            <span class="material-symbols-outlined me-1 author-icon fs-6">co_present</span>
+            <span class="me-4">${l}</span>
+            <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${i}" class="data-view-count fs-7">${i}</data>
           </div>
         </div>
-      </li>`;e+=r}),a.innerHTML=e}export{o as a,d as c,p as o,m as r};
+      </li>`;e+=r}),a.innerHTML=e}export{d as a,p as c,v as o,m as r};
