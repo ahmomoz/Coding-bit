@@ -512,3 +512,94 @@
     }
   }
 }
+
+.custom-modal {
+  .modal-dialog {
+    max-width: 95%;
+    height: 95vh;
+    margin: 2.5vh auto;
+  }
+
+  .modal-content {
+    height: 100%;
+  }
+
+  .modal-body {
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .scrollable-content {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .fixed-bottom-form {
+    background-color: white;
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 768px) {
+    .modal-dialog {
+      max-width: 90%;
+    }
+
+    .modal-body {
+      overflow-y: hidden;
+    }
+
+    .content-wrapper {
+      flex-direction: row;
+      overflow: hidden;
+    }
+
+    .left-column,
+    .right-column {
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .left-column {
+      border-right: 1px solid #dee2e6;
+    }
+
+    .fixed-bottom-form {
+      position: sticky;
+      bottom: 0;
+    }
+  }
+
+  .scrollable-content,
+  .left-column,
+  .right-column {
+    // 針對 Webkit 瀏覽器（Chrome、Safari 等）
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 0px;
+    }
+
+    // 針對 Firefox
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+}
