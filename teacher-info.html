@@ -19,11 +19,11 @@
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
     <title>講師介紹 ｜ 卡斯伯 Casper</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/teacher-info-ee850fa7.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-d15a2fae.js">
+    <script type="module" crossorigin src="/Coding-bit/assets/teacher-info-ae4a8cea.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-44939db7.js">
     <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-7eda3769.js">
     <link rel="modulepreload" crossorigin href="/Coding-bit/assets/show-n-hide-text-799d5ee3.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/main-2bb6b01d.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/main-80a4eada.css">
   </head>
   <body>
     <div class="loader-wrapper">
@@ -43,8 +43,23 @@
       d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
   </svg>
 </div>
- 
-    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+    <a 
+  href="javascript:void(0);"
+  onclick="scrollToTop()">
+  <img
+    class="scroll-to-top-btn"
+    src="/Coding-bit/assets/icons-to-top-040d2f85.png"
+    alt="to-top-btn-image">
+</a>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-lg">
     <div class="d-flex">
       <a href="index.html" class="navbar-brand me-10">
@@ -109,7 +124,6 @@
     const closeIcon = document.getElementById('close-icon');
     const toggler = document.getElementById('layout-navbar-toggler');
     const layoutNavWrap = document.querySelector('.layout-nav-wrap');
-    const stickBottomWrap = document.querySelector('.sticky-bottom');
 
     toggler.addEventListener('click', function () {
       if (menuIcon.classList.contains('d-none')) {
@@ -119,7 +133,6 @@
         layoutNavWrap.classList.add('bg-transparent');
 
         document.body.classList.remove('no-scroll');
-        stickBottomWrap.classList.remove('d-none');
       } else {
         menuIcon.classList.add('d-none');
         closeIcon.classList.remove('d-none');
@@ -127,7 +140,7 @@
         layoutNavWrap.classList.add('bg-white');
 
         document.body.classList.add('no-scroll');
-        stickBottomWrap.classList.add('d-none');
+
       }
     });
   });

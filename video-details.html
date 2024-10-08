@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <title>單一影片詳細 video-details</title>
-  <script type="module" crossorigin src="/Coding-bit/assets/video-details-28233594.js"></script>
-  <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-d15a2fae.js">
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="/Coding-bit/assets/icon-infinite-7978421b.svg"
+  />
+  <title>React 進階開發技巧 ｜ 課程詳細</title>
+  <script type="module" crossorigin src="/Coding-bit/assets/video-details-cd09f2db.js"></script>
+  <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-44939db7.js">
   <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-7eda3769.js">
-  <link rel="stylesheet" href="/Coding-bit/assets/main-2bb6b01d.css">
+  <link rel="stylesheet" href="/Coding-bit/assets/main-80a4eada.css">
 </head>
 
 <body>
+  <div class="loader-wrapper">
+  <svg width="150px" height="75px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color: #d0a2f7; stop-opacity: 1" />
+        <stop offset="50%" style="stop-color: #f1eaff; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: #645caa; stop-opacity: 1" />
+      </linearGradient>
+    </defs>
+    <path
+      id="outline-bg"
+      d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+    <path
+      id="outline"
+      d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+  </svg>
+</div>
+ 
   <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-lg">
     <div class="d-flex">
@@ -83,7 +107,6 @@
     const closeIcon = document.getElementById('close-icon');
     const toggler = document.getElementById('layout-navbar-toggler');
     const layoutNavWrap = document.querySelector('.layout-nav-wrap');
-    const stickBottomWrap = document.querySelector('.sticky-bottom');
 
     toggler.addEventListener('click', function () {
       if (menuIcon.classList.contains('d-none')) {
@@ -93,7 +116,6 @@
         layoutNavWrap.classList.add('bg-transparent');
 
         document.body.classList.remove('no-scroll');
-        stickBottomWrap.classList.remove('d-none');
       } else {
         menuIcon.classList.add('d-none');
         closeIcon.classList.remove('d-none');
@@ -101,7 +123,7 @@
         layoutNavWrap.classList.add('bg-white');
 
         document.body.classList.add('no-scroll');
-        stickBottomWrap.classList.add('d-none');
+
       }
     });
   });

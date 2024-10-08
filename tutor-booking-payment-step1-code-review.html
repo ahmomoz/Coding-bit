@@ -17,10 +17,10 @@
 
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>CCoding∞bit ｜ 講師預約</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/main-d15a2fae.js"></script>
+    <script type="module" crossorigin src="/Coding-bit/assets/main-44939db7.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/courses-7eda3769.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/index-d8b3cdd4.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/main-2bb6b01d.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/main-80a4eada.css">
   </head>
   <body>
     <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
@@ -88,7 +88,6 @@
     const closeIcon = document.getElementById('close-icon');
     const toggler = document.getElementById('layout-navbar-toggler');
     const layoutNavWrap = document.querySelector('.layout-nav-wrap');
-    const stickBottomWrap = document.querySelector('.sticky-bottom');
 
     toggler.addEventListener('click', function () {
       if (menuIcon.classList.contains('d-none')) {
@@ -98,7 +97,6 @@
         layoutNavWrap.classList.add('bg-transparent');
 
         document.body.classList.remove('no-scroll');
-        stickBottomWrap.classList.remove('d-none');
       } else {
         menuIcon.classList.add('d-none');
         closeIcon.classList.remove('d-none');
@@ -106,7 +104,7 @@
         layoutNavWrap.classList.add('bg-white');
 
         document.body.classList.add('no-scroll');
-        stickBottomWrap.classList.add('d-none');
+
       }
     });
   });
