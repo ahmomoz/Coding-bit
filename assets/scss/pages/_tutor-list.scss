@@ -9,12 +9,27 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include lg-pc {
+      margin-top: -100px;
+      margin-left: -250px;
+      padding-left: 250px;
+      padding-top: 250px;
+      padding-bottom: 150px;
+    }
+
     @include pad {
       background-color: $brand-05;
       background-image: none;
       margin-top: 0;
       padding-top: 80px;
       padding-bottom: 80px;
+    }
+
+    .cta-btn {
+      font-size: 20px;
+      @media (max-width: 368px) {
+        font-size: 15px;
+      }
     }
 
     .star-deco {
@@ -79,8 +94,17 @@
   }
 }
 
+//service intro section
 .tutor-list {
   .service-intro {
+    padding-bottom: 80px;
+    @include pad {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    @include mobile {
+      padding-top: 32px;
+    }
     .description,
     .cta {
       @include pad {
@@ -94,7 +118,6 @@
       }
     }
     .deco-img {
-      margin-top: 80px;
       width: 400px;
       @include lg-pc {
         width: 250px;
@@ -106,6 +129,7 @@
   }
 }
 
+//category section
 .tutor-list {
   .arrow {
     @include pad {
@@ -133,6 +157,7 @@
   }
 }
 
+//tutor list
 .tutor-list {
   .control-group {
     display: flex;
@@ -145,6 +170,13 @@
       flex-direction: column;
     }
   }
+
+  .search-tutor {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
   .nav-search-desktop {
     width: 200px;
     @include mobile {
@@ -159,6 +191,9 @@
   .sort {
     @include mobile {
       margin-top: 16px;
+      .dropdown-menu {
+        width: calc(100% - 20px);
+      }
     }
     .dropdown-toggle {
       width: 100%;
