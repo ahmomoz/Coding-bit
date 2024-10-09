@@ -4,12 +4,12 @@
     overflow-x: hidden;
     background-image: url("/assets/images/deco/bg-6.png");
     margin-top: -200px;
-    padding-top: 250px;
-    padding-bottom: 180px;
+    padding-top: 500px;
+    padding-bottom: 300px;
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include lg-pc {
+    @include xl-pc {
       margin-top: -100px;
       margin-left: -250px;
       padding-left: 250px;
@@ -97,6 +97,7 @@
 //service intro section
 .tutor-list {
   .service-intro {
+    padding-top: 50px;
     padding-bottom: 80px;
     @include pad {
       padding-top: 32px;

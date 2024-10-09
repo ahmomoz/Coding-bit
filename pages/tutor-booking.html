@@ -18,7 +18,9 @@
     <title>卡斯柏 ｜ 預約老師</title>
   </head>
   <body>
-    <%- include('./layout/loader'); -%> <%- include('./layout/header'); -%>
+    <!-- <%- include('./layout/loader'); -%>  -->
+
+    <%- include('./layout/header'); -%>
 
     <div class="tutor-booking">
       <!-- Mobile Top Cover -->
@@ -145,7 +147,7 @@
               </div>
               <div class="f-between-center mb-5">
                 <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
-                <h5 class="text-brand-03 week" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <h5 class="text-brand-03 week fw-medium">2024/08/01 - 2024/08/07</h5>
                 <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
               </div>
 
@@ -403,23 +405,23 @@
               <ul class="row row-cols-lg-2 g-lg-4 d-none d-lg-flex">
                 <!-- tutor1 -->
                 <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
-                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}]}); -%>
                 <!-- tutor2 -->
                 <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
                 title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
                 <!-- tutor3 -->
                 <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python 數據分析"},{name: "Python Flask 網站後端開發"}]}); -%>
+                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python"},{name: "Python Flask"}]}); -%>
                 <!-- tutor4 -->
                 <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
-                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"} ]}); -%>
               </ul>
               <!-- mobile -->
               <div class="swiper tutor-card-swiper d-block d-lg-none">
                 <div class="swiper-wrapper mb-10 py-5">
                   <div class="swiper-slide">
                     <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
-                    title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress網站架設"}, {name: "WordPress客製化佈景主題"}]}); -%>
+                    title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress網站架設"}]}); -%>
                   </div>
                   <div class="swiper-slide">
                     <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
@@ -427,12 +429,11 @@
                   </div>
                   <div class="swiper-slide">
                     <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                    title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python Flask 網站後端開發"}, {name: "Python數據分析"} ]});
-                    -%>
+                    title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python"},{name: "Python Flask"}]}); -%>
                   </div>
                   <div class="swiper-slide">
                     <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
-                    title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"},{name: "C# 腳本撰寫"} ]}); -%>
+                    title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"} ]}); -%>
                   </div>
                 </div>
               </div>
@@ -475,30 +476,37 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
+    <div
+      class="modal fade service-selection-modal"
+      id="serviceSelectionModal"
+      tabindex="-1"
+      aria-labelledby="serviceSelectionModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header border-0">
-            <h1 class="modal-title fs-3" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
+            <h1 class="modal-title fs-md-2 fs-3 ms-auto" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
             <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body p-8">
-            <div class="row row-cols-2 g-4">
-              <div class="col">
+          <div class="modal-body">
+            <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
+              <div class="col service-card">
                 <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
                   <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
-                    <h3 class="mb-auto">一對一教學</h3>
-                    <img src="../assets/images/deco/Illustration-7.png" alt="" class="w-md-50 w-100 mb-auto" />
-                    <p class="text-center">以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。</p>
+                    <h3 class="fs-4 fs-md-3">一對一教學</h3>
+                    <img src="../assets/images/deco/Illustration-7.png" alt="" class="" />
+                    <p class="text-center mb-auto">
+                      以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。
+                    </p>
                   </div>
                 </a>
               </div>
-              <div class="col">
+              <div class="col service-card">
                 <a href="tutor-booking-payment-step1-code-review.html" class="h-100">
                   <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
-                    <h3 class="mb-auto">程式碼檢視</h3>
-                    <img src="../assets/images/deco/Illustration-8.png" alt="" class="w-md-50 w-100 mb-auto" />
-                    <p class="text-center">
+                    <h3 class="fs-4 fs-md-3">程式碼檢視</h3>
+                    <img src="../assets/images/deco/Illustration-8.png" alt="" class="" />
+                    <p class="text-center mb-auto">
                       您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼， 老師會於預約時間內進行程式碼檢視服務，
                       並且於時間結束時回覆檢視後的結果。
                     </p>
