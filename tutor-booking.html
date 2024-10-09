@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>卡斯柏 ｜ 預約老師</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/main-44939db7.js"></script>
+    <script type="module" crossorigin src="/Coding-bit/assets/main-abef4d46.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/add-to-favorite-092af0d2.js"></script>
     <script type="module" crossorigin src="/Coding-bit/assets/show-n-hide-text-799d5ee3.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/main-80a4eada.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/main-ae7d6cc8.css">
   </head>
   <body>
-    <div class="loader-wrapper">
+    <!-- <div class="loader-wrapper">
   <svg width="150px" height="75px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -39,7 +39,9 @@
       d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
   </svg>
 </div>
- <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+  -->
+
+    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-lg">
     <div class="d-flex">
       <a href="index.html" class="navbar-brand me-10">
@@ -276,7 +278,7 @@
               </div>
               <div class="f-between-center mb-5">
                 <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
-                <h5 class="text-brand-03 week" style="font-weight: 500">2024/08/01 - 2024/08/07</h5>
+                <h5 class="text-brand-03 week fw-medium">2024/08/01 - 2024/08/07</h5>
                 <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
               </div>
 
@@ -614,10 +616,6 @@
             <a href="#" class="tag tag-brand-02 fs-8">WordPress 網站架設</a>
         </div>
         
-          <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">WordPress客製化佈景主題</a>
-        </div>
-        
         </div>
       </div>
 
@@ -763,11 +761,11 @@
         <div class="">
         
           <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">Python 數據分析</a>
+            <a href="#" class="tag tag-brand-02 fs-8">Python</a>
         </div>
         
           <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">Python Flask 網站後端開發</a>
+            <a href="#" class="tag tag-brand-02 fs-8">Python Flask</a>
         </div>
         
         </div>
@@ -846,10 +844,6 @@
             <a href="#" class="tag tag-brand-02 fs-8">2D遊戲製作</a>
         </div>
         
-          <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">C# 腳本撰寫</a>
-        </div>
-        
         </div>
       </div>
 
@@ -924,10 +918,6 @@
         
           <div class="d-inline-block mb-5">
             <a href="#" class="tag tag-brand-02 fs-8">WordPress網站架設</a>
-        </div>
-        
-          <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">WordPress客製化佈景主題</a>
         </div>
         
         </div>
@@ -1077,11 +1067,11 @@
         <div class="">
         
           <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">Python Flask 網站後端開發</a>
+            <a href="#" class="tag tag-brand-02 fs-8">Python</a>
         </div>
         
           <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">Python數據分析</a>
+            <a href="#" class="tag tag-brand-02 fs-8">Python Flask</a>
         </div>
         
         </div>
@@ -1161,10 +1151,6 @@
             <a href="#" class="tag tag-brand-02 fs-8">2D遊戲製作</a>
         </div>
         
-          <div class="d-inline-block mb-5">
-            <a href="#" class="tag tag-brand-02 fs-8">C# 腳本撰寫</a>
-        </div>
-        
         </div>
       </div>
 
@@ -1225,30 +1211,37 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
+    <div
+      class="modal fade service-selection-modal"
+      id="serviceSelectionModal"
+      tabindex="-1"
+      aria-labelledby="serviceSelectionModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header border-0">
-            <h1 class="modal-title fs-3" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
+            <h1 class="modal-title fs-md-2 fs-3 ms-auto" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
             <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body p-8">
-            <div class="row row-cols-2 g-4">
-              <div class="col">
+          <div class="modal-body">
+            <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
+              <div class="col service-card">
                 <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
                   <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
-                    <h3 class="mb-auto">一對一教學</h3>
-                    <img src="/Coding-bit/assets/Illustration-7-28dcbb99.png" alt="" class="w-md-50 w-100 mb-auto" />
-                    <p class="text-center">以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。</p>
+                    <h3 class="fs-4 fs-md-3">一對一教學</h3>
+                    <img src="/Coding-bit/assets/Illustration-7-28dcbb99.png" alt="" class="" />
+                    <p class="text-center mb-auto">
+                      以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。
+                    </p>
                   </div>
                 </a>
               </div>
-              <div class="col">
+              <div class="col service-card">
                 <a href="tutor-booking-payment-step1-code-review.html" class="h-100">
                   <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
-                    <h3 class="mb-auto">程式碼檢視</h3>
-                    <img src="/Coding-bit/assets/Illustration-8-0fe7d17b.png" alt="" class="w-md-50 w-100 mb-auto" />
-                    <p class="text-center">
+                    <h3 class="fs-4 fs-md-3">程式碼檢視</h3>
+                    <img src="/Coding-bit/assets/Illustration-8-0fe7d17b.png" alt="" class="" />
+                    <p class="text-center mb-auto">
                       您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼， 老師會於預約時間內進行程式碼檢視服務，
                       並且於時間結束時回覆檢視後的結果。
                     </p>
