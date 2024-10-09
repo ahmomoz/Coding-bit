@@ -22,19 +22,21 @@
     <title>Coding∞bit ｜ 課程一覽</title>
   </head>
   <body>
+    <%- include('./layout/loader'); -%>
+    <%- include('./layout/scroll-to-top-btn.ejs'); -%>
     <%- include('./layout/header'); -%>
     <header class="course-list-banner-section bg">
       <div class="container-lg">
         <div class="row">
-          <div class="col f-column-align-center d-lg-block">
+          <div class="col title-wrap f-column-align-center d-lg-block">
             <h1 class="title">
               教學影片一覽
             </h1>
             <p class="title-info play-write-font">
-              <span class="d-inline d-xl-block">
+              <span class="d-inline-block d-xl-block">
                 Your Journey to Coding Excellence
               <span>
-              <span class="d-inline d-xl-block mt-1 mt-lg-0">
+              <span class="d-inline-block d-xl-block mt-2 mt-lg-0">
                 Starts Here
               <span>
             </p>
@@ -59,7 +61,7 @@
         <div class="swiper hotCourses-swiper pb-10 mt-6 mt-lg-8">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#">
+              <a href="video-details.html">
                 <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
                   <div class="img-wrapper rounded">
                     <img src="../assets/images/course/course-10.png"
@@ -86,7 +88,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
+              <a href="video-details.html">
                 <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
                   <div class="img-wrapper rounded">
                     <img src="../assets/images/course/course-3.png"
@@ -113,7 +115,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
+              <a href="video-details.html">
                 <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
                   <div class="img-wrapper rounded">
                     <img src="../assets/images/course/course-12.png"
@@ -140,7 +142,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
+              <a href="video-details.html">
                 <div class="hot-course-card card img-hover-enlarge mt-10 mt-lg-12">
                   <div class="img-wrapper rounded">
                     <img src="../assets/images/course/course-16.png"
@@ -177,7 +179,7 @@
     <section class="course-list-topicSeries-section wrap bg-brand-05">
       <div class="container">
         <%- include('./layout/title-brand-03', { title: '講師自編', title2: '主題式系列課程', longTitle: true }) %>
-        <div class="row topicSeriesCourse-card-wrap mt-6 mt-lg-8 g-6">
+        <div class="row topicSeriesCourse-card-wrap mt-2 mt-lg-8 g-6">
           <div class="col-md-6 col-xl-4">
             <a href="#" class="course-card card-column">
               <div class="card gradient-border img-hover-enlarge h-100">
@@ -237,7 +239,7 @@
     </section>
     <section class="course-list-customLearning-section wrap">
       <div class="container">
-        <%- include('./layout/title-brand-03', { title: '客製化學習需求教學影片', title2: '', longTitle: false }) %>
+        <%- include('./layout/title-brand-03', { title: '客製化學習需求影片', title2: '', longTitle: false }) %>
         <div class="row mt-lg-12">
           <div class="col-lg-4 rounded-1 d-none d-lg-block">
             <ul class="customLearning-list-group list-group bg-white shadow h-100 px-6 py-8" id="customLearning" role="tablist">
@@ -288,12 +290,12 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-8 mt-6 mt-lg-10">
+          <div class="col-lg-8 mt-4 mt-lg-10">
             <div
-              class="hot-card-wrap card tab-content border-0 f-center py-6"
+              class="customLearning-card-wrap tab-content border-0 py-6"
               id="customLearningContent">
               <div
-                class="card-body bg-white tab-pane fade show active"
+                class="tab-pane bg-white fade show active"
                 id="customLearning-01" role="tabpanel"
                 aria-labelledby="customLearning-01-tab">
                 <a
@@ -324,7 +326,7 @@
                 </a>
               </div>
               <div
-                class="card-body bg-white tab-pane fade"
+                class="tab-pane bg-white fade mt-6 mt-lg-0"
                 id="customLearning-02" role="tabpanel"
                 aria-labelledby="customLearning-02-tab">
                 <a
@@ -355,7 +357,7 @@
                 </a>
               </div>
               <div
-                class="card-body bg-white tab-pane fade"
+                class="tab-pane bg-white fade mt-6 mt-lg-0"
                 id="customLearning-03" role="tabpanel"
                 aria-labelledby="customLearning-03-tab">
                 <a
@@ -386,7 +388,7 @@
                 </a>
               </div>
               <div
-                class="card-body bg-white tab-pane fade"
+                class="tab-pane bg-white fade mt-6 mt-lg-0"
                 id="customLearning-04" role="tabpanel"
                 aria-labelledby="customLearning-04-tab">
                 <a
@@ -457,7 +459,6 @@
           0: {
             slidesPerView: 1,
             spaceBetween: 24,
-            width: 348,
           }
         },
         navigation: {
