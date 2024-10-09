@@ -81,14 +81,14 @@
               <% if (bookingService === "程式碼檢視") { %>
               <div class="mb-8">
                 <label for="sourceCodeURL" class="form-label">希望接受檢視的程式碼儲存庫<span class="text-danger ms-1">*</span></label>
-                <input class="form-control rounded-1" id="sourceCodeURL" />
+                <input class="form-control rounded-1" id="sourceCodeURL" placeholder="https://github.com/testUser/todolist" />
               </div>
 
               <% } %>
 
               <div>
                 <label for="userInput" class="form-label">希望接受指導的項目<span class="text-danger ms-1">*</span></label>
-                <textarea class="form-control rounded-1" id="userInput" rows="15" style="resize: none"></textarea>
+                <textarea class="form-control rounded-1" id="userInput" rows="15" style="resize: none" placeholder="請輸入希望接受指導的項目"></textarea>
               </div>
             </div>
           </form>
