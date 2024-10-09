@@ -18,7 +18,9 @@
     <title>卡斯柏 ｜ 預約老師</title>
   </head>
   <body>
-    <%- include('./layout/loader'); -%> <%- include('./layout/header'); -%>
+    <!-- <%- include('./layout/loader'); -%>  -->
+
+    <%- include('./layout/header'); -%>
 
     <div class="tutor-booking">
       <!-- Mobile Top Cover -->
@@ -474,30 +476,37 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
+    <div
+      class="modal fade service-selection-modal"
+      id="serviceSelectionModal"
+      tabindex="-1"
+      aria-labelledby="serviceSelectionModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header border-0">
-            <h1 class="modal-title fs-3" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
+            <h1 class="modal-title fs-md-2 fs-3 ms-auto" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
             <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body p-8">
-            <div class="row row-cols-2 g-4">
-              <div class="col">
+          <div class="modal-body">
+            <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
+              <div class="col service-card">
                 <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
                   <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
-                    <h3 class="mb-auto">一對一教學</h3>
-                    <img src="../assets/images/deco/Illustration-7.png" alt="" class="w-md-50 w-100 mb-auto" />
-                    <p class="text-center">以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。</p>
+                    <h3 class="fs-4 fs-md-3">一對一教學</h3>
+                    <img src="../assets/images/deco/Illustration-7.png" alt="" class="" />
+                    <p class="text-center mb-auto">
+                      以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。
+                    </p>
                   </div>
                 </a>
               </div>
-              <div class="col">
+              <div class="col service-card">
                 <a href="tutor-booking-payment-step1-code-review.html" class="h-100">
                   <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
-                    <h3 class="mb-auto">程式碼檢視</h3>
-                    <img src="../assets/images/deco/Illustration-8.png" alt="" class="w-md-50 w-100 mb-auto" />
-                    <p class="text-center">
+                    <h3 class="fs-4 fs-md-3">程式碼檢視</h3>
+                    <img src="../assets/images/deco/Illustration-8.png" alt="" class="" />
+                    <p class="text-center mb-auto">
                       您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼， 老師會於預約時間內進行程式碼檢視服務，
                       並且於時間結束時回覆檢視後的結果。
                     </p>
