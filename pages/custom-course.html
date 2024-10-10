@@ -13,7 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
-    <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/icon/icon-infinite.svg"
+    />
     <title>Coding∞bit ｜ 課程需求一覽表</title>
   </head>
   <body class="bg-custom-course">
@@ -67,8 +71,8 @@
                   排序方式
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="sortDropdown">
-                  <li><a class="dropdown-item" href="#">遞增</a></li>
                   <li><a class="dropdown-item" href="#">遞減</a></li>
+                  <li><a class="dropdown-item" href="#">遞增</a></li>
                 </ul>
               </div>
               <div class="dropdown">
@@ -160,7 +164,7 @@
             <div class="content-wrapper">
               <!-- 左側欄：原需求、作者信息、標籤、照片 -->
               <div class="left-column col-md-6">
-                <div class="scrollable-content p-4">
+                <div class="scrollable-content p-5">
                   <div class="d-flex align-items-center mb-3">
                     <img
                       id="modalAuthorAvatar"
@@ -185,7 +189,7 @@
                       <textarea class="form-control rounded-2" rows="3" placeholder="請輸入您的回應..."></textarea>
                     </div>
                     <div class="form-actions">
-                      <button type="submit" class="btn btn-primary">提交回應</button>
+                      <button type="submit" class="btn btn-brand-03">提交回應</button>
                     </div>
                   </form>
                 </div>
@@ -193,7 +197,7 @@
 
               <!-- 右側欄：回覆意見 -->
               <div class="right-column col-md-6">
-                <div class="scrollable-content p-4">
+                <div class="scrollable-content p-5">
                   <h6 class="mb-3">回覆意見：</h6>
                   <div id="modalResponses" class="comments-container">
                     <!-- 回覆將在這裡動態插入 -->
@@ -220,7 +224,8 @@
           date: '2024-10-01 09:15',
           author: {
             name: '阿麥',
-            avatar: '../assets/images/user/user-1.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-10.png',
           },
           status: 'in-progress',
           tags: ['CSS3', 'UI/UX', '視覺效果'],
@@ -228,7 +233,8 @@
             {
               id: 'r1',
               author: 'MOMO',
-              avatar: '../assets/images/user/user-2.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-2.png',
               content:
                 '阿麥同學您好，針對您的問題，我寫了一支教學影片，希望能解決您的問題！影片中我詳細介紹了如何使用 CSS 的 backdrop-filter 屬性來創建毛玻璃效果，以及如何使用 filter 屬性作為備選方案。我也談到了一些常見的瀏覽器兼容性問題及其解決方法。您可以在這裡找到影片鏈接：[影片鏈接]',
               date: '2024/1/10 20:23',
@@ -237,13 +243,18 @@
             {
               id: 'r2',
               author: 'Ren Lin',
-              avatar: '../assets/images/user/user-3.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-3.png',
               content:
                 '阿麥同學您好，除了 MOMO 提供的優秀教學影片外，我還想補充一點：對於一些較舊的瀏覽器，您可能需要使用偽元素和 blur() 濾鏡來模擬毛玻璃效果。這裡有一個 CodePen 示例，展示了幾種不同的實現方法，包括對舊版瀏覽器的兼容處理：[CodePen 鏈接]。希望這能幫到您！',
               date: '2024/2/2 08:06',
               likes: 3,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1727827200000,
+          searchKeywords: 'css css毛玻璃製作效果 css3 ui/ux 視覺效果',
         },
         {
           id: '2',
@@ -255,7 +266,8 @@
           date: '2024-10-01 14:30',
           author: {
             name: 'CSS愛好者',
-            avatar: '../assets/images/user/user-2.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-2.png',
           },
           status: 'pending',
           tags: ['SCSS', '架構設計', '最佳實踐'],
@@ -263,13 +275,18 @@
             {
               id: 'r3',
               author: 'SCSS達人',
-              avatar: '../assets/images/user/user-3.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-3.png',
               content:
                 '您好，CSS愛好者！SCSS 7+1 模式確實是一個很好的大型專案樣式組織方法。這裡有一篇詳細的文章介紹了這種模式：[文章連結]。簡單來說，它將樣式文件分為7個文件夾和1個主文件，幫助您更好地組織代碼。我個人在幾個大型專案中使用過，確實提高了代碼的可維護性。',
               date: '2024/10/2 10:15',
               likes: 6,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1727845800000,
+          searchKeywords: 'scss scss7+1設計模式 架構設計 最佳實踐',
         },
         {
           id: '3',
@@ -281,7 +298,8 @@
           date: '2024-10-02 11:45',
           author: {
             name: '小明',
-            avatar: '../assets/images/user/user-3.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-3.png',
           },
           status: 'resolved',
           tags: ['JavaScript', 'HTML', 'CSS', '瀏覽器兼容性'],
@@ -289,13 +307,18 @@
             {
               id: 'r4',
               author: 'Table專家',
-              avatar: '../assets/images/user/user-4.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-4.png',
               content:
                 '小明你好，這聽起來可能是CSS中collapse屬性設置問題。請檢查你的table是否有設置border-collapse: collapse;。另外，不同瀏覽器對於table的默認樣式也有所不同，建議你重置一下表格的默認樣式。這裡有一個基礎的CSS重置代碼：[代碼片段]',
               date: '2024/10/2 13:30',
               likes: 8,
             },
           ],
+          isCompleted: true,
+          hasResponses: true,
+          timestamp: 1727922300000,
+          searchKeywords: 'js 表格渲染錯誤 javascript html css 瀏覽器兼容性',
         },
         {
           id: '4',
@@ -307,7 +330,8 @@
           date: '2024-10-02 16:20',
           author: {
             name: '設計新手',
-            avatar: '../assets/images/user/user-4.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-4.png',
           },
           status: 'in-progress',
           tags: ['CSS', 'clip-path', '圖形設計'],
@@ -315,13 +339,18 @@
             {
               id: 'r5',
               author: 'CSS魔法師',
-              avatar: '../assets/images/user/user-5.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-5.png',
               content:
                 '嗨，設計新手！使用 clip-path 確實可以創建很酷的形狀。對於複雜的形狀如雲朵，我推薦使用 Clippy 這個在線工具：[Clippy連結]。你可以在這裡視覺化地創建和調整你的 clip-path。至於兼容性，現代瀏覽器支持都不錯，但 IE 不支持，需要注意。',
               date: '2024/10/3 09:45',
               likes: 15,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1727938800000,
+          searchKeywords: 'css clip-path繪製不規則圖形 clip-path 圖形設計',
         },
         {
           id: '5',
@@ -333,7 +362,8 @@
           date: '2024-10-03 10:05',
           author: {
             name: 'API新手',
-            avatar: '../assets/images/user/user-5.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-5.png',
           },
           status: 'pending',
           tags: ['API', '錯誤處理', '數據解析'],
@@ -341,13 +371,18 @@
             {
               id: 'r6',
               author: 'Backend大神',
-              avatar: '../assets/images/user/user-6.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-6.png',
               content:
                 '處理第三方 API 確實可能會遇到各種挑戰。首先，我建議你使用類似 Postman 的工具直接測試 API，確認返回的數據結構。對於不一致的情況，可以考慮寫一個適配器來轉換數據。關於錯誤處理，務必使用 try-catch 來捕獲可能的異常，並為不同的錯誤碼設置相應的處理邏輯。這裡有一篇文章詳細討論了 API 錯誤處理的最佳實踐：[文章連結]',
               date: '2024/10/3 11:30',
               likes: 7,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1728012300000,
+          searchKeywords: 'api api疑問 錯誤處理 數據解析',
         },
         {
           id: '6',
@@ -359,7 +394,8 @@
           date: '2024-10-03 13:40',
           author: {
             name: 'React學習者',
-            avatar: '../assets/images/user/user-6.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-6.png',
           },
           status: 'in-progress',
           tags: ['React', 'Hooks', '狀態管理', '性能優化'],
@@ -367,13 +403,18 @@
             {
               id: 'r7',
               author: 'Hook專家',
-              avatar: '../assets/images/user/user-7.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-7.png',
               content:
                 '您提出了一些很好的問題！對於複雜狀態管理，可以考慮使用 useReducer 來組織邏輯。性能優化方面，useCallback 用於緩存回調函數，useMemo 用於緩存計算結果，它們主要用在子組件重渲染優化上。這裡有一個實用的性能優化指南：[指南連結]。關於自定義 Hook，建議遵循單一職責原則，使其可重用且易測試。',
               date: '2024/10/3 15:20',
               likes: 22,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1728025200000,
+          searchKeywords: 'react reacthooks使用技巧 hooks 狀態管理 性能優化',
         },
         {
           id: '7',
@@ -385,7 +426,8 @@
           date: '2024-10-03 17:55',
           author: {
             name: 'TS愛好者',
-            avatar: '../assets/images/user/user-7.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-7.png',
           },
           status: 'pending',
           tags: ['TypeScript', '高級類型', '泛型', '最佳實踐'],
@@ -393,13 +435,18 @@
             {
               id: 'r8',
               author: 'TS大師',
-              avatar: '../assets/images/user/user-8.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-8.png',
               content:
                 'TypeScript的高級類型確實可以大大提升代碼質量。對於複雜數據結構，可以利用 Partial<T>、Pick<T, K> 等工具類型來簡化定義。處理 null 或 undefined 值時，可以使用可選鏈操作符 ?. 和空值合並操作符 ??。這裡有一個很棒的 TypeScript 高級類型教程：[教程連結]。對於泛型，建議在設計通用組件或函數時廣泛使用，可以大大提高代碼的覆用性。',
               date: '2024/10/4 09:10',
               likes: 15,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1728040500000,
+          searchKeywords: 'typescript typescript高級類型技巧 高級類型 泛型 最佳實踐',
         },
         {
           id: '8',
@@ -411,7 +458,8 @@
           date: '2024-10-04 09:30',
           author: {
             name: '速度狂熱者',
-            avatar: '../assets/images/user/user-8.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-8.png',
           },
           status: 'in-progress',
           tags: ['性能優化', 'Web性能', '監控', '用戶體驗'],
@@ -419,7 +467,8 @@
             {
               id: 'r9',
               author: '性能優化專家',
-              avatar: '../assets/images/user/user-9.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-9.png',
               content:
                 '優化Web應用性能是一個複雜的話題，但這裡有一些關鍵策略：1) 使用懶加載和代碼分割來減少初始加載時間。2) 優化圖片，使用現代格式如WebP。3) 利用瀏覽器緩存和CDN。對於監控，推薦使用Google的Lighthouse和Chrome的Performance面板。對於SPA的首次加載問題，可以考慮服務端渲染(SSR)或靜態站點生成(SSG)。這裡有一個詳細的性能優化清單：[清單連結]',
               date: '2024/10/4 11:45',
@@ -428,13 +477,18 @@
             {
               id: 'r10',
               author: '監控達人',
-              avatar: '../assets/images/user/user-10.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-10.png',
               content:
                 '補充一點關於性能監控的建議：可以使用像New Relic或Datadog這樣的工具來進行實時監控。它們可以幫助你追踪關鍵指標如TTFB（Time to First Byte）和LCP（Largest Contentful Paint）。另外，設置自定義的性能預算並定期審查也是一個好習慣。這可以幫助你在性能下降時及時發現並解決問題。',
               date: '2024/10/4 14:20',
               likes: 15,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1728096600000,
+          searchKeywords: 'performance web應用性能優化與監控 性能優化 web性能 監控 用戶體驗',
         },
         {
           id: '9',
@@ -446,7 +500,8 @@
           date: '2024-10-04 12:10',
           author: {
             name: '無障礙倡導者',
-            avatar: '../assets/images/user/user-9.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-9.png',
           },
           status: 'pending',
           tags: ['無障礙設計', 'ARIA', 'WCAG', '包容性設計'],
@@ -454,13 +509,18 @@
             {
               id: 'r11',
               author: 'A11Y專家',
-              avatar: '../assets/images/user/user-1.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-1.png',
               content:
                 '實現真正的Web無障礙性確實是一個挑戰，但絕對值得。首先，確保您的HTML結構語義化，正確使用標題層級。關於ARIA，記住"無ARIA勝過錯誤的ARIA"這個原則。常見錯誤包括：未提供足夠的顏色對比度、僅依賴顏色傳遞信息、缺少表單標籤等。測試方面，推薦使用WAVE、aXe等自動化工具，同時進行手動測試和真實用戶測試。這裡有一個詳細的無障礙檢查清單：[清單連結]',
               date: '2024/10/4 14:30',
               likes: 12,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1728106200000,
+          searchKeywords: 'accessibility web無障礙設計與aria實踐 無障礙設計 aria wcag 包容性設計',
         },
         {
           id: '10',
@@ -472,7 +532,8 @@
           date: '2024-10-04 15:25',
           author: {
             name: 'API架構師',
-            avatar: '../assets/images/user/user-10.png',
+            avatar:
+              'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-10.png',
           },
           status: 'in-progress',
           tags: ['GraphQL', 'API設計', 'REST', '性能優化'],
@@ -480,7 +541,8 @@
             {
               id: 'r12',
               author: 'GraphQL大師',
-              avatar: '../assets/images/user/user-2.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-2.png',
               content:
                 'GraphQL相比REST的主要優勢是靈活性和減少過度獲取。它特別適合前端需求經常變化的場景。然而，它也帶來了後端複雜性增加的挑戰。對於schema組織，建議使用模塊化方法，將相關的類型和解析器組織在一起。處理N+1問題，可以使用數據加載庫如DataLoader進行批處理和緩存。性能優化技巧包括：實施查詢深度限制、使用片段來重用字段選擇等。這裡有一個GraphQL最佳實踐指南：[指南連結]',
               date: '2024/10/4 17:40',
@@ -489,13 +551,18 @@
             {
               id: 'r13',
               author: 'REST擁護者',
-              avatar: '../assets/images/user/user-3.png',
+              avatar:
+                'https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-3.png',
               content:
                 '雖然GraphQL有其優勢，但也不要忽視REST的強大之處。REST with HATEOAS可以提供很好的API探索性。對於微服務架構，混合使用REST和GraphQL可能是個好選擇，將GraphQL作為BFF（Backend for Frontend）層。這樣可以結合兩者的優點，同時降低遷移風險。無論選擇哪種方案，良好的API設計原則都是適用的，如版本控制、錯誤處理等。',
               date: '2024/10/5 09:15',
               likes: 10,
             },
           ],
+          isCompleted: false,
+          hasResponses: true,
+          timestamp: 1728117900000,
+          searchKeywords: 'graphql graphql應用與優化 api設計 rest 性能優化',
         },
       ];
 
@@ -546,12 +613,12 @@
       </div>
     `;
         },
-        renderCards() {
+        renderCards(cards = cardData) {
           const cardsContainer = document.querySelector('.cards-container');
           cardsContainer.innerHTML = '';
 
           if (window.innerWidth <= 576) {
-            cardData.forEach((card) => {
+            cards.forEach((card) => {
               const cardElement = document.createElement('div');
               cardElement.innerHTML = this.createCardHTML(card);
               cardsContainer.appendChild(cardElement.firstElementChild);
@@ -560,7 +627,7 @@
             const [row1, row2] = [document.createElement('div'), document.createElement('div')];
             [row1, row2].forEach((row) => (row.className = 'card_row'));
 
-            cardData.forEach((card, index) => {
+            cards.forEach((card, index) => {
               const cardElement = document.createElement('div');
               cardElement.innerHTML = this.createCardHTML(card);
               (index % 2 === 0 ? row1 : row2).appendChild(cardElement.firstElementChild);
@@ -569,6 +636,7 @@
             cardsContainer.append(row1, row2);
           }
           bindCardClickEvents();
+          applyRandomPositioning();
         },
       };
 
@@ -669,6 +737,64 @@
         },
       };
 
+      // 篩選相關功能
+      const filterManager = {
+        activeFilters: {
+          search: '',
+          category: null,
+          status: {
+            completed: false,
+            responded: false,
+          },
+          sortBy: 'newest',
+        },
+
+        applyFilters() {
+          const filteredData = cardData.filter((card) => {
+            const searchMatch = card.searchKeywords.toLowerCase().includes(this.activeFilters.search.toLowerCase());
+            const categoryMatch = !this.activeFilters.category || card.category === this.activeFilters.category;
+            const completedMatch = !this.activeFilters.status.completed || card.isCompleted;
+            const respondedMatch = !this.activeFilters.status.responded || card.hasResponses;
+
+            return searchMatch && categoryMatch && completedMatch && respondedMatch;
+          });
+
+          filteredData.sort((a, b) => {
+            return this.activeFilters.sortBy === 'newest' ? a.timestamp - b.timestamp : b.timestamp - a.timestamp;
+          });
+
+          cardManager.renderCards(filteredData);
+          timelineManager.generateTimeline();
+          scrollManager.updateScrollButtonVisibility();
+        },
+
+        setFilter(type, value) {
+          if (type === 'status') {
+            this.activeFilters.status[value] = !this.activeFilters.status[value];
+          } else if (type === 'category') {
+            this.activeFilters.category = value === 'all' ? null : value;
+          } else if (type === 'sortBy') {
+            this.activeFilters.sortBy = value;
+          } else {
+            this.activeFilters[type] = value;
+          }
+          this.applyFilters();
+        },
+
+        resetFilters() {
+          this.activeFilters = {
+            search: '',
+            category: null,
+            status: {
+              completed: false,
+              responded: false,
+            },
+            sortBy: 'newest',
+          };
+          this.applyFilters();
+        },
+      };
+
       function adjustMainContentPadding() {
         const [header, footer, mainContent] = [
           document.querySelector('.header-custom-course'),
@@ -705,9 +831,60 @@
         setTimeout(applyRandomPositioning, 100);
       }
 
+      // 初始化篩選器UI
+      function initFilters() {
+        const searchInput = document.querySelector('.search-course');
+        const categoryDropdown = document.getElementById('formatDropdown');
+        const sortDropdown = document.getElementById('sortDropdown');
+        const statusButtons = document.querySelectorAll('.status-btn');
+
+        // 搜索功能
+        searchInput.addEventListener('input', (e) => {
+          filterManager.setFilter('search', e.target.value);
+        });
+
+        // 類別篩選
+        categoryDropdown.addEventListener('click', (e) => {
+          if (e.target.classList.contains('dropdown-item')) {
+            const selectedCategory = e.target.textContent;
+            filterManager.setFilter('category', selectedCategory === 'HTML' ? 'all' : selectedCategory);
+            categoryDropdown.querySelector('button').textContent = selectedCategory;
+          }
+        });
+
+        // 排序
+        sortDropdown.addEventListener('click', (e) => {
+          if (e.target.classList.contains('dropdown-item')) {
+            console.log(e.target.textContent);
+            const sortOrder = e.target.textContent === '遞增' ? 'newest' : 'oldest';
+            filterManager.setFilter('sortBy', sortOrder);
+            sortDropdown.querySelector('button').textContent = e.target.textContent;
+          }
+        });
+
+        // 狀態按鈕
+        statusButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const statusType = this.textContent.trim() === '已完成' ? 'completed' : 'responded';
+            filterManager.setFilter('status', statusType);
+
+            // 更新按鈕樣式
+            const icon = this.querySelector('.material-symbols-outlined');
+            if (filterManager.activeFilters.status[statusType]) {
+              icon.textContent = 'check_circle';
+              icon.classList.add('icon-fill');
+            } else {
+              icon.textContent = 'radio_button_unchecked';
+              icon.classList.remove('icon-fill');
+            }
+          });
+        });
+      }
+
       function initWishpool() {
         adjustMainContentPadding();
         initRandomPositioning();
+
         cardManager.renderCards();
         timelineManager.generateTimeline();
         scrollManager.addScrollButtons();
@@ -718,16 +895,6 @@
           .querySelector('.wishpool-container')
           .addEventListener('scroll', scrollManager.updateScrollButtonVisibility);
       }
-
-      window.addEventListener(
-        'resize',
-        utils.debounce(() => {
-          initRandomPositioning();
-          timelineManager.generateTimeline();
-          scrollManager.updateScrollButtonVisibility();
-          adjustMainContentPadding();
-        }, 250),
-      );
 
       function openCardModal(cardId) {
         const card = cardData.find((c) => c.id === cardId);
@@ -822,7 +989,7 @@
 
         newResponseForm.addEventListener('submit', function (e) {
           e.preventDefault();
-          const newResponseText = document.getElementById('newResponseText').value;
+          const newResponseText = document.querySelector('textarea.form-control').value;
           if (newResponseText.trim()) {
             const newResponseElement = document.createElement('div');
             newResponseElement.className = 'card mb-3 border-0 bg-light';
@@ -830,7 +997,7 @@
         <div class="card-body p-3">
           <div class="d-flex justify-content-between align-items-center mb-2">
             <div class="d-flex align-items-center">
-              <img src="../assets/images/user/user-1.png" alt="Your Avatar" class="rounded-circle me-2" width="32" height="32">
+              <img src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-1.png" alt="Your Avatar" class="rounded-circle me-2" width="32" height="32">
               <div>
                 <h6 class="mb-0 fw-bold">You</h6>
                 <small class="text-muted">${new Date().toLocaleString()}</small>
@@ -861,7 +1028,7 @@
         </div>
       `;
             modalResponses.appendChild(newResponseElement);
-            document.getElementById('newResponseText').value = '';
+            document.getElementById('textarea.form-control').value = '';
           }
         });
 
@@ -875,24 +1042,36 @@
         });
 
         initWishpool();
+        initFilters();
         bindCardClickEvents();
+
+        // 初始應用篩選器
+        filterManager.applyFilters();
       });
+
+      window.addEventListener(
+        'resize',
+        utils.debounce(() => {
+          initRandomPositioning();
+          timelineManager.generateTimeline();
+          scrollManager.updateScrollButtonVisibility();
+          adjustMainContentPadding();
+        }, 250),
+      );
 
       // 狀態按鈕功能
-      document.querySelectorAll('.status-btn').forEach((button) => {
-        button.addEventListener('click', function () {
-          const icon = this.querySelector('.material-symbols-outlined');
-          if (icon.textContent === 'radio_button_unchecked') {
-            icon.textContent = 'check_circle';
-            icon.classList.add('icon-fill');
-          } else {
-            icon.textContent = 'radio_button_unchecked';
-            icon.classList.remove('icon-fill');
-          }
-        });
-      });
+      // document.querySelectorAll('.status-btn').forEach((button) => {
+      //   button.addEventListener('click', function () {
+      //     const icon = this.querySelector('.material-symbols-outlined');
+      //     if (icon.textContent === 'radio_button_unchecked') {
+      //       icon.textContent = 'check_circle';
+      //       icon.classList.add('icon-fill');
+      //     } else {
+      //       icon.textContent = 'radio_button_unchecked';
+      //       icon.classList.remove('icon-fill');
+      //     }
+      //   });
+      // });
     </script>
-
-    <!-- <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>

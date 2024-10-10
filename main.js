@@ -9,6 +9,6 @@ window.addEventListener('load', () => {
   if (loader) {
     setTimeout(() => {
       loader.classList.add('loader-hidden');
-    }, 1500);
+    }, 1000);
   }
 });
