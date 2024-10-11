@@ -65,3 +65,11 @@
     overflow: hidden;
   }
 }
+
+/* 影片清單背景著色 特效 */
+.video-background-color-hover {
+  &:hover {
+    background-color: $brand-02;
+    cursor: pointer;
+  }
+}
