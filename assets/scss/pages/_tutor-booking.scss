@@ -198,3 +198,28 @@
     }
   }
 }
+
+.service-selection-modal {
+  .modal-body {
+    padding: 20px 50px 50px 50px;
+    @include pad {
+      padding: 20px 30px 30px 30px;
+    }
+  }
+}
+
+.service-card {
+  img {
+    width: 100%;
+
+    @include lg-pc {
+      width: 250px;
+      height: 250px;
+    }
+
+    @include pad {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

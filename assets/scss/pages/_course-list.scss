@@ -6,8 +6,8 @@
 
   @include xl-pc {
     background-image: none;
-    padding-top: 112px;
-    padding-bottom: 32px;
+    padding-top: 142px;
+    padding-bottom: 72px;
   }
 
   .row {
@@ -24,6 +24,15 @@
     }
   }
 
+  .title-wrap {
+    @include lg-pc {
+      margin-top: -48px;
+    }
+    @include pad {
+      margin-top: -8px;
+    }
+  }
+
   .title {
     font-size: 64px;
     font-weight: 900;
@@ -31,12 +40,12 @@
     @include xl-pc {
       font-size: 32px;
       font-weight: 700;
-      margin-top: 24px;
     }
   }
 
   .title-info {
     font-size: 28px;
+    font-weight: 500;
     margin-top: 24px;
 
     @include xl-pc {
@@ -44,7 +53,7 @@
       margin-top: 16px;
     }
 
-    @include mobile {
+    @include pad {
       font-size: 16px;
       text-align: center;
     }
@@ -52,9 +61,151 @@
 
   .banner-illustration {
     width: 660px;
+    z-index: -1;
 
     @include pad {
       width: 100%;
+    }
+  }
+}
+/* course-list-category-section */
+.course-list-category-section {
+  .category-card {
+    background-color: $brand-05;
+    text-align: center;
+    border-radius: 16px;
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    &:hover {
+      background-color: $brand-04;
+      transition: background-color .3s ease-in-out;
+      animation: remove-overflow 2s forwards;
+    }
+    &:hover .card-info {
+      animation: show-info 1s forwards;
+      opacity: 1;
+      transition: opacity .3s;
+    }
+    &:not(:hover) {
+      animation: show-overflow 2s forwards;
+    }
+    &:not(:hover) {
+      .card-info {
+        animation: remove-info 1s forwards;
+      }
+    }
+
+    h4 {
+      color: $brand-03;
+    }
+    &:hover h4 {
+      color: $white;
+    }
+  }
+
+  .card-info {
+    width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    padding: 18px 24px;
+    position: absolute;
+    bottom: -144px;
+    left: 0; right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+  }
+
+  .card-img-wrap {
+    height: 240px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+
+    @include lg-pc {
+      height: 100%;
+    }
+  }
+  
+  /* card animation*/
+  @keyframes show-info {
+    50% {
+      transform: translateY(-160px);
+    }
+    100% {
+      transform: translateY(-108px);
+    }
+  }
+
+  @keyframes remove-info {
+    0% {
+      transform: translateY(-108px);
+    }
+    50% {
+      transform: translateY(-160px);
+    }
+    100% {
+      transform: translateY(8px);
+    }
+  }
+
+  @keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+  }
+
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+  }
+}
+
+/* course-list-freeTipShorts-section */
+.course-list-freeTipShorts-section {
+  position: relative;
+  background-image: url('/assets/images/deco/bg-10.png');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  padding: 100px 0;
+  margin-top: 80px;
+
+  @include xl-pc {
+    padding: 32px 0;
+    background-image: none;
+    background-color: $gray-04;
+  }
+
+  .freeTipShortsSwiper {
+    @include lg-pc {
+      padding: 24px 12px 24px;
+      margin-top: 120px;
+    }
+  }
+
+  .title {
+    font-size: 40px;
+    color: $brand-03;
+
+    @include xxl-pc {
+      font-size: 24px;
+    }
+  }
+
+  .swiper-switch-btn {
+    @include lg-pc {
+      justify-content: flex-end;
     }
   }
 }
@@ -109,6 +260,75 @@
 
     @include xl-pc {
       width: 100%;
+      padding: 0 16px;
     }
+  }
+
+  .tab-pane {
+    min-height: 660px;
+
+    @include lg-pc {
+      min-height: 100%;
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+.customLearning-card-wrap {
+  display: flex;
+  justify-content: center;
+
+  @include lg-pc {
+    flex-direction: column;
+  }
+}
+
+
+
+/* topicSeries & customLearning & freeTipShorts page*/
+.topicSeries-header-section,
+.customLearning-header-section,
+.freeTipShorts-header-section {
+  .category-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include pad {
+      display: block;
+      overflow: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: auto;
+  
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+  }
+}
+
+.topicSeries-course-section,
+.customLearning-course-section,
+.freeTipShorts-course-section {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: url('/assets/images/deco/unsplash.png') no-repeat center/cover;
+    opacity: 0.2;
+    z-index: -1;
+
+    @include lg-pc {
+      background-image: url('/assets/images/deco/unsplash-sm.png');
+    }
+  }
+
+  .nav-search-desktop {
+    padding-left: 44px;
   }
 }
