@@ -117,7 +117,7 @@ export function relatedVideosRender(dom, videos) {
           <h6 class="related-video-title">${title}</h6>
           <div class="f-align-center">
             <span class="material-symbols-outlined me-1 author-icon fs-6">co_present</span>
-            <span class="me-4">${author}</span>
+            <span class="me-2 me-md-4">${author}</span>
             <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${viewCount}" class="data-view-count fs-7">${viewCount}</data>
           </div>

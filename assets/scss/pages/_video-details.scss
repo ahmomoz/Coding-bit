@@ -105,7 +105,7 @@
 
     .user-comment-picture {
       display: block;
-      width: 40px;
+      height: 40px;
       border-radius: 88px;
     }
 
@@ -126,7 +126,7 @@
 
   .user-content {
     .user-image {
-      width: 40px;
+      height: 40px;
       border-radius: 88px;
     }
 
@@ -146,6 +146,7 @@
     .delete-comment,
     .reply-comment {
       color: $gray-01;
+      background-color: #f1eaff;
       line-height: 1.5;
     }
   }
@@ -153,6 +154,10 @@
   .reply {
     .accordion-button {
       color: $brand-03;
+
+      &:hover {
+        background-color: $brand-02;
+      }
 
       &:not(.collapsed) {
         background-color: unset;
@@ -171,7 +176,7 @@
 
       .teacher-content {
         .teacher-image {
-          width: 40px;
+          height: 40px;
           border-radius: 88px;
         }
 
@@ -240,6 +245,11 @@
   }
 
   .chapter-item-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // 限制顯示的行數
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: $gray-01;
     min-height: 39px;
     font-weight: 500;
@@ -278,6 +288,11 @@
   }
 
   .other-video-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // 限制顯示的行數
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: 500;
     color: $gray-01;
   }
@@ -322,6 +337,11 @@
   }
 
   .related-video-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // 限制顯示的行數
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: 500;
     color: $gray-01;
   }
