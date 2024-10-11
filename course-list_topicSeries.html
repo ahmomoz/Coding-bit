@@ -18,8 +18,10 @@
       type="image/x-icon"
       href="/Coding-bit/assets/icon-infinite-7978421b.svg"
     />
-    <title>Coding∞bit ｜ 訂閱方案付款完成</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/main-ab02b52d.js"></script>
+    <title>Coding∞bit ｜ 主題式系列課程影片一覽</title>
+    <script type="module" crossorigin src="/Coding-bit/assets/course-list_topicSeries-daff2182.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-ab02b52d.js">
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-7eda3769.js">
     <link rel="stylesheet" href="/Coding-bit/assets/main-ca1ac326.css">
   </head>
   <body>
@@ -40,7 +42,23 @@
       d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
   </svg>
 </div>
-    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+    <a 
+  href="javascript:void(0);"
+  onclick="scrollToTop()">
+  <img
+    class="scroll-to-top-btn"
+    src="/Coding-bit/assets/icons-to-top-fc9c406a.png"
+    alt="to-top-btn-image">
+</a>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-lg">
     <div class="d-flex">
       <a href="index.html" class="navbar-brand me-10">
@@ -126,80 +144,134 @@
     });
   });
 </script>
-    <main class="subscription-booking-success-section wrap">
+    <header class="topicSeries-header-section bg-brand-05 wrap">
       <div class="container">
-        <div class="f-center">
-  <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
-    <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5">
-      check_circle
-    </span>
-    付款成功
-  </h1>
-</div>
-<div class="row f-center">
-  <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
-    <div class="card shadow rounded-2 p-6 p-lg-10">
-      <h2 class="fs-5 fs-lg-4 w-bolder">訂閱方案詳細資訊</h2>
-      <table class="table border-top border-bottom mt-6 mt-lg-10">
-        <tbody>
-          <tr>
-            <th scope="row" class="border-0">
-              <h3 class="fs-5 fs-lg-4 pt-6">
-                
-                
-                  高級會員方案 / 月
-                
-              </h3>
-            </th>
-            <td class="border-0 text-end">
-              <h3 class="fs-5 fs-lg-4 pt-6">
-                
-                
-                  NT$ 499
-                
-              </h3>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="border-0">
-              <h4
-                class="fs-6 fw-medium mt-6 mt-lg-10">
-                開始日期
-              </h4>
-            </th>
-            <td class="border-0 text-end">
-              <p class="mt-6 mt-lg-10">
-                <time>2024 / 9 / 22</time>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="border-0">
-              <h4
-                class="fs-6 fw-medium pb-6 mt-3">
-                終止日期
-              </h4>
-            </th>
-            <td class="border-0 text-end">
-              <p class="pb-6 mt-3">
-                <time>2024 / 10 / 21</time>
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a href="index.html" class="mt-6 mt-lg-10">
-        <button
-          class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
-          回到首頁
-          <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
-            arrow_forward
-          </span>
-        </button>
-      </a>
-    </div>
-  </div>
-</div>      </div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a
+                href="index.html"
+                class="underline-hover">
+                首頁
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a
+                href="course-list.html"
+                class="underline-hover">
+                課程一覽
+              </a>
+            </li>
+            <li class="breadcrumb-item active fw-semibold" aria-current="page">
+              主題式系列課程影片一覽
+            </li>
+          </ol>
+        </nav>
+        <h1 class="text-brand-03 fs-3 fs-lg-1 mt-8">主題式系列課程影片一覽</h1>
+        <p class="fs-6 fs-lg-5 mt-3">專業講師自編，單一主題的系列課程影片</p>
+        <div class="category-list f-center mt-10 mt-lg-13">
+          <span class="material-symbols-outlined bg-brand-02 text-brand-01 p-2 rounded-circle me-2 mb-4 arrow" role="button"> chevron_left </span>
+          <a href="#" class="btn btn-brand-03 me-2 mb-4 border border-3 border-brand-03">全部</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">HTML & CSS</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">JavaScript</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">WordPress</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Python</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Vue</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">React</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">C++</a>
+          <a href="#" class="btn btn-outline-brand-03 me-2 mb-4">Bootstrap</a>
+          <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02 text-brand-01 mb-4 arrow" role="button"> chevron_right </span>
+        </div>
+      </div>
+    </header>
+    <main class="topicSeries-course-section wrap">
+      <div class="container">
+        <div class="control-group f-end-center">
+          <div class="position-relative f-align-center d-flex me-2 search-tutor">
+            <input type="search" class="form-control nav-search-desktop border border-brand-03 border-3" placeholder="搜尋課程" />
+            <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px"> search </span>
+          </div>
+
+          <div class="sort">
+            <button type="button" class="btn btn-outline-brand-03 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              排序方式
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">最熱門</a></li>
+              <li><a class="dropdown-item" href="#">最高評價</a></li>
+              <li><a class="dropdown-item" href="#">依時間(最舊到最新)</a></li>
+              <li><a class="dropdown-item" href="#">依時間(最新到最舊)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row topicSeriesCourse-card-wrap mt-6 mt-lg-8 g-5">
+          <div class="col-md-6 col-xl-4">
+            <a href="video-details.html" class="course-card card-column">
+              <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                <div class="overflow-hidden img-wrapper rounded position-relative">
+                  <img
+                    src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/course-1.png"
+                    class="card-img-top cover-img rounded"
+                    alt="course-image">
+                </div>
+                <span class="course-category-tag opacity-75 position-absolute">主題式課程影片</span>
+                <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                  <div>
+                    <h3 class="card-title fs-6 fs-lg-5">Python 基礎入門</h3>
+                    <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">Anna Wu</p>
+                  </div>
+                  <div class="f-between-center">
+                    <div class="f-align-center mt-1 mt-lg-2">
+                      <div class="f-center">
+                        <span class="material-symbols-outlined fs-5 me-1">
+                          schedule
+                        </span>
+                        <p class="fs-7 fs-lg-6">
+                          36小時
+                        </p>
+                      </div>
+                      <div class="f-center ms-2">
+                        <span class="material-symbols-outlined fs-5 me-1">
+                          group
+                        </span>
+                        <p class="fs-7 fs-lg-6">
+                          1,100
+                        </p>
+                      </div>
+                    </div>
+                    <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                      <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                        kid_star
+                      </span>
+                      4.0
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <nav class="mt-6 mt-lg-8" aria-label="navigation">
+          <ul class="pagination f-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><span class="material-symbols-outlined align-middle"> arrow_left
+                  </span></span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><span class="material-symbols-outlined align-middle"> arrow_right
+                  </span></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </main>
     <footer class="layout-footer-wrap wrap-lg bg-white">
   <div class="container f-xl-between">
@@ -306,6 +378,7 @@
   </div>
 </footer>
 
+    
     
   </body>
 </html>
