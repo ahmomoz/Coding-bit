@@ -53,8 +53,8 @@
     <section class="course-list-category-section wrap">
       <div class="container">
         <%- include('./layout/title-brand-03', { title: '三大類別，豐富多元', title2: '', longTitle: false }) %>
-        <div class="row mt-6 mt-lg-13">
-          <div class="col-lg-4 mt-10 mt-lg-0">
+        <div class="row f-center mt-6 mt-lg-13">
+          <div class="col-11 col-lg-4 mt-10 mt-lg-0">
             <a href="javascript:void(0);" class="category-card">
               <h4>主題式系列課程影片</h4>
               <div class="card-img-wrap">
@@ -64,17 +64,18 @@
                   class="card-img w-100">
               </div>
               <div class="card-info text-center bg-white">
-                <p class="fw-medium text-brand-03">
+                <p class="fs-7 fs-lg-6 fw-medium text-brand-03">
                   由專業講師自行規劃，</br>為單一主題的系列課程影片，具有連貫性。
                 </p>
                 <button
-                  class="btn btn-brand-03 fs-7 rounded-3 slide-right-hover w-100 mt-2">
+                  id="toTopicSeriesPageBtn"
+                  class="btn btn-brand-03 fs-7 rounded-3 w-100 mt-2">
                   查看所有影片
                 </button>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 mt-10 mt-lg-0">
+          <div class="col-11 col-lg-4 mt-10 mt-lg-0">
             <a href="javascript:void(0);" class="category-card">
               <h4>客製化學習需求影片</h4>
               <div class="card-img-wrap">
@@ -84,17 +85,18 @@
                   class="card-img w-100">
               </div>
               <div class="card-info text-center bg-white">
-                <p class="fw-medium text-brand-03">
+                <p class="fs-7 fs-lg-6 fw-medium text-brand-03">
                   學生於客製化許願頁面提出學習需求，</br>再由講師專為解決此需求而錄製，為成果導向的教學影片。
                 </p>
                 <button
-                class="btn btn-brand-03 fs-7 rounded-3 slide-right-hover w-100 mt-2">
-                查看所有影片
+                  id="toCustomLearningBtn"
+                  class="btn btn-brand-03 fs-7 rounded-3 w-100 mt-2">
+                  查看所有影片
               </button>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 mt-10 mt-lg-0">
+          <div class="col-11 col-lg-4 mt-10 mt-lg-0">
             <a href="javascript:void(0);" class="category-card">
               <h4>實用技術短影片</h4>
               <div class="card-img-wrap">
@@ -104,11 +106,12 @@
                   class="card-img w-100">
               </div>
               <div class="card-info text-center bg-white">
-                <p class="fw-medium text-brand-03">
-                  免費會員也可以自由觀看。</br>由專業講師錄製，影片時長教短，一支影片會進行一個小技術的教學。
+                <p class="fs-7 fs-lg-6 fw-medium text-brand-03">
+                  免費會員也可以自由觀看。</br>由專業講師錄製，影片時長較短，一支影片會進行一個小技術的教學。
                 </p>
                 <button
-                class="btn btn-brand-03 fs-7 rounded-3 slide-right-hover w-100 mt-2">
+                  id="toFreeTipShortsBtn"
+                  class="btn btn-brand-03 fs-7 rounded-3 w-100 mt-2">
                 查看所有影片
               </button>
               </div>
@@ -121,7 +124,7 @@
       <div class="container">
         <div class="row position-relative">
           <div class="position-absolute">
-            <div class="f-align-center">
+            <div class="f-center justify-content-lg-start">
               <picture>
                 <source
                   srcset="../assets/images/icon/icon-infinite-sm.svg"

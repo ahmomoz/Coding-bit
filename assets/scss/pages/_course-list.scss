@@ -26,10 +26,10 @@
 
   .title-wrap {
     @include lg-pc {
-      margin-top: -120px;
+      margin-top: -48px;
     }
     @include pad {
-      margin-top: -80px;
+      margin-top: -8px;
     }
   }
 
@@ -40,7 +40,6 @@
     @include xl-pc {
       font-size: 32px;
       font-weight: 700;
-      margin-top: 24px;
     }
   }
 
@@ -201,7 +200,6 @@
 
     @include xxl-pc {
       font-size: 24px;
-      text-align: center;
     }
   }
 
@@ -282,5 +280,55 @@
 
   @include lg-pc {
     flex-direction: column;
+  }
+}
+
+
+
+/* topicSeries & customLearning & freeTipShorts page*/
+.topicSeries-header-section,
+.customLearning-header-section,
+.freeTipShorts-header-section {
+  .category-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include pad {
+      display: block;
+      overflow: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: auto;
+  
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+  }
+}
+
+.topicSeries-course-section,
+.customLearning-course-section,
+.freeTipShorts-course-section {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: url('/assets/images/deco/unsplash.png') no-repeat center/cover;
+    opacity: 0.2;
+    z-index: -1;
+
+    @include lg-pc {
+      background-image: url('/assets/images/deco/unsplash-sm.png');
+    }
+  }
+
+  .nav-search-desktop {
+    padding-left: 44px;
   }
 }
