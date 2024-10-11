@@ -83,7 +83,7 @@ const customLearningCourseList = [
     courseName: '表格渲染技巧',
     img: 'course-15.png',
     teacher: '卡斯伯 Casper',
-    star: '4.0',
+    star: '4.2',
     totalDuration: '5分30秒',
     purchaseCount: '402',
     courseCategory: '客製化學習需求教學影片'
@@ -92,7 +92,7 @@ const customLearningCourseList = [
     courseName: 'clip-path繪製不規則圖形',
     img: 'course-16.png',
     teacher: '卡斯伯 Casper',
-    star: '4.0',
+    star: '4.8',
     totalDuration: '7分12秒',
     purchaseCount: '48',
     courseCategory: '客製化學習需求教學影片'
