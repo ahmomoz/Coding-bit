@@ -64,7 +64,7 @@
               <div class="section-component">
                 <ul class="nav nav-tabs mb-6 list-x-scroll flex-nowrap" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="about-me-tab" data-bs-toggle="tab" data-bs-target="#about-me-tab-pane" type="button" role="tab" aria-controls="about-me-tab-pane" aria-selected="true">
+                    <button class="nav-link" id="about-me-tab" data-bs-toggle="tab" data-bs-target="#about-me-tab-pane" type="button" role="tab" aria-controls="about-me-tab-pane" aria-selected="true">
                       關於我
                     </button>
                   </li>
@@ -74,13 +74,13 @@
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume-tab-pane" type="button" role="tab" aria-controls="resume-tab-pane" aria-selected="false">
+                    <button class="nav-link active" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume-tab-pane" type="button" role="tab" aria-controls="resume-tab-pane" aria-selected="false">
                       我的履歷
                     </button>
                   </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
+                  <div class="tab-pane fade" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
                     <p class="tab-details text-hide">
                       我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
                       <br />
@@ -98,24 +98,35 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" aria-labelledby="teaching-styles-tab" tabindex="0">
-                    ...
+                    <p class="tab-details text-hide">
+                      作為一名擁有十年經驗的前端工程師，我的教學風格注重實踐與互動。我相信學習不僅僅是理論，更需要將知識應用到實際項目中。因此，我會設計豐富的實作案例，讓學生在實踐中掌握前端技術。
+                      <br>
+                      <br>
+                      在課堂上，我鼓勵學生提問並分享自己的想法，這樣可以促進討論和思維碰撞。我會使用簡單易懂的語言解釋複雜的概念，並通過逐步指導來幫助學生克服挑戰。
+                      <br>
+                      <br>
+                      此外，我也非常重視學習資源的多樣性，會推薦優質的文獻、視頻和工具，讓學生能夠在課堂之外進一步探索和學習。我的目標是培養學生的自主學習能力，讓他們在前端開發的旅程中充滿信心與創造力。希望透過我的課程，每位學生都能找到屬於自己的編程熱情！
+                    </p>
+                    <div class="d-flex align-items-center py-3 show-more" role="button">
+                      <p class="text-brand-03">更多</p>
+                      <span class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+                        stat_minus_1
+                      </span>
+                    </div>
+
                   </div>
-                  <div class="tab-pane fade" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
-                    ...
-                  </div>
-                  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                    ...
+                  <div class="tab-pane fade show active" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
+                    <%- include('./layout/tutor-booking-resume'); -%>
                   </div>
                 </div>
-              </div>
-              <!-- statistics -->
-              <div class="row row-cols-2 row-cols-lg-5 g-3">
-                <%- include('./layout/tutor-stat-overview-card',{title: "學生" , details: "200" }); -%>
-                  <%- include('./layout/tutor-stat-overview-card',{title: "課堂" , details: "250" }); -%>
-                    <%- include('./layout/tutor-stat-overview-card',{title: "影片" , details: "10" }); -%>
-                      <%- include('./layout/tutor-stat-overview-card',{title: "出席率" , details: "100%" }); -%>
-                        <%- include('./layout/tutor-stat-overview-card',{title: "回覆率" , details: "100%" }); -%>
-              </div>
+                <!-- statistics -->
+                <div class="row row-cols-2 row-cols-lg-5 g-3 mt-5">
+                  <%- include('./layout/tutor-stat-overview-card',{title: "學生" , details: "200" }); -%>
+                    <%- include('./layout/tutor-stat-overview-card',{title: "課堂" , details: "250" }); -%>
+                      <%- include('./layout/tutor-stat-overview-card',{title: "影片" , details: "10" }); -%>
+                        <%- include('./layout/tutor-stat-overview-card',{title: "出席率" , details: "100%" }); -%>
+                          <%- include('./layout/tutor-stat-overview-card',{title: "回覆率" , details: "100%" }); -%>
+                </div>
             </section>
             <!-- section 2 - video list -->
             <section class="section">
