@@ -83,13 +83,23 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  HTML
+                  選擇標籤
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="formatDropdown">
-                  <li><a class="dropdown-item" href="#">HTML</a></li>
-                  <li><a class="dropdown-item" href="#">CSS</a></li>
-                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                </ul>
+                <div class="dropdown-menu p-0" aria-labelledby="formatDropdown" style="width: 250px">
+                  <div class="px-3 py-2">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm mb-2"
+                      id="tagSearch"
+                      placeholder="搜尋標籤..."
+                    />
+                  </div>
+                  <div class="tag-list-container">
+                    <ul class="list-unstyled mb-0" id="tagList">
+                      <!-- 標籤項將由 JavaScript 動態生成 -->
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -812,10 +822,10 @@
       };
 
       // 篩選相關功能
-      const filterManager = {
+      const FilterManager = {
         activeFilters: {
           search: '',
-          category: null,
+          tags: [],
           status: {
             completed: false,
             responded: false,
@@ -823,23 +833,139 @@
           sortBy: 'newest',
         },
 
-        applyFilters() {
-          const filteredData = cardData.filter((card) => {
-            const searchMatch = card.searchKeywords.toLowerCase().includes(this.activeFilters.search.toLowerCase());
-            const categoryMatch = !this.activeFilters.category || card.category === this.activeFilters.category;
-            const completedMatch = !this.activeFilters.status.completed || card.isCompleted;
-            const respondedMatch = !this.activeFilters.status.responded || card.hasResponses;
+        init(cardManager, timelineManager, scrollManager) {
+          this.cardManager = cardManager;
+          this.timelineManager = timelineManager;
+          this.scrollManager = scrollManager;
 
-            return searchMatch && categoryMatch && completedMatch && respondedMatch;
+          this.initSearchFilter();
+          this.initTagFilter();
+          this.initSortFilter();
+          this.initStatusFilters();
+        },
+
+        initTagFilter() {
+          const tagDropdown = document.querySelector('[aria-labelledby="formatDropdown"]');
+          const tagButton = document.getElementById('formatDropdown');
+          const tagSearch = document.getElementById('tagSearch');
+          const tagList = document.getElementById('tagList');
+
+          this.populateTagDropdown(tagList);
+
+          tagSearch.addEventListener('input', () => {
+            this.filterTags(tagSearch.value, tagList);
           });
 
-          filteredData.sort((a, b) => {
-            return this.activeFilters.sortBy === 'newest' ? a.timestamp - b.timestamp : b.timestamp - a.timestamp;
+          tagList.addEventListener('click', (e) => {
+            if (e.target.tagName === 'LI') {
+              const selectedTag = e.target.textContent;
+              this.toggleTag(selectedTag, e.target);
+              this.updateTagButtonText(tagButton);
+              this.applyFilters();
+            }
           });
+        },
 
-          cardManager.renderCards(filteredData);
-          timelineManager.generateTimeline();
-          scrollManager.updateScrollButtonVisibility();
+        filterTags(searchText, tagList) {
+          const items = tagList.getElementsByTagName('li');
+          for (let item of items) {
+            const text = item.textContent || item.innerText;
+            if (text.toLowerCase().indexOf(searchText.toLowerCase()) > -1) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          }
+        },
+
+        toggleTag(tag, element) {
+          const index = this.activeFilters.tags.indexOf(tag);
+          if (index > -1) {
+            this.activeFilters.tags.splice(index, 1);
+            element.classList.remove('active');
+          } else {
+            this.activeFilters.tags.push(tag);
+            element.classList.add('active');
+          }
+        },
+
+        populateTagDropdown(tagList) {
+          const allTags = new Set();
+          cardData.forEach((card) => card.tags.forEach((tag) => allTags.add(tag)));
+
+          // 將標籤轉換為數組並排序
+          const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, 'zh-Hant-TW'));
+
+          tagList.innerHTML = '';
+          sortedTags.forEach((tag) => {
+            const li = document.createElement('li');
+            li.className = 'dropdown-item';
+            li.textContent = tag;
+            tagList.appendChild(li);
+          });
+        },
+
+        updateTagButtonText(button) {
+          if (this.activeFilters.tags.length === 0) {
+            button.textContent = '選擇標籤';
+          } else if (this.activeFilters.tags.length === 1) {
+            button.textContent = this.activeFilters.tags[0];
+          } else {
+            button.textContent = `${this.activeFilters.tags.length} 個標籤已選擇`;
+          }
+        },
+
+        initSearchFilter() {
+          const searchInput = document.querySelector('.search-course');
+          searchInput.addEventListener('input', (e) => {
+            this.setFilter('search', e.target.value);
+          });
+        },
+
+        initCategoryFilter() {
+          const categoryDropdown = document.getElementById('formatDropdown');
+          categoryDropdown.addEventListener('click', (e) => {
+            if (e.target.classList.contains('dropdown-item')) {
+              const selectedCategory = e.target.textContent;
+              this.setFilter('category', selectedCategory === 'HTML' ? 'all' : selectedCategory);
+              categoryDropdown.querySelector('button').textContent = selectedCategory;
+            }
+          });
+        },
+
+        initSortFilter() {
+          const sortDropdownMenu = document.querySelector('[aria-labelledby="sortDropdown"]');
+          sortDropdownMenu.addEventListener('click', (e) => {
+            console.log('sortDropdown', 'click');
+            if (e.target.classList.contains('dropdown-item')) {
+              e.preventDefault(); // 防止 <a> 標籤的默認行為
+              const sortOrder = e.target.textContent === '遞增' ? 'oldest' : 'newest';
+              this.setFilter('sortBy', sortOrder);
+              document.getElementById('sortDropdown').textContent = e.target.textContent;
+            }
+          });
+        },
+
+        initStatusFilters() {
+          const statusButtons = document.querySelectorAll('.status-btn');
+          statusButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+              const statusType = button.textContent.trim() === '已完成' ? 'completed' : 'responded';
+              this.setFilter('status', statusType);
+              this.updateStatusButtonStyle(button, statusType);
+            });
+          });
+        },
+
+        updateStatusButtonStyle(button, statusType) {
+          const icon = button.querySelector('.material-symbols-outlined');
+          if (this.activeFilters.status[statusType]) {
+            icon.textContent = 'check_circle';
+            icon.classList.add('icon-fill');
+          } else {
+            icon.textContent = 'radio_button_unchecked';
+            icon.classList.remove('icon-fill');
+          }
         },
 
         setFilter(type, value) {
@@ -855,6 +981,30 @@
           this.applyFilters();
         },
 
+        applyFilters() {
+          const filteredData = cardData.filter((card) => {
+            const searchMatch = card.searchKeywords.toLowerCase().includes(this.activeFilters.search.toLowerCase());
+            const tagMatch =
+              this.activeFilters.tags.length === 0 || this.activeFilters.tags.some((tag) => card.tags.includes(tag));
+            const completedMatch = !this.activeFilters.status.completed || card.isCompleted;
+            const respondedMatch = !this.activeFilters.status.responded || card.hasResponses;
+
+            return searchMatch && tagMatch && completedMatch && respondedMatch;
+          });
+
+          filteredData.sort((a, b) => {
+            return this.activeFilters.sortBy === 'newest' ? b.timestamp - a.timestamp : a.timestamp - b.timestamp;
+          });
+
+          this.updateUI(filteredData);
+        },
+
+        updateUI(filteredData) {
+          this.cardManager.renderCards(filteredData);
+          this.timelineManager.generateTimeline();
+          this.scrollManager.updateScrollButtonVisibility();
+        },
+
         resetFilters() {
           this.activeFilters = {
             search: '',
@@ -866,6 +1016,79 @@
             sortBy: 'newest',
           };
           this.applyFilters();
+        },
+      };
+
+      // 反應相關功能
+      const ResponseManager = {
+        init() {
+          this.newResponseForm = document.getElementById('newResponseForm');
+          this.modalResponses = document.getElementById('modalResponses');
+          this.bindEvents();
+        },
+
+        bindEvents() {
+          this.newResponseForm.addEventListener('submit', this.handleNewResponse.bind(this));
+          this.modalResponses.addEventListener('click', this.handleLikeClick.bind(this));
+        },
+
+        handleNewResponse(e) {
+          e.preventDefault();
+          const newResponseText = document.querySelector('textarea.form-control').value;
+          if (newResponseText.trim()) {
+            const newResponseElement = this.createResponseElement(newResponseText);
+            this.modalResponses.appendChild(newResponseElement);
+            document.querySelector('textarea.form-control').value = '';
+          }
+        },
+
+        createResponseElement(responseText) {
+          const newResponseElement = document.createElement('div');
+          newResponseElement.className = 'card mb-3 border-0 bg-light';
+          newResponseElement.innerHTML = `
+      <div class="card-body p-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div class="d-flex align-items-center">
+            <img src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-1.png" alt="Your Avatar" class="rounded-circle me-2" width="32" height="32">
+            <div>
+              <h6 class="mb-0 fw-bold">You</h6>
+              <small class="text-muted">${new Date().toLocaleString()}</small>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-link text-muted p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">編輯</a></li>
+              <li><a class="dropdown-item" href="#">刪除</a></li>
+              <li><a class="dropdown-item" href="#">舉報</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="card-text mb-2">${responseText}</p>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-sm btn-light me-2 like-button d-flex align-items-center" data-response-id="new">
+            <span class="material-symbols-outlined icon-fill me-1">thumb_up</span>
+            <span class="like-count">0</span>
+          </button>
+          <button class="btn btn-sm btn-light d-flex align-items-center">
+            <span class="material-symbols-outlined me-1">comment</span>
+            <span>回覆</span>
+          </button>
+        </div>
+      </div>
+    `;
+          return newResponseElement;
+        },
+
+        handleLikeClick(e) {
+          if (e.target.closest('.like-button')) {
+            const likeButton = e.target.closest('.like-button');
+            const likeCount = likeButton.querySelector('.like-count');
+            let currentLikes = parseInt(likeCount.textContent);
+            likeCount.textContent = currentLikes + 1;
+          }
         },
       };
 
@@ -1009,56 +1232,6 @@
         setTimeout(applyRandomPositioning, 100);
       }
 
-      // 初始化篩選器UI
-      function initFilters() {
-        const searchInput = document.querySelector('.search-course');
-        const categoryDropdown = document.getElementById('formatDropdown');
-        const sortDropdown = document.getElementById('sortDropdown');
-        const statusButtons = document.querySelectorAll('.status-btn');
-
-        // 搜索功能
-        searchInput.addEventListener('input', (e) => {
-          filterManager.setFilter('search', e.target.value);
-        });
-
-        // 類別篩選
-        categoryDropdown.addEventListener('click', (e) => {
-          if (e.target.classList.contains('dropdown-item')) {
-            const selectedCategory = e.target.textContent;
-            filterManager.setFilter('category', selectedCategory === 'HTML' ? 'all' : selectedCategory);
-            categoryDropdown.querySelector('button').textContent = selectedCategory;
-          }
-        });
-
-        // 排序
-        sortDropdown.addEventListener('click', (e) => {
-          if (e.target.classList.contains('dropdown-item')) {
-            console.log(e.target.textContent);
-            const sortOrder = e.target.textContent === '遞增' ? 'newest' : 'oldest';
-            filterManager.setFilter('sortBy', sortOrder);
-            sortDropdown.querySelector('button').textContent = e.target.textContent;
-          }
-        });
-
-        // 狀態按鈕
-        statusButtons.forEach((button) => {
-          button.addEventListener('click', function () {
-            const statusType = this.textContent.trim() === '已完成' ? 'completed' : 'responded';
-            filterManager.setFilter('status', statusType);
-
-            // 更新按鈕樣式
-            const icon = this.querySelector('.material-symbols-outlined');
-            if (filterManager.activeFilters.status[statusType]) {
-              icon.textContent = 'check_circle';
-              icon.classList.add('icon-fill');
-            } else {
-              icon.textContent = 'radio_button_unchecked';
-              icon.classList.remove('icon-fill');
-            }
-          });
-        });
-      }
-
       function initWishpool() {
         adjustMainContentPadding();
         initRandomPositioning();
@@ -1162,69 +1335,15 @@
       }
 
       document.addEventListener('DOMContentLoaded', function () {
-        const newResponseForm = document.getElementById('newResponseForm');
-        const modalResponses = document.getElementById('modalResponses');
+        // 初始化 ResponseManager
+        ResponseManager.init();
 
-        newResponseForm.addEventListener('submit', function (e) {
-          e.preventDefault();
-          const newResponseText = document.querySelector('textarea.form-control').value;
-          if (newResponseText.trim()) {
-            const newResponseElement = document.createElement('div');
-            newResponseElement.className = 'card mb-3 border-0 bg-light';
-            newResponseElement.innerHTML = `
-        <div class="card-body p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <div class="d-flex align-items-center">
-              <img src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/user/user-1.png" alt="Your Avatar" class="rounded-circle me-2" width="32" height="32">
-              <div>
-                <h6 class="mb-0 fw-bold">You</h6>
-                <small class="text-muted">${new Date().toLocaleString()}</small>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-link text-muted p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="material-symbols-outlined">more_vert</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">編輯</a></li>
-                <li><a class="dropdown-item" href="#">刪除</a></li>
-                <li><a class="dropdown-item" href="#">舉報</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="card-text mb-2">${newResponseText}</p>
-          <div class="d-flex align-items-center">
-            <button class="btn btn-sm btn-light me-2 like-button d-flex align-items-center" data-response-id="new">
-              <span class="material-symbols-outlined icon-fill me-1">thumb_up</span>
-              <span class="like-count">0</span>
-            </button>
-            <button class="btn btn-sm btn-light d-flex align-items-center">
-              <span class="material-symbols-outlined me-1">comment</span>
-              <span>回覆</span>
-            </button>
-          </div>
-        </div>
-      `;
-            modalResponses.appendChild(newResponseElement);
-            document.getElementById('textarea.form-control').value = '';
-          }
-        });
-
-        modalResponses.addEventListener('click', function (e) {
-          if (e.target.closest('.like-button')) {
-            const likeButton = e.target.closest('.like-button');
-            const likeCount = likeButton.querySelector('.like-count');
-            let currentLikes = parseInt(likeCount.textContent);
-            likeCount.textContent = currentLikes + 1;
-          }
-        });
+        // 初始化 FilterManager
+        FilterManager.init(cardManager, timelineManager, scrollManager);
+        FilterManager.applyFilters(); // 初始應用過濾器
 
         initWishpool();
-        initFilters();
         bindCardClickEvents();
-
-        // 初始應用篩選器
-        filterManager.applyFilters();
 
         // 初始化新增學習需求功能
         LearningNeedManager.init();
