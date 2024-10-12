@@ -167,7 +167,7 @@
   }
 }
 
-.student-comment {
+.student-comment,.student-comment-modal {
   .progress {
     --bs-progress-bg: none;
   }
@@ -182,15 +182,16 @@
       height: 40px;
     }
   }
+}
 
-  .comment-details {
+
+.student-comment .comment-details {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-}
 
 .tutor-booking {
   .desktop-cta-card {
@@ -224,3 +225,5 @@
     }
   }
 }
+
+
