@@ -1,0 +1,13 @@
+.tutor-booking-resume{
+    .list-group-item {
+        border:0px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+
+        background-color: $brand-02;
+        &.active{
+            background-color: $brand-03;
+        }
+    }
+
+}
