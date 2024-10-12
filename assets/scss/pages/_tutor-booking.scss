@@ -203,8 +203,8 @@
 .service-selection-modal {
   .modal-content {
     padding: 20px 50px 50px 50px;
-    @include pad {
-      padding: 20px 30px 30px 30px;
+    @include lg-pc {
+      padding: 20px;
     }
   }
 }
