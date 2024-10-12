@@ -112,6 +112,44 @@
       width: 100%;
     }
   }
+
+  .tag-list-container {
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+
+  .tag-list-container::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .tag-list-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .tag-list-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  .tag-list-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  #tagList li {
+    cursor: pointer;
+    padding: 0.25rem 1.5rem;
+  }
+
+  #tagList li.active {
+    background-color: #007bff;
+    color: white;
+  }
+
+  #tagList li:hover {
+    background-color: #e9ecef;
+  }
 }
 
 // 自訂課程許願池樣式
@@ -515,9 +553,9 @@
 
 .custom-modal {
   .modal-dialog {
-    max-width: 95%;
-    height: 95vh;
-    margin: 2.5vh auto;
+    // max-width: 95%;
+    height: 100vh;
+    // margin: 2.5vh auto;
   }
 
   .modal-content {
