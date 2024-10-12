@@ -59,7 +59,7 @@ export function chapterListRender(dom, videos) {
   videos.forEach(video => {
     const { chapter, title, duration, viewCount } = video;
     const chapterStr = `
-    <li class="py-4 d-flex justify-content-between chapter-item">
+    <li class="px-6 py-4 d-flex justify-content-between chapter-item video-background-color-hover">
       <span class="material-symbols-outlined player-icon me-2">play_circle</span>
       <div class="flex-grow-1">
         <div class="d-flex align-items-center justify-content-between mb-1">
@@ -84,7 +84,7 @@ export function otherVideosRender(dom, videos) {
   videos.forEach(video => {
     const { imageUrl, title, viewCount, duration} = video;
     const otherStr = `
-      <li class="d-flex py-3 py-4">
+      <li class="d-flex py-3 py-4 px-6 video-background-color-hover">
         <div class="position-relative">
           <img class="rounded-2 me-4 other-video-image" src="${imageUrl}" alt="影片縮圖">
           <span class="position-absolute py-1 px-2 rounded-1 fs-7 other-video-duration">${duration}</span>
@@ -108,7 +108,7 @@ export function relatedVideosRender(dom, videos) {
   videos.forEach(video => {
     const { imageUrl, title, viewCount, author ,duration} = video;
     const relatedStr = `
-      <li class="d-flex py-3 py-4 position-relative">
+      <li class="d-flex py-3 py-4 px-6 video-background-color-hover position-relative ">
         <div class="position-relative me-4">
           <img class="rounded-2 related-video-image" src="${imageUrl}" alt="影片縮圖">
           <span class="position-absolute py-1 px-2 rounded-1 fs-7 related-video-duration">${duration}</span>
@@ -117,7 +117,7 @@ export function relatedVideosRender(dom, videos) {
           <h6 class="related-video-title">${title}</h6>
           <div class="f-align-center">
             <span class="material-symbols-outlined me-1 author-icon fs-6">co_present</span>
-            <span class="me-4">${author}</span>
+            <span class="me-2 me-md-4">${author}</span>
             <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${viewCount}" class="data-view-count fs-7">${viewCount}</data>
           </div>
