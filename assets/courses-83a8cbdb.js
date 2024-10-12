@@ -44,44 +44,44 @@ function d(a,t){let e="";t.forEach(s=>{e+=`
           </div>
         </a>
       </div>
-    `,a.innerHTML=e})}function p(a,t){let e="";t.forEach(s=>{const{chapter:n,title:o,duration:i,viewCount:l}=s,c=`
-    <li class="py-4 d-flex justify-content-between chapter-item">
+    `,a.innerHTML=e})}function p(a,t){let e="";t.forEach(s=>{const{chapter:o,title:n,duration:i,viewCount:l}=s,c=`
+    <li class="px-6 py-4 d-flex justify-content-between chapter-item video-background-color-hover">
       <span class="material-symbols-outlined player-icon me-2">play_circle</span>
       <div class="flex-grow-1">
         <div class="d-flex align-items-center justify-content-between mb-1">
-          <span class="fs-7 chapter-contents">${n}</span>
+          <span class="fs-7 chapter-contents">${o}</span>
           <time class="video-duration fs-7 rounded-1 px-2 py-1">${i}</time>
         </div>
-        <h6 class="chapter-item-title mb-2">${o}</h6>
+        <h6 class="chapter-item-title mb-2">${n}</h6>
         <div class="d-flex">
           <span class="material-symbols-outlined me-1 fs-6 eyes-icon">visibility</span>
           <data class="chapter-view-count fs-7" value="${l}">${l}</data>
         </div>
       </div>
-    </li>`;e+=c}),a.innerHTML=e}function v(a,t){let e="";t.forEach(s=>{const{imageUrl:n,title:o,viewCount:i,duration:l}=s,c=`
-      <li class="d-flex py-3 py-4">
+    </li>`;e+=c}),a.innerHTML=e}function v(a,t){let e="";t.forEach(s=>{const{imageUrl:o,title:n,viewCount:i,duration:l}=s,c=`
+      <li class="d-flex py-3 py-4 px-6 video-background-color-hover">
         <div class="position-relative">
-          <img class="rounded-2 me-4 other-video-image" src="${n}" alt="影片縮圖">
+          <img class="rounded-2 me-4 other-video-image" src="${o}" alt="影片縮圖">
           <span class="position-absolute py-1 px-2 rounded-1 fs-7 other-video-duration">${l}</span>
         </div>
         <div class="f-column-between py-2">
-          <h6 class="fs-6 other-video-title">${o}</h6>
+          <h6 class="fs-6 other-video-title">${n}</h6>
           <div class="f-align-center me-6">
             <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${i}" class="data-view-count fs-7">${i}</data>
           </div>
         </div>
-      </li>`;e+=c}),a.innerHTML=e}function m(a,t){let e="";t.forEach(s=>{const{imageUrl:n,title:o,viewCount:i,author:l,duration:c}=s,r=`
-      <li class="d-flex py-3 py-4 position-relative">
+      </li>`;e+=c}),a.innerHTML=e}function m(a,t){let e="";t.forEach(s=>{const{imageUrl:o,title:n,viewCount:i,author:l,duration:c}=s,r=`
+      <li class="d-flex py-3 py-4 px-6 video-background-color-hover position-relative ">
         <div class="position-relative me-4">
-          <img class="rounded-2 related-video-image" src="${n}" alt="影片縮圖">
+          <img class="rounded-2 related-video-image" src="${o}" alt="影片縮圖">
           <span class="position-absolute py-1 px-2 rounded-1 fs-7 related-video-duration">${c}</span>
         </div>
         <div class="f-column-between py-2">
-          <h6 class="related-video-title">${o}</h6>
+          <h6 class="related-video-title">${n}</h6>
           <div class="f-align-center">
             <span class="material-symbols-outlined me-1 author-icon fs-6">co_present</span>
-            <span class="me-4">${l}</span>
+            <span class="me-2 me-md-4">${l}</span>
             <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${i}" class="data-view-count fs-7">${i}</data>
           </div>
