@@ -132,7 +132,7 @@
             <section class="section">
               <div class="section-component f-between-center">
                 <h4>老師影片</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
+                <a href="teacher-info.html" class="text-brand-03 d-flex slide-right-hover" data-show="false">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -459,7 +459,7 @@
             <section class="section mb-0">
               <div class="section-component f-between-center">
                 <h4>推薦老師</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                <a href="tutor-list.html" class="text-brand-03 d-flex slide-right-hover">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -706,20 +706,19 @@
         });
 
         new Swiper(".freeTipShortsSwiper", {
-          slidesPerView: 2,
-          spaceBetween: 24,
+          slidesPerView: 1,
+          spaceBetween: 40,
           loop: true,
-          simulateTouch: false,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
+          },
           breakpoints: {
+            // when window width is >= 768px
             768: {
               slidesPerView: 2,
-              spaceBetween: 24,
+              spaceBetween: 20,
             },
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 24,
-              width: 348,
-            }
           },
         });
 
