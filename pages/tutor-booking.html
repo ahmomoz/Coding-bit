@@ -117,7 +117,109 @@
                         <%- include('./layout/tutor-stat-overview-card',{title: "回覆率" , details: "100%" }); -%>
               </div>
             </section>
-            <!-- section 2 - timetable -->
+            <!-- section 2 - video list -->
+            <section class="section">
+              <div class="section-component f-between-center">
+                <h4>老師影片</h4>
+                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
+                  <p>更多</p>
+                  <span class="material-symbols-outlined icon-fill">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+              <div class="swiper freeTipShortsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="video-details.html" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img src="../assets/images/course/course-12.png" class="card-img-top cover-img rounded" alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">免費影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">快速掌握html標籤</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">卡斯伯 Casper</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  2分18秒
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  3,581
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              4.9
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="video-details.html" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img src="../assets/images/course/course-13.png" class="card-img-top cover-img rounded" alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">免費影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">html載入外部圖片方式</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">卡斯伯 Casper</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  3分56秒
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  1,589
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              4.8
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <!-- section 3 - timetable -->
             <section class="section schedule">
               <div class="section-component f-between-center">
                 <h4>時間表</h4>
@@ -259,7 +361,7 @@
 
               <div></div>
             </section>
-            <!-- section 3 - student comment -->
+            <!-- section 4 - student comment -->
             <section class="section student-comment">
               <div class="section-component f-between-center">
                 <h4>學生評價</h4>
@@ -342,7 +444,7 @@
               </div>
             </section>
 
-            <!-- section 4 - tutor recommendation -->
+            <!-- section 5 - tutor recommendation -->
             <section class="section mb-0">
               <div class="section-component f-between-center">
                 <h4>推薦老師</h4>
@@ -485,7 +587,7 @@
       <script type="module" src="../main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
-        var swiper = new Swiper(".tutor-card-swiper", {
+        new Swiper(".tutor-card-swiper", {
           slidesPerView: 1,
           spaceBetween: 40,
           loop: true,
@@ -501,6 +603,25 @@
             },
           },
         });
+
+        new Swiper(".freeTipShortsSwiper", {
+          slidesPerView: 2,
+          spaceBetween: 24,
+          loop: true,
+          simulateTouch: false,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 24,
+              width: 348,
+            }
+          },
+        });
+
       </script>
 </body>
 
