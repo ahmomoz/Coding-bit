@@ -51,13 +51,14 @@
 .tag-label {
   background-color: $brand-02;
 
-  &:hover>h6 {
+  &:hover>h3 {
     color: $brand-02;
   }
 
-  h6 {
+  h3 {
     color: $brand-03;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.2;
   }
 }
@@ -69,6 +70,7 @@
 
   .author-name {
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.2;
     color: $gray-01;
   }
@@ -101,6 +103,11 @@
   .tab-content {
     .video-description-item {
       list-style-type: decimal;
+      h6{
+        font-weight: 400;
+        font-style: 16px;
+        line-height: 1.5;
+      }
     }
 
     .user-comment-picture {
@@ -214,6 +221,8 @@
 
   .chapter-video-title {
     font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     color: $gray-01;
   }
 
@@ -252,6 +261,8 @@
     text-overflow: ellipsis;
     color: $gray-01;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
   }
 
   .eyes-icon {
@@ -269,8 +280,10 @@
   padding: 34px 0 12px 0;
   backdrop-filter: blur(20px);
 
-  .teacher-other-video {
+  .teacher-other-video-title {
     font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     color: $gray-01;
   }
 
@@ -293,6 +306,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
     color: $gray-01;
   }
 
@@ -310,8 +325,10 @@
   padding: 34px 0 12px 0;
   backdrop-filter: blur(20px);
 
-  .teacher-related-video {
+  .teacher-related-video-title {
     font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     color: $gray-01;
   }
 
@@ -342,6 +359,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
     color: $gray-01;
   }
 
