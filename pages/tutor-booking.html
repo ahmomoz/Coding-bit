@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
-    <title>卡斯柏 ｜ 預約老師</title>
-  </head>
-  <body>
-    <!-- <%- include('./layout/loader'); -%>  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <%- include('./layout/header'); -%>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/images/icon/icon-infinite.svg" />
+  <title>卡斯柏 ｜ 預約老師</title>
+</head>
+
+<body>
+  <!-- <%- include('./layout/loader'); -%>  -->
+
+  <%- include('./layout/header'); -%>
 
     <div class="tutor-booking">
       <!-- Mobile Top Cover -->
@@ -33,11 +33,7 @@
           play_circle
         </span>
 
-        <span
-          class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
-          role="button"
-          style="background-color: #1e1e1e66"
-          data-favorite="true">
+        <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" role="button" style="background-color: #1e1e1e66" data-favorite="true">
           favorite
         </span>
       </div>
@@ -68,87 +64,193 @@
               <div class="section-component">
                 <ul class="nav nav-tabs mb-6 list-x-scroll flex-nowrap" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link active"
-                      id="about-me-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#about-me-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="about-me-tab-pane"
-                      aria-selected="true">
+                    <button class="nav-link" id="about-me-tab" data-bs-toggle="tab" data-bs-target="#about-me-tab-pane" type="button" role="tab" aria-controls="about-me-tab-pane" aria-selected="true">
                       關於我
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="teaching-styles-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#teaching-styles-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="teaching-styles-tab-pane"
-                      aria-selected="false">
+                    <button class="nav-link" id="teaching-styles-tab" data-bs-toggle="tab" data-bs-target="#teaching-styles-tab-pane" type="button" role="tab" aria-controls="teaching-styles-tab-pane" aria-selected="false">
                       我的教學風格
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="resume-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#resume-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="resume-tab-pane"
-                      aria-selected="false">
+                    <button class="nav-link active" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume-tab-pane" type="button" role="tab" aria-controls="resume-tab-pane" aria-selected="false">
                       我的履歷
                     </button>
                   </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
+                  <div class="tab-pane fade" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
                     <p class="tab-details text-hide">
-                      我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。<br /><br />
+                      我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
+                      <br />
+                      <br />
                       在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
-                      <br /><br />
+                      <br />
+                      <br />
                       老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。我曾經教導過百位學生，大家均表示教學清晰容易明白。如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
                     </p>
                     <div class="d-flex align-items-center py-3 show-more" role="button">
                       <p class="text-brand-03">更多</p>
-                      <span class="material-symbols-outlined icon-fill text-brand-03 align-middle"> stat_minus_1 </span>
+                      <span class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+                        stat_minus_1
+                      </span>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" aria-labelledby="teaching-styles-tab" tabindex="0">
-                    ...
+                    <p class="tab-details text-hide">
+                      作為一名擁有十年經驗的前端工程師，我的教學風格注重實踐與互動。我相信學習不僅僅是理論，更需要將知識應用到實際項目中。因此，我會設計豐富的實作案例，讓學生在實踐中掌握前端技術。
+                      <br>
+                      <br>
+                      在課堂上，我鼓勵學生提問並分享自己的想法，這樣可以促進討論和思維碰撞。我會使用簡單易懂的語言解釋複雜的概念，並通過逐步指導來幫助學生克服挑戰。
+                      <br>
+                      <br>
+                      此外，我也非常重視學習資源的多樣性，會推薦優質的文獻、視頻和工具，讓學生能夠在課堂之外進一步探索和學習。我的目標是培養學生的自主學習能力，讓他們在前端開發的旅程中充滿信心與創造力。希望透過我的課程，每位學生都能找到屬於自己的編程熱情！
+                    </p>
+                    <div class="d-flex align-items-center py-3 show-more" role="button">
+                      <p class="text-brand-03">更多</p>
+                      <span class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+                        stat_minus_1
+                      </span>
+                    </div>
+
                   </div>
-                  <div class="tab-pane fade" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade show active" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
+                    <%- include('./layout/tutor-booking-resume'); -%>
+                  </div>
+                </div>
+                <!-- statistics -->
+                <div class="row row-cols-2 row-cols-lg-5 g-3 mt-5">
+                  <%- include('./layout/tutor-stat-overview-card',{title: "學生" , details: "200" }); -%>
+                    <%- include('./layout/tutor-stat-overview-card',{title: "課堂" , details: "250" }); -%>
+                      <%- include('./layout/tutor-stat-overview-card',{title: "影片" , details: "10" }); -%>
+                        <%- include('./layout/tutor-stat-overview-card',{title: "出席率" , details: "100%" }); -%>
+                          <%- include('./layout/tutor-stat-overview-card',{title: "回覆率" , details: "100%" }); -%>
+                </div>
+            </section>
+            <!-- section 2 - video list -->
+            <section class="section">
+              <div class="section-component f-between-center">
+                <h4>老師影片</h4>
+                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
+                  <p>更多</p>
+                  <span class="material-symbols-outlined icon-fill">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+              <div class="swiper freeTipShortsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="video-details.html" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img src="../assets/images/course/course-12.png" class="card-img-top cover-img rounded" alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">免費影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">快速掌握html標籤</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">卡斯伯 Casper</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  2分18秒
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  3,581
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              4.9
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="video-details.html" class="course-card card-column">
+                      <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+                        <div class="overflow-hidden img-wrapper rounded position-relative">
+                          <img src="../assets/images/course/course-13.png" class="card-img-top cover-img rounded" alt="course-image">
+                        </div>
+                        <span class="course-category-tag opacity-75 position-absolute">免費影片</span>
+                        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+                          <div>
+                            <h3 class="card-title fs-6 fs-lg-5">html載入外部圖片方式</h3>
+                            <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">卡斯伯 Casper</p>
+                          </div>
+                          <div class="f-between-center">
+                            <div class="f-align-center mt-1 mt-lg-2">
+                              <div class="f-center">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  schedule
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  3分56秒
+                                </p>
+                              </div>
+                              <div class="f-center ms-2">
+                                <span class="material-symbols-outlined fs-5 me-1">
+                                  group
+                                </span>
+                                <p class="fs-7 fs-lg-6">
+                                  1,589
+                                </p>
+                              </div>
+                            </div>
+                            <p class="f-center text-brand-03 fs-7 fs-lg-6">
+                              <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                                kid_star
+                              </span>
+                              4.8
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
                 </div>
               </div>
-              <!-- statistics -->
-              <div class="row row-cols-2 row-cols-lg-5 g-3">
-                <%- include('./layout/tutor-stat-overview-card',{title: "學生", details: "200"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "課堂", details: "250"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "影片", details: "10"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "出席率", details: "100%"}); -%> <%-
-                include('./layout/tutor-stat-overview-card',{title: "回覆率", details: "100%"}); -%>
-              </div>
             </section>
-            <!-- section 2 - timetable -->
+
+            <!-- section 3 - timetable -->
             <section class="section schedule">
               <div class="section-component f-between-center">
                 <h4>時間表</h4>
                 <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
                   <p>更多</p>
-                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                  <span class="material-symbols-outlined icon-fill">
+                    arrow_forward
+                  </span>
                 </a>
               </div>
               <div class="f-between-center mb-5">
-                <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_back</span>
-                <h5 class="text-brand-03 week fw-medium">2024/08/01 - 2024/08/07</h5>
-                <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">arrow_forward</span>
+                <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">
+                  arrow_back
+                </span>
+                <h5 class="text-brand-03 week fw-medium">
+                  2024/08/01 - 2024/08/07
+                </h5>
+                <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">
+                  arrow_forward
+                </span>
               </div>
 
               <div>
@@ -270,13 +372,15 @@
 
               <div></div>
             </section>
-            <!-- section 3 - student comment -->
+            <!-- section 4 - student comment -->
             <section class="section student-comment">
               <div class="section-component f-between-center">
                 <h4>學生評價</h4>
                 <a href="#" class="text-brand-03 d-flex slide-right-hover">
                   <p>更多</p>
-                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                  <span class="material-symbols-outlined icon-fill">
+                    arrow_forward
+                  </span>
                 </a>
               </div>
 
@@ -300,14 +404,7 @@
                           <!-- 5星 -->
                           <li class="f-between-center">
                             <p class="fs-7 me-3">5 星</p>
-                            <div
-                              class="progress flex-grow-1"
-                              style="height: 8px"
-                              role="progressbar"
-                              aria-label="Basic example"
-                              aria-valuenow="0"
-                              aria-valuemin="0"
-                              aria-valuemax="100">
+                            <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                               <div class="progress-bar" style="width: 85%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">108</p>
@@ -315,14 +412,7 @@
                           <!-- 4星 -->
                           <li class="f-between-center">
                             <p class="fs-7 me-3">4 星</p>
-                            <div
-                              class="progress flex-grow-1"
-                              style="height: 8px"
-                              role="progressbar"
-                              aria-label="Basic example"
-                              aria-valuenow="0"
-                              aria-valuemin="0"
-                              aria-valuemax="100">
+                            <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                               <div class="progress-bar" style="width: 15%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">3</p>
@@ -330,14 +420,7 @@
                           <!-- 3星 -->
                           <li class="f-between-center">
                             <p class="fs-7 me-3">3 星</p>
-                            <div
-                              class="progress flex-grow-1"
-                              style="height: 8px"
-                              role="progressbar"
-                              aria-label="Basic example"
-                              aria-valuenow="0"
-                              aria-valuemin="0"
-                              aria-valuemax="100">
+                            <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                               <div class="progress-bar" style="width: 0%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">0</p>
@@ -345,14 +428,7 @@
                           <!-- 2星 -->
                           <li class="f-between-center">
                             <p class="fs-7 me-3">2 星</p>
-                            <div
-                              class="progress flex-grow-1"
-                              style="height: 8px"
-                              role="progressbar"
-                              aria-label="Basic example"
-                              aria-valuenow="0"
-                              aria-valuemin="0"
-                              aria-valuemax="100">
+                            <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                               <div class="progress-bar" style="width: 0%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">0</p>
@@ -360,14 +436,7 @@
                           <!-- 1星 -->
                           <li class="f-between-center">
                             <p class="fs-7 me-3">1 星</p>
-                            <div
-                              class="progress flex-grow-1"
-                              style="height: 8px"
-                              role="progressbar"
-                              aria-label="Basic example"
-                              aria-valuenow="0"
-                              aria-valuemin="0"
-                              aria-valuemax="100">
+                            <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                               <div class="progress-bar" style="width: 0%"></div>
                             </div>
                             <p class="class=fs-7 text-gray-03">0</p>
@@ -378,62 +447,51 @@
                   </div>
                 </div>
                 <!-- 1st Comment -->
-                <%- include('./layout/student-comment-card.ejs',{profile:"user-2",
-                name:"阮永庭",commentDetails:"找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。",
-                timestamp:"2024-07-31 10:30"}); -%>
-                <!-- 2nd Comment -->
-                <%- include('./layout/student-comment-card.ejs',{profile:"user-3",
-                name:"黄詠琪",commentDetails:"所有我的問題都得到了解決。謝謝老師。", timestamp:"2024-08-01 10:30"}); -%>
-                <!-- 3rd Comment -->
-                <%- include('./layout/student-comment-card.ejs',{profile:"user-4",
-                name:"鍾宗仁",commentDetails:"非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！",
-                timestamp:"2024-08-07 10:30"}); -%>
+                <%- include('./layout/student-comment-card.ejs',{profile:"user-2", name:"阮永庭",commentDetails:"找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。", timestamp:"2024-07-31 10:30"}); -%>
+                  <!-- 2nd Comment -->
+                  <%- include('./layout/student-comment-card.ejs',{profile:"user-3", name:"黄詠琪",commentDetails:"所有我的問題都得到了解決。謝謝老師。", timestamp:"2024-08-01 10:30"}); -%>
+                    <!-- 3rd Comment -->
+                    <%- include('./layout/student-comment-card.ejs',{profile:"user-4", name:"鍾宗仁",commentDetails:"非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！", timestamp:"2024-08-07 10:30"}); -%>
               </div>
             </section>
 
-            <!-- section 4 - tutor recommendation -->
+            <!-- section 5 - tutor recommendation -->
             <section class="section mb-0">
               <div class="section-component f-between-center">
                 <h4>推薦老師</h4>
                 <a href="#" class="text-brand-03 d-flex slide-right-hover">
                   <p>更多</p>
-                  <span class="material-symbols-outlined icon-fill">arrow_forward</span>
+                  <span class="material-symbols-outlined icon-fill">
+                    arrow_forward
+                  </span>
                 </a>
               </div>
 
               <!-- desktop -->
               <ul class="row row-cols-lg-2 g-lg-4 d-none d-lg-flex">
                 <!-- tutor1 -->
-                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
-                title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}]}); -%>
-                <!-- tutor2 -->
-                <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
-                title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
-                <!-- tutor3 -->
-                <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python"},{name: "Python Flask"}]}); -%>
-                <!-- tutor4 -->
-                <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
-                title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"} ]}); -%>
+                <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress 網站架設"}]}); -%>
+                  <!-- tutor2 -->
+                  <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師", title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap" }]}); -%>
+                    <!-- tutor3 -->
+                    <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong", title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python" },{name: "Python Flask" }]}); -%>
+                      <!-- tutor4 -->
+                      <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee", title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作" } ]}); -%>
               </ul>
               <!-- mobile -->
               <div class="swiper tutor-card-swiper d-block d-lg-none">
                 <div class="swiper-wrapper mb-10 py-5">
                   <div class="swiper-slide">
-                    <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖",
-                    title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress網站架設"}]}); -%>
+                    <%- include('./layout/tutor-card', {image:"course-1", isFavorite:true, tutorProfile:"user-5.png",name:"平凡老師 - 李東霖", title:"WordPress 工程師", score:"4.9", price:250, tags:[{name:"WordPress網站架設"}]}); -%>
                   </div>
                   <div class="swiper-slide">
-                    <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師",
-                    title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap"}]}); -%>
+                    <%- include('./layout/tutor-card', {image:"course-5", isFavorite:false, tutorProfile:"user-6.png", name:"米克老師", title:"喜歡寫code的前端工程師", score:"3.4", price:100, tags:[{name:"製作 RWD 網站"}, {name: "Bootstrap" }]}); -%>
                   </div>
                   <div class="swiper-slide">
-                    <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong",
-                    title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python"},{name: "Python Flask"}]}); -%>
+                    <%- include('./layout/tutor-card', {image:"course-8", isFavorite:false, tutorProfile:"user-7.png", name:"Pong Pong", title:"台大資訊訓練班首席老師", score:"4.3", price:530, tags:[{name: "Python" },{name: "Python Flask" }]}); -%>
                   </div>
                   <div class="swiper-slide">
-                    <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee",
-                    title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作"} ]}); -%>
+                    <%- include('./layout/tutor-card', {image:"course-3", isFavorite:true, tutorProfile:"user-10.png",name:"Alan Lee", title:"熱愛遊戲的熱血青年", score:"4.3", price:250, tags:[{name:"Unity"}, {name: "2D遊戲製作" } ]}); -%>
                   </div>
                 </div>
               </div>
@@ -448,11 +506,7 @@
                   <img src="../assets/images/course/course-2.png" class="card-img-top rounded-2 object-fit-cover" alt="course-2" />
                 </div>
 
-                <span
-                  class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle"
-                  role="button"
-                  style="background-color: #1e1e1e66"
-                  data-favorite="true">
+                <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" role="button" style="background-color: #1e1e1e66" data-favorite="true">
                   favorite
                 </span>
               </div>
@@ -476,19 +530,16 @@
     </div>
 
     <!-- Modal -->
-    <div
-      class="modal fade service-selection-modal"
-      id="serviceSelectionModal"
-      tabindex="-1"
-      aria-labelledby="serviceSelectionModalLabel"
-      aria-hidden="true">
+    <div class="modal fade service-selection-modal" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
-          <div class="modal-header border-0">
-            <h1 class="modal-title fs-md-2 fs-3 ms-auto" id="serviceSelectionModalLabel">請選擇想預約的項目</h1>
-            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            <h1 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+              請選擇想預約的項目
+            </h1>
             <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
               <div class="col service-card">
                 <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
@@ -496,7 +547,9 @@
                     <h3 class="fs-4 fs-md-3">一對一教學</h3>
                     <img src="../assets/images/deco/Illustration-7.png" alt="" class="" />
                     <p class="text-center mb-auto">
-                      以線上Google meeting的形式， 將於預約時間前一天發送會議連結， 老師會於預約時間內進行一對一單獨指導。
+                      以線上Google meeting的形式，
+                      將於預約時間前一天發送會議連結，
+                      老師會於預約時間內進行一對一單獨指導。
                     </p>
                   </div>
                 </a>
@@ -507,7 +560,8 @@
                     <h3 class="fs-4 fs-md-3">程式碼檢視</h3>
                     <img src="../assets/images/deco/Illustration-8.png" alt="" class="" />
                     <p class="text-center mb-auto">
-                      您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼， 老師會於預約時間內進行程式碼檢視服務，
+                      您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼，
+                      老師會於預約時間內進行程式碼檢視服務，
                       並且於時間結束時回覆檢視後的結果。
                     </p>
                   </div>
@@ -520,46 +574,66 @@
     </div>
 
     <%- include('./layout/footer'); -%>
-    <!--Mobile sticky bottom CTA card -->
-    <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
-      <div class="pt-4 pb-6 px-4">
-        <div class="f-between-center">
-          <div>
-            <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
-            <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
-          </div>
+      <!--Mobile sticky bottom CTA card -->
+      <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
+        <div class="pt-4 pb-6 px-4">
+          <div class="f-between-center">
+            <div>
+              <p class="text-gray-02 fs-7 fs-lg-6">每小時收費</p>
+              <h2 class="text-brand-03 fs-lg-2 fs-3">NT $250</h2>
+            </div>
 
-          <button class="btn slide-right-hover btn-brand-03" data-bs-toggle="modal" data-bs-target="#serviceSelectionModal">
-            <p class="f-center me-1">
-              立即預約
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </p>
-          </button>
+            <button class="btn slide-right-hover btn-brand-03" data-bs-toggle="modal" data-bs-target="#serviceSelectionModal">
+              <p class="f-center me-1">
+                立即預約
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </p>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script type="module" src="../assets/js/add-to-favorite.js"></script>
-    <script type="module" src="../assets/js/show-n-hide-text.js"></script>
-    <script type="module" src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".tutor-card-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 40,
-        loop: true,
-        grabCursor: true,
-        autoplay: {
-          delay: 5000,
-        },
-        breakpoints: {
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+      <script type="module" src="../assets/js/add-to-favorite.js"></script>
+      <script type="module" src="../assets/js/show-n-hide-text.js"></script>
+      <script type="module" src="../main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        new Swiper(".tutor-card-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 40,
+          loop: true,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
           },
-        },
-      });
-    </script>
-  </body>
+          breakpoints: {
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          },
+        });
+
+        new Swiper(".freeTipShortsSwiper", {
+          slidesPerView: 2,
+          spaceBetween: 24,
+          loop: true,
+          simulateTouch: false,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 24,
+              width: 348,
+            }
+          },
+        });
+
+      </script>
+</body>
+
 </html>
