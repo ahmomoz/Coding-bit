@@ -52,7 +52,7 @@ function d(a,t){let e="";t.forEach(s=>{e+=`
           <span class="fs-7 chapter-contents">${o}</span>
           <time class="video-duration fs-7 rounded-1 px-2 py-1">${i}</time>
         </div>
-        <h6 class="chapter-item-title mb-2">${n}</h6>
+        <h5 class="chapter-item-title mb-2">${n}</h5>
         <div class="d-flex">
           <span class="material-symbols-outlined me-1 fs-6 eyes-icon">visibility</span>
           <data class="chapter-view-count fs-7" value="${l}">${l}</data>
@@ -65,7 +65,7 @@ function d(a,t){let e="";t.forEach(s=>{e+=`
           <span class="position-absolute py-1 px-2 rounded-1 fs-7 other-video-duration">${l}</span>
         </div>
         <div class="f-column-between py-2">
-          <h6 class="fs-6 other-video-title">${n}</h6>
+          <h5 class="other-video-title">${n}</h5>
           <div class="f-align-center me-6">
             <span class="view-count me-1 material-symbols-outlined eyes-icon fs-6">visibility</span>
             <data value="${i}" class="data-view-count fs-7">${i}</data>
@@ -78,7 +78,7 @@ function d(a,t){let e="";t.forEach(s=>{e+=`
           <span class="position-absolute py-1 px-2 rounded-1 fs-7 related-video-duration">${c}</span>
         </div>
         <div class="f-column-between py-2">
-          <h6 class="related-video-title">${n}</h6>
+          <h5 class="related-video-title">${n}</h5>
           <div class="f-align-center">
             <span class="material-symbols-outlined me-1 author-icon fs-6">co_present</span>
             <span class="me-2 me-md-4">${l}</span>

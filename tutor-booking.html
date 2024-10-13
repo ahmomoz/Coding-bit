@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
   <title>卡斯柏 ｜ 預約老師</title>
-  <script type="module" crossorigin src="/Coding-bit/assets/main-6fcd651e.js"></script>
+  <script type="module" crossorigin src="/Coding-bit/assets/main-8460ef8d.js"></script>
   <script type="module" crossorigin src="/Coding-bit/assets/add-to-favorite-092af0d2.js"></script>
   <script type="module" crossorigin src="/Coding-bit/assets/show-n-hide-text-799d5ee3.js"></script>
-  <link rel="stylesheet" href="/Coding-bit/assets/main-64b6ac10.css">
+  <link rel="stylesheet" href="/Coding-bit/assets/main-f3d3d7f9.css">
 </head>
 
 <body>
@@ -170,7 +170,7 @@
               <div class="section-component">
                 <ul class="nav nav-tabs mb-6 list-x-scroll flex-nowrap" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="about-me-tab" data-bs-toggle="tab" data-bs-target="#about-me-tab-pane" type="button" role="tab" aria-controls="about-me-tab-pane" aria-selected="true">
+                    <button class="nav-link" id="about-me-tab" data-bs-toggle="tab" data-bs-target="#about-me-tab-pane" type="button" role="tab" aria-controls="about-me-tab-pane" aria-selected="true">
                       關於我
                     </button>
                   </li>
@@ -180,13 +180,13 @@
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume-tab-pane" type="button" role="tab" aria-controls="resume-tab-pane" aria-selected="false">
+                    <button class="nav-link active" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume-tab-pane" type="button" role="tab" aria-controls="resume-tab-pane" aria-selected="false">
                       我的履歷
                     </button>
                   </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
+                  <div class="tab-pane fade" id="about-me-tab-pane" role="tabpanel" aria-labelledby="about-me-tab" tabindex="0">
                     <p class="tab-details text-hide">
                       我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
                       <br />
@@ -204,55 +204,126 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" aria-labelledby="teaching-styles-tab" tabindex="0">
-                    ...
+                    <p class="tab-details text-hide">
+                      作為一名擁有十年經驗的前端工程師，我的教學風格注重實踐與互動。我相信學習不僅僅是理論，更需要將知識應用到實際項目中。因此，我會設計豐富的實作案例，讓學生在實踐中掌握前端技術。
+                      <br>
+                      <br>
+                      在課堂上，我鼓勵學生提問並分享自己的想法，這樣可以促進討論和思維碰撞。我會使用簡單易懂的語言解釋複雜的概念，並通過逐步指導來幫助學生克服挑戰。
+                      <br>
+                      <br>
+                      此外，我也非常重視學習資源的多樣性，會推薦優質的文獻、視頻和工具，讓學生能夠在課堂之外進一步探索和學習。我的目標是培養學生的自主學習能力，讓他們在前端開發的旅程中充滿信心與創造力。希望透過我的課程，每位學生都能找到屬於自己的編程熱情！
+                    </p>
+                    <div class="d-flex align-items-center py-3 show-more" role="button">
+                      <p class="text-brand-03">更多</p>
+                      <span class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+                        stat_minus_1
+                      </span>
+                    </div>
+
                   </div>
-                  <div class="tab-pane fade" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
-                    ...
-                  </div>
-                  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                    ...
-                  </div>
+                  <div class="tab-pane fade show active" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
+                    <div class="row tutor-booking-resume">
+    <div class="col-md-3 col-5">
+        <div class="list-group" id="list-resume-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-work-experience-list" data-bs-toggle="list" href="#list-work-experience" role="tab" aria-controls="list-work-experience">工作經歷</a>
+            <a class="list-group-item list-group-item-action" id="list-education-list" data-bs-toggle="list" href="#list-education" role="tab" aria-controls="list-education">學歷</a>
+            <a class="list-group-item list-group-item-action" id="list-certificate-list" data-bs-toggle="list" href="#list-certificate" role="tab" aria-controls="list-certificate">證書</a>
+        </div>
+    </div>
+    <div class="col-md-9 col-7">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-work-experience" role="tabpanel" aria-labelledby="list-work-experience-list">
+                <div class="d-md-flex mb-5">
+                    <p class="date me-5 ">2020 - 2024</p>
+                    <div>
+                        <p class="fw-bold ">資深前端工程師</p>
+                        <p class="text-gray-03 ">TutorABC</p>
+                    </div>
                 </div>
-              </div>
-              <!-- statistics -->
-              <div class="row row-cols-2 row-cols-lg-5 g-3">
-                <div class="col">
+
+                <div class="d-md-flex mb-5">
+                    <p class="date me-5 ">2015 - 2020</p>
+                    <div>
+                        <p class="fw-bold">前端工程師</p>
+                        <p class="text-gray-03 ">KKDay</p>
+                    </div>
+                </div>
+
+                <div class="d-md-flex mb-5">
+                    <p class="date me-5">2011 - 2015</p>
+                    <div>
+                        <p class="fw-bold ">前端工程師</p>
+                        <p class="text-gray-03 ">Taiwan Tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="list-education" role="tabpanel" aria-labelledby="list-education-list">
+                <div class="d-md-flex mb-5">
+                    <p class="date me-5">2005 - 2009</p>
+                    <div>
+                        <p class="fw-bold">國立臺灣大學</p>
+                        <p class="text-gray-03 ">外國語文學系學士學位</p>
+                        <p class="text-success d-flex verification fs-7 mt-1"><span class="material-symbols-outlined icon-fill align-middle me-1 fs-5">
+                                verified
+                            </span>學歷認證</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="list-certificate" role="tabpanel" aria-labelledby="list-certificate-list">
+                <div class="d-md-flex mb-5">
+                    <p class="date me-5">2024 - 2027</p>
+                    <div>
+                        <p class="fw-bold">AWS Certified Cloud Practitioner</p>
+                        <p class="text-gray-03">Amazon Web Services (AWS)</p>
+                        <p class="text-success d-flex verification fs-7 mt-1"><span class="material-symbols-outlined icon-fill align-middle me-1 fs-5">
+                                verified
+                            </span>證書認證</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                  </div>
+                </div>
+                <!-- statistics -->
+                <div class="row row-cols-2 row-cols-lg-5 g-3 mt-5">
+                  <div class="col">
   <div class="stat-overview-card">
     <h4 class="text-brand-03">200</h4>
     <p class="fs-7">學生</p>
   </div>
 </div>
-                  <div class="col">
+                    <div class="col">
   <div class="stat-overview-card">
     <h4 class="text-brand-03">250</h4>
     <p class="fs-7">課堂</p>
   </div>
 </div>
-                    <div class="col">
+                      <div class="col">
   <div class="stat-overview-card">
     <h4 class="text-brand-03">10</h4>
     <p class="fs-7">影片</p>
   </div>
 </div>
-                      <div class="col">
+                        <div class="col">
   <div class="stat-overview-card">
     <h4 class="text-brand-03">100%</h4>
     <p class="fs-7">出席率</p>
   </div>
 </div>
-                        <div class="col">
+                          <div class="col">
   <div class="stat-overview-card">
     <h4 class="text-brand-03">100%</h4>
     <p class="fs-7">回覆率</p>
   </div>
 </div>
-              </div>
+                </div>
             </section>
             <!-- section 2 - video list -->
             <section class="section">
               <div class="section-component f-between-center">
                 <h4>老師影片</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
+                <a href="teacher-info.html" class="text-brand-03 d-flex slide-right-hover" data-show="false">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -496,7 +567,7 @@
             <section class="section student-comment">
               <div class="section-component f-between-center">
                 <h4>學生評價</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-bs-toggle="modal" data-bs-target="#studentCommentModal">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -570,49 +641,64 @@
                 <div class="col">
   <div class="student-comment-card card p-4 h-100">
     <div>
-      <img src="/Coding-bit/assets/user-2-33082ac6.png" alt="profile" class="object-fit-cover rounded-circle me-4" />
+      <img src="/Coding-bit/assets/user-2-33082ac6.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
     </div>
     <div class="flex-grow-1">
-      <h6 class="mb-2 text-gray-01 fw-medium mb-1">阮永庭</h6>
-      <p class="comment-details mb-1">找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。</p>
-      <p class="timestamp text-gray-03 fs-7 mt-auto">2024-07-31 10:30</p>
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        阮永庭
+      </h6>
+      <p class="comment-details mb-1">
+        找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-07-31 10:30
+      </p>
     </div>
   </div>
-</div>
-                  <!-- 2nd Comment -->
+</div>                  <!-- 2nd Comment -->
                   <div class="col">
   <div class="student-comment-card card p-4 h-100">
     <div>
-      <img src="/Coding-bit/assets/user-3-ee46b278.png" alt="profile" class="object-fit-cover rounded-circle me-4" />
+      <img src="/Coding-bit/assets/user-3-ee46b278.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
     </div>
     <div class="flex-grow-1">
-      <h6 class="mb-2 text-gray-01 fw-medium mb-1">黄詠琪</h6>
-      <p class="comment-details mb-1">所有我的問題都得到了解決。謝謝老師。</p>
-      <p class="timestamp text-gray-03 fs-7 mt-auto">2024-08-01 10:30</p>
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        黄詠琪
+      </h6>
+      <p class="comment-details mb-1">
+        所有我的問題都得到了解決。謝謝老師。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-01 10:30
+      </p>
     </div>
   </div>
-</div>
-                    <!-- 3rd Comment -->
+</div>                    <!-- 3rd Comment -->
                     <div class="col">
   <div class="student-comment-card card p-4 h-100">
     <div>
-      <img src="/Coding-bit/assets/user-4-e0a6fbf8.png" alt="profile" class="object-fit-cover rounded-circle me-4" />
+      <img src="/Coding-bit/assets/user-4-e0a6fbf8.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
     </div>
     <div class="flex-grow-1">
-      <h6 class="mb-2 text-gray-01 fw-medium mb-1">鍾宗仁</h6>
-      <p class="comment-details mb-1">非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！</p>
-      <p class="timestamp text-gray-03 fs-7 mt-auto">2024-08-07 10:30</p>
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        鍾宗仁
+      </h6>
+      <p class="comment-details mb-1">
+        非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-07 10:30
+      </p>
     </div>
   </div>
-</div>
-              </div>
+</div>              </div>
             </section>
 
             <!-- section 5 - tutor recommendation -->
             <section class="section mb-0">
               <div class="section-component f-between-center">
                 <h4>推薦老師</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                <a href="tutor-list.html" class="text-brand-03 d-flex slide-right-hover">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -1267,6 +1353,7 @@
     </div>
 
     <!-- Modal -->
+    <!-- Modal - Service Select Modal -->
     <div class="modal fade service-selection-modal" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
@@ -1274,9 +1361,9 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <h1 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+            <h4 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
               請選擇想預約的項目
-            </h1>
+            </h4>
             <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
               <div class="col service-card">
                 <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
@@ -1305,6 +1392,239 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal - Student Comment Modal -->
+    <div class="modal fade student-comment-modal" id="studentCommentModal" tabindex="-1" aria-labelledby="studentCommentModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+              學生評價
+            </h4>
+            <div class="row flex-column g-2">
+              <div class="col">
+                <div class="card p-4">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-5 f-center flex-column">
+                      <h4 class="text-brand-03 mb-2">4.9</h4>
+                      <div class="f-center mb-2">
+                        <img src="/Coding-bit/assets/kid_star-55ba9aed.svg" class="text-brand-01" alt="" width="16" height="16" />
+                        <img src="/Coding-bit/assets/kid_star-55ba9aed.svg" alt="" width="16" height="16" />
+                        <img src="/Coding-bit/assets/kid_star-55ba9aed.svg" alt="" width="16" height="16" />
+                        <img src="/Coding-bit/assets/kid_star-55ba9aed.svg" alt="" width="16" height="16" />
+                        <img src="/Coding-bit/assets/kid_star_half_purple-8b85d5e5.svg" alt="" width="16" height="16" />
+                      </div>
+                      <p class="fs-7">111則評論</p>
+                    </div>
+                    <div class="col-lg-7">
+                      <ol class="ps-0 mb-0">
+                        <!-- 5星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">5 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">108</p>
+                        </li>
+                        <!-- 4星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">4 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 15%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">3</p>
+                        </li>
+                        <!-- 3星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">3 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">0</p>
+                        </li>
+                        <!-- 2星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">2 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">0</p>
+                        </li>
+                        <!-- 1星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">1 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">0</p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-2-33082ac6.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        阮永庭
+      </h6>
+      <p class="comment-details mb-1">
+        找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-07-31 10:30
+      </p>
+    </div>
+  </div>
+</div>                <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-3-ee46b278.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        黄詠琪
+      </h6>
+      <p class="comment-details mb-1">
+        所有我的問題都得到了解決。謝謝老師。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-01 10:30
+      </p>
+    </div>
+  </div>
+</div>                  <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-4-e0a6fbf8.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        鍾宗仁
+      </h6>
+      <p class="comment-details mb-1">
+        非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-07 10:30
+      </p>
+    </div>
+  </div>
+</div>                    <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-2-33082ac6.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        阮永庭
+      </h6>
+      <p class="comment-details mb-1">
+        找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-07-31 10:30
+      </p>
+    </div>
+  </div>
+</div>                      <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-3-ee46b278.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        黄詠琪
+      </h6>
+      <p class="comment-details mb-1">
+        所有我的問題都得到了解決。謝謝老師。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-01 10:30
+      </p>
+    </div>
+  </div>
+</div>                        <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-4-e0a6fbf8.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        鍾宗仁
+      </h6>
+      <p class="comment-details mb-1">
+        非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-07 10:30
+      </p>
+    </div>
+  </div>
+</div>                          <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-2-33082ac6.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        阮永庭
+      </h6>
+      <p class="comment-details mb-1">
+        找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-07-31 10:30
+      </p>
+    </div>
+  </div>
+</div>                            <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-3-ee46b278.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        黄詠琪
+      </h6>
+      <p class="comment-details mb-1">
+        所有我的問題都得到了解決。謝謝老師。
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-01 10:30
+      </p>
+    </div>
+  </div>
+</div>                              <div class="col">
+  <div class="student-comment-card card p-4 h-100">
+    <div>
+      <img src="/Coding-bit/assets/user-4-e0a6fbf8.png" alt="profile" class="object-fit-cover rounded-circle me-4 avatar" />
+    </div>
+    <div class="flex-grow-1">
+      <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+        鍾宗仁
+      </h6>
+      <p class="comment-details mb-1">
+        非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+      </p>
+      <p class="timestamp text-gray-03 fs-7 mt-auto">
+        2024-08-07 10:30
+      </p>
+    </div>
+  </div>
+</div>            </div>
+
           </div>
         </div>
       </div>
@@ -1456,20 +1776,19 @@
         });
 
         new Swiper(".freeTipShortsSwiper", {
-          slidesPerView: 2,
-          spaceBetween: 24,
+          slidesPerView: 1,
+          spaceBetween: 40,
           loop: true,
-          simulateTouch: false,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
+          },
           breakpoints: {
+            // when window width is >= 768px
             768: {
               slidesPerView: 2,
-              spaceBetween: 24,
+              spaceBetween: 20,
             },
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 24,
-              width: 348,
-            }
           },
         });
 
