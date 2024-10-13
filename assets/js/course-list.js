@@ -1,9 +1,5 @@
 import { courseRender } from '../js/courses.js';
 
-const toTopicSeriesPageBtn = document.querySelector('#toTopicSeriesPageBtn');
-const toCustomLearningBtn = document.querySelector('#toCustomLearningBtn');
-const toFreeTipShortsBtn = document.querySelector('#toFreeTipShortsBtn');
-
 const topicSeriesCourseCard = document.querySelector('.topicSeriesCourse-card-wrap');
 const topicSeriesCourseList = [
   {
@@ -71,16 +67,3 @@ if (topicSeriesCourseCard) {
 } else {
   console.error('course-card-wrap element not found');
 }
-
-toTopicSeriesPageBtn.addEventListener('click', (e)=> {
-  e.preventDefault(); 
-  window.location.href='course-list_topicSeries.html';
-})
-toCustomLearningBtn.addEventListener('click', (e)=> {
-  e.preventDefault(); 
-  window.location.href='course-list_customLearning.html';
-})
-toFreeTipShortsBtn.addEventListener('click', (e)=> {
-  e.preventDefault(); 
-  window.location.href='course-list_freeTipShorts.html';
-})
