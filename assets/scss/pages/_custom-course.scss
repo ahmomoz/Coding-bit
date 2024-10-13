@@ -475,15 +475,16 @@
   background-image: url('../images/deco/bg-3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  @include mobile-sm {
-    background-image: url('../images/deco/bg-sm-3.png');
-  }
-
   position: fixed;
   z-index: 999;
   bottom: 0;
+  left: 0;
   width: 100%;
-  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+
+  @include mobile-sm {
+    background-image: url('../images/deco/bg-sm-3.png');
+  }
 
   // 橫幅樣式
   .banner {
@@ -534,6 +535,62 @@
       &:hover {
         background-color: darken($brand-02, 5%);
       }
+    }
+  }
+
+  // 切換按鈕樣式
+  .footer-toggle {
+    display: none; // 預設隱藏
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 1000;
+    background-color: $brand-02;
+    color: $brand-01;
+    border: none;
+    width: 40px;
+    height: 10px;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: darken($brand-02, 10%);
+    }
+
+    .material-symbols-outlined {
+      font-size: 24px;
+      transition: transform 0.3s;
+    }
+  }
+
+  // 響應式設計
+  @include pad {
+    .banner {
+      padding: 20px 0;
+
+      // .banner-text {
+      //   display: none;
+      // }
+    }
+
+    .footer-toggle {
+      display: flex; // 在手機版顯示
+    }
+  }
+
+  // Footer 隱藏時的樣式
+  body.footer-hidden & {
+    @include pad {
+      transform: translateY(100%);
+
+      // .footer-toggle {
+      //   transform: translate(-50%, -100%) rotate(180deg);
+      // }
     }
   }
 }
