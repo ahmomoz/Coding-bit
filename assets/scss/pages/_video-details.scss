@@ -181,13 +181,13 @@
       background-color: $gray-04;
       background: rgba(248, 248, 248, 1);
 
-      .teacher-content {
-        .teacher-image {
+      .tutor-content {
+        .tutor-image {
           height: 40px;
           border-radius: 88px;
         }
 
-        .teacher-name {
+        .tutor-name {
           font-size: 18px;
           font-weight: 500;
           line-height: 1.2;
@@ -280,7 +280,7 @@
   padding: 34px 0 12px 0;
   backdrop-filter: blur(20px);
 
-  .teacher-other-video-title {
+  .tutor-other-video-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -325,7 +325,7 @@
   padding: 34px 0 12px 0;
   backdrop-filter: blur(20px);
 
-  .teacher-related-video-title {
+  .tutor-related-video-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
