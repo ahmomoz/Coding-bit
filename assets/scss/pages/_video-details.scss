@@ -205,6 +205,12 @@
           color: $gray-01;
           line-height: 1.5;
         }
+        >div:last-of-type{
+          margin-bottom: 0;
+        }
+        >div:not(last-of-type)  {
+          margin-bottom: 32px;
+        }
       }
     }
   }
