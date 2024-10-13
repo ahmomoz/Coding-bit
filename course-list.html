@@ -20,10 +20,10 @@
 
     <link rel="icon" type="image/x-icon" href="/Coding-bit/assets/icon-infinite-7978421b.svg" />
     <title>Coding∞bit ｜ 課程一覽</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/course-list-f25bed81.js"></script>
-    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-8460ef8d.js">
+    <script type="module" crossorigin src="/Coding-bit/assets/course-list-b77356dc.js"></script>
+    <link rel="modulepreload" crossorigin href="/Coding-bit/assets/main-1fe4e53f.js">
     <link rel="modulepreload" crossorigin href="/Coding-bit/assets/courses-dc73fe3c.js">
-    <link rel="stylesheet" href="/Coding-bit/assets/main-f3d3d7f9.css">
+    <link rel="stylesheet" href="/Coding-bit/assets/main-9b29495c.css">
   </head>
   <body>
     <div class="loader-wrapper">
@@ -198,7 +198,7 @@
 </div>
         <div class="row f-center mt-6 mt-lg-13">
           <div class="col-11 col-lg-4 mt-10 mt-lg-0">
-            <a href="javascript:void(0);" class="category-card">
+            <div class="category-card">
               <h4>主題式系列課程影片</h4>
               <div class="card-img-wrap">
                 <img
@@ -210,16 +210,15 @@
                 <p class="fs-7 fs-lg-6 fw-medium text-brand-03">
                   由專業講師自行規劃，</br>為單一主題的系列課程影片，具有連貫性。
                 </p>
-                <button
-                  id="toTopicSeriesPageBtn"
+                <a href="course-list_topicSeries.html"
                   class="btn btn-brand-03 fs-7 rounded-3 w-100 mt-2">
                   查看所有影片
-                </button>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
           <div class="col-11 col-lg-4 mt-10 mt-lg-0">
-            <a href="javascript:void(0);" class="category-card">
+            <div class="category-card">
               <h4>客製化學習需求影片</h4>
               <div class="card-img-wrap">
                 <img
@@ -231,16 +230,15 @@
                 <p class="fs-7 fs-lg-6 fw-medium text-brand-03">
                   學生於客製化許願頁面提出學習需求，</br>再由講師專為解決此需求而錄製，為成果導向的教學影片。
                 </p>
-                <button
-                  id="toCustomLearningBtn"
+                <a href="course-list_customLearning.html"
                   class="btn btn-brand-03 fs-7 rounded-3 w-100 mt-2">
                   查看所有影片
-              </button>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
           <div class="col-11 col-lg-4 mt-10 mt-lg-0">
-            <a href="javascript:void(0);" class="category-card">
+            <div class="category-card">
               <h4>實用技術短影片</h4>
               <div class="card-img-wrap">
                 <img
@@ -252,13 +250,12 @@
                 <p class="fs-7 fs-lg-6 fw-medium text-brand-03">
                   免費會員也可以自由觀看。</br>由專業講師錄製，影片時長較短，一支影片會進行一個小技術的教學。
                 </p>
-                <button
-                  id="toFreeTipShortsBtn"
+                <a href="course-list_freeTipShorts.html"
                   class="btn btn-brand-03 fs-7 rounded-3 w-100 mt-2">
-                查看所有影片
-              </button>
+                  查看所有影片
+                </a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -659,13 +656,13 @@
           </div>
         </div>
         <div class="f-center">
-          <button
-            class="btn btn-outline-brand-03 slide-right-hover f-align-center mt-6 mt-lg-11">
+          <a href="course-list_topicSeries.html"
+            class="btn btn-outline-brand-03 slide-right-hover d-inline-flex f-align-center mt-6 mt-lg-11">
             查看所有主題式系列課程影片
             <span class="material-symbols-outlined icon-fill fs-5 ms-1">
               arrow_forward
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -875,13 +872,13 @@
               </div>
             </div>
             <div class="f-center f-lg-end-center">
-              <button
-                class="btn btn-outline-brand-03 slide-right-hover f-align-center mt-6 mt-lg-8">
+              <a href="course-list_customLearning.html"
+                class="btn btn-outline-brand-03 slide-right-hover d-inline-flex f-align-center mt-6 mt-lg-8">
                 查看所有客製化需求影片
                 <span class="material-symbols-outlined icon-fill fs-5 ms-1">
                   arrow_forward
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -954,13 +951,6 @@
             aria-current="page"
             href="help-center.html">
             幫助中心
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link underline-hover d-inline-flex link-gray-02 fs-7"
-            href="#">
-            成為老師
           </a>
         </li>
         <li class="nav-item">
