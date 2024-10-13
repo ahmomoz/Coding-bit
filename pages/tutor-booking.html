@@ -132,7 +132,7 @@
             <section class="section">
               <div class="section-component f-between-center">
                 <h4>老師影片</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-show="false">
+                <a href="teacher-info.html" class="text-brand-03 d-flex slide-right-hover" data-show="false">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -376,7 +376,7 @@
             <section class="section student-comment">
               <div class="section-component f-between-center">
                 <h4>學生評價</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                <a href="#" class="text-brand-03 d-flex slide-right-hover" data-bs-toggle="modal" data-bs-target="#studentCommentModal">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -459,7 +459,7 @@
             <section class="section mb-0">
               <div class="section-component f-between-center">
                 <h4>推薦老師</h4>
-                <a href="#" class="text-brand-03 d-flex slide-right-hover">
+                <a href="tutor-list.html" class="text-brand-03 d-flex slide-right-hover">
                   <p>更多</p>
                   <span class="material-symbols-outlined icon-fill">
                     arrow_forward
@@ -530,6 +530,7 @@
     </div>
 
     <!-- Modal -->
+    <!-- Modal - Service Select Modal -->
     <div class="modal fade service-selection-modal" id="serviceSelectionModal" tabindex="-1" aria-labelledby="serviceSelectionModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
@@ -537,9 +538,9 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <h1 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+            <h4 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
               請選擇想預約的項目
-            </h1>
+            </h4>
             <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
               <div class="col service-card">
                 <a href="tutor-booking-payment-step1-1on1.html" class="h-100">
@@ -568,6 +569,95 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal - Student Comment Modal -->
+    <div class="modal fade student-comment-modal" id="studentCommentModal" tabindex="-1" aria-labelledby="studentCommentModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+              學生評價
+            </h4>
+            <div class="row flex-column g-2">
+              <div class="col">
+                <div class="card p-4">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-5 f-center flex-column">
+                      <h4 class="text-brand-03 mb-2">4.9</h4>
+                      <div class="f-center mb-2">
+                        <img src="../assets/images/icon/kid_star.svg" class="text-brand-01" alt="" width="16" height="16" />
+                        <img src="../assets/images/icon/kid_star.svg" alt="" width="16" height="16" />
+                        <img src="../assets/images/icon/kid_star.svg" alt="" width="16" height="16" />
+                        <img src="../assets/images/icon/kid_star.svg" alt="" width="16" height="16" />
+                        <img src="../assets/images/icon/kid_star_half_purple.svg" alt="" width="16" height="16" />
+                      </div>
+                      <p class="fs-7">111則評論</p>
+                    </div>
+                    <div class="col-lg-7">
+                      <ol class="ps-0 mb-0">
+                        <!-- 5星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">5 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">108</p>
+                        </li>
+                        <!-- 4星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">4 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 15%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">3</p>
+                        </li>
+                        <!-- 3星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">3 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">0</p>
+                        </li>
+                        <!-- 2星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">2 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">0</p>
+                        </li>
+                        <!-- 1星 -->
+                        <li class="f-between-center">
+                          <p class="fs-7 me-3">1 星</p>
+                          <div class="progress flex-grow-1" style="height: 8px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+                          <p class="class=fs-7 text-gray-03">0</p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <%- include('./layout/student-comment-card.ejs',{profile:"user-2", name:"阮永庭",commentDetails:"找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。", timestamp:"2024-07-31 10:30"}); -%>
+                <%- include('./layout/student-comment-card.ejs',{profile:"user-3", name:"黄詠琪",commentDetails:"所有我的問題都得到了解決。謝謝老師。", timestamp:"2024-08-01 10:30"}); -%>
+                  <%- include('./layout/student-comment-card.ejs',{profile:"user-4", name:"鍾宗仁",commentDetails:"非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！", timestamp:"2024-08-07 10:30"}); -%>
+                    <%- include('./layout/student-comment-card.ejs',{profile:"user-2", name:"阮永庭",commentDetails:"找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。", timestamp:"2024-07-31 10:30"}); -%>
+                      <%- include('./layout/student-comment-card.ejs',{profile:"user-3", name:"黄詠琪",commentDetails:"所有我的問題都得到了解決。謝謝老師。", timestamp:"2024-08-01 10:30"}); -%>
+                        <%- include('./layout/student-comment-card.ejs',{profile:"user-4", name:"鍾宗仁",commentDetails:"非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！", timestamp:"2024-08-07 10:30"}); -%>
+                          <%- include('./layout/student-comment-card.ejs',{profile:"user-2", name:"阮永庭",commentDetails:"找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。", timestamp:"2024-07-31 10:30"}); -%>
+                            <%- include('./layout/student-comment-card.ejs',{profile:"user-3", name:"黄詠琪",commentDetails:"所有我的問題都得到了解決。謝謝老師。", timestamp:"2024-08-01 10:30"}); -%>
+                              <%- include('./layout/student-comment-card.ejs',{profile:"user-4", name:"鍾宗仁",commentDetails:"非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！", timestamp:"2024-08-07 10:30"}); -%>
+            </div>
+
           </div>
         </div>
       </div>
@@ -616,20 +706,19 @@
         });
 
         new Swiper(".freeTipShortsSwiper", {
-          slidesPerView: 2,
-          spaceBetween: 24,
+          slidesPerView: 1,
+          spaceBetween: 40,
           loop: true,
-          simulateTouch: false,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
+          },
           breakpoints: {
+            // when window width is >= 768px
             768: {
               slidesPerView: 2,
-              spaceBetween: 24,
+              spaceBetween: 20,
             },
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 24,
-              width: 348,
-            }
           },
         });
 
