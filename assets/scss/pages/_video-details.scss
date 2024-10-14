@@ -92,11 +92,12 @@
       font-weight: 500;
       line-height: 1.2;
       padding: 12px 24px;
-      color: $brand-03;
-    }
-
-    .video-comments {
       color: $gray-03;
+    }
+    
+    .video-comments.active,
+    .video-description.active {
+      color: $brand-03;
     }
   }
 
