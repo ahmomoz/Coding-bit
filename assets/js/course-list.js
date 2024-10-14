@@ -3,12 +3,12 @@ import { courseRender } from '../js/courses.js';
 const topicSeriesCourseCard = document.querySelector('.topicSeriesCourse-card-wrap');
 const topicSeriesCourseList = [
   {
-    courseName: 'Python 基礎入門',
-    img: 'course-1.png',
-    teacher: 'Anna Wu',
+    courseName: 'React 進階開發技巧',
+    img: 'course-17.png',
+    teacher: '卡斯伯Casper',
     star: '4.0',
     totalDuration: '36小時',
-    purchaseCount: '1,100',
+    purchaseCount: '12,345',
     courseCategory: '主題式課程影片'
   },
   {
