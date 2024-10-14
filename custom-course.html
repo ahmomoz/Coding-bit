@@ -19,8 +19,8 @@
       href="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/icon/icon-infinite.svg"
     />
     <title>Coding∞bit ｜ 課程需求一覽表</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/main-1fe4e53f.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/main-9b29495c.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/main-4b9f3c5c.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/main-4ac8cbd3.css">
   </head>
   <body class="bg-custom-course">
     <!-- header -->
@@ -85,13 +85,13 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  選擇標籤
+                  選擇類別
                 </button>
                 <div class="dropdown-menu p-0" aria-labelledby="formatDropdown" style="width: 250px">
                   <div class="px-3 py-2">
                     <input
                       type="text"
-                      class="form-control form-control-sm mb-2"
+                      class="form-control form-control-sm mt-1"
                       id="tagSearch"
                       placeholder="搜尋標籤..."
                     />
@@ -142,6 +142,9 @@
 
     <!-- footer-learning-needs -->
     <footer class="footer-learning-needs">
+      <button class="footer-toggle" aria-label="切換顯示 Footer">
+        <span class="material-symbols-outlined">expand_less</span>
+      </button>
       <div class="container">
         <div class="banner">
           <div class="banner-text">
@@ -401,7 +404,7 @@
               likes: 8,
             },
           ],
-          isCompleted: true,
+          isCompleted: false,
           hasResponses: true,
           timestamp: 1727922300000,
           searchKeywords: 'js 表格渲染錯誤 javascript html css 瀏覽器兼容性',
@@ -830,7 +833,7 @@
           tags: [],
           status: {
             completed: false,
-            responded: false,
+            responded: true,
           },
           sortBy: 'newest',
         },
@@ -988,8 +991,8 @@
             const searchMatch = card.searchKeywords.toLowerCase().includes(this.activeFilters.search.toLowerCase());
             const tagMatch =
               this.activeFilters.tags.length === 0 || this.activeFilters.tags.some((tag) => card.tags.includes(tag));
-            const completedMatch = !this.activeFilters.status.completed || card.isCompleted;
-            const respondedMatch = !this.activeFilters.status.responded || card.hasResponses;
+            const completedMatch = this.activeFilters.status.completed === card.isCompleted;
+            const respondedMatch = this.activeFilters.status.responded === card.hasResponses;
 
             return searchMatch && tagMatch && completedMatch && respondedMatch;
           });
@@ -1198,6 +1201,60 @@
         },
       };
 
+      const FooterManager = {
+        footer: null,
+        toggleButton: null,
+        body: document.body,
+        header: null,
+        mainContent: null,
+        observer: null,
+
+        init() {
+          this.footer = document.querySelector('.footer-learning-needs');
+          this.toggleButton = this.footer.querySelector('.footer-toggle');
+          this.header = document.querySelector('.header-custom-course');
+          this.mainContent = document.querySelector('.main-content');
+
+          this.adjustMainContentPadding();
+          this.bindEvents();
+          this.setupMutationObserver();
+        },
+
+        adjustMainContentPadding() {
+          const headerHeight = this.header ? this.header.offsetHeight : 0;
+          const footerHeight = this.body.classList.contains('footer-hidden')
+            ? 0
+            : this.footer
+            ? this.footer.offsetHeight
+            : 0;
+
+          this.mainContent.style.paddingTop = `${headerHeight}px`;
+          this.mainContent.style.paddingBottom = `${footerHeight}px`;
+        },
+
+        toggleFooter() {
+          this.body.classList.toggle('footer-hidden');
+
+          if (this.body.classList.contains('footer-hidden')) {
+            this.toggleButton.setAttribute('aria-label', '顯示 Footer');
+          } else {
+            this.toggleButton.setAttribute('aria-label', '隱藏 Footer');
+          }
+
+          this.adjustMainContentPadding();
+        },
+
+        bindEvents() {
+          this.toggleButton.addEventListener('click', () => this.toggleFooter());
+          window.addEventListener('resize', () => this.adjustMainContentPadding());
+        },
+
+        setupMutationObserver() {
+          this.observer = new MutationObserver(() => this.adjustMainContentPadding());
+          this.observer.observe(document.body, { childList: true, subtree: true });
+        },
+      };
+
       function adjustMainContentPadding() {
         const [header, footer, mainContent] = [
           document.querySelector('.header-custom-course'),
@@ -1349,6 +1406,9 @@
 
         // 初始化新增學習需求功能
         LearningNeedManager.init();
+
+        // 初始化頁尾
+        FooterManager.init();
       });
 
       window.addEventListener(
