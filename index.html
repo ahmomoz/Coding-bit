@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="icon"
       type="image/x-icon"
@@ -151,7 +153,7 @@
           <div class="swiper-slide">
             <div class="container-lg">
               <div class="row f-center flex-column-reverse flex-xl-row py-xl-10">
-                <div class="col-xl-8 f-column-align-center d-xl-block">
+                <div class="col-xl-8 f-column-align-center d-xl-block" >
                   <h1 class="title">
                     程式學習，量身訂做
                   </h1>
@@ -292,7 +294,10 @@
       </div>
     </main>
     <section class="index-feature-section wrap">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <div class="f-center">
   <picture>
     <source
@@ -371,7 +376,10 @@
       </div>
     </section> 
     <section class="index-booking-steps-section wrap bg-gray-04">
-      <div class="container">
+      <div 
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <div class="f-center">
   <picture>
     <source
@@ -495,7 +503,10 @@
       </div>
     </section>
     <section class="index-customized-info-section wrap">
-      <div class="container">
+      <div 
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <div class="f-center">
   <picture>
     <source
@@ -574,7 +585,10 @@
       </div>
     </section>
     <section class="index-subscription-section bg wrap">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <div class="f-center">
   <picture>
     <source
@@ -885,8 +899,10 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
+      AOS.init();
       var swiper = new Swiper(".banner-swiper", {
         slidesPerView: 1,
         spaceBetween: 240,
