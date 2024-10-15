@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="icon"
       type="image/x-icon"
@@ -30,7 +32,7 @@
           <div class="swiper-slide">
             <div class="container-lg">
               <div class="row f-center flex-column-reverse flex-xl-row py-xl-10">
-                <div class="col-xl-8 f-column-align-center d-xl-block">
+                <div class="col-xl-8 f-column-align-center d-xl-block" >
                   <h1 class="title">
                     程式學習，量身訂做
                   </h1>
@@ -148,7 +150,10 @@
       </div>
     </main>
     <section class="index-feature-section wrap">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <%- include('./layout/title-brand-03', { title: '選擇我們的理由', title2: '', longTitle: false }) %>
         <div class="row mt-6 mt-lg-8">
           <div class="col-lg-4">
@@ -204,7 +209,10 @@
       </div>
     </section> 
     <section class="index-booking-steps-section wrap bg-gray-04">
-      <div class="container">
+      <div 
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <%- include('./layout/title-brand-03', { title: '簡單四步驟，', title2: '預約一對一教學', longTitle: true }) %>
         <div class="step-wrap mt-6 mt-lg-8">
           <div class="text-center position-relative">
@@ -305,7 +313,10 @@
       </div>
     </section>
     <section class="index-customized-info-section wrap">
-      <div class="container">
+      <div 
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <%- include('./layout/title-brand-03', { title: '會員限定，', title2: '學習影片客製化服務', longTitle: true }) %>
         <div class="info-wrap p-4 p-lg-10 mt-6 mt-lg-8">
           <div>
@@ -361,7 +372,10 @@
       </div>
     </section>
     <section class="index-subscription-section bg wrap">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="1000">
         <%- include('./layout/title-brand-03', { title: '訂閱方案', title2: '', longTitle: false }) %>
         <div class="row mt-6 mt-lg-8">
           <%- include('./layout/subscription-card', { month: true }); -%>
@@ -373,8 +387,10 @@
     <script type="module" src="../main.js"></script>
     <script type="module" src="../assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
+      AOS.init();
       var swiper = new Swiper(".banner-swiper", {
         slidesPerView: 1,
         spaceBetween: 240,
