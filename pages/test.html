@@ -10,7 +10,13 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Test</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/icon/icon-infinite.svg"
+    />
+    <title>Coding∞bit ｜ 測試頁面</title>
   </head>
   <body class="bg-light">
     <div class="container">
@@ -90,22 +96,6 @@
 
       <div class="row">
         <div class="col">
-          <input
-            type="search"
-            class="form-control mt-3"
-            placeholder="搜尋感興趣的課程">
-          </br>
-          <input
-            type="search"
-            class="form-control mt-3"
-            placeholder="搜尋感興趣的課程"
-            disabled>
-          </br>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
           <div class="mt-5">
             <button
               class="btn btn-brand-03"
@@ -163,6 +153,7 @@
         </div>
       </div>
 
+      <!-- icon -->
       <div class="row">
         <div class="col">
           <div class="f-align-center mt-5" style="gap: 8px">
@@ -244,16 +235,54 @@
         </div>
       </div>
 
+      <!-- input -->
       <div class="row">
         <div class="col">
-          <div class="f-column f-xl-row border p-3 mt-5">
-            <button class="btn btn-outline-brand-03 me-3" id="dropdownMenuCopyButton">複製此dropdown語法</button>
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="inputTestComponent">
+              複製此input語法
+            </button>
+            <div id="inputTestComponent">
+              <input
+                type="search"
+                class="form-control mt-3"
+                placeholder="搜尋感興趣的課程">
+            </div>
+          </div>
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="inputDisabledTestComponent">
+              複製此input-disabled語法
+            </button>
+            <div id="inputDisabledTestComponent">
+              <input
+                type="search"
+                class="form-control mt-3"
+                placeholder="搜尋感興趣的課程"
+                disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dropdown -->
+      <div class="row">
+        <div class="col">
+          <div class="f-column f-xl-align-center f-xl-row border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="dropdownTestComponent">
+              複製此dropdown語法
+            </button>
             <div id="dropdownTestComponent">
               <div class="dropdown mt-4 mt-lg-0">
-                <button class="btn btn-brand-04 dropdown-toggle border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-brand-04 dropdown-toggle border-0" type="button">
                   排序方式
                 </button>
-                <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu mt-2">
                   <li><a class="dropdown-item" href="#">標題</a></li>
                   <li><a class="dropdown-item" href="#">標題</a></li>
                 </ul>
@@ -263,88 +292,135 @@
         </div>
       </div>
 
+      <!-- tag & badge -->
       <div class="row">
         <div class="col">
-          <div class="mt-5">
-            <a href="#" class="tag tag-brand-02">
-              <span>標籤</span>
-            </a>
-            <span class="badge bg-brand-02">沒有a的標籤</span>
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="tagBrandTestComponent">
+              複製此標籤語法
+            </button>
+            <div id="tagBrandTestComponent">
+              <a href="#" class="tag tag-brand-02">
+                <span>標籤</span>
+              </a>
+            </div>
+          </div>
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="badgeBrandTestComponent">
+              複製此沒有a的標籤語法
+            </button>
+            <div id="badgeBrandTestComponent">
+              <span class="badge bg-brand-02">沒有a的標籤</span>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- navbar -->
       <div class="row">
         <div class="col">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="navbarTestComponent">
+              複製此navbar語法
+            </button>
+            <div id="navbarTestComponent">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
 
+      <!-- nav-tab -->
       <div class="row">
         <div class="col">
-          <ul
-            class="nav nav-tabs border-bottom border-gray-03"
-            id="subscriptionTab"
-            role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="annually-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#annually"
-                type="button"
-                role="tab"
-                aria-controls="annually"
-                aria-selected="true">
-                年繳
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="monthly-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#monthly"
-                type="button"
-                role="tab"
-                aria-controls="monthly"
-                aria-selected="false">
-                月繳
-              </button>
-            </li>
-          </ul>
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="navTabTestComponent">
+              複製此nav-tab語法
+            </button>
+            <div id="navTabTestComponent">
+              <ul
+                class="nav nav-tabs border-bottom border-gray-03"
+                id="subscriptionTab"
+                role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="annually-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#annually"
+                    type="button"
+                    role="tab"
+                    aria-controls="annually"
+                    aria-selected="true">
+                    年繳
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="monthly-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#monthly"
+                    type="button"
+                    role="tab"
+                    aria-controls="monthly"
+                    aria-selected="false">
+                    月繳
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- card -->      
       <div class="row">
-        <div class="col-lg-4 py-5">
-          <div class="card card-hover">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-brand-03 d-block w-100 mt-6">立即預約</a>
+        <div class="col-lg-5 py-5">
+          <div class="f-align-center border p-3 mt-5">
+            <button
+              class="btn btn-outline-brand-03 me-3 copyButton"
+              data-copy-target="cardTestComponent">
+              複製此card語法
+            </button>
+            <div id="cardTestComponent">
+              <div class="card card-hover">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-brand-03 d-block w-100 mt-6">立即預約</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -354,25 +430,27 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="../main.js"></script>
     <script>
-      document.getElementById('dropdownMenuCopyButton').addEventListener('click', function() {
-        let htmlContent = document.querySelector('#dropdownTestComponent').innerHTML;
-        
-        let tempTextArea = document.createElement('textarea');
-        tempTextArea.value = htmlContent;
-        document.body.appendChild(tempTextArea);
-    
-        tempTextArea.select();
-        document.execCommand('copy');
-    
-        document.body.removeChild(tempTextArea);
-    
-        Swal.fire({
-          icon: "success",
-          title: "複製成功",
-          showConfirmButton: false,
-          timer: 1500,
-          padding: '3em',
-        });
+      document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('copyButton')) {
+          const targetId = event.target.getAttribute('data-copy-target');
+          const htmlContent = document.querySelector(`#${targetId}`).innerHTML;
+
+          let tempTextArea = document.createElement('textarea');
+          tempTextArea.value = htmlContent;
+          document.body.appendChild(tempTextArea);
+
+          tempTextArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempTextArea);
+
+          Swal.fire({
+            icon: "success",
+            title: "複製成功",
+            showConfirmButton: false,
+            timer: 1500,
+            padding: '3em',
+          });
+        }
       });
     </script>
   </body>
