@@ -5,7 +5,7 @@
 
 ## 關於此專案
 
-<a href="https://github.com/othneildrew/Best-README-Template">DEMO</a>
+<a href="https://ahmomoz.github.io/Coding-bit/">DEMO</a>
 
 ![custom course page screenshot](https://github.com/ahmomoz/Coding-bit/blob/main/assets/images/custom-course-page-screenshot.png)
 
@@ -14,8 +14,6 @@
 我們希望可以打造一個環境，除了主題式連貫性的課程影片外，還可以讓學習者發佈學習需求，讓講師針對這個需求提供解答，錄製教學影片。如果學習者還是不懂，可以再額外預約一對一課程，達到完整的學習體驗。
 
 ## 資料夾結構
-
-
 ```
 ├── README.md               # 本專案的README
 ├── assets                  # 靜態資源
@@ -76,8 +74,8 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 ## 團隊成員
 
 <table>
-  <tbody style="border:0px"> 
-    <tr style="border:0px">
+  <tbody style="border: none"> 
+    <tr style="border: none">
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/ahmomoz"><img src="https://avatars.githubusercontent.com/u/134830436?v=4" width="100px;" alt="MY"/><br /><sub><b>MY</b></sub></a></td>
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/z111048"><img src="https://avatars.githubusercontent.com/u/147981540?v=4" width="100px;" alt="詹姆士"/><br /><sub><b>詹姆士</b></sub></a></td>
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/joker-cat"><img src="https://avatars.githubusercontent.com/u/67618773?v=4" width="100px;" alt="Chia Pin"/><br /><sub><b>Chia Pin</b></sub></a></td>
