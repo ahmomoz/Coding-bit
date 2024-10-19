@@ -19,8 +19,8 @@
       href="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/icon/icon-infinite.svg"
     />
     <title>Coding∞bit ｜ 課程需求一覽表</title>
-    <script type="module" crossorigin src="/Coding-bit/assets/main-68a53cdf.js"></script>
-    <link rel="stylesheet" href="/Coding-bit/assets/main-e99c1729.css">
+    <script type="module" crossorigin src="/Coding-bit/assets/main-8cc1435a.js"></script>
+    <link rel="stylesheet" href="/Coding-bit/assets/main-9db69f1c.css">
   </head>
   <body class="bg-custom-course">
     <!-- header -->
@@ -130,12 +130,6 @@
       </section>
 
       <section class="time-line mt-auto">
-        <!-- <div class="f-between">
-          <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月1日</span>
-        <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月2日</span>
-        <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月3日</span>
-        <span class="bg-brand-01 rounded-top-2 px-2 py-1 text-black">10月4日</span>
-        </div> -->
         <div class="bg-brand-01" style="height: 8px"></div>
       </section>
     </main>
@@ -191,7 +185,7 @@
                     />
                     <h6 id="modalAuthorName" class="mb-0"></h6>
                   </div>
-                  <p id="modalContent" class="mb-3"></p>
+                  <p id="modalContent" class=""></p>
                   <div id="modalTags" class="mb-3"></div>
                   <small id="modalDate" class="text-muted d-block mb-3"></small>
                   <img id="modalPhoto" src="" alt="相關照片" class="img-fluid mb-3" />
@@ -1337,7 +1331,7 @@
         }
 
         modalElements.tags.innerHTML = card.tags
-          .map((tag) => `<span class="badge bg-secondary me-1">${tag}</span>`)
+          .map((tag) => `<span class="badge bg-secondary me-1 mt-3">${tag}</span>`)
           .join('');
 
         modalElements.responses.innerHTML = card.responses
