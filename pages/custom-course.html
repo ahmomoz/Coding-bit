@@ -183,7 +183,7 @@
                     />
                     <h6 id="modalAuthorName" class="mb-0"></h6>
                   </div>
-                  <p id="modalContent" class="mb-3"></p>
+                  <p id="modalContent" class=""></p>
                   <div id="modalTags" class="mb-3"></div>
                   <small id="modalDate" class="text-muted d-block mb-3"></small>
                   <img id="modalPhoto" src="" alt="相關照片" class="img-fluid mb-3" />
@@ -1329,7 +1329,7 @@
         }
 
         modalElements.tags.innerHTML = card.tags
-          .map((tag) => `<span class="badge bg-secondary me-1">${tag}</span>`)
+          .map((tag) => `<span class="badge bg-secondary me-1 mt-3">${tag}</span>`)
           .join('');
 
         modalElements.responses.innerHTML = card.responses
