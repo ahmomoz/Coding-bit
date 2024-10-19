@@ -14,6 +14,7 @@
 我們希望可以打造一個環境，除了主題式連貫性的課程影片外，還可以讓學習者發佈學習需求，讓講師針對這個需求提供解答，錄製教學影片。如果學習者還是不懂，可以再額外預約一對一課程，達到完整的學習體驗。
 
 ## 資料夾結構
+
 ```
 ├── README.md               # 本專案的README
 ├── assets                  # 靜態資源
@@ -35,10 +36,12 @@
 ```
 
 ## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+
+- 專案的 Node.js 版本需為 v16 以上
+- 查看自己版本指令：`node -v`
 
 ## 指令列表
+
 - `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
 - `npm run dev` - 執行開發模式
   - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
@@ -47,17 +50,22 @@
 - `npm ru deploy` - 自動化部署
 
 ### 注意事項
+
 - 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
 - .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
 
 ## 開發模式的監聽
+
 vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
 
 ## 部署 gh-pages 流程說明
+
 ### Windows 版本
+
 1. 在 GitHub 建立一個新的 Repository
 
 2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
+
 ```cmd
 git init # 若已經初始化過就可以不用輸入
 git add .
@@ -67,7 +75,7 @@ git remote add origin [GitHub Repositories Url]
 git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
 ```
 
-3. 修改 vite.config.js 第28行，將你的Github Repo的名字填入
+3. 修改 vite.config.js 第 28 行，將你的 Github Repo 的名字填入
 
 4. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
 
@@ -75,7 +83,7 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 
 <table>
   <tbody style="border: none"> 
-    <tr style="border: none">
+     <tr style="border: none; border-top: none;">
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/ahmomoz"><img src="https://avatars.githubusercontent.com/u/134830436?v=4" width="100px;" alt="MY"/><br /><sub><b>MY</b></sub></a></td>
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/z111048"><img src="https://avatars.githubusercontent.com/u/147981540?v=4" width="100px;" alt="詹姆士"/><br /><sub><b>詹姆士</b></sub></a></td>
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/joker-cat"><img src="https://avatars.githubusercontent.com/u/67618773?v=4" width="100px;" alt="Chia Pin"/><br /><sub><b>Chia Pin</b></sub></a></td>
