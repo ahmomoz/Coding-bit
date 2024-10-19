@@ -612,6 +612,7 @@
   .modal-dialog {
     // max-width: 95%;
     height: 100vh;
+    margin: auto;
     // margin: 2.5vh auto;
   }
 
@@ -639,6 +640,7 @@
     background-color: white;
     padding: 15px;
     border-top: 1px solid #dee2e6;
+    border-bottom-left-radius: 12px;
   }
 
   .form-actions {
