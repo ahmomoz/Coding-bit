@@ -83,7 +83,7 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 
 <table>
   <tbody style="border: none"> 
-     <tr style="border: none; border-top: none;">
+     <tr style="border: none;">
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/ahmomoz"><img src="https://avatars.githubusercontent.com/u/134830436?v=4" width="100px;" alt="MY"/><br /><sub><b>MY</b></sub></a></td>
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/z111048"><img src="https://avatars.githubusercontent.com/u/147981540?v=4" width="100px;" alt="詹姆士"/><br /><sub><b>詹姆士</b></sub></a></td>
         <td align="center" valign="top" width="14.28%" style="border:none"><a href="https://github.com/joker-cat"><img src="https://avatars.githubusercontent.com/u/67618773?v=4" width="100px;" alt="Chia Pin"/><br /><sub><b>Chia Pin</b></sub></a></td>
